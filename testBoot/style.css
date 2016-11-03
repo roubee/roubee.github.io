@@ -1,4 +1,6 @@
 [class*="col-"] {
 	background-color: #ffff00;
 	border:1px solid #333;
+	padding: 0;
+	margin: 0;
 }
