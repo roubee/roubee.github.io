@@ -3,14 +3,22 @@
   border: 1px solid #333;
 }
 
-.dropdown-menu {
-  border: 0;
-  box-shadow: 0;
-  border-radius: 0;
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
   background-color: rgba(191, 149, 90, 0.8);
 }
 
-.dropdown-menu li a:hover {
+.menu li a:hover {
   background-color: black;
   color: #fff;
 }
