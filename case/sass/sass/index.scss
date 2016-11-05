@@ -2,3 +2,13 @@
 	background-color: #ffff00;
 	border:1px solid #333;
 }
+
+.dropdown-menu{
+	border: 0;
+	box-shadow: 0;
+	background-color: rgba(191,149,90,0.8);
+}
+
+.dropdown-menu a:hover{
+	background-color: rgba(0,0,0,1);
+}
