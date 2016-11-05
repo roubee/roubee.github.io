@@ -1,3 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
 [class*="col-"] {
   background-color: #ffff00;
   border: 1px solid #333;
@@ -14,8 +30,15 @@
   background-clip: border-box;
   -webkit-background-clip: border-box;
   background-color: rgba(191, 149, 90, 0.8);
-  color: #fff;
   min-width: 146px;
+}
+
+.dropdown-menu li {
+  font-size: 1.4rem;
+}
+
+.dropdown-menu li a {
+  color: #fff;
 }
 
 .dropdown-menu li a:hover {
