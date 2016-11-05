@@ -6,7 +6,10 @@
 .dropdown-menu{
 	border: 0;
 	box-shadow: 0;
+	-webkit-box-shadow: 0;
 	border-radius: 0;
+	background-clip: 0;
+	-webkit-background-clip: 0;
 	background-color: rgba(191,149,90,0.8);
 }
 
