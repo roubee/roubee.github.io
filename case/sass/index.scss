@@ -6,9 +6,11 @@
 .dropdown-menu{
 	border: 0;
 	box-shadow: 0;
+	border-radius: 0;
 	background-color: rgba(191,149,90,0.8);
 }
 
-.dropdown-menu a:hover{
+.dropdown-menu li a:hover{
 	background-color: rgba(0,0,0,1);
+	color:#fff;
 }
