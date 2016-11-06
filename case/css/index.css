@@ -10,6 +10,10 @@ h1 {
   font-size: 2.4rem;
 }
 
+a:focus, li:focus {
+  outline: none;
+}
+
 .nav li {
   font-size: 1.5rem;
 }
@@ -19,9 +23,6 @@ h1 {
 }
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
-}
-.nav li:focus {
-  outline: none;
 }
 
 [class*="col-"] {
