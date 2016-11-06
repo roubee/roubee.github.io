@@ -43,7 +43,7 @@ a:focus, li:focus{
 .open .dropdown-menu{
 	@include box-shadow(none);
 	@include background-clip(border-box);
-	padding: 0;
+	padding: 10px 0;
 	margin: 0;
 	text-align: center;
 	border: 0;
