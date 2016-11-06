@@ -40,7 +40,7 @@ a:focus, li:focus{
 	border:1px solid #333;
 }
 
-.dropdown-menu{
+.open .dropdown-menu{
 	@include box-shadow(none);
 	@include background-clip(border-box);
 	padding: 0;
