@@ -26,7 +26,7 @@ li:focus {
   outline: none;
 }
 
-li a:hover, a:focus {
+li a:hover, li a:focus {
   background-color: #fff;
 }
 
