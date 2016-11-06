@@ -29,7 +29,7 @@ a:focus, li:focus {
   color: #3f3f3f;
 }
 
-.navbar-nav {
+.navbar-block {
   width: 630px;
   margin: auto 0;
 }
