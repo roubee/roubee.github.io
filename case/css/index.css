@@ -24,8 +24,7 @@ a:focus, li:focus {
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
 }
-
-.open a, .open a:hover, .open a:focus {
+.nav .open a, .nav .open a:hover, .nav .open a:focus {
   background-color: #fff;
   color: #3f3f3f;
 }

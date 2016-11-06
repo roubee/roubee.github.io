@@ -25,14 +25,15 @@ a:focus, li:focus{
 	li:hover{
 		border-bottom: 5px solid $mainColor;
 	}
-}
-
-.open{
+	.open{
 		a, a:hover, a:focus{
 			background-color: #fff;
 			color: #3f3f3f;
 		}
 	}
+}
+
+
 
 [class*="col-"] {
 	background-color: #ffff00;
