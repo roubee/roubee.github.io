@@ -27,6 +27,10 @@ li:active {
   background-color: #fff;
 }
 
+li:focus {
+  outline: none;
+}
+
 [class*="col-"] {
   background-color: #ffff00;
   border: 1px solid #333;

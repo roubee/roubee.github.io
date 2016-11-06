@@ -23,6 +23,9 @@ li:hover{
 li:active{
 	background-color: #fff;
 }
+li:focus{
+	outline: none;
+}
 
 [class*="col-"] {
 	background-color: #ffff00;
