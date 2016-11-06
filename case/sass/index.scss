@@ -17,7 +17,7 @@ a:focus, li:focus{
 .nav{
 	li{
 		font-size: 1.5rem;
-		a, a:hover{
+		a, a:hover, a:focus{
 			color: #3f3f3f;
 			background-color: #fff;
 		}
@@ -26,6 +26,13 @@ a:focus, li:focus{
 		border-bottom: 5px solid $mainColor;
 	}
 }
+
+.open{
+		a, a:hover, a:focus{
+			background-color: #fff;
+			color: #3f3f3f;
+		}
+	}
 
 [class*="col-"] {
 	background-color: #ffff00;

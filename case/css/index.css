@@ -17,12 +17,17 @@ a:focus, li:focus {
 .nav li {
   font-size: 1.5rem;
 }
-.nav li a, .nav li a:hover {
+.nav li a, .nav li a:hover, .nav li a:focus {
   color: #3f3f3f;
   background-color: #fff;
 }
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
+}
+
+.open a, .open a:hover, .open a:focus {
+  background-color: #fff;
+  color: #3f3f3f;
 }
 
 [class*="col-"] {
