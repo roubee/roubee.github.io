@@ -19,19 +19,14 @@ li a {
 }
 
 li:hover {
-  background-color: #fff;
   border-bottom: 5px solid #bf955a;
-}
-
-li:active {
-  background-color: #fff;
 }
 
 li:focus {
   outline: none;
 }
 
-li a:focus {
+li a:hover, a:focus {
   background-color: #fff;
 }
 

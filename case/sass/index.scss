@@ -17,16 +17,12 @@ li a{
 	color: #3f3f3f;
 }
 li:hover{
-	background-color: #fff;
 	border-bottom: 5px solid $mainColor;
-}
-li:active{
-	background-color: #fff;
 }
 li:focus{
 	outline: none;
 }
-li a:focus{
+li a:hover, a:focus{
 	background-color: #fff;
 }
 
