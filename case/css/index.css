@@ -14,11 +14,6 @@ a:focus, li:focus {
   outline: none;
 }
 
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 .nav li {
   font-size: 1.5rem;
 }
