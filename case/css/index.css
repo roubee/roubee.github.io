@@ -48,14 +48,14 @@ a:focus, li:focus {
   text-align: center;
   border: 0;
   border-radius: 0;
-  background-color: rgba(191, 149, 90, 0.8);
+  background-color: #bf955a;
   min-width: 146px;
 }
 .open .dropdown-menu li {
   font-size: 1.4rem;
 }
 .open .dropdown-menu li a {
-  background-color: rgba(191, 149, 90, 0.8);
+  background-color: #bf955a;
   color: #fff;
 }
 .open .dropdown-menu li a:hover {
