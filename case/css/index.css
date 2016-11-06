@@ -19,7 +19,7 @@ li a {
 }
 
 li:hover {
-  border: 5px solid #bf955a;
+  border-bottom: 5px solid #bf955a;
 }
 
 [class*="col-"] {

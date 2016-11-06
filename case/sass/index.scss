@@ -1,3 +1,5 @@
+$mainColor: #bf955a;
+
 html {
 	font-size: 62.5%;
 }
@@ -15,7 +17,7 @@ li a{
 	color: #3f3f3f;
 }
 li:hover{
-	border: 5px solid #bf955a;
+	border-bottom: 5px solid $mainColor;
 }
 
 [class*="col-"] {
