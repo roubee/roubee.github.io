@@ -14,7 +14,7 @@ li {
   font-size: 1.5rem;
 }
 
-li a {
+li a, li a:hover {
   color: #3f3f3f;
 }
 
