@@ -33,7 +33,10 @@ a:focus, li:focus{
 	}
 }
 
-.im-centered { margin: auto; max-width: 630px;}
+.nav-center { 
+	margin: auto; 
+	max-width: 630px;
+}
 
 [class*="col-"] {
 	background-color: #fff;
