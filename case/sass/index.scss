@@ -31,8 +31,14 @@ a:focus, li:focus{
 	background-color: #ffff00;
 	border:1px solid #333;
 }
+.dropdown:hover{
+    display: block;
+    margin-top: 0;
+ }
 
 .dropdown-menu{
+	display: block;
+    margin-top: 0;
 	@include box-shadow(none);
 	@include background-clip(border-box);
 	padding: 0;
