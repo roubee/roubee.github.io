@@ -31,6 +31,10 @@ li:focus {
   outline: none;
 }
 
+li a:focus {
+  background-color: #fff;
+}
+
 [class*="col-"] {
   background-color: #ffff00;
   border: 1px solid #333;
