@@ -32,6 +32,7 @@ a:focus, li:focus {
 [class*="col-"] {
   background-color: #ffff00;
   border: 1px solid #333;
+  text-align: center;
 }
 
 .open .dropdown-menu {
