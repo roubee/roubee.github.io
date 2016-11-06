@@ -30,11 +30,6 @@ a:focus, li:focus {
   border: 1px solid #333;
 }
 
-.dropdown:hover {
-  display: block;
-  margin-top: 0;
-}
-
 .dropdown-menu {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
