@@ -54,7 +54,7 @@ a:focus, li:focus {
   font-size: 1.4rem;
 }
 .open .dropdown-menu li a {
-  background-color: #bf955a;
+  background-color: rgba(191, 149, 90, 0.8);
   color: #fff;
 }
 .open .dropdown-menu li a:hover {
