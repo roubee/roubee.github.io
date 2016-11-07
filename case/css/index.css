@@ -128,7 +128,18 @@ a:focus, li:focus {
   border: 1px solid #000;
 }
 
-.title-text {
+.subject-block {
+  padding: 65px 0;
+}
+
+.subject-title {
   vertical-align: middle;
   font-size: 3rem;
+  padding-left: 15px;
+}
+
+.subject-content {
+  padding-top: 35px;
+  color: #bf955a;
+  font-size: 1.6rem;
 }
