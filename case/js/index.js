@@ -13,12 +13,13 @@ $(function(){
 		var arrow = $(this).find('.service-arrow');
 		var width = parseInt(arrow.css('width').replace('px',''));
 		width = width*-1;
-		$(this).find('.service-arrow').css('background-position', width+'px 0');
+		arrow.css('background-position', width+'px 0');
 		var icon = $(this).find('.service-icon');
 		width = icon.css('width');
 		var position = icon.css('background-position').split(" ");
 		var x = parseInt(position[0].replace('px',''));
 		x = x-width;
+		console.log("x1="+x);
 		icon.css('background-position', x+'px 0');
     }, function() {
 		$(this).find('.service-mask').css('display', 'block');
@@ -28,6 +29,7 @@ $(function(){
 		var position = icon.css('background-position').split(" ");
 		var x = parseInt(position[0].replace('px',''));
 		x = x+width;
+		console.log("x2="+x);
 		icon.css('background-position', x+'px 0');
     });
 });
