@@ -93,3 +93,10 @@ a:focus, li:focus {
   background-color: black;
   color: #fff;
 }
+
+.banner {
+  margin-top: 140px;
+  width: 100%;
+  background: url("./img/banner.jpg") no-repeat;
+  display: block;
+}
