@@ -142,8 +142,8 @@ a:focus, li:focus{
 }
 
 .service-block{
-	@include box-shadow(0px 0px 5px rgba(213,213,213,0.5)); 
-	width: 242px;
+	@include box-shadow(0px 0px 5px rgba(213,213,213,1)); 
+	width: 240px;
 	margin: 0 auto;
 	font-size: 2.2rem;
 	color: #3e3934;
