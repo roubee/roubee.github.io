@@ -95,6 +95,7 @@ a:focus, li:focus {
 }
 
 .banner {
+  padding: 0;
   margin-top: 140px;
   width: 100%;
   display: block;
