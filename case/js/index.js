@@ -10,7 +10,7 @@ $(function(){
 });
 
 var slideIndex = 1;
-var slideIntervalTime = 3000;
+var slideIntervalTime = 5000;
 showDivs(slideIndex);
 
 function do_slide(){
