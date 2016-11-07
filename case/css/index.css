@@ -128,10 +128,6 @@ a:focus, li:focus {
   border: 1px solid #000;
 }
 
-.block-mark {
-  margin: auto 0;
-}
-
 .block-title {
   font-size: 3rem;
 }
