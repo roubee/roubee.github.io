@@ -20,13 +20,16 @@ a:focus, li:focus {
 }
 
 [class*="col-"] {
-  background-color: #fff;
-  border: 1px solid #333;
   text-align: center;
 }
 
 .navbar > div {
   background-color: #fff;
+}
+
+.nav-logo {
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 .nav li {
@@ -35,9 +38,8 @@ a:focus, li:focus {
 .nav li a, .nav li a:hover, .nav li a:focus {
   color: #3f3f3f;
   background-color: #fff;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
