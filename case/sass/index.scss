@@ -139,6 +139,12 @@ a:focus, li:focus{
 	font-size: 1.6rem;
 	line-height: 2;
 }
+.service-icon{
+	width: 36px;
+	height: 36px;
+	background-position: 0 0;
+	background: url('../img/service.png')
+}
 
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}
