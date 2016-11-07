@@ -12,14 +12,17 @@ var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
+	console.log("plusDivs="+n);
 	showDivs(slideIndex += n);
 }
 
 function currentDiv(n) {
+	console.log("currentDiv="+n);
 	showDivs(slideIndex = n);
 }
 
 function showDivs(n) {
+	console.log("showDivs="+n);
 	var i;
 	var x = document.getElementsByClassName("mySlides");
 	var dots = document.getElementsByClassName("demo");
