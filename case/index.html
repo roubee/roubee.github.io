@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <!-- css路徑待更改 -->
+    <link href="./css/w3.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
 
   </head>
@@ -45,9 +45,20 @@
     </div></nav>
     <div class="container-fluid banner"><div class="row">
       <div class="col-xs-12 slider">
-        <ul>
-          <li><img src="./img/banner.jpg"></li>
-        </ul>
+        
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="./img/banner.jpg" style="width:100%">
+  <img class="mySlides" src="./img/banner.jpg" style="width:100%">
+  <img class="mySlides" src="./img/banner.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
       </div>
     </div></div>
     <div class="container">
