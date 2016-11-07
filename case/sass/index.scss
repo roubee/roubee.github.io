@@ -93,4 +93,9 @@ a:focus, li:focus{
 	margin-top: 140px;
 	width: 100%;
 	display: block;
+	ul{
+		list-style: none;
+    	padding: 0;
+    	margin: 0;
+	}
 }

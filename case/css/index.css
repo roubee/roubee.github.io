@@ -99,3 +99,8 @@ a:focus, li:focus {
   width: 100%;
   display: block;
 }
+.banner ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
