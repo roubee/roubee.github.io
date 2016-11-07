@@ -9,13 +9,15 @@ $(function(){
 var slideIndex = 1;
 showDivs(slideIndex);
 
+function plusDivs(n) {
+	showDivs(slideIndex += n);
+}
+
 function currentDiv(n) {
-	console.log("n1="+n);
 	showDivs(slideIndex = n);
 }
 
 function showDivs(n) {
-	console.log("n2="+n);
 	var i;
 	var x = document.getElementsByClassName("mySlides");
 	var dots = document.getElementsByClassName("demo");
