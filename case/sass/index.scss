@@ -193,6 +193,10 @@ a:focus, li:focus{
 	background-color: rgba(#201403, 0.3);
 	z-index: 2;
 	position: absolute;
+	display:block;
+}
+.service-mask:hover{
+	display:none;
 }
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}

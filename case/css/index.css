@@ -221,4 +221,9 @@ a:focus, li:focus {
   background-color: rgba(32, 20, 3, 0.3);
   z-index: 2;
   position: absolute;
+  display: block;
+}
+
+.service-mask:hover {
+  display: none;
 }
