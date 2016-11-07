@@ -16,7 +16,7 @@ $(function(){
 		arrow.css('background-position', width+'px 0');
 		
 		var icon = $(this).find('.service-icon');
-		width = icon.css('width');
+		width = parseInt(icon.css('width').replace('px',''));
 		var position = icon.css('background-position').split(" ");
 		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
@@ -29,7 +29,7 @@ $(function(){
 		$(this).find('.service-arrow').css('background-position', '0 0');
 		
 		var icon = $(this).find('.service-icon');
-		var width = icon.css('width');
+		var width = parseInt(icon.css('width').replace('px',''));
 		var position = icon.css('background-position').split(" ");
 		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
