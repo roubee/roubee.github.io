@@ -19,6 +19,12 @@ a:focus, li:focus {
   margin: 0 !important;
 }
 
+[class*="col-"] {
+  background-color: #fff;
+  border: 1px solid #333;
+  text-align: center;
+}
+
 .navbar > div {
   background-color: #fff;
 }
@@ -39,19 +45,13 @@ a:focus, li:focus {
   color: #3f3f3f;
 }
 
-.navbar-nav {
-  margin-left: 30px;
-}
-
 .nav-center {
   margin: auto;
   max-width: 690px;
 }
 
-[class*="col-"] {
-  background-color: #fff;
-  border: 1px solid #333;
-  text-align: center;
+.navbar-nav {
+  margin-left: 30px;
 }
 
 .open .dropdown-menu {
