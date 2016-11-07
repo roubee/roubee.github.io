@@ -15,10 +15,10 @@ showDivs(slideIndex);
 
 function do_slide(){
 	interval = setInterval(function(){
-    	showDivs(slideIndex += n);
+    	showDivs(slideIndex += 1);
 	}, slideIntervalTime);
  }
- 
+
 function currentDiv(n) {
 	console.log("currentDiv="+n);
 	showDivs(slideIndex = n);
