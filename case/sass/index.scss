@@ -119,8 +119,12 @@ a:focus, li:focus{
 .service-block{
 	border: 1px solid #000;
 	>div{
-		
+		border: 1px solid #000;
 	}
+}
+
+.block-title{
+	font-size: 3rem;
 }
 
 @media (max-width: $screen-xs-max) {}

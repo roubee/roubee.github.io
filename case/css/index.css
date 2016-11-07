@@ -124,3 +124,10 @@ a:focus, li:focus {
 .service-block {
   border: 1px solid #000;
 }
+.service-block > div {
+  border: 1px solid #000;
+}
+
+.block-title {
+  font-size: 3rem;
+}
