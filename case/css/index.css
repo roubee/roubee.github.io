@@ -129,7 +129,7 @@ a:focus, li:focus {
 }
 
 .subject-block {
-  padding: 65px 0;
+  padding: 60px 0;
 }
 
 .subject-title {
@@ -142,7 +142,8 @@ a:focus, li:focus {
   display: block;
   max-width: 660px;
   margin: 0 auto;
-  padding-top: 35px;
+  padding-top: 25px;
   color: #80776a;
   font-size: 1.6rem;
+  line-height: 2;
 }
