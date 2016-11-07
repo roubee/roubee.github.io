@@ -37,6 +37,7 @@ a:focus, li:focus {
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
+  height: 40px;
 }
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
