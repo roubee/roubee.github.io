@@ -121,12 +121,6 @@ a:focus, li:focus {
   margin: 0 5px;
 }
 
-.service-block {
-  border: 1px solid #000;
-  width: 242px;
-  margin: 0 auto;
-}
-
 .subject-block {
   padding: 60px 0;
 }
@@ -147,13 +141,19 @@ a:focus, li:focus {
   line-height: 2;
 }
 
+.service-block {
+  border: 1px solid #000;
+  width: 242px;
+  margin: 0 auto;
+  font-size: 2.2rem;
+  color: #3e3934;
+}
+
 .service-icon1 {
   width: 36px;
   height: 36px;
   background: url("../img/service.png") no-repeat;
   margin: 0 auto;
-  font-size: 2.2rem;
-  color: #3e3934;
   background-position: 0 0;
 }
 
@@ -162,8 +162,6 @@ a:focus, li:focus {
   height: 36px;
   background: url("../img/service.png") no-repeat;
   margin: 0 auto;
-  font-size: 2.2rem;
-  color: #3e3934;
   background-position: -72px 0;
 }
 
@@ -172,8 +170,6 @@ a:focus, li:focus {
   height: 36px;
   background: url("../img/service.png") no-repeat;
   margin: 0 auto;
-  font-size: 2.2rem;
-  color: #3e3934;
   background-position: -144px 0;
 }
 
@@ -182,8 +178,6 @@ a:focus, li:focus {
   height: 36px;
   background: url("../img/service.png") no-repeat;
   margin: 0 auto;
-  font-size: 2.2rem;
-  color: #3e3934;
   background-position: -216px 0;
 }
 
