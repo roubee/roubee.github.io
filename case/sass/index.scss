@@ -116,6 +116,10 @@ a:focus, li:focus{
 	margin: 0 5px;
 }
 
+.service-block{
+	border: 1px solid #000;
+}
+
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {}

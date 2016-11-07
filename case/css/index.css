@@ -120,3 +120,7 @@ a:focus, li:focus {
   padding: 0;
   margin: 0 5px;
 }
+
+.service-block {
+  border: 1px solid #000;
+}
