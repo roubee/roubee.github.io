@@ -122,11 +122,8 @@ a:focus, li:focus {
 }
 
 .service-block {
-  border: 5px solid #000;
-  width: 240px;
-}
-.service-block > div {
   border: 1px solid #000;
+  width: 242px;
 }
 
 .subject-block {
