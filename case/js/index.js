@@ -14,9 +14,11 @@ $(function(){
 		var width = parseInt(arrow.css('width').replace('px',''));
 		width = width*-1;
 		arrow.css('background-position', width+'px 0');
+		
 		var icon = $(this).find('.service-icon');
 		width = icon.css('width');
 		var position = icon.css('background-position').split(" ");
+		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
 		x = x-width;
 		console.log("x1="+x);
@@ -24,9 +26,11 @@ $(function(){
     }, function() {
 		$(this).find('.service-mask').css('display', 'block');
 		$(this).find('.service-arrow').css('background-position', '0 0');
+		
 		var icon = $(this).find('.service-icon');
 		var width = icon.css('width');
 		var position = icon.css('background-position').split(" ");
+		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
 		x = x+width;
 		console.log("x2="+x);
