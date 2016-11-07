@@ -1,5 +1,11 @@
 @import "compass/css3";
 $mainColor: #bf955a;
+$screen-xs-max: 743px;
+$screen-sm-min: 744px;
+$screen-sm-max: 959px;
+$screen-md-min: 960px;
+$screen-md-max: 1159px;
+$screen-lg-min: 1200px;
 
 html {
 	font-size: 62.5%;
@@ -104,3 +110,8 @@ a:focus, li:focus{
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
+
+@media (max-width: $screen-xs-max) {}
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {}
+@media (min-width: $screen-lg-min) {}

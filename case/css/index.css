@@ -115,8 +115,7 @@ a:focus, li:focus {
 }
 
 .w3-badge {
-  height: 12px;
-  width: 12px;
+  height: 13px;
+  width: 13px;
   padding: 0;
-  margin: 0 3px;
 }
