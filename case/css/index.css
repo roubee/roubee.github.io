@@ -150,7 +150,7 @@ a:focus, li:focus {
 .service-icon1 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png");
+  background: url("../img/service.png") no-repeat;
   margin: 0 auto;
   font-size: 2.2rem;
   color: #3e3934;
@@ -160,7 +160,7 @@ a:focus, li:focus {
 .service-icon2 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png");
+  background: url("../img/service.png") no-repeat;
   margin: 0 auto;
   font-size: 2.2rem;
   color: #3e3934;
@@ -170,7 +170,7 @@ a:focus, li:focus {
 .service-icon3 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png");
+  background: url("../img/service.png") no-repeat;
   margin: 0 auto;
   font-size: 2.2rem;
   color: #3e3934;
@@ -180,7 +180,7 @@ a:focus, li:focus {
 .service-icon4 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png");
+  background: url("../img/service.png") no-repeat;
   margin: 0 auto;
   font-size: 2.2rem;
   color: #3e3934;
@@ -191,5 +191,5 @@ a:focus, li:focus {
   width: 18px;
   height: 18px;
   background-position: 0 0;
-  background: url("../img/serviceArrow.png");
+  background: url("../img/serviceArrow.png") no-repeat;
 }

@@ -9,7 +9,7 @@ $screen-lg-min: 1200px;
 @mixin service-icon() {
 	width: 36px;
 	height: 36px;
-	background: url('../img/service.png');
+	background: url('../img/service.png') no-repeat;
 	margin: 0 auto;
 	font-size: 2.2rem;
 	color: #3e3934;
@@ -167,7 +167,7 @@ a:focus, li:focus{
 	width: 18px;
 	height: 18px;
 	background-position: 0 0;
-	background: url('../img/serviceArrow.png');
+	background: url('../img/serviceArrow.png') no-repeat;
 }
 
 @media (max-width: $screen-xs-max) {}
