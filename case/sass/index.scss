@@ -151,15 +151,15 @@ a:focus, li:focus{
 }
 .service-icon2{
 	@include service-icon();
-	background-position: -72 0;
+	background-position: -72px 0;
 }
 .service-icon3{
 	@include service-icon();
-	background-position: -144 0;
+	background-position: -144px 0;
 }
 .service-icon4{
 	@include service-icon();
-	background-position: -216 0;
+	background-position: -216px 0;
 }
 
 @media (max-width: $screen-xs-max) {}

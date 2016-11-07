@@ -160,7 +160,7 @@ a:focus, li:focus {
   height: 36px;
   background: url("../img/service.png");
   margin: 0 auto;
-  background-position: -72 0;
+  background-position: -72px 0;
 }
 
 .service-icon3 {
@@ -168,7 +168,7 @@ a:focus, li:focus {
   height: 36px;
   background: url("../img/service.png");
   margin: 0 auto;
-  background-position: -144 0;
+  background-position: -144px 0;
 }
 
 .service-icon4 {
@@ -176,5 +176,5 @@ a:focus, li:focus {
   height: 36px;
   background: url("../img/service.png");
   margin: 0 auto;
-  background-position: -216 0;
+  background-position: -216px 0;
 }
