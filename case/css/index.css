@@ -35,7 +35,8 @@ a:focus, li:focus {
 .nav li a, .nav li a:hover, .nav li a:focus {
   color: #3f3f3f;
   background-color: #fff;
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
