@@ -5,16 +5,20 @@ $(function(){
     function() {
         $(this).removeClass('open');
     });
+
+    do_slide();
 });
 
 var slideIndex = 1;
+var slideIntervalTime = 3000;
 showDivs(slideIndex);
 
-function plusDivs(n) {
-	console.log("plusDivs="+n);
-	showDivs(slideIndex += n);
-}
-
+function do_slide(){
+	interval = setInterval(function(){
+    	showDivs(slideIndex += n);
+	}, slideIntervalTime);
+ }
+ 
 function currentDiv(n) {
 	console.log("currentDiv="+n);
 	showDivs(slideIndex = n);
