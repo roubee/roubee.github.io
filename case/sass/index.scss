@@ -6,6 +6,12 @@ $screen-sm-max: 959px;
 $screen-md-min: 960px;
 $screen-md-max: 1159px;
 $screen-lg-min: 1200px;
+@mixin service-icon() {
+	width: 36px;
+	height: 36px;
+	background: url('../img/service.png');
+	margin: 0 auto;
+}
 
 html {
 	font-size: 62.5%;
@@ -139,11 +145,21 @@ a:focus, li:focus{
 	font-size: 1.6rem;
 	line-height: 2;
 }
-.service-icon{
-	width: 36px;
-	height: 36px;
+.service-icon1{
+	@include service-icon();
 	background-position: 0 0;
-	background: url('../img/service.png')
+}
+.service-icon2{
+	@include service-icon();
+	background-position: -72 0;
+}
+.service-icon3{
+	@include service-icon();
+	background-position: -144 0;
+}
+.service-icon4{
+	@include service-icon();
+	background-position: -216 0;
 }
 
 @media (max-width: $screen-xs-max) {}

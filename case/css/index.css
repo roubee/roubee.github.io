@@ -147,9 +147,34 @@ a:focus, li:focus {
   line-height: 2;
 }
 
-.service-icon {
+.service-icon1 {
   width: 36px;
   height: 36px;
-  background-position: 0 0;
   background: url("../img/service.png");
+  margin: 0 auto;
+  background-position: 0 0;
+}
+
+.service-icon2 {
+  width: 36px;
+  height: 36px;
+  background: url("../img/service.png");
+  margin: 0 auto;
+  background-position: -72 0;
+}
+
+.service-icon3 {
+  width: 36px;
+  height: 36px;
+  background: url("../img/service.png");
+  margin: 0 auto;
+  background-position: -144 0;
+}
+
+.service-icon4 {
+  width: 36px;
+  height: 36px;
+  background: url("../img/service.png");
+  margin: 0 auto;
+  background-position: -216 0;
 }
