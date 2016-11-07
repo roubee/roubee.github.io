@@ -19,6 +19,10 @@ a:focus, li:focus {
   margin: 0 !important;
 }
 
+.navbar > div {
+  background-color: #fff;
+}
+
 .nav li {
   font-size: 1.5rem;
 }
@@ -34,9 +38,13 @@ a:focus, li:focus {
   color: #3f3f3f;
 }
 
+.navbar-nav {
+  margin-left: 30px;
+}
+
 .nav-center {
   margin: auto;
-  max-width: 660px;
+  max-width: 690px;
 }
 
 [class*="col-"] {
