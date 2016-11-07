@@ -20,6 +20,7 @@ $(function(){
 		var position = icon.css('background-position').split(" ");
 		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
+		console.log(x);
 		x = x-width;
 		console.log("x1="+x);
 		icon.css('background-position', x+'px 0');
@@ -32,6 +33,7 @@ $(function(){
 		var position = icon.css('background-position').split(" ");
 		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
+		console.log(x);
 		x = x+width;
 		console.log("x2="+x);
 		icon.css('background-position', x+'px 0');
