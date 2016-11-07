@@ -195,9 +195,6 @@ a:focus, li:focus{
 	position: absolute;
 	display:block;
 }
-.service-mask:hover{
-	display:none;
-}
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {}

@@ -1,5 +1,5 @@
 $(function(){
-    $('.dropdown').hover(function() {
+    $(".dropdown").hover(function() {
         $(this).addClass('open');
     },
     function() {
@@ -7,6 +7,12 @@ $(function(){
     });
 
     do_slide();
+
+    $(".service-block").hover(function() {
+    	$(this).find('.service-mask').css('display', 'none');
+    }, function() {
+    	$(this).find('.service-mask').css('display', 'block');
+    });
 });
 
 var slideIndex = 1;

@@ -223,7 +223,3 @@ a:focus, li:focus {
   position: absolute;
   display: block;
 }
-
-.service-mask:hover {
-  display: none;
-}
