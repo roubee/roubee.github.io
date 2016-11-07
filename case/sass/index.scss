@@ -132,8 +132,11 @@ a:focus, li:focus{
 	padding-left: 15px;
 }
 .subject-content{
+	display: block;
+	max-width: 660px;
+	margin: 0 auto;
 	padding-top: 35px;
-	color: $mainColor;
+	color: #80776a;
 	font-size: 1.6rem;
 }
 

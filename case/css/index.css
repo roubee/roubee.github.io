@@ -139,7 +139,10 @@ a:focus, li:focus {
 }
 
 .subject-content {
+  display: block;
+  max-width: 660px;
+  margin: 0 auto;
   padding-top: 35px;
-  color: #bf955a;
+  color: #80776a;
   font-size: 1.6rem;
 }
