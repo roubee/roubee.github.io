@@ -33,13 +33,6 @@ a:focus, li:focus{
 	text-align: center;
 }
 
-// Mixin
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .navbar>div{
 	background-color: #fff;
 	@include box-shadow(rgba(191,149,90, 0.3) 0px 0px 20px 0px);
