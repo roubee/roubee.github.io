@@ -199,5 +199,5 @@ a:focus, li:focus {
   width: 18px;
   height: 28px;
   background: url("../img/serviceArrow.png") no-repeat;
-  background-position: -18px 0;
+  background-position: 0 0;
 }
