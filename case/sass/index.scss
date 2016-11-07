@@ -151,7 +151,6 @@ a:focus, li:focus{
 	color: #3e3934;
 	margin-bottom: 80px;
 }
-
 .service-icon1{
 	@include service-icon();
 	background-position: 0 0;
@@ -177,7 +176,12 @@ a:focus, li:focus{
 	background: url('../img/serviceArrow.png') no-repeat;
 	background-position: 0 0;
 }
-
+.service-mask{
+	width:240px;
+	height:250px;
+	background-color: rgba(#201403, 0.3);
+	z-index: 10;
+}
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {}
