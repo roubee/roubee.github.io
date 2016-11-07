@@ -39,11 +39,6 @@ a:focus, li:focus {
   max-width: 660px;
 }
 
-.col-centered {
-  float: none;
-  margin: 0 auto;
-}
-
 [class*="col-"] {
   background-color: #fff;
   border: 1px solid #333;
