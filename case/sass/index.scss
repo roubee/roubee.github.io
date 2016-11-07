@@ -11,6 +11,8 @@ $screen-lg-min: 1200px;
 	height: 36px;
 	background: url('../img/service.png');
 	margin: 0 auto;
+	font-size: 2.2rem;
+	color: #3e3934;
 }
 
 html {
@@ -160,6 +162,13 @@ a:focus, li:focus{
 .service-icon4{
 	@include service-icon();
 	background-position: -216px 0;
+}
+.service-arrow{
+	float: right;
+	width: 18px;
+	height: 18px;
+	background-position: 0 0;
+	background: url('../img/serviceArrow.png');
 }
 
 @media (max-width: $screen-xs-max) {}
