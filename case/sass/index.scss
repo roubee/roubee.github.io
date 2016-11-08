@@ -230,13 +230,12 @@ a:focus, li:focus{outline: none;}
 .footer{
 	background-color: #272727;
 }
-.footer-block{
-	border: 1px solid #fff;
-}
-// .footer-block:nth-child(1){width: 155px; margin-right: 70px;};
-// .footer-block:nth-child(2){width: 210px; margin-right: 70px;};
-// .footer-block:nth-child(3){width: 250px; margin-right: 70px;};
-// .footer-block:nth-child(4){width: 140px};
+.footer-block1{width: 155px;border: 1px solid #fff;}
+.footer-block2{width: 210px;border: 1px solid #fff;}
+.footer-block3{width: 250px;border: 1px solid #fff;}
+.footer-block4{width: 140px;border: 1px solid #fff;}
+
+
 .footer-bottom{
 	border-top: 1px solid rgba($mainColor,0.2);
 }
