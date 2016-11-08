@@ -288,6 +288,15 @@ a:focus, li:focus{outline: none;}
 	background: url('../img/demandBox.png') no-repeat;
 	font-size: 1.5rem;
 	color: $mainColor;
+	span{
+		display: block;
+		margin-top: 20px;
+	}
+	div:nth-child(1){
+		width: 100%;
+		height: 30px;
+		display: block;
+	}
 }
 .footer-note{
 	width: 40px;

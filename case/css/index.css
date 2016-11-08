@@ -388,6 +388,15 @@ a:focus, li:focus {
   font-size: 1.5rem;
   color: #bf955a;
 }
+.footer-block4 span {
+  display: block;
+  margin-top: 20px;
+}
+.footer-block4 div:nth-child(1) {
+  width: 100%;
+  height: 30px;
+  display: block;
+}
 
 .footer-note {
   width: 40px;
