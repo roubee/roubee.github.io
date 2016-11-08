@@ -40,7 +40,7 @@ $(function(){
 		console.log("name1="+name);
 		$(name).css('background-color', 'rgba(#000,1)');
 	}, function() {
-		var name = $(this).attr('class').split(' ')[1];
+		var name = $(this).attr('class').split(' ');
 		name = name[1];
 		name = ".mask"+name.match(/\d+/g);
 		console.log("name2="+name);
