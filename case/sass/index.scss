@@ -235,6 +235,11 @@ a:focus, li:focus{outline: none;}
 		font-size: 1.4rem;
 	}
 	a:hover{color: $mainColor;}
+	table{width: 100%;}
+	td{
+		text-align: left;
+		padding-top: 15px;
+	}
 }
 
 

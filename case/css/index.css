@@ -321,6 +321,13 @@ a:focus, li:focus {
 .footer a:hover {
   color: #bf955a;
 }
+.footer table {
+  width: 100%;
+}
+.footer td {
+  text-align: left;
+  padding-top: 15px;
+}
 
 .footer-block1 {
   width: 155px;
