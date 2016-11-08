@@ -354,7 +354,8 @@ a:focus, li:focus {
   padding-top: 10px;
 }
 .footer td:nth-child(even) {
-  text-align: right;
+  text-align: left;
+  padding-left: 40px;
 }
 .footer .row {
   padding-top: 65px;
