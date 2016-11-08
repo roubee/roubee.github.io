@@ -224,6 +224,10 @@ a:focus, li:focus {
   display: block;
 }
 
+.case {
+  background: url("../img/case.jpg") no-repeat;
+}
+
 .footer {
   background-color: #272727;
 }
