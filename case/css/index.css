@@ -350,13 +350,19 @@ a:focus, li:focus {
   width: 19px;
   height: 20px;
   background: url("../img/info.png") no-repeat;
-  background-position: 0 21;
+  background-position: 0 21px;
 }
 .footer .info3 {
   width: 19px;
   height: 20px;
   background: url("../img/info.png") no-repeat;
-  background-position: 0 41;
+  background-position: 0 41px;
+}
+.footer .info td {
+  padding-top: 15px;
+}
+.footer .info td:nth-child(even) {
+  text-align: left;
 }
 
 .footer-block1 {
