@@ -56,13 +56,15 @@ $(function(){
 
 $(window).bind('scroll', function(){
 	if ($(window).scrollTop() > 0) {
-         // $('.nav-center').css('display', 'none');
          $('.nav-center').hide();
          $('.banner').animate({'margin-top':'0'});
+         $('.logo1').hide();
+         $('.logo2').show();
     } else {
-		// $('.nav-center').css('display', 'block');
 		$('.nav-center').slideDown();
 		$('.banner').animate({'margin-top':'135px'});
+		$('.logo1').show();
+        $('.logo2').hide();
     }
 });
 

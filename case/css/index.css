@@ -126,6 +126,10 @@ a:focus, li:focus {
   background-position: -30px 0;
 }
 
+.logo2 {
+  display: none;
+}
+
 /*------- 圖片輪播 -------*/
 .banner {
   padding: 0;
