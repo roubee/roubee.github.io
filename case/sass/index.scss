@@ -238,21 +238,21 @@ a:focus, li:focus{outline: none;}
 .footer-block3{width: 250px;border: 1px solid #fff;}
 .footer-block4{width: 140px;border: 1px solid #fff;}
 .footer-bottom{
-	color: #8d8d8d;
-	font-size: 1.3rem;
 	padding: 30px 0;
 	text-align: center;
 	border-top: 1px solid rgba($mainColor,0.2);
 }
+.footer-leftblock{
+	width:10%;
+}
 .footer-copyright{
-	width: 100%;
+	width: 80%;
 	text-align: center;
+	color: #8d8d8d;
+	font-size: 1.3rem;
 }
 .footer-producer{
-	width: 100%;
-	position: absolute;
-	z-index: 2;
-	display: block;
+	width: 10%;
 	text-align: right;
 	color: #686868;
 	font-size: 1.2rem;
