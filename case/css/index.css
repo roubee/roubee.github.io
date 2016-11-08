@@ -363,6 +363,10 @@ a:focus, li:focus {
 }
 .footer .info td:nth-child(even) {
   text-align: left;
+  padding-left: 15px;
+}
+.footer .demand {
+  margin-top: 20px;
 }
 
 .footer-block1 {

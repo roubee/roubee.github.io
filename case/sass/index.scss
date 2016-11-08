@@ -270,7 +270,13 @@ a:focus, li:focus{outline: none;}
 	}
 	.info{
 		td{padding-top: 15px;}
-		td:nth-child(even){text-align: left;}
+		td:nth-child(even){
+			text-align: left;
+			padding-left: 15px;
+		}
+	}
+	.demand{
+		margin-top: 20px;
 	}
 }
 .footer-block1{width: 155px;}
