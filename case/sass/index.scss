@@ -217,10 +217,14 @@ a:focus, li:focus{outline: none;}
 	position: absolute;
 	display:block;
 }
+.case-mask:hover{
+	background-color: rgba(#000, 1);
+}
 .case1{background: url('../img/case1.jpg') no-repeat;}
 .case2{background: url('../img/case2.jpg') no-repeat;}
 .case3{background: url('../img/case3.jpg') no-repeat;}
 .case-title{
+	width: 140px;
 	z-index: 3;
 	position: absolute;
 	display:block;

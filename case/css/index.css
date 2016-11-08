@@ -288,6 +288,10 @@ a:focus, li:focus {
   display: block;
 }
 
+.case-mask:hover {
+  background-color: black;
+}
+
 .case1 {
   background: url("../img/case1.jpg") no-repeat;
 }
@@ -301,6 +305,7 @@ a:focus, li:focus {
 }
 
 .case-title {
+  width: 140px;
   z-index: 3;
   position: absolute;
   display: block;
