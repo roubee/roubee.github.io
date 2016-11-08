@@ -205,8 +205,11 @@ a:focus, li:focus{outline: none;}
 .case-block{
 	width: 140px;
 	height: 140px;
-	background-color: rgba(#ab7f41, 0.8);
+	// background-color: rgba(#ab7f41, 0.8);
 }
+.case-block:nth-child(1){background: url('../img/case1.jpg') no-repeat;}
+.case-block:nth-child(2){background: url('../img/case2.jpg') no-repeat;}
+.case-block:nth-child(3){background: url('../img/case3.jpg') no-repeat;}
 /*------- 頁腳 -------*/
 .footer{
 	background-color: #272727;
