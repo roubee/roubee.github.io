@@ -300,6 +300,12 @@ a:focus, li:focus {
   background: url("../img/case3.jpg") no-repeat;
 }
 
+.case-title {
+  z-index: 3;
+  position: absolute;
+  display: block;
+}
+
 /*------- 頁腳 -------*/
 .footer {
   background-color: #272727;

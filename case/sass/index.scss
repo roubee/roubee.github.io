@@ -220,6 +220,11 @@ a:focus, li:focus{outline: none;}
 .case1{background: url('../img/case1.jpg') no-repeat;}
 .case2{background: url('../img/case2.jpg') no-repeat;}
 .case3{background: url('../img/case3.jpg') no-repeat;}
+.case-title{
+	z-index: 3;
+	position: absolute;
+	display:block;
+}
 /*------- 頁腳 -------*/
 .footer{
 	background-color: #272727;
