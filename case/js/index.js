@@ -38,6 +38,16 @@ $(function(){
 		console.log("x2="+x);
 		icon.css('background-position', x+'px 0');
     });
+
+	$('.case-title').hover(function() {
+		var name = $(this).attr('class').split(' ')[1]);
+		name = ".mask"+name.match(/\d+/g);
+		$(name).css('background-color', 'rgba(#000,1)');
+	}, function() {
+		var name = $(this).attr('class').split(' ')[1]);
+		name = ".mask"+name.match(/\d+/g);
+		$(name).css('background-color', 'rgba(#000,0)');
+	});
 });
 
 var slideIndex = 1;
