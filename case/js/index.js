@@ -36,15 +36,21 @@ $(function(){
 	$('.case-title').hover(function() {
 		var name = $(this).attr('class').split(' ');
 		name = name[1];
-		name = ".mask"+name.match(/\d+/g);
-		console.log("name1="+name);
+		name = '.mask'+name.match(/\d+/g);
+		console.log('name1='+name);
 		$(name).css('background-color', 'rgba(0,0,0,1)');
 	}, function() {
 		var name = $(this).attr('class').split(' ');
 		name = name[1];
-		name = ".mask"+name.match(/\d+/g);
-		console.log("name2="+name);
+		name = '.mask'+name.match(/\d+/g);
+		console.log('name2='+name);
 		$(name).css('background-color', '');
+	});
+
+	$('.footer-block4').hover(function() {
+		$('.footer-block4').find('note').css('background-position', '-40px 0');
+	}, function() {
+		$('.footer-block4').find('note').css('background-position', '0 0');
 	});
 });
 

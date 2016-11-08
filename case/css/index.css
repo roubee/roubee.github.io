@@ -385,6 +385,17 @@ a:focus, li:focus {
   width: 140px;
   height: 155px;
   background: url("../img/demandBox.png") no-repeat;
+  font-size: 1.5rem;
+  color: #bf955a;
+}
+.footer-block4 .note {
+  background: url("../img/demand.png") no-repeat;
+  background-position: 0 0;
+}
+
+.footer-block4:hover {
+  background-color: #bf955a;
+  color: #272727;
 }
 
 .top_title {
