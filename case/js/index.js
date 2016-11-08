@@ -84,13 +84,19 @@ function change_lg_menu(type){
 		$('.logo1').show();
 		$('.logo2').hide();
 		$('.nav-mail').css({'margin-top':'20px'});
+		$('.nav-menuBtn').css('display', 'none');
 	} else {
 		$('.nav-center').hide();
 		$('.banner').animate({'margin-top':'0'});
 		$('.logo1').hide();
 		$('.logo2').show();
 		$('.nav-mail').css({'margin-top':'30px'});
+		$('.nav-menuBtn').css('display', 'block');
 	}
+}
+
+function openMenu(){
+	$('.nav-center').slideToggle();
 }
 
 var slideIndex = 1;
