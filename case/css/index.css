@@ -341,14 +341,20 @@ a:focus, li:focus {
   padding-top: 15px;
 }
 .footer .info1 {
+  width: 19px;
+  height: 21px;
   background: url("../img/info.png") no-repeat;
   background-position: 0 0;
 }
 .footer .info2 {
+  width: 19px;
+  height: 20px;
   background: url("../img/info.png") no-repeat;
   background-position: 0 21;
 }
 .footer .info3 {
+  width: 19px;
+  height: 20px;
   background: url("../img/info.png") no-repeat;
   background-position: 0 41;
 }
