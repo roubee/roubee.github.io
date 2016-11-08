@@ -235,14 +235,17 @@ a:focus, li:focus {
 
 .footer-block:nth-child(1) {
   width: 155px;
+  margin-right: 70px;
 }
 
 .footer-block:nth-child(2) {
   width: 210px;
+  margin-right: 70px;
 }
 
 .footer-block:nth-child(3) {
   width: 250px;
+  margin-right: 70px;
 }
 
 .footer-block:nth-child(4) {
