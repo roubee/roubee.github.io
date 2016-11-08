@@ -326,6 +326,11 @@ a:focus, li:focus {
 }
 .footer td {
   text-align: left;
+}
+.footer tr {
+  padding-top: 10px;
+}
+.footer tr:nth-child(1) {
   padding-top: 15px;
 }
 .footer td:nth-child(even) {
