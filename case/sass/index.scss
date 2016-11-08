@@ -217,9 +217,9 @@ a:focus, li:focus{outline: none;}
 	position: absolute;
 	display:block;
 }
-.case-block:nth-child(1){background: url('../img/case1.jpg') no-repeat;}
-.case-block:nth-child(2){background: url('../img/case2.jpg') no-repeat;}
-.case-block:nth-child(3){background: url('../img/case3.jpg') no-repeat;}
+.case1{background: url('../img/case1.jpg') no-repeat;}
+.case2{background: url('../img/case2.jpg') no-repeat;}
+.case3{background: url('../img/case3.jpg') no-repeat;}
 /*------- 頁腳 -------*/
 .footer{
 	background-color: #272727;
