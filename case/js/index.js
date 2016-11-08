@@ -42,15 +42,18 @@ $(function(){
 
 var slideIndex = 1;
 var slideIntervalTime = 5000;
+var slideIntervalTimer = setInterval(function(){
+		showDivs(slideIndex += 1);
+	}, slideIntervalTime);
 showDivs(slideIndex);
 
 function do_slide(){
-	interval = setInterval(function(){
-    	showDivs(slideIndex += 1);
-	}, slideIntervalTime);
- }
+	clearInterval(slideIntervalTimer);
+	slideIntervalTimer = setInterval(slide, slideIntervalTime);
+}
 
 function currentDiv(n) {
+	do_slide();
 	showDivs(slideIndex = n);
 }
 
