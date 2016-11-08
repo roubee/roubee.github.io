@@ -335,25 +335,36 @@ a:focus, li:focus {
   padding-top: 65px;
   padding-bottom: 50px;
 }
+.footer .first_line {
+  padding-top: 15px;
+}
+.footer .info1 {
+  background: url("./img/info.png") no-repeat;
+  background-position: 0 0;
+}
+.footer .info2 {
+  background: url("./img/info.png") no-repeat;
+  background-position: 0 21;
+}
+.footer .info3 {
+  background: url("./img/info.png") no-repeat;
+  background-position: 0 41;
+}
 
 .footer-block1 {
   width: 155px;
-  border: 1px solid #fff;
 }
 
 .footer-block2 {
   width: 210px;
-  border: 1px solid #fff;
 }
 
 .footer-block3 {
   width: 250px;
-  border: 1px solid #fff;
 }
 
 .footer-block4 {
   width: 140px;
-  border: 1px solid #fff;
 }
 
 .top_title {
