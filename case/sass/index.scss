@@ -6,7 +6,7 @@ $screen-sm-max: 959px;
 $screen-md-min: 960px;
 $screen-md-max: 1159px;
 $screen-lg-min: 1200px;
-@mixin serviceIcon() {
+@mixin service-icon() {
 	width: 36px;
 	height: 36px;
 	background: url('../img/service.png') no-repeat;
@@ -14,17 +14,11 @@ $screen-lg-min: 1200px;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-@mixin subjectBlock(){
-	padding: 60px 0;
-}
-@mixin subjectTitle(){
-	vertical-align: middle;
-	font-size: 3rem;
-	padding-left: 15px;
-}
+
 html {
 	font-size: 62.5%;
 }
+
 body {
 	font-size: 1.4rem;
 	overflow-y: scroll;
@@ -42,20 +36,26 @@ a,a:visited,a:hover,a:active,a:focus{
 a:focus, li:focus{
 	outline: none;
 }
+
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
 }
-[class*="col-"] {text-align: center;}
-/*--------- 導覽列 ---------*/
+
+[class*="col-"] {
+	text-align: center;
+}
+
 .navbar>div{
 	background-color: #fff;
 	@include box-shadow(rgba(191,149,90, 0.3) 0px 0px 20px 0px);
 }
+
 .nav-logo{
 	padding-top: 25px;
 	padding-bottom: 15px;
 }
+
 .nav{
 	li{
 		font-size: 1.5rem;
@@ -80,7 +80,10 @@ a:focus, li:focus{
 	margin: auto; 
 	max-width: 690px; 
 }
-.navbar-nav{margin-left:30px;}
+.navbar-nav{
+	margin-left:30px;
+}
+
 .open .dropdown-menu{
 	@include box-shadow(none); 
 	@include background-clip(border-box);
@@ -104,7 +107,7 @@ a:focus, li:focus{
 		}
 	}
 }
-/*--------- 圖片輪播 ---------*/
+
 .banner{
 	padding: 0;
 	margin-top: 135px;
@@ -116,6 +119,7 @@ a:focus, li:focus{
     	margin: 0;
 	}
 }
+
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {
@@ -124,14 +128,15 @@ a:focus, li:focus{
 	padding: 0;
 	margin: 0 5px;
 }
-/*--------- 服務 ---------*/
-.service{
-	.subject-block{
-		@include subjectBlock();
-	}
-	.subject-title{
-		@include subjectTitle();
-	}
+
+.subject-block{
+	padding: 60px 0;
+}
+
+.subject-title{
+	vertical-align: middle;
+	font-size: 3rem;
+	padding-left: 15px;
 }
 .subject-content{
 	display: block;
@@ -142,6 +147,7 @@ a:focus, li:focus{
 	font-size: 1.6rem;
 	line-height: 2;
 }
+
 .service-block{
 	@include box-shadow(0px 0px 5px #d5d5d5); 
 	background-color: #fff;
@@ -151,25 +157,27 @@ a:focus, li:focus{
 	color: #3e3934;
 	margin-bottom: 80px;
 }
+
 .service-block:hover{
 	@include box-shadow(0px 0px 5px $mainColor); 
 	background-color: $mainColor;
 	color: #fff;
 }
+
 .service-icon1{
-	@include serviceIcon();
+	@include service-icon();
 	background-position: 0 0;
 }
 .service-icon2{
-	@include serviceIcon();
+	@include service-icon();
 	background-position: -72px 0;
 }
 .service-icon3{
-	@include serviceIcon();
+	@include service-icon();
 	background-position: -144px 0;
 }
 .service-icon4{
-	@include serviceIcon();
+	@include service-icon();
 	background-position: -216px 0;
 }
 .service-arrow{
@@ -189,19 +197,11 @@ a:focus, li:focus{
 	position: absolute;
 	display:block;
 }
-/*--------- 實績經驗 ---------*/
 .case{
 	background: url('../img/case.jpg') no-repeat;
 	@include background-size(cover);
 	height: 490px;
-	.subject-block{
-		@include subjectBlock();
-	}
-	.subject-title{
-		@include subjectTitle();
-	}
 }
-/*--------- 頁尾 ---------*/
 .footer{
 	background-color: #272727;
 }
