@@ -242,9 +242,13 @@ a:focus, li:focus {
 .case .subject-block {
   padding: 60px 0;
   width: 510px;
+  padding-top: 70px;
 }
 .case .subject-block div {
   margin: 0 auto;
+}
+.case .subject-block .row {
+  margin-top: 65px;
 }
 .case .subject-title {
   vertical-align: middle;
@@ -262,6 +266,12 @@ a:focus, li:focus {
   line-height: 2;
   color: #272727;
   padding-left: 40px;
+}
+
+.case-block {
+  width: 140px;
+  height: 140px;
+  background-color: rgba(171, 127, 65, 0.8);
 }
 
 /*------- 頁腳 -------*/

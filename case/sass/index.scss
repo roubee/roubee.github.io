@@ -184,8 +184,12 @@ a:focus, li:focus{outline: none;}
 	.subject-block{
 		@include subject-block();
 		width: 510px;
+		padding-top: 70px;
 		div{
 			margin: 0 auto;
+		}
+		.row{
+			margin-top: 65px;
 		}
 	}
 	.subject-title{@include subject-title();}
@@ -194,6 +198,11 @@ a:focus, li:focus{outline: none;}
 		color: #272727;
 		padding-left: 40px;
 	}
+}
+.case-block{
+	width: 140px;
+	height: 140px;
+	background-color: rgba(#ab7f41, 0.8);
 }
 /*------- 頁腳 -------*/
 .footer{
