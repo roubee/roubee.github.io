@@ -18,11 +18,8 @@ $(function(){
 		var icon = $(this).find('.service-icon');
 		width = parseInt(icon.css('width').replace('px',''));
 		var position = icon.css('background-position').split(" ");
-		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
-		console.log(x);
 		x = x-width;
-		console.log("x1="+x);
 		icon.css('background-position', x+'px 0');
     }, function() {
 		$(this).find('.service-mask').css('display', 'block');
@@ -31,21 +28,22 @@ $(function(){
 		var icon = $(this).find('.service-icon');
 		var width = parseInt(icon.css('width').replace('px',''));
 		var position = icon.css('background-position').split(" ");
-		console.log(position);
 		var x = parseInt(position[0].replace('px',''));
-		console.log(x);
 		x = x+width;
-		console.log("x2="+x);
 		icon.css('background-position', x+'px 0');
     });
 
 	$('.case-title').hover(function() {
-		var name = $(this).attr('class').split(' ')[1];
+		var name = $(this).attr('class').split(' ');
+		name = name[1];
 		name = ".mask"+name.match(/\d+/g);
+		console.log("name1="+name);
 		$(name).css('background-color', 'rgba(#000,1)');
 	}, function() {
 		var name = $(this).attr('class').split(' ')[1];
+		name = name[1];
 		name = ".mask"+name.match(/\d+/g);
+		console.log("name2="+name);
 		$(name).css('background-color', 'rgba(#000,0)');
 	});
 });
