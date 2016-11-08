@@ -199,6 +199,8 @@ a:focus, li:focus{
 }
 .case{
 	background: url('../img/case.jpg') no-repeat;
+	@include background-size(cover);
+	height: 490px;
 }
 .footer{
 	background-color: #272727;

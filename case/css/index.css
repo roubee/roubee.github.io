@@ -228,6 +228,11 @@ a:focus, li:focus {
 
 .case {
   background: url("../img/case.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 490px;
 }
 
 .footer {
