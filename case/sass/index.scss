@@ -14,6 +14,21 @@ $screen-lg-min: 1200px;
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
+@mixin subject-block(){padding: 60px 0;}
+@mixin subject-title(){
+	vertical-align: middle;
+	font-size: 3rem;
+	padding-left: 15px;
+}
+@mixin subject-content(){
+	display: block;
+	max-width: 660px;
+	margin: 0 auto;
+	padding-top: 25px;
+	color: #80776a;
+	font-size: 1.6rem;
+	line-height: 2;
+}
 html {font-size: 62.5%;}
 body {
 	font-size: 1.4rem;
@@ -107,20 +122,10 @@ a:focus, li:focus{outline: none;}
 	margin: 0 5px;
 }
 /*------- 服務-------*/
-.subject-block{padding: 60px 0;}
-.subject-title{
-	vertical-align: middle;
-	font-size: 3rem;
-	padding-left: 15px;
-}
-.subject-content{
-	display: block;
-	max-width: 660px;
-	margin: 0 auto;
-	padding-top: 25px;
-	color: #80776a;
-	font-size: 1.6rem;
-	line-height: 2;
+.service{
+	.subject-block{@include subject-block();}
+	.subject-title{@include subject-title();}
+	.subject-content{@include subject-content();}
 }
 .service-block{
 	@include box-shadow(0px 0px 5px #d5d5d5); 
@@ -174,6 +179,9 @@ a:focus, li:focus{outline: none;}
 	background: url('../img/case.jpg') no-repeat;
 	@include background-size(cover);
 	height: 490px;
+	.subject-block{@include subject-block();}
+	.subject-title{@include subject-title();}
+	.subject-content{@include subject-content();}
 }
 /*------- 頁腳 -------*/
 .footer{

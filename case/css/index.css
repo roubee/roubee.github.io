@@ -131,17 +131,15 @@ a:focus, li:focus {
 }
 
 /*------- 服務-------*/
-.subject-block {
+.service .subject-block {
   padding: 60px 0;
 }
-
-.subject-title {
+.service .subject-title {
   vertical-align: middle;
   font-size: 3rem;
   padding-left: 15px;
 }
-
-.subject-content {
+.service .subject-content {
   display: block;
   max-width: 660px;
   margin: 0 auto;
@@ -238,6 +236,23 @@ a:focus, li:focus {
   -webkit-background-size: cover;
   background-size: cover;
   height: 490px;
+}
+.case .subject-block {
+  padding: 60px 0;
+}
+.case .subject-title {
+  vertical-align: middle;
+  font-size: 3rem;
+  padding-left: 15px;
+}
+.case .subject-content {
+  display: block;
+  max-width: 660px;
+  margin: 0 auto;
+  padding-top: 25px;
+  color: #80776a;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 /*------- 頁腳 -------*/
