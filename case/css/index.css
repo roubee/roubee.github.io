@@ -295,7 +295,7 @@ a:focus, li:focus {
 
 .footer-bottom {
   clear: both;
-  border-top: 1px solid #bf955a;
+  border-top: 0.5px solid #bf955a;
 }
 
 /*------- RWD -------*/

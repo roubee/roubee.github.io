@@ -209,7 +209,7 @@ a:focus, li:focus{outline: none;}
 .footer-block:nth-child(4){width: 140px};
 .footer-bottom{
 	clear: both;
-	border-top: 1px solid $mainColor;
+	border-top: 0.5px solid $mainColor;
 }
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {}
