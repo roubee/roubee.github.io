@@ -42,18 +42,20 @@ $(function(){
 
 var slideIndex = 1;
 var slideIntervalTime = 5000;
-var slideIntervalTimer = setInterval(function(){
-		showDivs(slideIndex += 1);
-	}, slideIntervalTime);
+var interval;
 showDivs(slideIndex);
 
 function do_slide(){
-	clearInterval(slideIntervalTimer);
-	slideIntervalTimer = setInterval(slide, slideIntervalTime);
+	interval = setInterval(function(){
+		showDivs(slideIndex += 1);
+	}, slideIntervalTime);
 }
 
 function currentDiv(n) {
-	do_slide();
+	clearInterval(interval);
+	interval = setInterval(function(){
+		showDivs(slideIndex += 1);
+	}, slideIntervalTime);
 	showDivs(slideIndex = n);
 }
 
