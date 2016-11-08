@@ -349,7 +349,10 @@ a:focus, li:focus {
 }
 
 .footer-producer {
-  float: right;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: block;
   text-align: right;
   color: #686868;
   font-size: 1.2rem;
