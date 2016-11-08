@@ -107,6 +107,7 @@ a:focus, li:focus {
   height: 14px;
   background: url("../img/mail.png") no-repeat;
   background-position: 0 0;
+  float: right;
 }
 
 .nav-mail:hover {
