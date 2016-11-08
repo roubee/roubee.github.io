@@ -249,6 +249,7 @@ a:focus, li:focus {
 }
 .case .subject-block .row {
   margin-top: 60px;
+  margin-left: 25px;
 }
 .case .subject-title {
   vertical-align: middle;

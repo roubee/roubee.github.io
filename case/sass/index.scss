@@ -190,6 +190,7 @@ a:focus, li:focus{outline: none;}
 		}
 		.row{
 			margin-top: 60px;
+			margin-left: 25px;
 		}
 	}
 	.subject-title{@include subject-title();}
