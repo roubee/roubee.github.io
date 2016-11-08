@@ -312,14 +312,8 @@ a:focus, li:focus {
   background-color: #272727;
 }
 
-.footer-top {
-  width: 965px;
-  margin: 0 auto;
-}
-
 .footer-block {
-  float: left;
-  border: 1px solid #000;
+  border: 1px solid #fff;
 }
 
 .footer-block:nth-child(1) {

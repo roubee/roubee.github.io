@@ -230,13 +230,8 @@ a:focus, li:focus{outline: none;}
 .footer{
 	background-color: #272727;
 }
-.footer-top{
-	width: 965px;
-	margin: 0 auto;
-}
 .footer-block{
-	float: left;
-	border: 1px solid #000;
+	border: 1px solid #fff;
 }
 .footer-block:nth-child(1){width: 155px; margin-right: 70px;};
 .footer-block:nth-child(2){width: 210px; margin-right: 70px;};
