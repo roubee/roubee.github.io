@@ -230,6 +230,8 @@ a:focus, li:focus{outline: none;}
 .footer{
 	background-color: #272727;
 	[class*="col-"]>div{margin: 0 auto;}
+	color: #8d8d8d;
+	font-size: 1.4rem;
 	a{
 		color: #8d8d8d;
 		font-size: 1.4rem;
@@ -249,15 +251,15 @@ a:focus, li:focus{outline: none;}
 		padding-top: 15px;
 	}
 	.info1{
-		background: url('./img/info.png') no-repeat;
+		background: url('../img/info.png') no-repeat;
 		background-position: 0 0;
 	}
 	.info2{
-		background: url('./img/info.png') no-repeat;
+		background: url('../img/info.png') no-repeat;
 		background-position: 0 21;
 	}
 	.info3{
-		background: url('./img/info.png') no-repeat;
+		background: url('../img/info.png') no-repeat;
 		background-position: 0 41;
 	}
 }

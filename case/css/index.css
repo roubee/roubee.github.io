@@ -310,6 +310,8 @@ a:focus, li:focus {
 /*------- 頁腳 -------*/
 .footer {
   background-color: #272727;
+  color: #8d8d8d;
+  font-size: 1.4rem;
 }
 .footer [class*="col-"] > div {
   margin: 0 auto;
@@ -339,15 +341,15 @@ a:focus, li:focus {
   padding-top: 15px;
 }
 .footer .info1 {
-  background: url("./img/info.png") no-repeat;
+  background: url("../img/info.png") no-repeat;
   background-position: 0 0;
 }
 .footer .info2 {
-  background: url("./img/info.png") no-repeat;
+  background: url("../img/info.png") no-repeat;
   background-position: 0 21;
 }
 .footer .info3 {
-  background: url("./img/info.png") no-repeat;
+  background: url("../img/info.png") no-repeat;
   background-position: 0 41;
 }
 
