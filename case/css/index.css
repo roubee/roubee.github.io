@@ -241,7 +241,7 @@ a:focus, li:focus {
 }
 .case .subject-block {
   padding: 60px 0;
-  width: 470px;
+  width: 510px;
 }
 .case .subject-block div {
   margin: 0 auto;
@@ -261,6 +261,7 @@ a:focus, li:focus {
   font-size: 1.6rem;
   line-height: 2;
   color: #272727;
+  padding-left: 40px;
 }
 
 /*------- 頁腳 -------*/
@@ -294,7 +295,7 @@ a:focus, li:focus {
 
 .footer-bottom {
   clear: both;
-  border-bottom: 1px solid #bf955a;
+  border-top: 1px solid #bf955a;
 }
 
 /*------- RWD -------*/

@@ -183,7 +183,7 @@ a:focus, li:focus{outline: none;}
 	text-align: left;
 	.subject-block{
 		@include subject-block();
-		width: 470px;
+		width: 510px;
 		div{
 			margin: 0 auto;
 		}
@@ -192,6 +192,7 @@ a:focus, li:focus{outline: none;}
 	.subject-content{
 		@include subject-content();
 		color: #272727;
+		padding-left: 40px;
 	}
 }
 /*------- 頁腳 -------*/
@@ -208,7 +209,7 @@ a:focus, li:focus{outline: none;}
 .footer-block:nth-child(4){width: 140px};
 .footer-bottom{
 	clear: both;
-	border-bottom: 1px solid $mainColor;
+	border-top: 1px solid $mainColor;
 }
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {}
