@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -33,6 +34,7 @@ a:focus, li:focus {
   text-align: center;
 }
 
+/*------- 導覽列 -------*/
 .navbar > div {
   background-color: #fff;
   -moz-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
@@ -100,6 +102,7 @@ a:focus, li:focus {
   color: #fff;
 }
 
+/*------- 圖片輪播 -------*/
 .banner {
   padding: 0;
   margin-top: 135px;
@@ -127,6 +130,7 @@ a:focus, li:focus {
   margin: 0 5px;
 }
 
+/*------- 服務-------*/
 .subject-block {
   padding: 60px 0;
 }
@@ -226,6 +230,7 @@ a:focus, li:focus {
   display: block;
 }
 
+/*------- 實績經驗 -------*/
 .case {
   background: url("../img/case.jpg") no-repeat;
   -moz-background-size: cover;
@@ -235,6 +240,7 @@ a:focus, li:focus {
   height: 490px;
 }
 
+/*------- 頁腳 -------*/
 .footer {
   background-color: #272727;
 }
@@ -267,3 +273,5 @@ a:focus, li:focus {
   clear: both;
   border-bottom: 1px solid #bf955a;
 }
+
+/*------- RWD -------*/
