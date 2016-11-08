@@ -336,6 +336,7 @@ a:focus, li:focus {
 }
 
 .footer-bottom {
+  width: 100%;
   padding: 30px 0;
   text-align: center;
   border-top: 1px solid rgba(191, 149, 90, 0.2);
