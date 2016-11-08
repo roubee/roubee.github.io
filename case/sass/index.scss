@@ -229,14 +229,25 @@ a:focus, li:focus{outline: none;}
 /*------- 頁腳 -------*/
 .footer{
 	background-color: #272727;
-	[class*="col-"]>div{
-		margin: 0 auto;
+	[class*="col-"]>div{margin: 0 auto;}
+	a{
+		color: ##8d8d8d;
+		font-size: 1.4rem;
 	}
+	a:hover:{color: $mainColor;}
 }
+
+
 .footer-block1{width: 155px;border: 1px solid #fff;}
 .footer-block2{width: 210px;border: 1px solid #fff;}
 .footer-block3{width: 250px;border: 1px solid #fff;}
 .footer-block4{width: 140px;border: 1px solid #fff;}
+.top_title{
+	font-size: 1.5rem;
+	color: $mainColor;
+	border-bottom: 1px solid $mainColor;
+	padding-bottom: 5px;
+}
 .footer-bottom{
 	width: 100%;
 	padding: 30px 0;

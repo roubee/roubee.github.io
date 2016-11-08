@@ -1,370 +1,64 @@
-@charset "UTF-8";
-html {
-  font-size: 62.5%;
-}
+/*
+Error: Invalid CSS after "		color: ": expected expression (e.g. 1px, bold), was "##8d8d8d;"
+        on line 234 of /Users/roubee/Desktop/roubee.github.io/case/sass/index.scss
 
-body {
-  font-size: 1.4rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
+229: /*------- 頁腳 -------*\/
+230: .footer{
+231: 	background-color: #272727;
+232: 	[class*="col-"]>div{margin: 0 auto;}
+233: 	a{
+234: 		color: ##8d8d8d;
+235: 		font-size: 1.4rem;
+236: 	}
+237: 	a:hover:{color: $mainColor;}
+238: }
+239: 
 
-h1 {
-  font-size: 2.4rem;
-}
-
-a {
-  cursor: pointer;
-}
-
-a, a:visited, a:hover, a:active, a:focus {
-  text-decoration: none;
-}
-
-a:focus, li:focus {
-  outline: none;
-}
-
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-[class*="col-"] {
-  text-align: center;
-}
-
-/*------- 導覽列 -------*/
-.navbar > div {
-  background-color: #fff;
-  -moz-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
-  -webkit-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
-  box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
-}
-
-.nav-logo {
-  padding-top: 25px;
-  padding-bottom: 15px;
-}
-
-.nav li {
-  font-size: 1.5rem;
-}
-.nav li a, .nav li a:hover, .nav li a:focus {
-  color: #3f3f3f;
-  background-color: #fff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.nav li:hover {
-  border-bottom: 5px solid #bf955a;
-}
-.nav .open a, .nav .open a:hover, .nav .open a:focus {
-  background-color: #fff;
-  color: #3f3f3f;
-}
-
-.nav-center {
-  margin: auto;
-  max-width: 690px;
-}
-
-.navbar-nav {
-  margin-left: 30px;
-}
-
-.open .dropdown-menu {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -moz-background-clip: border;
-  -o-background-clip: border-box;
-  -webkit-background-clip: border;
-  background-clip: border-box;
-  padding: 10px 0;
-  margin: 0;
-  margin-left: -28px;
-  text-align: center;
-  border: 0;
-  border-radius: 0;
-  background-color: #bf955a;
-  min-width: 146px;
-}
-.open .dropdown-menu li {
-  font-size: 1.4rem;
-}
-.open .dropdown-menu li a {
-  background-color: #bf955a;
-  color: #fff;
-}
-.open .dropdown-menu li a:hover {
-  background-color: black;
-  color: #fff;
-}
-
-/*------- 圖片輪播 -------*/
-.banner {
-  padding: 0;
-  margin-top: 135px;
-  width: 100%;
-  display: block;
-}
-.banner ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.mySlides {
-  display: none;
-}
-
-.w3-left, .w3-right, .w3-badge {
-  cursor: pointer;
-}
-
-.w3-badge {
-  height: 12px;
-  width: 12px;
-  padding: 0;
-  margin: 0 5px;
-}
-
-/*------- 服務-------*/
-.service .subject-block {
-  padding: 60px 0;
-}
-.service .subject-title {
-  vertical-align: middle;
-  font-size: 3rem;
-  padding-left: 15px;
-  color: #272727;
-}
-.service .subject-content {
-  display: block;
-  max-width: 660px;
-  margin: 0 auto;
-  padding-top: 25px;
-  color: #80776a;
-  font-size: 1.6rem;
-  line-height: 2;
-}
-
-.service-block {
-  -moz-box-shadow: 0px 0px 5px #d5d5d5;
-  -webkit-box-shadow: 0px 0px 5px #d5d5d5;
-  box-shadow: 0px 0px 5px #d5d5d5;
-  background-color: #fff;
-  width: 240px;
-  margin: 0 auto;
-  font-size: 2.2rem;
-  color: #3e3934;
-  margin-bottom: 80px;
-}
-
-.service-block:hover {
-  -moz-box-shadow: 0px 0px 5px #bf955a;
-  -webkit-box-shadow: 0px 0px 5px #bf955a;
-  box-shadow: 0px 0px 5px #bf955a;
-  background-color: #bf955a;
-  color: #fff;
-}
-
-.service-icon1 {
-  width: 36px;
-  height: 36px;
-  background: url("../img/service.png") no-repeat;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  background-position: 0 0;
-}
-
-.service-icon2 {
-  width: 36px;
-  height: 36px;
-  background: url("../img/service.png") no-repeat;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  background-position: -72px 0;
-}
-
-.service-icon3 {
-  width: 36px;
-  height: 36px;
-  background: url("../img/service.png") no-repeat;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  background-position: -144px 0;
-}
-
-.service-icon4 {
-  width: 36px;
-  height: 36px;
-  background: url("../img/service.png") no-repeat;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  background-position: -216px 0;
-}
-
-.service-arrow {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 210px;
-  width: 18px;
-  height: 28px;
-  background: url("../img/serviceArrow.png") no-repeat;
-  background-position: 0 0;
-}
-
-.service-mask {
-  width: 240px;
-  height: 240px;
-  background-color: rgba(32, 20, 3, 0.3);
-  z-index: 2;
-  position: absolute;
-  display: block;
-}
-
-/*------- 實績經驗 -------*/
-.case {
-  background: url("../img/case.jpg") no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  height: 490px;
-  text-align: left;
-}
-.case .subject-block {
-  padding: 60px 0;
-  width: 510px;
-  padding-top: 70px;
-  text-align: left;
-}
-.case .subject-block div {
-  margin: 0 auto;
-}
-.case .subject-block .row {
-  margin-top: 60px;
-  margin-left: 25px;
-}
-.case .subject-title {
-  vertical-align: middle;
-  font-size: 3rem;
-  padding-left: 15px;
-  color: #272727;
-}
-.case .subject-content {
-  display: block;
-  max-width: 660px;
-  margin: 0 auto;
-  padding-top: 25px;
-  color: #80776a;
-  font-size: 1.6rem;
-  line-height: 2;
-  color: #272727;
-  padding-left: 40px;
-  padding-top: 15px;
-}
-
-.case-block {
-  width: 140px;
-  height: 140px;
-  color: #fff;
-  font-size: 2.4rem;
-  line-height: 140px;
-}
-
-.case-mask {
-  width: 140px;
-  height: 140px;
-  background-color: rgba(171, 127, 65, 0.8);
-  z-index: 2;
-  position: absolute;
-  display: block;
-}
-
-.case1 {
-  background: url("../img/case1.jpg") no-repeat;
-}
-
-.case2 {
-  background: url("../img/case2.jpg") no-repeat;
-}
-
-.case3 {
-  background: url("../img/case3.jpg") no-repeat;
-}
-
-.case-title {
-  width: 140px;
-  z-index: 3;
-  position: absolute;
-  display: block;
-}
-
-/*------- 頁腳 -------*/
-.footer {
-  background-color: #272727;
-}
-.footer [class*="col-"] > div {
-  margin: 0 auto;
-}
-
-.footer-block1 {
-  width: 155px;
-  border: 1px solid #fff;
-}
-
-.footer-block2 {
-  width: 210px;
-  border: 1px solid #fff;
-}
-
-.footer-block3 {
-  width: 250px;
-  border: 1px solid #fff;
-}
-
-.footer-block4 {
-  width: 140px;
-  border: 1px solid #fff;
-}
-
-.footer-bottom {
-  width: 100%;
-  padding: 30px 0;
-  text-align: center;
-  border-top: 1px solid rgba(191, 149, 90, 0.2);
-}
-
-.footer-leftblock {
-  width: 10%;
-  float: left;
-}
-
-.footer-copyright {
-  width: 80%;
-  float: left;
-  text-align: center;
-  color: #8d8d8d;
-  font-size: 1.3rem;
-}
-
-.footer-producer {
-  width: 10%;
-  float: left;
-  text-align: right;
-  color: #686868;
-  font-size: 1.2rem;
-}
-.footer-producer a, .footer-producer a:visited, .footer-producer a:hover, .footer-producer a:active, .footer-producer a:focus {
-  color: #686868;
-  text-decoration: underline;
-}
-
-/*------- RWD -------*/
+Backtrace:
+/Users/roubee/Desktop/roubee.github.io/case/sass/index.scss:234
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"		color: \": expected expression (e.g. 1px, bold), was \"##8d8d8d;\"\A         on line 234 of /Users/roubee/Desktop/roubee.github.io/case/sass/index.scss\A \A 229: /*------- 頁腳 -------*/\A 230: .footer{\A 231: 	background-color: #272727;\A 232: 	[class*=\"col-\"]>div{margin: 0 auto;}\A 233: 	a{\A 234: 		color: ##8d8d8d;\A 235: 		font-size: 1.4rem;\A 236: 	}\A 237: 	a:hover:{color: $mainColor;}\A 238: }\A 239: "; }
