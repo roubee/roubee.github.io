@@ -54,6 +54,16 @@ $(function(){
 	});
 });
 
+$(window).bind('scroll', function(){
+	if ($(window).scrollTop() > 0) {
+         $('.nav-center').css('display', 'none');
+         $('.banner').css('margin-top', '0');
+    } else {
+    	$('.nav-center').css('display', 'block');
+        $('.banner').css('margin-top', '135px');
+    }
+});
+
 var slideIndex = 1;
 var slideIntervalTime = 5000;
 var interval;
