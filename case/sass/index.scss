@@ -248,10 +248,16 @@ a:focus, li:focus{outline: none;}
 		text-align: right;
 	}
 }
+.footer-copyright{
+	width: 100%;
+}
 .footer-producer{
 	color: #686868;
 	font-size: 1.2rem;
-	a,a:visited,a:hover,a:active,a:focus{text-decoration: underline;}
+	a,a:visited,a:hover,a:active,a:focus{
+		color: #686868;
+		text-decoration: underline;
+	}
 }
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {}

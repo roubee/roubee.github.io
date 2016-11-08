@@ -347,11 +347,16 @@ a:focus, li:focus {
   text-align: right;
 }
 
+.footer-copyright {
+  width: 100%;
+}
+
 .footer-producer {
   color: #686868;
   font-size: 1.2rem;
 }
 .footer-producer a, .footer-producer a:visited, .footer-producer a:hover, .footer-producer a:active, .footer-producer a:focus {
+  color: #686868;
   text-decoration: underline;
 }
 
