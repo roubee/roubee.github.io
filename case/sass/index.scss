@@ -231,6 +231,7 @@ a:focus, li:focus{outline: none;}
 	background-color: #272727;
 }
 .footer-block{
+	float: left;
 	border: 1px solid #000;
 }
 .footer-block:nth-child(1){width: 155px; margin-right: 70px;};

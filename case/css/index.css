@@ -313,6 +313,7 @@ a:focus, li:focus {
 }
 
 .footer-block {
+  float: left;
   border: 1px solid #000;
 }
 
