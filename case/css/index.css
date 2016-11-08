@@ -311,6 +311,9 @@ a:focus, li:focus {
 .footer {
   background-color: #272727;
 }
+.footer [class*="col-"] > div {
+  margin: 0 auto;
+}
 
 .footer-block1 {
   width: 155px;
@@ -333,7 +336,12 @@ a:focus, li:focus {
 }
 
 .footer-bottom {
+  text-align: center;
   border-top: 1px solid rgba(191, 149, 90, 0.2);
+}
+.footer-bottom div {
+  float: right;
+  text-align: right;
 }
 
 /*------- RWD -------*/
