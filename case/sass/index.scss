@@ -76,6 +76,7 @@ a:focus, li:focus{outline: none;}
 	}
 }
 .nav-center { 
+	display: none;
 	margin: auto; 
 	max-width: 690px; 
 }
@@ -104,27 +105,37 @@ a:focus, li:focus{outline: none;}
 	}
 }
 .nav-mail{
+	margin: 0 auto;
+	margin-top: 30px;
 	width: 20px;
 	height: 14px;
 	background: url('../img/mail.png') no-repeat;
 	background-position: 0 0;
-	float: right;
 }
 .nav-mail:hover{background-position: -20px 0;}
 .nav-menu{
+	margin: 0 auto;
+	margin-top: 25px;
 	width: 30px;
 	height: 22px;
 	background: url('../img/menu.png') no-repeat;
 	background-position: 0 0;
 }
 .nav-menu:hover{background-position: -30px 0;}
-.logo2{
-	display: none;
+.logo{
+	margin:0 auto;
+	text-align: center;
+	width: 200px;
+	img{
+    	margin: 0 auto;
+	}
 }
+.logo1{display: none;}
+.logo2{display: block;}
 /*------- 圖片輪播 -------*/
 .banner{
 	padding: 0;
-	margin-top: 135px;
+	margin-top: 0;
 	width: 100%;
 	display: block;
 	ul{
@@ -291,10 +302,10 @@ a:focus, li:focus{outline: none;}
 		background-position: 0 -41px;
 	}
 	.info{
-		td{padding-top: 15px;}
 		td:nth-child(even){
 			text-align: left;
 			padding-left: 15px;
+			padding-top: 15px;
 		}
 	}
 	.demand{
@@ -370,4 +381,10 @@ a:focus, li:focus{outline: none;}
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {}
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {}
-@media (min-width: $screen-lg-min) {}
+@media (min-width: $screen-lg-min) {
+	.logo1{display: block;}
+	.logo2{display: none;}
+	.banner{margin-top: 135px;}
+	.nav-center {display: block;}
+	.nav-mail{margin-top: 20px;}
+}
