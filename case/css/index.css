@@ -274,6 +274,9 @@ a:focus, li:focus {
 .case-block {
   width: 140px;
   height: 140px;
+  color: #fff;
+  font-size: 2.4rem;
+  line-height: 140px;
 }
 
 .case-block:nth-child(1) {
