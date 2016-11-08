@@ -186,6 +186,7 @@ a:focus, li:focus{outline: none;}
 	.subject-content{
 		@include subject-content();
 		color: #272727;
+		width: 470px;
 	}
 }
 /*------- 頁腳 -------*/
