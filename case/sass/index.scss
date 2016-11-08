@@ -260,13 +260,13 @@ a:focus, li:focus{outline: none;}
 		width: 19px;
 		height: 20px;
 		background: url('../img/info.png') no-repeat;
-		background-position: 0 21px;
+		background-position: 0 -21px;
 	}
 	.info3{
 		width: 19px;
 		height: 20px;
 		background: url('../img/info.png') no-repeat;
-		background-position: 0 41px;
+		background-position: 0 -41px;
 	}
 	.info{
 		td{padding-top: 15px;}
@@ -276,7 +276,11 @@ a:focus, li:focus{outline: none;}
 .footer-block1{width: 155px;}
 .footer-block2{width: 210px;}
 .footer-block3{width: 250px;}
-.footer-block4{width: 140px;}
+.footer-block4{
+	width: 140px;
+	height: 155px;
+	background: url('../img/demandBox.png') no-repeat;
+}
 .top_title{
 	font-size: 1.5rem;
 	color: $mainColor;

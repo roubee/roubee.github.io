@@ -350,13 +350,13 @@ a:focus, li:focus {
   width: 19px;
   height: 20px;
   background: url("../img/info.png") no-repeat;
-  background-position: 0 21px;
+  background-position: 0 -21px;
 }
 .footer .info3 {
   width: 19px;
   height: 20px;
   background: url("../img/info.png") no-repeat;
-  background-position: 0 41px;
+  background-position: 0 -41px;
 }
 .footer .info td {
   padding-top: 15px;
@@ -379,6 +379,8 @@ a:focus, li:focus {
 
 .footer-block4 {
   width: 140px;
+  height: 155px;
+  background: url("../img/demandBox.png") no-repeat;
 }
 
 .top_title {
