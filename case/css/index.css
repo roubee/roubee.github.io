@@ -336,12 +336,23 @@ a:focus, li:focus {
 }
 
 .footer-bottom {
+  color: #8d8d8d;
+  font-size: 1.3rem;
+  padding: 30px 0;
   text-align: center;
   border-top: 1px solid rgba(191, 149, 90, 0.2);
 }
 .footer-bottom div {
   float: right;
   text-align: right;
+}
+
+.footer-producer {
+  color: #686868;
+  font-size: 1.2rem;
+}
+.footer-producer a, .footer-producer a:visited, .footer-producer a:hover, .footer-producer a:active, .footer-producer a:focus {
+  text-decoration: underline;
 }
 
 /*------- RWD -------*/
