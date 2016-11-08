@@ -183,8 +183,8 @@ a:focus, li:focus{outline: none;}
 	text-align: left;
 	.subject-block{
 		@include subject-block();
+		width: 470px;
 		div{
-			width: 470px;
 			margin: 0 auto;
 		}
 	}
@@ -192,7 +192,6 @@ a:focus, li:focus{outline: none;}
 	.subject-content{
 		@include subject-content();
 		color: #272727;
-		width: 470px;
 	}
 }
 /*------- 頁腳 -------*/

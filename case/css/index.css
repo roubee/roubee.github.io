@@ -241,9 +241,9 @@ a:focus, li:focus {
 }
 .case .subject-block {
   padding: 60px 0;
+  width: 470px;
 }
 .case .subject-block div {
-  width: 470px;
   margin: 0 auto;
 }
 .case .subject-title {
@@ -261,7 +261,6 @@ a:focus, li:focus {
   font-size: 1.6rem;
   line-height: 2;
   color: #272727;
-  width: 470px;
 }
 
 /*------- 頁腳 -------*/
