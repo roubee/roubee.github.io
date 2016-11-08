@@ -102,6 +102,28 @@ a:focus, li:focus {
   color: #fff;
 }
 
+.nav-mail {
+  width: 20px;
+  height: 14px;
+  background: url("../img/mail.png") no-repeat;
+  background-position: 0 0;
+}
+
+.nav-mail:hover {
+  background-position: -20px 0;
+}
+
+.nav-menu {
+  width: 30px;
+  height: 22px;
+  background: url("../img/menu.png") no-repeat;
+  background-position: 0 0;
+}
+
+.nav-menu:hover {
+  background-position: -30px 0;
+}
+
 /*------- 圖片輪播 -------*/
 .banner {
   padding: 0;
