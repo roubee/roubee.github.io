@@ -19,6 +19,7 @@ $screen-lg-min: 1200px;
 	vertical-align: middle;
 	font-size: 3rem;
 	padding-left: 15px;
+	color: #272727;
 }
 @mixin subject-content(){
 	display: block;
@@ -179,9 +180,13 @@ a:focus, li:focus{outline: none;}
 	background: url('../img/case.jpg') no-repeat;
 	@include background-size(cover);
 	height: 490px;
+	text-align: left;
 	.subject-block{@include subject-block();}
 	.subject-title{@include subject-title();}
-	.subject-content{@include subject-content();}
+	.subject-content{
+		@include subject-content();
+		color: #272727;
+	}
 }
 /*------- 頁腳 -------*/
 .footer{
