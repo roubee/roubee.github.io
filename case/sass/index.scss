@@ -240,8 +240,10 @@ a:focus, li:focus{outline: none;}
 		text-align: left;
 		padding-top: 10px;
 	}
-	td:nth-child(even){
-		text-align: right;
+	td:nth-child(even){text-align: right;}
+	.row{
+		padding-top: 65px;
+		padding-bottom: 50px;
 	}
 }
 

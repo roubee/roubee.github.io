@@ -331,6 +331,10 @@ a:focus, li:focus {
 .footer td:nth-child(even) {
   text-align: right;
 }
+.footer .row {
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
 
 .footer-block1 {
   width: 155px;
