@@ -388,11 +388,13 @@ a:focus, li:focus {
   font-size: 1.5rem;
   color: #bf955a;
 }
-.footer-block4 .note {
+
+.footer-note {
   width: 40px;
   height: 43px;
   background: url("../img/demand.png") no-repeat;
   background-position: 0 0;
+  margin: 0 auto;
 }
 
 .footer-block4:hover {

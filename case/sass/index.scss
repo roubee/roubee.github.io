@@ -288,12 +288,13 @@ a:focus, li:focus{outline: none;}
 	background: url('../img/demandBox.png') no-repeat;
 	font-size: 1.5rem;
 	color: $mainColor;
-	.note{
-		width: 40px;
-		height: 43px;
-		background: url('../img/demand.png') no-repeat;
-		background-position: 0 0;
-	}
+}
+.footer-note{
+	width: 40px;
+	height: 43px;
+	background: url('../img/demand.png') no-repeat;
+	background-position: 0 0;
+	margin: 0 auto;
 }
 .footer-block4:hover{
 	background-color: $mainColor;

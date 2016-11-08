@@ -48,9 +48,9 @@ $(function(){
 	});
 
 	$('.footer-block4').hover(function() {
-		$('.footer-block4').find('note').css('background-position', '-40px 0');
+		$('.footer-note').css('background-position', '-40px 0');
 	}, function() {
-		$('.footer-block4').find('note').css('background-position', '0 0');
+		$('.footer-note').css('background-position', '0 0');
 	});
 });
 
