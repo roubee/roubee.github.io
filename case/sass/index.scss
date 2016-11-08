@@ -181,7 +181,13 @@ a:focus, li:focus{outline: none;}
 	@include background-size(cover);
 	height: 490px;
 	text-align: left;
-	.subject-block{@include subject-block();}
+	.subject-block{
+		@include subject-block();
+		div{
+			width: 470px;
+			margin: 0 auto;
+		}
+	}
 	.subject-title{@include subject-title();}
 	.subject-content{
 		@include subject-content();

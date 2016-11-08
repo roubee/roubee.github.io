@@ -242,6 +242,10 @@ a:focus, li:focus {
 .case .subject-block {
   padding: 60px 0;
 }
+.case .subject-block div {
+  width: 470px;
+  margin: 0 auto;
+}
 .case .subject-title {
   vertical-align: middle;
   font-size: 3rem;
