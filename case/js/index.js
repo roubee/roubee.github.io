@@ -45,6 +45,7 @@ $(function(){
 		name = ".mask"+name.match(/\d+/g);
 		console.log("name2="+name);
 		$(name).css('background-color', 'none');
+		$(name).css('background-color', 'rgba(171,127,65, 0.8);');
 	});
 });
 
