@@ -344,10 +344,12 @@ a:focus, li:focus {
 
 .footer-leftblock {
   width: 10%;
+  float: left;
 }
 
 .footer-copyright {
   width: 80%;
+  float: left;
   text-align: center;
   color: #8d8d8d;
   font-size: 1.3rem;
@@ -355,6 +357,7 @@ a:focus, li:focus {
 
 .footer-producer {
   width: 10%;
+  float: left;
   text-align: right;
   color: #686868;
   font-size: 1.2rem;
