@@ -58,11 +58,11 @@ $(window).bind('scroll', function(){
 	if ($(window).scrollTop() > 0) {
          // $('.nav-center').css('display', 'none');
          $('.nav-center').hide();
-         $('.banner').css('margin-top', '0');
+         $('.banner').animate({'margin-top':'0'});
     } else {
 		// $('.nav-center').css('display', 'block');
 		$('.nav-center').slideDown();
-        $('.banner').css('margin-top', '135px');
+		$('.banner').animate({'margin-top':'135px'});
     }
 });
 
