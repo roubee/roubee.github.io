@@ -342,16 +342,15 @@ a:focus, li:focus {
   text-align: center;
   border-top: 1px solid rgba(191, 149, 90, 0.2);
 }
-.footer-bottom div {
-  float: right;
-  text-align: right;
-}
 
 .footer-copyright {
   width: 100%;
+  text-align: center;
 }
 
 .footer-producer {
+  float: right;
+  text-align: right;
   color: #686868;
   font-size: 1.2rem;
 }
