@@ -279,6 +279,15 @@ a:focus, li:focus {
   line-height: 140px;
 }
 
+.case-mask {
+  width: 140px;
+  height: 140px;
+  background-color: rgba(171, 127, 65, 0.8);
+  z-index: 2;
+  position: absolute;
+  display: block;
+}
+
 .case-block:nth-child(1) {
   background: url("../img/case1.jpg") no-repeat;
 }
