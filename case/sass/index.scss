@@ -189,7 +189,7 @@ a:focus, li:focus{outline: none;}
 			margin: 0 auto;
 		}
 		.row{
-			margin-top: 65px;
+			margin-top: 60px;
 		}
 	}
 	.subject-title{@include subject-title();}
@@ -197,6 +197,7 @@ a:focus, li:focus{outline: none;}
 		@include subject-content();
 		color: #272727;
 		padding-left: 40px;
+		padding-top: 15px;
 	}
 }
 .case-block{

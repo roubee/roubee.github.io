@@ -248,7 +248,7 @@ a:focus, li:focus {
   margin: 0 auto;
 }
 .case .subject-block .row {
-  margin-top: 65px;
+  margin-top: 60px;
 }
 .case .subject-title {
   vertical-align: middle;
@@ -266,6 +266,7 @@ a:focus, li:focus {
   line-height: 2;
   color: #272727;
   padding-left: 40px;
+  padding-top: 15px;
 }
 
 .case-block {
