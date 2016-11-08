@@ -377,6 +377,7 @@ a:focus, li:focus {
   font-size: 1.2rem;
 }
 .footer-producer a, .footer-producer a:visited, .footer-producer a:hover, .footer-producer a:active, .footer-producer a:focus {
+  font-size: 1.2rem;
   color: #686868;
   text-decoration: underline;
 }
