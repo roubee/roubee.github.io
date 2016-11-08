@@ -238,12 +238,7 @@ a:focus, li:focus{outline: none;}
 	table{width: 100%;}
 	td{
 		text-align: left;
-	}
-	tr{
-		margin-top: 10px;
-	}
-	tr:nth-child(1){
-		margin-top: 15px;
+		padding-top: 10px;
 	}
 	td:nth-child(even){
 		text-align: right;
