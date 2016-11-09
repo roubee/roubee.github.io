@@ -159,6 +159,7 @@ a:focus, li:focus{outline: none;}
 }
 /*------- 服務-------*/
 .service{
+	padding-bottom: 40px;
 	.subject-block{@include subject-block();}
 	.subject-title{@include subject-title();}
 	.subject-content{@include subject-content();}
@@ -170,7 +171,7 @@ a:focus, li:focus{outline: none;}
 	margin: 0 auto;
 	font-size: 2.2rem;
 	color: #3e3934;
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 }
 .service-block:hover{
 	@include box-shadow(0px 0px 5px $mainColor); 
@@ -219,7 +220,7 @@ a:focus, li:focus{outline: none;}
 	text-align: left;
 	.subject-block{
 		@include subject-block();
-		width: 270px;
+		width: 260px;
 		padding-top: 40px;
 		text-align: left;
 		.row{
@@ -259,9 +260,7 @@ a:focus, li:focus{outline: none;}
 	position: absolute;
 	display:block;
 }
-.case-area{
-	margin-bottom: 15px;
-}
+.case-area{margin-bottom: 15px;}
 /*------- 頁腳 -------*/
 .footer{
 	background-color: #272727;
@@ -278,9 +277,7 @@ a:focus, li:focus{outline: none;}
 		text-align: left;
 		padding-top: 10px;
 	}
-	td:nth-child(1){
-		padding-top: 0;
-	}
+	td:nth-child(1){padding-top: 0;}
 	td:nth-child(even){
 		text-align: left;
 		padding-left: 40px;
@@ -289,9 +286,7 @@ a:focus, li:focus{outline: none;}
 		padding-top: 40px;
 		padding-bottom: 30px;
 	}
-	.first_line{
-		padding-top: 15px;
-	}
+	.first_line{padding-top: 15px;}
 	.info1{
 		width: 19px;
 		height: 21px;
@@ -310,9 +305,7 @@ a:focus, li:focus{outline: none;}
 		background: url('../img/info.png') no-repeat;
 		background-position: 0 -41px;
 	}
-	.demand{
-		margin-bottom: 35px;
-	}
+	.demand{margin-bottom: 35px;}
 }
 .footer-block1{
 	width: 155px;
@@ -396,15 +389,15 @@ a:focus, li:focus{outline: none;}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+	.service{padding-bottom: 45px;}
+	.service-block{margin-bottom: 30px;}
 	.case{
 		height:490px;
 		.subject-block{
 			width: 510px;
 			padding-top: 70px;
 		}
-		.row{
-			margin-top: 60px;
-		}
+		.row{margin-top: 0;}
 	}
 	.case-area{margin-bottom: 0;}
 	.footer{
@@ -419,15 +412,15 @@ a:focus, li:focus{outline: none;}
 	.footer-producer{width: 20%;text-align: right;}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+	.service{padding-bottom: 45px;}
+	.service-block{margin-bottom: 30px;}
 	.case{
 		height:490px;
 		.subject-block{
 			width: 510px;
 			padding-top: 70px;
 		}
-		.row{
-			margin-top: 60px;
-		}
+		.row{margin-top: 0;}
 	}
 	.case-area{margin-bottom: 0;}
 	.footer{
@@ -448,15 +441,15 @@ a:focus, li:focus{outline: none;}
 	.nav-center {display: block;}
 	.nav-mail{margin-top: 20px;}
 	.nav-menuBtn{display: none;}
+	.service{padding-bottom: 70px;}
+	.service-block{margin-bottom: 0px;}
 	.case{
 		height: 490px;
 		.subject-block{
 			width: 510px;
 			padding-top: 70px;
 		}
-		.row{
-			margin-top: 60px;
-		}
+		.row{margin-top: 0;}
 	}
 	.case-area{margin-bottom: 0;}
 	.footer{
@@ -468,9 +461,7 @@ a:focus, li:focus{outline: none;}
 			margin-bottom: 0;
 			margin-left: 10px;
 		}
-		.info{
-			margin-left: -15px;
-		}
+		.info{margin-left: -15px;}
 	}
 	.footer-block1{display: block;}
 	.footer-block2{display: block;}
