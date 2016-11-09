@@ -80,14 +80,16 @@ $(window).bind('scroll', function(){
 function change_lg_menu(type){
 	if (type == 0) {
 		$('.nav-center').slideDown();
-		$('.banner').animate({'margin-top':'135px'});
+		// $('.banner').animate({'margin-top':'135px'});
+		$('.banner').css('margin-top', '135px');
 		$('.logo1').show();
 		$('.logo2').hide();
 		$('.nav-mail').css({'margin-top':'20px'});
 		$('.nav-menuBtn').css('display', 'none');
 	} else {
 		$('.nav-center').hide();
-		$('.banner').animate({'margin-top':'0'});
+		// $('.banner').animate({'margin-top':'0'});
+		$('.banner').css('margin-top', '0');
 		$('.logo1').hide();
 		$('.logo2').show();
 		$('.nav-mail').css({'margin-top':'30px'});

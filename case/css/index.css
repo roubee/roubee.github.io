@@ -387,8 +387,8 @@ a:focus, li:focus {
   padding-left: 40px;
 }
 .footer .row {
-  padding-top: 65px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .footer .first_line {
   padding-top: 15px;
@@ -417,7 +417,7 @@ a:focus, li:focus {
   padding-top: 15px;
 }
 .footer .demand {
-  margin-top: 20px;
+  margin-bottom: 35px;
 }
 
 .footer-block1 {
@@ -507,6 +507,26 @@ a:focus, li:focus {
 
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
+  .case {
+    height: 490px;
+  }
+  .case .subject-block {
+    width: 510px;
+    padding-top: 70px;
+  }
+  .case .row {
+    margin-top: 60px;
+  }
+
+  .case-area {
+    margin-bottom: 0;
+  }
+
+  .footer .row {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
   .footer-leftblock {
     width: 20%;
   }
@@ -520,22 +540,11 @@ a:focus, li:focus {
     text-align: right;
   }
 
-  .case {
-    height: 490px;
-  }
-  .case .subject-block {
-    width: 510px;
-    padding-top: 70px;
-  }
-  .case .row {
-    margin-top: 60px;
-  }
-
-  .case-area {
+  .demand {
     margin-bottom: 0;
   }
 }
-@media (min-width: 960px) and (max-width: 1159px) {
+@media (min-width: 960px) and (max-width: 1199px) {
   .case {
     height: 490px;
   }
@@ -551,6 +560,11 @@ a:focus, li:focus {
     margin-bottom: 0;
   }
 
+  .footer .row {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
   .footer-leftblock {
     width: 20%;
   }
@@ -562,6 +576,10 @@ a:focus, li:focus {
   .footer-producer {
     width: 20%;
     text-align: right;
+  }
+
+  .demand {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -604,6 +622,11 @@ a:focus, li:focus {
     margin-bottom: 0;
   }
 
+  .footer .row {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
   .footer-block1 {
     display: block;
   }
@@ -623,5 +646,9 @@ a:focus, li:focus {
   .footer-producer {
     width: 20%;
     text-align: right;
+  }
+
+  .demand {
+    margin-bottom: 0;
   }
 }

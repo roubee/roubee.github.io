@@ -4,7 +4,7 @@ $screen-xs-max: 743px;
 $screen-sm-min: 744px;
 $screen-sm-max: 959px;
 $screen-md-min: 960px;
-$screen-md-max: 1159px;
+$screen-md-max: 1199px;
 $screen-lg-min: 1200px;
 @mixin service-icon() {
 	width: 36px;
@@ -283,8 +283,8 @@ a:focus, li:focus{outline: none;}
 		padding-left: 40px;
 	}
 	.row{
-		padding-top: 65px;
-		padding-bottom: 50px;
+		padding-top: 40px;
+		padding-bottom: 30px;
 	}
 	.first_line{
 		padding-top: 15px;
@@ -315,7 +315,7 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 	.demand{
-		margin-top: 20px;
+		margin-bottom: 35px;
 	}
 }
 .footer-block1{
@@ -393,9 +393,6 @@ a:focus, li:focus{outline: none;}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-	.footer-leftblock{width: 20%;}
-	.footer-copyright{width: 60%;}
-	.footer-producer{width: 20%;text-align: right;}
 	.case{
 		height:490px;
 		.subject-block{
@@ -407,6 +404,16 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 	.case-area{margin-bottom: 0;}
+	.footer{
+		.row{
+			padding-top: 65px;
+			padding-bottom: 50px;
+		}
+	}
+	.footer-leftblock{width: 20%;}
+	.footer-copyright{width: 60%;}
+	.footer-producer{width: 20%;text-align: right;}
+	.demand{margin-bottom: 0;}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.case{
@@ -420,9 +427,16 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 	.case-area{margin-bottom: 0;}
+	.footer{
+		.row{
+			padding-top: 65px;
+			padding-bottom: 50px;
+		}
+	}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
+	.demand{margin-bottom: 0;}
 }
 @media (min-width: $screen-lg-min) {
 	.logo1{display: block;}
@@ -442,9 +456,16 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 	.case-area{margin-bottom: 0;}
+	.footer{
+		.row{
+			padding-top: 65px;
+			padding-bottom: 50px;
+		}
+	}
 	.footer-block1{display: block;}
 	.footer-block2{display: block;}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
+	.demand{margin-bottom: 0;}
 }
