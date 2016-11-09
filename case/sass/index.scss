@@ -278,6 +278,9 @@ a:focus, li:focus{outline: none;}
 		text-align: left;
 		padding-top: 10px;
 	}
+	td:nth-child(1){
+		padding-top: 0;
+	}
 	td:nth-child(even){
 		text-align: left;
 		padding-left: 40px;
@@ -307,13 +310,6 @@ a:focus, li:focus{outline: none;}
 		background: url('../img/info.png') no-repeat;
 		background-position: 0 -41px;
 	}
-	.info{
-		td:nth-child(even){
-			text-align: left;
-			padding-left: 15px;
-			padding-top: 15px;
-		}
-	}
 	.demand{
 		margin-bottom: 35px;
 	}
@@ -326,7 +322,14 @@ a:focus, li:focus{outline: none;}
 	width: 210px;
 	display: none;
 }
-.footer-block3{width: 250px;}
+.footer-block3{
+	width: 250px;
+	td:nth-child(even){
+		text-align: left;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+}
 .footer-block4{
 	margin: 0 auto;
 	width: 140px;
@@ -406,14 +409,14 @@ a:focus, li:focus{outline: none;}
 	.case-area{margin-bottom: 0;}
 	.footer{
 		.row{
-			padding-top: 65px;
+			padding-top: 60px;
 			padding-bottom: 50px;
 		}
+		.demand{margin-bottom: 0;}
 	}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
-	.demand{margin-bottom: 0;}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.case{
@@ -429,14 +432,14 @@ a:focus, li:focus{outline: none;}
 	.case-area{margin-bottom: 0;}
 	.footer{
 		.row{
-			padding-top: 65px;
+			padding-top: 60px;
 			padding-bottom: 50px;
 		}
+		.demand{margin-bottom: 0;}
 	}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
-	.demand{margin-bottom: 0;}
 }
 @media (min-width: $screen-lg-min) {
 	.logo1{display: block;}
@@ -458,8 +461,15 @@ a:focus, li:focus{outline: none;}
 	.case-area{margin-bottom: 0;}
 	.footer{
 		.row{
-			padding-top: 65px;
+			padding-top: 70px;
 			padding-bottom: 50px;
+		}
+		.demand{
+			margin-bottom: 0;
+			margin-left: 10px;
+		}
+		.info{
+			margin-left: -15px;
 		}
 	}
 	.footer-block1{display: block;}
@@ -467,5 +477,4 @@ a:focus, li:focus{outline: none;}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
-	.demand{margin-bottom: 0;}
 }
