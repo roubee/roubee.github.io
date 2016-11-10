@@ -219,6 +219,11 @@ a:focus, li:focus {
   display: block;
 }
 
+.wra {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 /*------- 圖片輪播 -------*/
 .banner {
   margin-top: 70px !important;
