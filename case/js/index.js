@@ -122,6 +122,7 @@ $(window).bind('scroll', function(){
 	if(windowWidth>=1200 && scrollVal<=0){
 		change_lg_menu(0);
 	}else{
+		$('.nav-right-side').css('display','none');
 		change_lg_menu(1);
 	}
 });
