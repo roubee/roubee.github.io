@@ -183,7 +183,7 @@ a:focus, li:focus {
   background-position: 0 0;
 }
 
-.nav-mail:hover, .nav-mail:focus {
+.nav-mail:hover {
   background-position: -20px 0;
 }
 
@@ -198,7 +198,7 @@ a:focus, li:focus {
   cursor: pointer;
 }
 
-.nav-menuBtn:hover {
+.nav-menuBtn:focus {
   background-position: -30px 0;
 }
 
