@@ -234,7 +234,10 @@ a:focus, li:focus{outline: none;}
 /*------- 服務-------*/
 .service{
 	padding-bottom: 40px;
-	.subject-block{@include subject-block();}
+	.subject-block{
+		@include subject-block();
+		padding: 40px 0;
+	}
 	.subject-title{@include subject-title();}
 	.subject-content{@include subject-content();}
 }
