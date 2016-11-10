@@ -48,9 +48,9 @@ a:focus, li:focus {
   bottom: 0;
   position: fixed;
   padding-top: 30px;
-  -moz-box-shadow: 1px 0px 5px 0px rgba(191, 149, 90, 0.5);
-  -webkit-box-shadow: 1px 0px 5px 0px rgba(191, 149, 90, 0.5);
-  box-shadow: 1px 0px 5px 0px rgba(191, 149, 90, 0.5);
+  -moz-box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
+  -webkit-box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
+  box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
 }
 .nav-right-side ul {
   padding: 0;
@@ -84,9 +84,9 @@ a:focus, li:focus {
 .nav-right-side .level2-block {
   display: none;
   background-color: #bf955a;
-  -moz-box-shadow: inset 0px 3px 5px 0px rgba(102, 102, 102, 0.3), inset 0px -3px 5px 0px rgba(102, 102, 102, 0.3);
-  -webkit-box-shadow: inset 0px 3px 5px 0px rgba(102, 102, 102, 0.3), inset 0px -3px 5px 0px rgba(102, 102, 102, 0.3);
-  box-shadow: inset 0px 3px 5px 0px rgba(102, 102, 102, 0.3), inset 0px -3px 5px 0px rgba(102, 102, 102, 0.3);
+  -moz-box-shadow: inset 0px 3px 5px rgba(102, 102, 102, 0.3), inset 0px -3px 5px rgba(102, 102, 102, 0.3);
+  -webkit-box-shadow: inset 0px 3px 5px rgba(102, 102, 102, 0.3), inset 0px -3px 5px rgba(102, 102, 102, 0.3);
+  box-shadow: inset 0px 3px 5px rgba(102, 102, 102, 0.3), inset 0px -3px 5px rgba(102, 102, 102, 0.3);
 }
 .nav-right-side .level2 {
   cursor: pointer;
@@ -104,9 +104,9 @@ a:focus, li:focus {
 /*------- 導覽列 -------*/
 .navbar > div {
   background-color: #fff;
-  -moz-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
-  -webkit-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
-  box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px 0px;
+  -moz-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px;
+  -webkit-box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px;
+  box-shadow: rgba(191, 149, 90, 0.3) 0px 0px 20px;
 }
 
 .nav-logo {

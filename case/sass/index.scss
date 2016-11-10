@@ -59,7 +59,7 @@ a:focus, li:focus{outline: none;}
 	bottom: 0;
 	position: fixed;
 	padding-top: 30px;
-	@include box-shadow(1px 0px 5px 0px rgba(191,149,90,0.5));
+	@include box-shadow(1px 0px 5px rgba(191,149,90,0.5));
 	ul{
 		padding: 0;
 		list-style: none;
@@ -92,7 +92,7 @@ a:focus, li:focus{outline: none;}
 	.level2-block{
 		display: none;
 		background-color: $mainColor;
-		@include box-shadow(inset 0px 3px 5px 0px rgba(#666,0.3),inset 0px -3px 5px 0px rgba(#666,0.3));
+		@include box-shadow(inset 0px 3px 5px rgba(#666,0.3),inset 0px -3px 5px rgba(#666,0.3));
 	}
 	.level2{
 		cursor: pointer;
@@ -110,7 +110,7 @@ a:focus, li:focus{outline: none;}
 /*------- 導覽列 -------*/
 .navbar>div{
 	background-color: #fff;
-	@include box-shadow(rgba($mainColor, 0.3) 0px 0px 20px 0px);
+	@include box-shadow(rgba($mainColor, 0.3) 0px 0px 20px);
 }
 .nav-logo{
 	padding-top: 25px;
