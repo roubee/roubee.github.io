@@ -13,6 +13,7 @@ $(window).resize(function () {
 	}
 });
 $(function(){
+	window.scrollTo(0,0);
     $('.dropdown').hover(function() {
         $(this).addClass('open');
     },
@@ -94,6 +95,10 @@ $(function(){
 		}
 	);
 	$('.level1').click(function() {
+		$('.level2-block').css('display','none');
+		$('.arrow').css('background-position', '0 0');
+		$('.arrow').css('display', 'none');
+		$('.level1').find('a').css('font-weight','normal');
 		var x = $(this).children('.level2-block');
 		var y = x.css('display');
 		if (x.length){
