@@ -30,7 +30,11 @@ $screen-lg-min: 1200px;
 	font-size: 1.6rem;
 	line-height: 2;
 }
-html {font-size: 62.5%;}
+html {
+	font-size: 62.5%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
 body {
 	font-size: 1.4rem;
 	overflow-y: scroll;
