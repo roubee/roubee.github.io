@@ -115,6 +115,11 @@ $(function(){
 			}
 		}
 	});
+	
+	$('.wra').click(function(){
+		$('.nav-right-side').animate({'width':'0px'});
+		$('.nav-right-side').css('display', 'none');
+	});
 });
 
 $(window).bind('scroll', function(){
