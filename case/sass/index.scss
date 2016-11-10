@@ -464,7 +464,10 @@ a:focus, li:focus{outline: none;}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-	.service{padding-bottom: 45px;}
+	.service{
+		padding: 60px 0;
+		padding-bottom: 45px;
+	}
 	.service-block{margin-bottom: 30px;}
 	.case{
 		height:490px;
@@ -487,7 +490,10 @@ a:focus, li:focus{outline: none;}
 	.footer-producer{width: 20%;text-align: right;}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-	.service{padding-bottom: 45px;}
+	.service{
+		padding: 60px 0;
+		padding-bottom: 45px;
+	}
 	.service-block{margin-bottom: 30px;}
 	.case{
 		height:490px;
@@ -516,7 +522,10 @@ a:focus, li:focus{outline: none;}
 	.nav-center {display: block;}
 	.nav-mail{margin-top: 20px;}
 	.nav-menuBtn{display: none;}
-	.service{padding-bottom: 70px;}
+	.service{
+		padding: 60px 0;
+		padding-bottom: 70px;
+	}
 	.service-block{margin-bottom: 0px;}
 	.case{
 		height: 490px;
