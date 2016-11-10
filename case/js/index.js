@@ -119,6 +119,7 @@ $(function(){
 	$('.wra').click(function(){
 		$('.nav-right-side').animate({'width':'0px'});
 		$('.nav-right-side').css('display', 'none');
+		$('.level2-block').css('display','none');
 	});
 });
 
@@ -158,6 +159,7 @@ function openMenu(){
 		}else{
 			$('.nav-right-side').animate({'width':'0px'});
 			$('.nav-right-side').css('display', 'none');
+			$('.level2-block').css('display','none');
 		}
 }
 
