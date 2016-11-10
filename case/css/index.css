@@ -253,6 +253,15 @@ a:focus, li:focus {
   margin: 0 5px;
 }
 
+.w3-display-container {
+  height: 180px;
+}
+
+.mySlides {
+  width: auto;
+  height: 100%;
+}
+
 /*------- 服務-------*/
 .service {
   padding-bottom: 40px;
