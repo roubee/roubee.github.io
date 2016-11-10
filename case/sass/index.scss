@@ -110,7 +110,7 @@ a:focus, li:focus{outline: none;}
 /*------- 導覽列 -------*/
 .navbar>div{
 	background-color: #fff;
-	@include box-shadow(rgba($mainColor, 0.3) 0px 0px 20px);
+	@include box-shadow(0px 0px 20px rgba($mainColor, 0.3));
 }
 .nav-logo{
 	padding-top: 25px;
