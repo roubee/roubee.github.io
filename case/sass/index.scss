@@ -32,10 +32,9 @@ $screen-lg-min: 1200px;
 }
 html {font-size: 62.5%;}
 body {
-	position: fixed;
 	font-size: 1.4rem;
-	overflow-y: scroll;
 	overflow-x: hidden;
+	height: 100%;
 	font-family: Microsoft JhengHei, "微軟正黑體", sans-serif;
 	text-align:	justify; 
 	text-justify:inter-ideograph; 
@@ -201,7 +200,6 @@ a:focus, li:focus{outline: none;}
 .logo2{display: block;}
 /*------- 圖片輪播 -------*/
 .banner{
-	overflow-x: hidden;
 	margin-top: 70px !important;
 	padding: 0;
 	margin-top: 0;
@@ -223,7 +221,6 @@ a:focus, li:focus{outline: none;}
 }
 /*------- 服務-------*/
 .service{
-	overflow-x: hidden;
 	padding-bottom: 40px;
 	.subject-block{@include subject-block();}
 	.subject-title{@include subject-title();}
