@@ -115,19 +115,6 @@ $(function(){
 			}
 		}
 	});
-	
-	$('.nav-menuBtn').mousedown(function(){
-		$(this).css('background-position','-30px 0');
-	});
-
-	$('.nav-menuBtn').mouseup(function(){
-		$(this).css('background-position','0 0');
-	});
-	
-	$('.nav-menuBtn').focus(function(){
-    	if (!$(this).data("mouseDown"))
-        $(this).click();
-	});
 });
 
 $(window).bind('scroll', function(){
