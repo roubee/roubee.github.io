@@ -68,20 +68,6 @@ $(function(){
 		$('.footer-note').css('background-position', '0 0');
 	});
 
-
-$('.level1').on('touchstart', function (e) {
-    var link = $(this);
-    if (link.hasClass('hover')) {
-        return true;
-    } else {
-        link.addClass('hover');
-        $('.level1').not(this).removeClass('hover');
-        e.preventDefault();
-        return false;
-    }
-});
-
-
 	$('.level1').hover(
 		function() {
 			var x = $(this).children('.level2-block');
