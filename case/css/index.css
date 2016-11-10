@@ -48,9 +48,9 @@ a:focus, li:focus {
   bottom: 0;
   position: fixed;
   padding-top: 30px;
-  -moz-box-shadow: 1px 0px 3px 1px #bf955a;
-  -webkit-box-shadow: 1px 0px 3px 1px #bf955a;
-  box-shadow: 1px 0px 3px 1px #bf955a;
+  -moz-box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
+  -webkit-box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
+  box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
 }
 .nav-right-side ul {
   padding: 0;

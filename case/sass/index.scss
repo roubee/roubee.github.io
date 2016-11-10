@@ -59,7 +59,7 @@ a:focus, li:focus{outline: none;}
 	bottom: 0;
 	position: fixed;
 	padding-top: 30px;
-	@include box-shadow(1px 0px 3px 1px $mainColor);
+	@include box-shadow(1px 0px 5px rgba($mainColor,0.5));
 	ul{
 		padding: 0;
 		list-style: none;
