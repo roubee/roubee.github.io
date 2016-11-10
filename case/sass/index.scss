@@ -176,7 +176,7 @@ a:focus, li:focus{outline: none;}
 	background: url('../img/mail.png') no-repeat;
 	background-position: 0 0;
 }
-.nav-mail:hover{background-position: -20px 0;}
+.nav-mail:hover, .nav-mail:focus{background-position: -20px 0;}
 .nav-menuBtn{
 	display: block;
 	margin: 0 auto;

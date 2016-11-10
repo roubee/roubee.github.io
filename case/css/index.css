@@ -183,7 +183,7 @@ a:focus, li:focus {
   background-position: 0 0;
 }
 
-.nav-mail:hover {
+.nav-mail:hover, .nav-mail:focus {
   background-position: -20px 0;
 }
 
