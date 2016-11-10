@@ -48,6 +48,65 @@ a:focus, li:focus{outline: none;}
    margin: 0 !important;
 }
 [class*="col-"] {text-align: center;}
+/*------- 右側導覽列 -------*/
+.nav-right-side{
+	display: none;
+	width: 0px;
+	background-color: #fff;
+	position: absolute;
+	z-index: 5;
+	top: 73px;
+	bottom: 0;
+	position: fixed;
+	padding-top: 30px;
+	@include box-shadow(1px 0px 5px 0px rgba(191,149,90,0.5));
+	ul{
+		padding: 0;
+		list-style: none;
+	}
+	li{
+		padding: 0;
+	}
+	.level1{
+		cursor: pointer;
+		a,a:visited,a:hover,a:active,a:focus{
+			padding-left: 40px;
+			font-size: 1.7rem;
+			color: #3f3f3f;
+			line-height: 50px;
+		}
+		.arrow{
+			background: url('../img/arrow.png');
+			background-position: 0 0;
+			width: 24px;
+			height: 12px;
+			float: right;
+			margin-top: 18px;
+			margin-right: 25px;
+			display: none;
+		}
+	}
+	.level1:hover{
+		border-bottom: 2px solid $mainColor;
+	}
+	.level2-block{
+		display: none;
+		background-color: $mainColor;
+		@include box-shadow(inset 0px 3px 5px 0px rgba(#666,0.3),inset 0px -3px 5px 0px rgba(#666,0.3));
+	}
+	.level2{
+		cursor: pointer;
+		a,a:visited,a:hover,a:active,a:focus{
+			padding-left: 80px;
+			font-size: 1.6rem;
+			color: #fff;
+			line-height: 40px;
+		}
+	}
+	.level2:hover{
+		background-color: #000;
+	}
+}
 /*------- 導覽列 -------*/
 .navbar>div{
 	background-color: #fff;
