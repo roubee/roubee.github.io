@@ -9,7 +9,7 @@ $screen-lg-min: 1200px;
 @mixin service-icon() {
 	width: 36px;
 	height: 36px;
-	background: url('../img/service.png') no-repeat;
+	background: url('../images/service.png') no-repeat;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 20px;
@@ -76,7 +76,7 @@ a:focus, li:focus{outline: none;}
 			line-height: 50px;
 		}
 		.arrow{
-			background: url('../img/arrow.png');
+			background: url('../images/arrow.png');
 			background-position: 0 0;
 			width: 24px;
 			height: 12px;
@@ -173,7 +173,7 @@ a:focus, li:focus{outline: none;}
 	margin-top: 30px;
 	width: 20px;
 	height: 14px;
-	background: url('../img/mail.png') no-repeat;
+	background: url('../images/mail.png') no-repeat;
 	background-position: 0 0;
 }
 .nav-mail:hover{background-position: -20px 0;}
@@ -183,7 +183,7 @@ a:focus, li:focus{outline: none;}
 	margin-top: 25px;
 	width: 30px;
 	height: 22px;
-	background: url('../img/menu.png') no-repeat;
+	background: url('../images/menu.png') no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
 }
@@ -270,7 +270,7 @@ a:focus, li:focus{outline: none;}
 	margin-left: 210px;
 	width: 18px;
 	height: 28px;
-	background: url('../img/serviceArrow.png') no-repeat;
+	background: url('../images/serviceArrow.png') no-repeat;
 	background-position: 0 0;
 }
 .service-mask{
@@ -283,7 +283,7 @@ a:focus, li:focus{outline: none;}
 }
 /*------- 實績經驗 -------*/
 .case{
-	background: url('../img/case.jpg') no-repeat;
+	background: url('../images/case.jpg') no-repeat;
 	background-position: top center;
 	@include background-size(cover);
 	height: 750px;
@@ -321,9 +321,9 @@ a:focus, li:focus{outline: none;}
 	position: absolute;
 	display:block;
 }
-.case1{background: url('../img/case1.jpg') no-repeat;}
-.case2{background: url('../img/case2.jpg') no-repeat;}
-.case3{background: url('../img/case3.jpg') no-repeat;}
+.case1{background: url('../images/case1.jpg') no-repeat;}
+.case2{background: url('../images/case2.jpg') no-repeat;}
+.case3{background: url('../images/case3.jpg') no-repeat;}
 .case-title{
 	width: 140px;
 	z-index: 3;
@@ -360,19 +360,19 @@ a:focus, li:focus{outline: none;}
 	.info1{
 		width: 19px;
 		height: 21px;
-		background: url('../img/info.png') no-repeat;
+		background: url('../images/info.png') no-repeat;
 		background-position: 0 0;
 	}
 	.info2{
 		width: 19px;
 		height: 20px;
-		background: url('../img/info.png') no-repeat;
+		background: url('../images/info.png') no-repeat;
 		background-position: 0 -21px;
 	}
 	.info3{
 		width: 19px;
 		height: 20px;
-		background: url('../img/info.png') no-repeat;
+		background: url('../images/info.png') no-repeat;
 		background-position: 0 -41px;
 	}
 	.demand{margin-bottom: 35px;}
@@ -395,7 +395,7 @@ a:focus, li:focus{outline: none;}
 	margin: 0 auto;
 	width: 140px;
 	height: 155px;
-	background: url('../img/demandBox.png') no-repeat;
+	background: url('../images/demandBox.png') no-repeat;
 	font-size: 1.5rem;
 	color: $mainColor;
 	span{
@@ -411,7 +411,7 @@ a:focus, li:focus{outline: none;}
 .footer-note{
 	width: 40px;
 	height: 43px;
-	background: url('../img/demand.png') no-repeat;
+	background: url('../images/demand.png') no-repeat;
 	background-position: 0 0;
 	margin: 0 auto;
 }

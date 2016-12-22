@@ -69,7 +69,7 @@ a:focus, li:focus {
   line-height: 50px;
 }
 .nav-right-side .level1 .arrow {
-  background: url("../img/arrow.png");
+  background: url("../images/arrow.png");
   background-position: 0 0;
   width: 24px;
   height: 12px;
@@ -179,7 +179,7 @@ a:focus, li:focus {
   margin-top: 30px;
   width: 20px;
   height: 14px;
-  background: url("../img/mail.png") no-repeat;
+  background: url("../images/mail.png") no-repeat;
   background-position: 0 0;
 }
 
@@ -193,7 +193,7 @@ a:focus, li:focus {
   margin-top: 25px;
   width: 30px;
   height: 22px;
-  background: url("../img/menu.png") no-repeat;
+  background: url("../images/menu.png") no-repeat;
   background-position: 0 0;
   cursor: pointer;
 }
@@ -300,7 +300,7 @@ a:focus, li:focus {
 .service-icon1 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png") no-repeat;
+  background: url("../images/service.png") no-repeat;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -310,7 +310,7 @@ a:focus, li:focus {
 .service-icon2 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png") no-repeat;
+  background: url("../images/service.png") no-repeat;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -320,7 +320,7 @@ a:focus, li:focus {
 .service-icon3 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png") no-repeat;
+  background: url("../images/service.png") no-repeat;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -330,7 +330,7 @@ a:focus, li:focus {
 .service-icon4 {
   width: 36px;
   height: 36px;
-  background: url("../img/service.png") no-repeat;
+  background: url("../images/service.png") no-repeat;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -343,7 +343,7 @@ a:focus, li:focus {
   margin-left: 210px;
   width: 18px;
   height: 28px;
-  background: url("../img/serviceArrow.png") no-repeat;
+  background: url("../images/serviceArrow.png") no-repeat;
   background-position: 0 0;
 }
 
@@ -358,7 +358,7 @@ a:focus, li:focus {
 
 /*------- 實績經驗 -------*/
 .case {
-  background: url("../img/case.jpg") no-repeat;
+  background: url("../images/case.jpg") no-repeat;
   background-position: top center;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -414,15 +414,15 @@ a:focus, li:focus {
 }
 
 .case1 {
-  background: url("../img/case1.jpg") no-repeat;
+  background: url("../images/case1.jpg") no-repeat;
 }
 
 .case2 {
-  background: url("../img/case2.jpg") no-repeat;
+  background: url("../images/case2.jpg") no-repeat;
 }
 
 .case3 {
-  background: url("../img/case3.jpg") no-repeat;
+  background: url("../images/case3.jpg") no-repeat;
 }
 
 .case-title {
@@ -476,19 +476,19 @@ a:focus, li:focus {
 .footer .info1 {
   width: 19px;
   height: 21px;
-  background: url("../img/info.png") no-repeat;
+  background: url("../images/info.png") no-repeat;
   background-position: 0 0;
 }
 .footer .info2 {
   width: 19px;
   height: 20px;
-  background: url("../img/info.png") no-repeat;
+  background: url("../images/info.png") no-repeat;
   background-position: 0 -21px;
 }
 .footer .info3 {
   width: 19px;
   height: 20px;
-  background: url("../img/info.png") no-repeat;
+  background: url("../images/info.png") no-repeat;
   background-position: 0 -41px;
 }
 .footer .demand {
@@ -516,7 +516,7 @@ a:focus, li:focus {
   margin: 0 auto;
   width: 140px;
   height: 155px;
-  background: url("../img/demandBox.png") no-repeat;
+  background: url("../images/demandBox.png") no-repeat;
   font-size: 1.5rem;
   color: #bf955a;
 }
@@ -533,7 +533,7 @@ a:focus, li:focus {
 .footer-note {
   width: 40px;
   height: 43px;
-  background: url("../img/demand.png") no-repeat;
+  background: url("../images/demand.png") no-repeat;
   background-position: 0 0;
   margin: 0 auto;
 }
