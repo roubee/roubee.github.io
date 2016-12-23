@@ -45,129 +45,54 @@ a:focus, li:focus {
   text-align: center;
 }
 
-/*------- 右側導覽列 -------*/
-/* line 52, ../sass/index.scss */
-.nav-right-side {
-  display: none;
-  width: 0px;
-  background-color: #fff;
-  position: absolute;
-  z-index: 5;
-  top: 73px;
-  bottom: 0;
-  position: fixed;
-  padding-top: 30px;
-  -moz-box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
-  -webkit-box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
-  box-shadow: 1px 0px 5px rgba(191, 149, 90, 0.5);
-}
-/* line 63, ../sass/index.scss */
-.nav-right-side ul {
-  padding: 0;
-  list-style: none;
-}
-/* line 67, ../sass/index.scss */
-.nav-right-side li {
-  padding: 0;
-}
-/* line 70, ../sass/index.scss */
-.nav-right-side .level1 {
-  cursor: pointer;
-}
-/* line 72, ../sass/index.scss */
-.nav-right-side .level1 a, .nav-right-side .level1 a:visited, .nav-right-side .level1 a:hover, .nav-right-side .level1 a:active, .nav-right-side .level1 a:focus {
-  padding-left: 40px;
-  font-size: 1.7rem;
-  color: #3f3f3f;
-  line-height: 50px;
-}
-/* line 78, ../sass/index.scss */
-.nav-right-side .level1 .arrow {
-  background: url("../images/arrow.png");
-  background-position: 0 0;
-  width: 24px;
-  height: 12px;
-  float: right;
-  margin-top: 18px;
-  margin-right: 25px;
-  display: none;
-}
-/* line 89, ../sass/index.scss */
-.nav-right-side .level1:hover {
-  border-bottom: 2px solid #bf955a;
-}
-/* line 92, ../sass/index.scss */
-.nav-right-side .level2-block {
-  display: none;
-  background-color: #bf955a;
-  -moz-box-shadow: inset 0px 3px 5px rgba(102, 102, 102, 0.3), inset 0px -3px 5px rgba(102, 102, 102, 0.3);
-  -webkit-box-shadow: inset 0px 3px 5px rgba(102, 102, 102, 0.3), inset 0px -3px 5px rgba(102, 102, 102, 0.3);
-  box-shadow: inset 0px 3px 5px rgba(102, 102, 102, 0.3), inset 0px -3px 5px rgba(102, 102, 102, 0.3);
-}
-/* line 97, ../sass/index.scss */
-.nav-right-side .level2 {
-  cursor: pointer;
-}
-/* line 99, ../sass/index.scss */
-.nav-right-side .level2 a, .nav-right-side .level2 a:visited, .nav-right-side .level2 a:hover, .nav-right-side .level2 a:active, .nav-right-side .level2 a:focus {
-  padding-left: 80px;
-  font-size: 1.6rem;
-  color: #fff;
-  line-height: 40px;
-}
-/* line 106, ../sass/index.scss */
-.nav-right-side .level2:hover {
-  background-color: #000;
-}
-
 /*------- 導覽列 -------*/
-/* line 111, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 .navbar > div {
   background-color: #fff;
   border-bottom: 1px solid #000;
   height: 80px;
 }
 
-/* line 116, ../sass/index.scss */
+/* line 57, ../sass/index.scss */
 .nav-logo {
   padding-top: 25px;
   padding-bottom: 15px;
 }
 
-/* line 121, ../sass/index.scss */
+/* line 62, ../sass/index.scss */
 .nav li {
   font-size: 1.5rem;
 }
-/* line 123, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .nav li a, .nav li a:hover, .nav li a:focus {
   color: #3f3f3f;
   background-color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 130, ../sass/index.scss */
+/* line 71, ../sass/index.scss */
 .nav li:hover {
   border-bottom: 5px solid #bf955a;
 }
-/* line 134, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 .nav .open a, .nav .open a:hover, .nav .open a:focus {
   background-color: #fff;
   color: #3f3f3f;
 }
 
-/* line 140, ../sass/index.scss */
+/* line 81, ../sass/index.scss */
 .nav-center {
   display: none;
   margin: auto;
   max-width: 690px;
 }
 
-/* line 145, ../sass/index.scss */
+/* line 86, ../sass/index.scss */
 .navbar-nav {
   margin-left: 30px;
 }
 
-/* line 146, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 .open .dropdown-menu {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -185,27 +110,27 @@ a:focus, li:focus {
   background-color: rgba(191, 149, 90, 0.8);
   min-width: 146px;
 }
-/* line 157, ../sass/index.scss */
+/* line 98, ../sass/index.scss */
 .open .dropdown-menu li {
   font-size: 1.4rem;
 }
-/* line 159, ../sass/index.scss */
+/* line 100, ../sass/index.scss */
 .open .dropdown-menu li a {
   background-color: rgba(191, 149, 90, 0.8);
   color: #fff;
 }
-/* line 163, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .open .dropdown-menu li a:hover {
   background-color: black;
   color: #fff;
 }
 
-/* line 169, ../sass/index.scss */
+/* line 110, ../sass/index.scss */
 .nopadding {
   padding: 0 !important;
 }
 
-/* line 172, ../sass/index.scss */
+/* line 113, ../sass/index.scss */
 .nav-mail {
   margin: 0 auto;
   margin-top: 30px;
@@ -215,12 +140,12 @@ a:focus, li:focus {
   background-position: 0 0;
 }
 
-/* line 180, ../sass/index.scss */
+/* line 121, ../sass/index.scss */
 .nav-mail:hover {
   background-position: -20px 0;
 }
 
-/* line 181, ../sass/index.scss */
+/* line 122, ../sass/index.scss */
 .nav-menuBtn {
   display: block;
   margin: 0 auto;
@@ -232,40 +157,40 @@ a:focus, li:focus {
   cursor: pointer;
 }
 
-/* line 191, ../sass/index.scss */
+/* line 132, ../sass/index.scss */
 .nav-menuBtn:hover {
   background-position: -30px 0;
 }
 
-/* line 192, ../sass/index.scss */
+/* line 133, ../sass/index.scss */
 .logo {
   margin: 0 auto;
   text-align: center;
   width: 200px;
 }
-/* line 196, ../sass/index.scss */
+/* line 137, ../sass/index.scss */
 .logo img {
   margin: 0 auto;
 }
 
-/* line 200, ../sass/index.scss */
+/* line 141, ../sass/index.scss */
 .logo1 {
   display: none;
 }
 
-/* line 201, ../sass/index.scss */
+/* line 142, ../sass/index.scss */
 .logo2 {
   display: block;
 }
 
-/* line 203, ../sass/index.scss */
+/* line 144, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 /*------- 圖片輪播 -------*/
-/* line 208, ../sass/index.scss */
+/* line 149, ../sass/index.scss */
 .banner {
   margin-top: 70px !important;
   padding: 0;
@@ -273,24 +198,24 @@ a:focus, li:focus {
   width: 100%;
   display: block;
 }
-/* line 214, ../sass/index.scss */
+/* line 155, ../sass/index.scss */
 .banner ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 220, ../sass/index.scss */
+/* line 161, ../sass/index.scss */
 .mySlides {
   display: none;
 }
 
-/* line 221, ../sass/index.scss */
+/* line 162, ../sass/index.scss */
 .w3-left, .w3-right, .w3-badge {
   cursor: pointer;
 }
 
-/* line 222, ../sass/index.scss */
+/* line 163, ../sass/index.scss */
 .w3-badge {
   height: 12px;
   width: 12px;
@@ -299,23 +224,23 @@ a:focus, li:focus {
 }
 
 /*------- 服務-------*/
-/* line 229, ../sass/index.scss */
+/* line 170, ../sass/index.scss */
 .service {
   padding-bottom: 40px;
 }
-/* line 231, ../sass/index.scss */
+/* line 172, ../sass/index.scss */
 .service .subject-block {
   padding: 60px 0;
   padding: 40px 0;
 }
-/* line 235, ../sass/index.scss */
+/* line 176, ../sass/index.scss */
 .service .subject-title {
   vertical-align: middle;
   font-size: 3rem;
   padding-left: 15px;
   color: #272727;
 }
-/* line 236, ../sass/index.scss */
+/* line 177, ../sass/index.scss */
 .service .subject-content {
   display: block;
   max-width: 660px;
@@ -326,7 +251,7 @@ a:focus, li:focus {
   line-height: 2;
 }
 
-/* line 238, ../sass/index.scss */
+/* line 179, ../sass/index.scss */
 .service-block {
   -moz-box-shadow: 0px 0px 5px #d5d5d5;
   -webkit-box-shadow: 0px 0px 5px #d5d5d5;
@@ -339,7 +264,7 @@ a:focus, li:focus {
   margin-bottom: 20px;
 }
 
-/* line 247, ../sass/index.scss */
+/* line 188, ../sass/index.scss */
 .service-block:hover {
   -moz-box-shadow: 0px 0px 5px #bf955a;
   -webkit-box-shadow: 0px 0px 5px #bf955a;
@@ -348,7 +273,7 @@ a:focus, li:focus {
   color: #fff;
 }
 
-/* line 252, ../sass/index.scss */
+/* line 193, ../sass/index.scss */
 .service-icon1 {
   width: 36px;
   height: 36px;
@@ -359,7 +284,7 @@ a:focus, li:focus {
   background-position: 0 0;
 }
 
-/* line 256, ../sass/index.scss */
+/* line 197, ../sass/index.scss */
 .service-icon2 {
   width: 36px;
   height: 36px;
@@ -370,7 +295,7 @@ a:focus, li:focus {
   background-position: -72px 0;
 }
 
-/* line 260, ../sass/index.scss */
+/* line 201, ../sass/index.scss */
 .service-icon3 {
   width: 36px;
   height: 36px;
@@ -381,7 +306,7 @@ a:focus, li:focus {
   background-position: -144px 0;
 }
 
-/* line 264, ../sass/index.scss */
+/* line 205, ../sass/index.scss */
 .service-icon4 {
   width: 36px;
   height: 36px;
@@ -392,7 +317,7 @@ a:focus, li:focus {
   background-position: -216px 0;
 }
 
-/* line 268, ../sass/index.scss */
+/* line 209, ../sass/index.scss */
 .service-arrow {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -403,7 +328,7 @@ a:focus, li:focus {
   background-position: 0 0;
 }
 
-/* line 277, ../sass/index.scss */
+/* line 218, ../sass/index.scss */
 .service-mask {
   width: 240px;
   height: 240px;
@@ -414,7 +339,7 @@ a:focus, li:focus {
 }
 
 /*------- 實績經驗 -------*/
-/* line 286, ../sass/index.scss */
+/* line 227, ../sass/index.scss */
 .case {
   background: url("../images/case.jpg") no-repeat;
   background-position: top center;
@@ -425,26 +350,26 @@ a:focus, li:focus {
   height: 750px;
   text-align: left;
 }
-/* line 292, ../sass/index.scss */
+/* line 233, ../sass/index.scss */
 .case .subject-block {
   padding: 60px 0;
   width: 260px;
   padding-top: 40px;
   text-align: left;
 }
-/* line 297, ../sass/index.scss */
+/* line 238, ../sass/index.scss */
 .case .subject-block .row {
   margin-top: 30px;
   margin-left: 25px;
 }
-/* line 302, ../sass/index.scss */
+/* line 243, ../sass/index.scss */
 .case .subject-title {
   vertical-align: middle;
   font-size: 3rem;
   padding-left: 15px;
   color: #272727;
 }
-/* line 303, ../sass/index.scss */
+/* line 244, ../sass/index.scss */
 .case .subject-content {
   display: block;
   max-width: 660px;
@@ -458,7 +383,7 @@ a:focus, li:focus {
   padding-top: 15px;
 }
 
-/* line 310, ../sass/index.scss */
+/* line 251, ../sass/index.scss */
 .case-block {
   width: 140px;
   height: 140px;
@@ -467,7 +392,7 @@ a:focus, li:focus {
   line-height: 140px;
 }
 
-/* line 317, ../sass/index.scss */
+/* line 258, ../sass/index.scss */
 .case-mask {
   width: 140px;
   height: 140px;
@@ -477,22 +402,22 @@ a:focus, li:focus {
   display: block;
 }
 
-/* line 325, ../sass/index.scss */
+/* line 266, ../sass/index.scss */
 .case1 {
   background: url("../images/case1.jpg") no-repeat;
 }
 
-/* line 326, ../sass/index.scss */
+/* line 267, ../sass/index.scss */
 .case2 {
   background: url("../images/case2.jpg") no-repeat;
 }
 
-/* line 327, ../sass/index.scss */
+/* line 268, ../sass/index.scss */
 .case3 {
   background: url("../images/case3.jpg") no-repeat;
 }
 
-/* line 328, ../sass/index.scss */
+/* line 269, ../sass/index.scss */
 .case-title {
   width: 140px;
   z-index: 3;
@@ -500,106 +425,106 @@ a:focus, li:focus {
   display: block;
 }
 
-/* line 334, ../sass/index.scss */
+/* line 275, ../sass/index.scss */
 .case-area {
   margin-bottom: 15px;
 }
 
 /*------- 頁腳 -------*/
-/* line 336, ../sass/index.scss */
+/* line 277, ../sass/index.scss */
 .footer {
   background-color: #272727;
   color: #8d8d8d;
   font-size: 1.4rem;
 }
-/* line 338, ../sass/index.scss */
+/* line 279, ../sass/index.scss */
 .footer [class*="col-"] > div {
   margin: 0 auto;
 }
-/* line 341, ../sass/index.scss */
+/* line 282, ../sass/index.scss */
 .footer a {
   color: #8d8d8d;
   font-size: 1.4rem;
 }
-/* line 345, ../sass/index.scss */
+/* line 286, ../sass/index.scss */
 .footer a:hover {
   color: #bf955a;
 }
-/* line 346, ../sass/index.scss */
+/* line 287, ../sass/index.scss */
 .footer table {
   width: 100%;
 }
-/* line 347, ../sass/index.scss */
+/* line 288, ../sass/index.scss */
 .footer td {
   text-align: left;
   padding-top: 10px;
 }
-/* line 351, ../sass/index.scss */
+/* line 292, ../sass/index.scss */
 .footer td:nth-child(1) {
   padding-top: 0;
 }
-/* line 352, ../sass/index.scss */
+/* line 293, ../sass/index.scss */
 .footer td:nth-child(even) {
   text-align: left;
   padding-left: 40px;
 }
-/* line 356, ../sass/index.scss */
+/* line 297, ../sass/index.scss */
 .footer .row {
   padding-top: 40px;
   padding-bottom: 30px;
 }
-/* line 360, ../sass/index.scss */
+/* line 301, ../sass/index.scss */
 .footer .first_line {
   padding-top: 15px;
 }
-/* line 361, ../sass/index.scss */
+/* line 302, ../sass/index.scss */
 .footer .info1 {
   width: 19px;
   height: 21px;
   background: url("../images/info.png") no-repeat;
   background-position: 0 0;
 }
-/* line 367, ../sass/index.scss */
+/* line 308, ../sass/index.scss */
 .footer .info2 {
   width: 19px;
   height: 20px;
   background: url("../images/info.png") no-repeat;
   background-position: 0 -21px;
 }
-/* line 373, ../sass/index.scss */
+/* line 314, ../sass/index.scss */
 .footer .info3 {
   width: 19px;
   height: 20px;
   background: url("../images/info.png") no-repeat;
   background-position: 0 -41px;
 }
-/* line 379, ../sass/index.scss */
+/* line 320, ../sass/index.scss */
 .footer .demand {
   margin-bottom: 35px;
 }
 
-/* line 381, ../sass/index.scss */
+/* line 322, ../sass/index.scss */
 .footer-block1 {
   width: 155px;
 }
 
-/* line 384, ../sass/index.scss */
+/* line 325, ../sass/index.scss */
 .footer-block2 {
   width: 210px;
 }
 
-/* line 387, ../sass/index.scss */
+/* line 328, ../sass/index.scss */
 .footer-block3 {
   width: 250px;
 }
-/* line 389, ../sass/index.scss */
+/* line 330, ../sass/index.scss */
 .footer-block3 td:nth-child(even) {
   text-align: left;
   padding-left: 15px;
   padding-top: 15px;
 }
 
-/* line 395, ../sass/index.scss */
+/* line 336, ../sass/index.scss */
 .footer-block4 {
   margin: 0 auto;
   width: 140px;
@@ -608,19 +533,19 @@ a:focus, li:focus {
   font-size: 1.5rem;
   color: #bf955a;
 }
-/* line 402, ../sass/index.scss */
+/* line 343, ../sass/index.scss */
 .footer-block4 span {
   display: block;
   margin-top: 20px;
 }
-/* line 406, ../sass/index.scss */
+/* line 347, ../sass/index.scss */
 .footer-block4 div:nth-child(1) {
   width: 100%;
   height: 30px;
   display: block;
 }
 
-/* line 412, ../sass/index.scss */
+/* line 353, ../sass/index.scss */
 .footer-note {
   width: 40px;
   height: 43px;
@@ -629,13 +554,13 @@ a:focus, li:focus {
   margin: 0 auto;
 }
 
-/* line 419, ../sass/index.scss */
+/* line 360, ../sass/index.scss */
 .footer-block4:hover {
   background-color: #bf955a;
   color: #272727;
 }
 
-/* line 423, ../sass/index.scss */
+/* line 364, ../sass/index.scss */
 .top_title {
   font-size: 1.5rem;
   color: #bf955a;
@@ -643,7 +568,7 @@ a:focus, li:focus {
   padding-bottom: 5px;
 }
 
-/* line 429, ../sass/index.scss */
+/* line 370, ../sass/index.scss */
 .footer-bottom {
   width: 100%;
   padding: 30px 0;
@@ -651,13 +576,13 @@ a:focus, li:focus {
   border-top: 1px solid rgba(191, 149, 90, 0.2);
 }
 
-/* line 435, ../sass/index.scss */
+/* line 376, ../sass/index.scss */
 .footer-leftblock {
   width: 0%;
   float: left;
 }
 
-/* line 439, ../sass/index.scss */
+/* line 380, ../sass/index.scss */
 .footer-copyright {
   width: 100%;
   float: left;
@@ -666,7 +591,7 @@ a:focus, li:focus {
   font-size: 1.3rem;
 }
 
-/* line 446, ../sass/index.scss */
+/* line 387, ../sass/index.scss */
 .footer-producer {
   width: 100%;
   float: left;
@@ -674,7 +599,7 @@ a:focus, li:focus {
   color: #686868;
   font-size: 1.2rem;
 }
-/* line 452, ../sass/index.scss */
+/* line 393, ../sass/index.scss */
 .footer-producer a, .footer-producer a:visited, .footer-producer a:hover, .footer-producer a:active, .footer-producer a:focus {
   font-size: 1.2rem;
   color: #686868;
@@ -683,216 +608,216 @@ a:focus, li:focus {
 
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
-  /* line 461, ../sass/index.scss */
+  /* line 402, ../sass/index.scss */
   .service {
     padding: 60px 0;
     padding-bottom: 45px;
   }
 
-  /* line 465, ../sass/index.scss */
+  /* line 406, ../sass/index.scss */
   .service-block {
     margin-bottom: 30px;
   }
 
-  /* line 466, ../sass/index.scss */
+  /* line 407, ../sass/index.scss */
   .case {
     height: 490px;
   }
-  /* line 468, ../sass/index.scss */
+  /* line 409, ../sass/index.scss */
   .case .subject-block {
     width: 510px;
     padding-top: 70px;
   }
-  /* line 472, ../sass/index.scss */
+  /* line 413, ../sass/index.scss */
   .case .row {
     margin-top: 0;
   }
 
-  /* line 474, ../sass/index.scss */
+  /* line 415, ../sass/index.scss */
   .case-area {
     margin-bottom: 0;
   }
 
-  /* line 476, ../sass/index.scss */
+  /* line 417, ../sass/index.scss */
   .footer .row {
     padding-top: 60px;
     padding-bottom: 50px;
   }
-  /* line 480, ../sass/index.scss */
+  /* line 421, ../sass/index.scss */
   .footer .demand {
     margin-bottom: 0;
   }
 
-  /* line 482, ../sass/index.scss */
+  /* line 423, ../sass/index.scss */
   .footer-leftblock {
     width: 20%;
   }
 
-  /* line 483, ../sass/index.scss */
+  /* line 424, ../sass/index.scss */
   .footer-copyright {
     width: 60%;
   }
 
-  /* line 484, ../sass/index.scss */
+  /* line 425, ../sass/index.scss */
   .footer-producer {
     width: 20%;
     text-align: right;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
-  /* line 487, ../sass/index.scss */
+  /* line 428, ../sass/index.scss */
   .service {
     padding: 60px 0;
     padding-bottom: 45px;
   }
 
-  /* line 491, ../sass/index.scss */
+  /* line 432, ../sass/index.scss */
   .service-block {
     margin-bottom: 30px;
   }
 
-  /* line 492, ../sass/index.scss */
+  /* line 433, ../sass/index.scss */
   .case {
     height: 490px;
   }
-  /* line 494, ../sass/index.scss */
+  /* line 435, ../sass/index.scss */
   .case .subject-block {
     width: 510px;
     padding-top: 70px;
   }
-  /* line 498, ../sass/index.scss */
+  /* line 439, ../sass/index.scss */
   .case .row {
     margin-top: 0;
   }
 
-  /* line 500, ../sass/index.scss */
+  /* line 441, ../sass/index.scss */
   .case-area {
     margin-bottom: 0;
   }
 
-  /* line 502, ../sass/index.scss */
+  /* line 443, ../sass/index.scss */
   .footer .row {
     padding-top: 60px;
     padding-bottom: 50px;
   }
-  /* line 506, ../sass/index.scss */
+  /* line 447, ../sass/index.scss */
   .footer .demand {
     margin-bottom: 0;
   }
 
-  /* line 508, ../sass/index.scss */
+  /* line 449, ../sass/index.scss */
   .footer-leftblock {
     width: 20%;
   }
 
-  /* line 509, ../sass/index.scss */
+  /* line 450, ../sass/index.scss */
   .footer-copyright {
     width: 60%;
   }
 
-  /* line 510, ../sass/index.scss */
+  /* line 451, ../sass/index.scss */
   .footer-producer {
     width: 20%;
     text-align: right;
   }
 }
 @media (min-width: 1200px) {
-  /* line 513, ../sass/index.scss */
+  /* line 454, ../sass/index.scss */
   .logo1 {
     display: block;
   }
 
-  /* line 514, ../sass/index.scss */
+  /* line 455, ../sass/index.scss */
   .logo2 {
     display: none;
   }
 
-  /* line 515, ../sass/index.scss */
+  /* line 456, ../sass/index.scss */
   .banner {
     margin-top: 135px !important;
   }
 
-  /* line 516, ../sass/index.scss */
+  /* line 457, ../sass/index.scss */
   .nav-center {
     display: block;
   }
 
-  /* line 517, ../sass/index.scss */
+  /* line 458, ../sass/index.scss */
   .nav-mail {
     margin-top: 20px;
   }
 
-  /* line 518, ../sass/index.scss */
+  /* line 459, ../sass/index.scss */
   .nav-menuBtn {
     display: none;
   }
 
-  /* line 519, ../sass/index.scss */
+  /* line 460, ../sass/index.scss */
   .service {
     padding: 60px 0;
     padding-bottom: 70px;
   }
 
-  /* line 523, ../sass/index.scss */
+  /* line 464, ../sass/index.scss */
   .service-block {
     margin-bottom: 0px;
   }
 
-  /* line 524, ../sass/index.scss */
+  /* line 465, ../sass/index.scss */
   .case {
     height: 490px;
   }
-  /* line 526, ../sass/index.scss */
+  /* line 467, ../sass/index.scss */
   .case .subject-block {
     width: 510px;
     padding-top: 70px;
   }
-  /* line 530, ../sass/index.scss */
+  /* line 471, ../sass/index.scss */
   .case .row {
     margin-top: 0;
   }
 
-  /* line 532, ../sass/index.scss */
+  /* line 473, ../sass/index.scss */
   .case-area {
     margin-bottom: 0;
   }
 
-  /* line 534, ../sass/index.scss */
+  /* line 475, ../sass/index.scss */
   .footer .row {
     padding-top: 70px;
     padding-bottom: 50px;
   }
-  /* line 538, ../sass/index.scss */
+  /* line 479, ../sass/index.scss */
   .footer .demand {
     margin-bottom: 0;
     margin-left: 10px;
   }
-  /* line 542, ../sass/index.scss */
+  /* line 483, ../sass/index.scss */
   .footer .info {
     margin-left: -15px;
   }
 
-  /* line 544, ../sass/index.scss */
+  /* line 485, ../sass/index.scss */
   .footer-block1 {
     display: block;
   }
 
-  /* line 545, ../sass/index.scss */
+  /* line 486, ../sass/index.scss */
   .footer-block2 {
     display: block;
   }
 
-  /* line 546, ../sass/index.scss */
+  /* line 487, ../sass/index.scss */
   .footer-leftblock {
     width: 20%;
   }
 
-  /* line 547, ../sass/index.scss */
+  /* line 488, ../sass/index.scss */
   .footer-copyright {
     width: 60%;
   }
 
-  /* line 548, ../sass/index.scss */
+  /* line 489, ../sass/index.scss */
   .footer-producer {
     width: 20%;
     text-align: right;
