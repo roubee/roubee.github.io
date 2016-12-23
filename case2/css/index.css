@@ -71,10 +71,14 @@ a:focus, li:focus {
   width: 50%;
   height: 100%;
   display: block;
-  float: right;
+}
+/* line 40, ../sass/index.scss */
+.navbar-right div {
+  position: absolute;
+  right: 0;
 }
 
-/* line 42, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;

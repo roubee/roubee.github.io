@@ -37,7 +37,10 @@ a:focus, li:focus{outline: none;}
 	width: 50%;
 	height: 100%;
 	display: block;
-	float: right;
+	div{
+		position: absolute;
+		right: 0;
+	}
 }
 .wra{
 	overflow-y: scroll;
