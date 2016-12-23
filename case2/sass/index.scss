@@ -22,9 +22,21 @@ a:focus, li:focus{outline: none;}
 	background-color: #fff;
 	border-bottom: 1px solid #dedede;
 	height: 80px;
+	width: 100%;
 	li{
 		list-style-type: none;
 	}
+}
+.navbar-left{
+	width: 50%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+.navbar-right{
+	width: 50%;
+	height: 100%;
+	display: block;
 }
 .wra{
 	overflow-y: scroll;

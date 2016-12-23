@@ -51,13 +51,29 @@ a:focus, li:focus {
   background-color: #fff;
   border-bottom: 1px solid #dedede;
   height: 80px;
+  width: 100%;
 }
-/* line 25, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 .navbar li {
   list-style-type: none;
 }
 
-/* line 29, ../sass/index.scss */
+/* line 30, ../sass/index.scss */
+.navbar-left {
+  width: 50%;
+  height: 100%;
+  display: block;
+  float: left;
+}
+
+/* line 36, ../sass/index.scss */
+.navbar-right {
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+
+/* line 41, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
