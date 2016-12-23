@@ -32,6 +32,11 @@ a:focus, li:focus{outline: none;}
 	height: 100%;
 	display: block;
 	float: left;
+	div{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 .navbar-right{
 	width: 50%;

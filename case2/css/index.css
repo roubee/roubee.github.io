@@ -65,20 +65,26 @@ a:focus, li:focus {
   display: block;
   float: left;
 }
+/* line 35, ../sass/index.scss */
+.navbar-left div {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
-/* line 36, ../sass/index.scss */
+/* line 41, ../sass/index.scss */
 .navbar-right {
   width: 50%;
   height: 100%;
   display: block;
 }
-/* line 40, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .navbar-right div {
   position: absolute;
   right: 0;
 }
 
-/* line 45, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
