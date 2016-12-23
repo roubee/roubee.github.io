@@ -70,21 +70,24 @@ a:focus, li:focus {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  padding-left: 15px;
 }
 
-/* line 41, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 .navbar-right {
   width: 50%;
   height: 100%;
   display: block;
 }
-/* line 45, ../sass/index.scss */
+/* line 46, ../sass/index.scss */
 .navbar-right div {
-  position: absolute;
-  right: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 15px;
 }
 
-/* line 50, ../sass/index.scss */
+/* line 53, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
