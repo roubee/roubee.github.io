@@ -52,8 +52,12 @@ a:focus, li:focus {
   border-bottom: 1px solid #000;
   height: 80px;
 }
+/* line 25, ../sass/index.scss */
+.navbar li {
+  list-style-type: none;
+}
 
-/* line 26, ../sass/index.scss */
+/* line 29, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;

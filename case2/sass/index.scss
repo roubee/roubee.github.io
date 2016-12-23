@@ -22,6 +22,9 @@ a:focus, li:focus{outline: none;}
 	background-color: #fff;
 	border-bottom: 1px solid #000;
 	height: 80px;
+	li{
+		list-style-type: none;
+	}
 }
 .wra{
 	overflow-y: scroll;
