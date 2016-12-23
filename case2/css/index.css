@@ -6,7 +6,7 @@ html {
 
 /* line 3, ../sass/index.scss */
 body {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   overflow-y: scroll;
   overflow-x: hidden;
   font-family: Microsoft JhengHei, "微軟正黑體", sans-serif;
@@ -15,89 +15,75 @@ body {
 }
 
 /* line 11, ../sass/index.scss */
-h1 {
-  font-size: 2.4rem;
-}
-
-/* line 12, ../sass/index.scss */
 a {
   cursor: pointer;
 }
 
-/* line 13, ../sass/index.scss */
+/* line 12, ../sass/index.scss */
 a, a:visited, a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-/* line 14, ../sass/index.scss */
+/* line 13, ../sass/index.scss */
 a:focus, li:focus {
   outline: none;
 }
 
-/* line 15, ../sass/index.scss */
+/* line 14, ../sass/index.scss */
 .nomargin {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* line 19, ../sass/index.scss */
+/* line 18, ../sass/index.scss */
 [class*="col-"] {
   text-align: center;
 }
 
 /*------- 導覽列 -------*/
-/* line 21, ../sass/index.scss */
-.navbar {
+/* line 20, ../sass/index.scss */
+.nav-all {
   background-color: #fff;
-  border-bottom: 1px solid #dedede;
   height: 80px;
   width: 100%;
 }
-/* line 26, ../sass/index.scss */
-.navbar li {
-  list-style-type: none;
+/* line 25, ../sass/index.scss */
+.nav-all .logo {
+  float: left;
+  line-height: 80px;
+}
+/* line 29, ../sass/index.scss */
+.nav-all .member {
+  float: right;
+  line-height: 80px;
 }
 
-/* line 30, ../sass/index.scss */
-.navbar-left {
-  display: table;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 36, ../sass/index.scss */
-.navbar-left .middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 40, ../sass/index.scss */
-.navbar-left .inner {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 45, ../sass/index.scss */
-.navbar-right {
-  display: table;
-  position: absolute;
-  right: 0;
-  width: 50%;
-  height: 100%;
-}
-/* line 51, ../sass/index.scss */
-.navbar-right .middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-/* line 55, ../sass/index.scss */
-.navbar-right .inner {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 60, ../sass/index.scss */
+/* line 34, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
+  margin-top: 80px !important;
+}
+
+/* line 39, ../sass/index.scss */
+.login-title {
+  widows: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #ebf0f4;
+}
+/* line 44, ../sass/index.scss */
+.login-title div {
+  text-align: center;
+}
+/* line 47, ../sass/index.scss */
+.login-title span {
+  font-size: 3.2rem;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+/* line 54, ../sass/index.scss */
+footer span {
+  margin: 0 7.5px;
 }
