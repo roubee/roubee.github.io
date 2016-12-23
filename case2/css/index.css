@@ -60,34 +60,43 @@ a:focus, li:focus {
 
 /* line 30, ../sass/index.scss */
 .navbar-left {
-  width: 50%;
+  display: table;
+  position: absolute;
+  left: 0;
+  width: 100%;
   height: 100%;
-  display: block;
-  float: left;
 }
-/* line 35, ../sass/index.scss */
-.navbar-left div {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-left: 15px;
+/* line 36, ../sass/index.scss */
+.navbar-left .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 40, ../sass/index.scss */
+.navbar-left .inner {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 42, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .navbar-right {
+  display: table;
+  position: absolute;
+  right: 0;
   width: 50%;
   height: 100%;
-  display: block;
 }
-/* line 46, ../sass/index.scss */
-.navbar-right div {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  padding-right: 15px;
+/* line 51, ../sass/index.scss */
+.navbar-right .middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 55, ../sass/index.scss */
+.navbar-right .inner {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 53, ../sass/index.scss */
+/* line 60, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
