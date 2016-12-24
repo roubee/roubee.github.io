@@ -19,11 +19,6 @@ a {
   cursor: pointer;
 }
 
-/* line 12, ../sass/index.scss */
-a, a:visited, a:hover, a:active, a:focus {
-  text-decoration: none;
-}
-
 /* line 13, ../sass/index.scss */
 a:focus, li:focus {
   outline: none;
@@ -83,7 +78,20 @@ a:focus, li:focus {
   margin-left: 15px;
 }
 
-/* line 54, ../sass/index.scss */
+/* line 53, ../sass/index.scss */
+footer {
+  border-top: 1px solid #dedede;
+  color: #959595;
+}
+/* line 56, ../sass/index.scss */
+footer a {
+  color: #959595;
+}
+/* line 57, ../sass/index.scss */
+footer a:hover, footer a:active, footer a:focus {
+  color: #8c8c8c;
+}
+/* line 58, ../sass/index.scss */
 footer span {
   margin: 0 7.5px;
 }

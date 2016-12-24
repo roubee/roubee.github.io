@@ -9,7 +9,7 @@ body {
 	text-justify:inter-ideograph; 
 }
 a{cursor: pointer;}
-a,a:visited,a:hover,a:active,a:focus{text-decoration: none;}
+// a,a:visited,a:hover,a:active,a:focus{text-decoration: none;}
 a:focus, li:focus{outline: none;}
 .nomargin {
    padding: 0 !important;
@@ -51,6 +51,10 @@ a:focus, li:focus{outline: none;}
 	}
 }
 footer{
+	border-top: 1px solid #dedede;
+	color: #959595;
+	a{color: #959595;}
+	a:hover,a:active,a:focus{color: #8c8c8c;}
 	span{
 		margin: 0 7.5px;
 	}
