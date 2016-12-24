@@ -1,6 +1,6 @@
 @import "compass/css3";
 $screen-sm-min: 744px;
-html {font-size: 62.5%;}
+html {font-size: 75%;}
 body {
 	font-size: 1.6rem;
 	overflow-y: scroll;
@@ -73,7 +73,7 @@ h3{
 	border: 0;
 }
 .button2{
-	width: 320px;
+	width: 260px;
 	@include button-all(#1aa0e5,1.7rem);
 }
 .button2:hover,.button2:active{
@@ -86,7 +86,7 @@ h3{
 	padding: 0 15px;
 	color: #b9b9b9;
 	font-size: 1.7rem;
-	width: 320px;
+	width: 260px;
 	height: 40px;
 }
 .input-text:hover,.input-text:active{
@@ -103,7 +103,10 @@ h3{
 	font-size: 1.5rem;
 	padding-left: 10px;
 }
-.captcha{
+.input-captcha{
+	width: 150px;
+}
+.captcha-img{
 	width: 100px;
 	height: 40px;
 	border: 1px solid #b9b9b9;
@@ -154,12 +157,19 @@ h3{
 		height: auto;
 		padding-top: 35px;
 	}
+	.info-s{
+		display: block;
+		margin-top: 10px;
+	}
+	.info-hide{
+		display: inline-block;
+	}
 }
 .login-right{
-	margin-top: 125px;
+	margin-top: 35px;
 	margin-bottom: 90px;
 	form{
-		width: 320px;
+		width: 260px;
 		margin: 0 auto;
 		.state{
 			padding: 35px 0;
@@ -174,12 +184,12 @@ h3{
 		width: 320px;
 		margin: 0 auto;
 		div:nth-child(1){
-			float: left;
-			margin-bottom:40px;
+			float: none;
+			margin-bottom:10px;
 			line-height: 40px;
 		}
 		div:nth-child(2){
-			float: right;
+			float: none;
 			margin-bottom:40px;
 		}
 	}
@@ -210,10 +220,42 @@ h3{
 }
 /*------- RWD -------*/
 @media (min-width: $screen-sm-min){
+	html {font-size: 62.5%;}
+	.button2{
+		width: 320px;
+	}
+	.input-text{
+		width: 320px;
+	}
+	.input-captcha{
+		width:210px;
+	}
 	.login-left{
 		text-align: left;
 		img{
 			width: 90%;
+		}
+		.info-s{
+			display: inline-block;
+			margin-top: 0;
+		}
+		.info-hide{
+			display: none;
+		}
+	}
+	.login-right{
+		margin-top: 125px;
+		form{
+			width: 320px;
+		}
+		.join{
+			div:nth-child(1){
+				float: left;
+				margin-bottom: 40px;
+			}
+			div:nth-child(2){
+				float: right;
+			}
 		}
 	}
 	.footer-all{display: block;}
