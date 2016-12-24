@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* line 3, ../sass/index.scss */
 html {
-  font-size: 75%;
+  font-size: 62.5%;
 }
 
 /* line 4, ../sass/index.scss */
@@ -32,79 +32,84 @@ a:focus, li:focus, button:focus, input:focus, input[type="checkbox"] {
 }
 
 /* line 22, ../sass/index.scss */
+.nopadding {
+  padding: 0 !important;
+}
+
+/* line 25, ../sass/index.scss */
 h1 {
   font-size: 3.2rem;
 }
 
-/* line 23, ../sass/index.scss */
+/* line 26, ../sass/index.scss */
 h2 {
   font-size: 2.8rem;
 }
 
-/* line 24, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 h3 {
   font-size: 1.8rem;
   color: #5b5b5b;
 }
 
-/* line 28, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 .a1, .a1:focus {
   color: #1aa0e5;
   text-decoration: underline;
 }
 
-/* line 32, ../sass/index.scss */
+/* line 35, ../sass/index.scss */
 .a1:hover, .a1:active {
   color: #178fcd;
   text-decoration: underline;
 }
 
-/* line 36, ../sass/index.scss */
+/* line 39, ../sass/index.scss */
 .a2, .a2:focus {
   color: #333333;
   text-decoration: none;
 }
 
-/* line 40, ../sass/index.scss */
+/* line 43, ../sass/index.scss */
 .a2:hover, .a2:active {
   color: #0b0b0b;
   text-decoration: underline;
 }
 
-/* line 44, ../sass/index.scss */
+/* line 47, ../sass/index.scss */
 .a3, .a3:focus {
   color: #959595;
   text-decoration: none;
 }
 
-/* line 48, ../sass/index.scss */
+/* line 51, ../sass/index.scss */
 .a3:hover, .a3:active {
   color: #8c8c8c;
   text-decoration: underline;
 }
 
-/* line 52, ../sass/index.scss */
+/* line 55, ../sass/index.scss */
 .text-l {
   font-size: 1.7rem;
 }
 
-/* line 53, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .text-s {
   font-size: 1.5rem;
 }
 
-/* line 54, ../sass/index.scss */
+/* line 57, ../sass/index.scss */
 .text-xs {
   font-size: 1.4rem;
   color: #959595;
 }
 
-/* line 55, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
 .main-name {
   color: #1aa0e5;
 }
 
-/* line 65, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 .button1 {
   background-color: #333333;
   color: #fff;
@@ -116,38 +121,38 @@ h3 {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 67, ../sass/index.scss */
+/* line 70, ../sass/index.scss */
 .button1 img {
   padding-left: 10px;
 }
 
-/* line 71, ../sass/index.scss */
+/* line 74, ../sass/index.scss */
 .button1:hover, .button1:active {
   background-color: #0b0b0b;
   border: 0;
 }
 
-/* line 75, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 .button2 {
   width: 260px;
   background-color: #1aa0e5;
   color: #fff;
   border: 0;
   font-size: 1.7rem;
-  height: 40px;
+  height: 50px;
   padding: 0 30px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
 
-/* line 79, ../sass/index.scss */
+/* line 82, ../sass/index.scss */
 .button2:hover, .button2:active {
   background-color: #178fcd;
   border: 0;
 }
 
-/* line 83, ../sass/index.scss */
+/* line 86, ../sass/index.scss */
 .input-text {
   border: 1px solid #b9b9b9;
   -moz-border-radius: 5px;
@@ -157,17 +162,17 @@ h3 {
   color: #b9b9b9;
   font-size: 1.7rem;
   width: 260px;
-  height: 40px;
+  height: 45px;
 }
 
-/* line 92, ../sass/index.scss */
+/* line 95, ../sass/index.scss */
 .input-text:hover, .input-text:active {
   border: 1px solid #178fcd;
   background-color: #f2f7fb;
   color: #000;
 }
 
-/* line 97, ../sass/index.scss */
+/* line 100, ../sass/index.scss */
 .input-checkbox {
   -moz-transform: scale(1.5, 1.5);
   -ms-transform: scale(1.5, 1.5);
@@ -176,22 +181,22 @@ h3 {
   cursor: pointer;
 }
 
-/* line 101, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 .input-checkbox-text {
   color: #4b4b4b;
   font-size: 1.5rem;
   padding-left: 10px;
 }
 
-/* line 106, ../sass/index.scss */
+/* line 109, ../sass/index.scss */
 .input-captcha {
   width: 150px;
 }
 
-/* line 109, ../sass/index.scss */
+/* line 112, ../sass/index.scss */
 .captcha-img {
   width: 100px;
-  height: 40px;
+  height: 45px;
   border: 1px solid #b9b9b9;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -199,212 +204,212 @@ h3 {
   background-color: #eeeeee;
 }
 
-/* line 116, ../sass/index.scss */
+/* line 119, ../sass/index.scss */
 [class*="col-"] {
   text-align: center;
 }
 
 /*------- 導覽列 -------*/
-/* line 118, ../sass/index.scss */
+/* line 121, ../sass/index.scss */
 .nav-all {
   background-color: #fff;
   height: 80px;
   width: 100%;
 }
-/* line 123, ../sass/index.scss */
+/* line 126, ../sass/index.scss */
 .nav-all .logo {
   float: left;
   line-height: 80px;
 }
-/* line 127, ../sass/index.scss */
+/* line 130, ../sass/index.scss */
 .nav-all .member {
   float: right;
   line-height: 80px;
 }
 
-/* line 132, ../sass/index.scss */
+/* line 135, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
   margin-top: 80px !important;
 }
 
-/* line 137, ../sass/index.scss */
+/* line 140, ../sass/index.scss */
 .login-title {
   widows: 100%;
   height: 100px;
   line-height: 100px;
   background-color: #ebf0f4;
 }
-/* line 142, ../sass/index.scss */
+/* line 145, ../sass/index.scss */
 .login-title div {
   text-align: center;
 }
-/* line 145, ../sass/index.scss */
+/* line 148, ../sass/index.scss */
 .login-title span {
   font-size: 3.2rem;
   vertical-align: middle;
   margin-left: 15px;
 }
 
-/* line 151, ../sass/index.scss */
+/* line 154, ../sass/index.scss */
 .login-left {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/* line 155, ../sass/index.scss */
+/* line 158, ../sass/index.scss */
 .login-left img {
   width: 100%;
   height: auto;
   padding-top: 35px;
 }
-/* line 160, ../sass/index.scss */
+/* line 163, ../sass/index.scss */
 .login-left .info-s {
   display: block;
   margin-top: 10px;
 }
-/* line 164, ../sass/index.scss */
+/* line 167, ../sass/index.scss */
 .login-left .info-hide {
   display: inline-block;
 }
 
-/* line 168, ../sass/index.scss */
+/* line 171, ../sass/index.scss */
 .login-right {
   margin-top: 35px;
   margin-bottom: 90px;
 }
-/* line 171, ../sass/index.scss */
+/* line 174, ../sass/index.scss */
 .login-right form {
   width: 260px;
   margin: 0 auto;
 }
-/* line 174, ../sass/index.scss */
+/* line 177, ../sass/index.scss */
 .login-right form .state {
   padding: 35px 0;
   float: left;
 }
-/* line 178, ../sass/index.scss */
+/* line 181, ../sass/index.scss */
 .login-right form .input-padding {
   padding-top: 20px;
   text-align: left;
 }
-/* line 183, ../sass/index.scss */
+/* line 186, ../sass/index.scss */
 .login-right .join {
   width: 320px;
   margin: 0 auto;
 }
-/* line 186, ../sass/index.scss */
+/* line 189, ../sass/index.scss */
 .login-right .join div:nth-child(1) {
   float: none;
   margin-bottom: 10px;
   line-height: 40px;
 }
-/* line 191, ../sass/index.scss */
+/* line 194, ../sass/index.scss */
 .login-right .join div:nth-child(2) {
   float: none;
   margin-bottom: 40px;
 }
 
-/* line 197, ../sass/index.scss */
+/* line 200, ../sass/index.scss */
 .footer-mobile {
   display: block;
   padding: 30px 0;
   border-top: 1px solid #dedede;
 }
-/* line 200, ../sass/index.scss */
+/* line 203, ../sass/index.scss */
 .footer-mobile [class*="col-"] {
   text-align: left;
 }
-/* line 202, ../sass/index.scss */
+/* line 205, ../sass/index.scss */
 .footer-mobile .line {
   padding-right: 15px;
 }
-/* line 206, ../sass/index.scss */
+/* line 209, ../sass/index.scss */
 .footer-mobile .row div:nth-child(2) {
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-/* line 212, ../sass/index.scss */
+/* line 215, ../sass/index.scss */
 .footer-all {
   display: none;
   padding: 30px 0;
   border-top: 1px solid #dedede;
 }
-/* line 215, ../sass/index.scss */
+/* line 218, ../sass/index.scss */
 .footer-all [class*="col-"] {
   text-align: center;
 }
-/* line 217, ../sass/index.scss */
+/* line 220, ../sass/index.scss */
 .footer-all .line {
   padding: 0 15px;
 }
 
 /*------- RWD -------*/
 @media (min-width: 744px) {
-  /* line 223, ../sass/index.scss */
-  html {
-    font-size: 62.5%;
-  }
-
-  /* line 224, ../sass/index.scss */
+  /* line 226, ../sass/index.scss */
   .button2 {
     width: 320px;
   }
 
-  /* line 227, ../sass/index.scss */
+  /* line 229, ../sass/index.scss */
   .input-text {
     width: 320px;
   }
 
-  /* line 230, ../sass/index.scss */
+  /* line 232, ../sass/index.scss */
   .input-captcha {
     width: 210px;
   }
 
-  /* line 233, ../sass/index.scss */
+  /* line 235, ../sass/index.scss */
+  .captcha-img {
+    height: 40px;
+  }
+
+  /* line 238, ../sass/index.scss */
   .login-left {
     text-align: left;
   }
-  /* line 235, ../sass/index.scss */
+  /* line 240, ../sass/index.scss */
   .login-left img {
     width: 90%;
   }
-  /* line 238, ../sass/index.scss */
+  /* line 243, ../sass/index.scss */
   .login-left .info-s {
     display: inline-block;
     margin-top: 0;
   }
-  /* line 242, ../sass/index.scss */
+  /* line 247, ../sass/index.scss */
   .login-left .info-hide {
     display: none;
   }
 
-  /* line 246, ../sass/index.scss */
+  /* line 251, ../sass/index.scss */
   .login-right {
     margin-top: 125px;
   }
-  /* line 248, ../sass/index.scss */
+  /* line 253, ../sass/index.scss */
   .login-right form {
     width: 320px;
   }
-  /* line 252, ../sass/index.scss */
+  /* line 257, ../sass/index.scss */
   .login-right .join div:nth-child(1) {
     float: left;
     margin-bottom: 40px;
   }
-  /* line 256, ../sass/index.scss */
+  /* line 261, ../sass/index.scss */
   .login-right .join div:nth-child(2) {
     float: right;
   }
 
-  /* line 261, ../sass/index.scss */
+  /* line 266, ../sass/index.scss */
   .footer-all {
     display: block;
   }
 
-  /* line 262, ../sass/index.scss */
+  /* line 267, ../sass/index.scss */
   .footer-mobile {
     display: none;
   }
