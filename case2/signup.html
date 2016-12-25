@@ -33,22 +33,61 @@
         <li class="undone">填寫資訊</li>
       </ul></div>
     </div></div></div>
-    <div class="container-fluid"><div class="row content-row">
+
+    <!-- 註冊步驟1 -->
+    <div id="sign-step1" class="container-fluid"><div class="row content-row">
       <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
         <h2>歡迎您的加入</h2>
         <h3><span class="info-s">請填寫您的 <span class="hint">email</span> 作為 Bizpider</span><span class="info-s">會員登入帳號</span></h3>
         <div class="sign-img"><img src="./images/loginBrief.png"></div>
       </div>
       <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
-        <form role="form">
+        <form role="form" id="sign-form1">
           <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
           <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
           <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
-          <div><button class="button2">註冊</button></div>
+          <div><button type="button" class="button2" onclick="signupStepShow(1,2)">註冊</button></div>
         </form>
       </div>
       <div class="col-lg-1 col-xs-1"></div>
-    </div></div>      
+    </div></div> 
+
+    <!-- 註冊步驟2 -->
+    <div id="sign-step2" class="container-fluid hide"><div class="row content-row">
+      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
+        <h2>已寄送識別碼</h2>
+        <h3><span class="info-s">已將識別碼xxxx寄送到<span class="hint">abc@123.com</span>的email帳號<br>請填入此封郵件的啟用碼來啟用帳號。</span></h3>
+        <div class="sign-img"><img src="./images/loginBrief.png"></div>
+      </div>
+      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
+        <form role="form" id="sign-form2">
+          <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
+          <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
+          <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
+          <div><button type="button" class="button2" onclick="signupStepShow(2,3)">註冊</button></div>
+        </form>
+      </div>
+      <div class="col-lg-1 col-xs-1"></div>
+    </div></div>
+
+    <!-- 註冊步驟3 -->
+    <div id="sign-step3" class="container-fluid hide"><div class="row content-row">
+      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
+        <h2>您的帳號已啟用!</h2>
+        <h3><span class="info-s">請填寫完整正確的聯絡資訊，以利我們與您聯繫，謝謝!</span></h3>
+        <div class="sign-img"><img src="./images/loginBrief.png"></div>
+      </div>
+      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
+        <form role="form" id="sign-form3">
+          <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
+          <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
+          <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
+          <div><button type="button" class="button2" onclick="">確認送出</button></div>
+        </form>
+      </div>
+      <div class="col-lg-1 col-xs-1"></div>
+    </div></div>
+
   </div>
   <!-- footer -->
   <footer class="footer-mobile text-xs"><div class="container-fluid"><div class="row">
@@ -66,5 +105,6 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="./jss/bootstrap.min.js"></script>
+  <script src="./jss/index.js"></script>
   </body>
 </html>
