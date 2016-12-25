@@ -84,6 +84,15 @@ h3{
 	background-color: #178fcd;
 	border: 0;
 }
+.button3{
+	width: 150px;
+	margin-right: 20px;
+	@include button-all(#bababa,1.7rem,50px);
+}
+.button3:hover,.button3:active{
+	background-color: #8c8c8c;
+	border: 0;
+}
 .input-text{
 	border: 1px solid #b9b9b9;
 	@include border-radius(5px);
@@ -340,6 +349,9 @@ h3{
 	left: -50%;
 	top: 23.5px;
 	z-index: -1;
+}
+.sign-progressbar li.done:after{
+	background: #1aa0e5;
 }
 .sign-progressbar li:first-child:after {
 	content: none; 

@@ -154,6 +154,27 @@ h3 {
 }
 
 /* line 87, ../sass/index.scss */
+.button3 {
+  width: 150px;
+  margin-right: 20px;
+  background-color: #bababa;
+  color: #fff;
+  border: 0;
+  font-size: 1.7rem;
+  height: 50px;
+  padding: 0 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 92, ../sass/index.scss */
+.button3:hover, .button3:active {
+  background-color: #8c8c8c;
+  border: 0;
+}
+
+/* line 96, ../sass/index.scss */
 .input-text {
   border: 1px solid #b9b9b9;
   -moz-border-radius: 5px;
@@ -166,14 +187,14 @@ h3 {
   height: 45px;
 }
 
-/* line 96, ../sass/index.scss */
+/* line 105, ../sass/index.scss */
 .input-text:hover, .input-text:active {
   border: 1px solid #178fcd;
   background-color: #f2f7fb;
   color: #000;
 }
 
-/* line 101, ../sass/index.scss */
+/* line 110, ../sass/index.scss */
 .input-checkbox {
   -moz-transform: scale(1.5, 1.5);
   -ms-transform: scale(1.5, 1.5);
@@ -182,19 +203,19 @@ h3 {
   cursor: pointer;
 }
 
-/* line 105, ../sass/index.scss */
+/* line 114, ../sass/index.scss */
 .input-checkbox-text {
   color: #4b4b4b;
   font-size: 1.5rem;
   padding-left: 10px;
 }
 
-/* line 110, ../sass/index.scss */
+/* line 119, ../sass/index.scss */
 .input-captcha {
   width: 150px;
 }
 
-/* line 113, ../sass/index.scss */
+/* line 122, ../sass/index.scss */
 .captcha-img {
   width: 100px;
   height: 45px;
@@ -205,17 +226,17 @@ h3 {
   background-color: #eeeeee;
 }
 
-/* line 120, ../sass/index.scss */
+/* line 129, ../sass/index.scss */
 [class*="col-"] {
   text-align: center;
 }
 
-/* line 121, ../sass/index.scss */
+/* line 130, ../sass/index.scss */
 .hide {
   display: none;
 }
 
-/* line 134, ../sass/index.scss */
+/* line 143, ../sass/index.scss */
 .step-done {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -233,7 +254,7 @@ h3 {
   font-size: 2.4rem;
 }
 
-/* line 139, ../sass/index.scss */
+/* line 148, ../sass/index.scss */
 .step-stay {
   width: 50px;
   height: 50px;
@@ -247,7 +268,7 @@ h3 {
   font-size: 2.4rem;
 }
 
-/* line 142, ../sass/index.scss */
+/* line 151, ../sass/index.scss */
 .step-undone {
   width: 50px;
   height: 50px;
@@ -262,24 +283,24 @@ h3 {
 }
 
 /*------- 導覽列 -------*/
-/* line 146, ../sass/index.scss */
+/* line 155, ../sass/index.scss */
 .nav-all {
   background-color: #fff;
   height: 80px;
   width: 100%;
 }
-/* line 151, ../sass/index.scss */
+/* line 160, ../sass/index.scss */
 .nav-all .logo {
   float: left;
   line-height: 80px;
 }
-/* line 155, ../sass/index.scss */
+/* line 164, ../sass/index.scss */
 .nav-all .member {
   float: right;
   line-height: 80px;
 }
 
-/* line 160, ../sass/index.scss */
+/* line 169, ../sass/index.scss */
 .wra {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -287,203 +308,203 @@ h3 {
 }
 
 /*------- 共用 -------*/
-/* line 226, ../sass/index.scss */
+/* line 235, ../sass/index.scss */
 .content-row {
   padding: 0;
 }
 
 /*------- 登入頁面 -------*/
-/* line 230, ../sass/index.scss */
+/* line 239, ../sass/index.scss */
 .login-title {
   widows: 100%;
   height: 100px;
   line-height: 100px;
   background-color: #ebf0f4;
 }
-/* line 171, ../sass/index.scss */
+/* line 180, ../sass/index.scss */
 .login-title div {
   text-align: center;
 }
-/* line 174, ../sass/index.scss */
+/* line 183, ../sass/index.scss */
 .login-title span {
   font-size: 3.2rem;
   vertical-align: middle;
   margin-left: 15px;
 }
 
-/* line 233, ../sass/index.scss */
+/* line 242, ../sass/index.scss */
 .login-left {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/* line 184, ../sass/index.scss */
+/* line 193, ../sass/index.scss */
 .login-left img {
   width: 100%;
   height: auto;
   padding-top: 35px;
 }
-/* line 189, ../sass/index.scss */
+/* line 198, ../sass/index.scss */
 .login-left .info-s {
   display: block;
   margin-top: 10px;
 }
-/* line 193, ../sass/index.scss */
+/* line 202, ../sass/index.scss */
 .login-left .info-hide {
   display: inline-block;
 }
 
-/* line 236, ../sass/index.scss */
+/* line 245, ../sass/index.scss */
 .login-right {
   margin-top: 35px;
   margin-bottom: 90px;
 }
-/* line 200, ../sass/index.scss */
+/* line 209, ../sass/index.scss */
 .login-right form {
   width: 260px;
   margin: 0 auto;
 }
-/* line 203, ../sass/index.scss */
+/* line 212, ../sass/index.scss */
 .login-right form .state {
   padding: 35px 0;
   float: left;
 }
-/* line 207, ../sass/index.scss */
+/* line 216, ../sass/index.scss */
 .login-right form .input-padding {
   padding-top: 20px;
   text-align: left;
 }
-/* line 212, ../sass/index.scss */
+/* line 221, ../sass/index.scss */
 .login-right .join {
   width: 100%;
   margin: 0 auto;
 }
-/* line 215, ../sass/index.scss */
+/* line 224, ../sass/index.scss */
 .login-right .join div:nth-child(1) {
   float: none;
   margin-bottom: 10px;
   line-height: 40px;
 }
-/* line 220, ../sass/index.scss */
+/* line 229, ../sass/index.scss */
 .login-right .join div:nth-child(2) {
   float: none;
   margin-bottom: 40px;
 }
 
-/* line 239, ../sass/index.scss */
+/* line 248, ../sass/index.scss */
 .footer-mobile {
   display: block;
   padding: 30px 0;
   border-top: 1px solid #dedede;
 }
-/* line 242, ../sass/index.scss */
+/* line 251, ../sass/index.scss */
 .footer-mobile [class*="col-"] {
   text-align: left;
 }
-/* line 244, ../sass/index.scss */
+/* line 253, ../sass/index.scss */
 .footer-mobile .line {
   padding-right: 15px;
 }
-/* line 248, ../sass/index.scss */
+/* line 257, ../sass/index.scss */
 .footer-mobile .row div:nth-child(2) {
   margin-bottom: 15px;
   margin-top: 15px;
 }
 
-/* line 254, ../sass/index.scss */
+/* line 263, ../sass/index.scss */
 .footer-all {
   display: none;
   padding: 30px 0;
   border-top: 1px solid #dedede;
 }
-/* line 257, ../sass/index.scss */
+/* line 266, ../sass/index.scss */
 .footer-all [class*="col-"] {
   text-align: center;
 }
-/* line 259, ../sass/index.scss */
+/* line 268, ../sass/index.scss */
 .footer-all .line {
   padding: 0 15px;
 }
 
 /*------- 註冊頁面 -------*/
-/* line 264, ../sass/index.scss */
+/* line 273, ../sass/index.scss */
 .sign-title {
   widows: 100%;
   height: 100px;
   line-height: 100px;
   background-color: #ebf0f4;
 }
-/* line 171, ../sass/index.scss */
+/* line 180, ../sass/index.scss */
 .sign-title div {
   text-align: center;
 }
-/* line 174, ../sass/index.scss */
+/* line 183, ../sass/index.scss */
 .sign-title span {
   font-size: 3.2rem;
   vertical-align: middle;
   margin-left: 15px;
 }
 
-/* line 267, ../sass/index.scss */
+/* line 276, ../sass/index.scss */
 .sign-left {
   text-align: center;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-/* line 184, ../sass/index.scss */
+/* line 193, ../sass/index.scss */
 .sign-left img {
   width: 100%;
   height: auto;
   padding-top: 35px;
 }
-/* line 189, ../sass/index.scss */
+/* line 198, ../sass/index.scss */
 .sign-left .info-s {
   display: block;
   margin-top: 10px;
 }
-/* line 193, ../sass/index.scss */
+/* line 202, ../sass/index.scss */
 .sign-left .info-hide {
   display: inline-block;
 }
 
-/* line 270, ../sass/index.scss */
+/* line 279, ../sass/index.scss */
 .sign-right {
   margin-top: 35px;
   margin-bottom: 90px;
   margin-bottom: 50px;
 }
-/* line 200, ../sass/index.scss */
+/* line 209, ../sass/index.scss */
 .sign-right form {
   width: 260px;
   margin: 0 auto;
 }
-/* line 203, ../sass/index.scss */
+/* line 212, ../sass/index.scss */
 .sign-right form .state {
   padding: 35px 0;
   float: left;
 }
-/* line 207, ../sass/index.scss */
+/* line 216, ../sass/index.scss */
 .sign-right form .input-padding {
   padding-top: 20px;
   text-align: left;
 }
-/* line 212, ../sass/index.scss */
+/* line 221, ../sass/index.scss */
 .sign-right .join {
   width: 100%;
   margin: 0 auto;
 }
-/* line 215, ../sass/index.scss */
+/* line 224, ../sass/index.scss */
 .sign-right .join div:nth-child(1) {
   float: none;
   margin-bottom: 10px;
   line-height: 40px;
 }
-/* line 220, ../sass/index.scss */
+/* line 229, ../sass/index.scss */
 .sign-right .join div:nth-child(2) {
   float: none;
   margin-bottom: 40px;
 }
-/* line 273, ../sass/index.scss */
+/* line 282, ../sass/index.scss */
 .sign-right .agree-block {
   width: 100%;
   text-align: left;
@@ -491,45 +512,45 @@ h3 {
   height: 90px;
   margin: 20px 0;
 }
-/* line 279, ../sass/index.scss */
+/* line 288, ../sass/index.scss */
 .sign-right .agree-block div:nth-child(1) {
   line-height: 90px;
   margin-left: 25px;
   margin-right: 10px;
 }
-/* line 285, ../sass/index.scss */
+/* line 294, ../sass/index.scss */
 .sign-right div {
   float: left;
 }
-/* line 288, ../sass/index.scss */
+/* line 297, ../sass/index.scss */
 .sign-right .input-checkbox-text {
   padding-top: 25px;
   line-height: 2rem;
 }
 
-/* line 293, ../sass/index.scss */
+/* line 302, ../sass/index.scss */
 .sign-img {
   text-align: center;
 }
-/* line 295, ../sass/index.scss */
+/* line 304, ../sass/index.scss */
 .sign-img img {
   width: 100%;
 }
 
-/* line 299, ../sass/index.scss */
+/* line 308, ../sass/index.scss */
 .sign-progressbar-block {
   width: 261px;
   margin: 0 auto;
   margin-top: 30px;
 }
 
-/* line 304, ../sass/index.scss */
+/* line 313, ../sass/index.scss */
 .sign-progressbar {
   overflow: hidden;
   counter-reset: step;
 }
 
-/* line 308, ../sass/index.scss */
+/* line 317, ../sass/index.scss */
 .sign-progressbar li {
   list-style-type: none;
   color: #808080;
@@ -541,12 +562,12 @@ h3 {
   text-align: center;
 }
 
-/* line 318, ../sass/index.scss */
+/* line 327, ../sass/index.scss */
 .sign-progressbar li.active {
   color: #1aa0e5;
 }
 
-/* line 321, ../sass/index.scss */
+/* line 330, ../sass/index.scss */
 .sign-progressbar li:before {
   content: counter(step);
   counter-increment: step;
@@ -563,7 +584,7 @@ h3 {
   margin: 0 auto 10px auto;
 }
 
-/* line 334, ../sass/index.scss */
+/* line 343, ../sass/index.scss */
 .sign-progressbar li:after {
   content: '';
   width: 100%;
@@ -575,18 +596,23 @@ h3 {
   z-index: -1;
 }
 
-/* line 344, ../sass/index.scss */
+/* line 353, ../sass/index.scss */
+.sign-progressbar li.done:after {
+  background: #1aa0e5;
+}
+
+/* line 356, ../sass/index.scss */
 .sign-progressbar li:first-child:after {
   content: none;
 }
 
-/* line 347, ../sass/index.scss */
+/* line 359, ../sass/index.scss */
 .sign-progressbar li.active:before, .sign-progressbar li.active:after {
   background: #1aa0e5;
   color: white;
 }
 
-/* line 351, ../sass/index.scss */
+/* line 363, ../sass/index.scss */
 .sign-progressbar li.done:before {
   line-height: 48.5px;
   background: #fff;
@@ -598,7 +624,7 @@ h3 {
   width: 50px;
 }
 
-/* line 359, ../sass/index.scss */
+/* line 371, ../sass/index.scss */
 .sign-progressbar li.undone:before {
   background: #e4e4e4;
   color: #fff;
@@ -606,19 +632,19 @@ h3 {
 }
 
 /*------- email頁面 -------*/
-/* line 365, ../sass/index.scss */
+/* line 377, ../sass/index.scss */
 [class*="email-"] {
   width: 100%;
   margin: 0 auto;
   text-align: left;
 }
 
-/* line 370, ../sass/index.scss */
+/* line 382, ../sass/index.scss */
 .email-header {
   padding: 30px 20px;
 }
 
-/* line 373, ../sass/index.scss */
+/* line 385, ../sass/index.scss */
 .email-content {
   font-size: 1.8rem;
   padding: 0 20px;
@@ -626,21 +652,21 @@ h3 {
   border-top: 1px solid #dedede;
   padding-top: 40px;
 }
-/* line 379, ../sass/index.scss */
+/* line 391, ../sass/index.scss */
 .email-content a {
   font-size: 1.6rem;
 }
-/* line 382, ../sass/index.scss */
+/* line 394, ../sass/index.scss */
 .email-content p {
   margin: 0 0 30px;
 }
-/* line 385, ../sass/index.scss */
+/* line 397, ../sass/index.scss */
 .email-content .note {
   color: #c22e2e;
   font-size: 1.4rem;
 }
 
-/* line 390, ../sass/index.scss */
+/* line 402, ../sass/index.scss */
 .email-footer {
   padding: 20px 0;
   text-align: center;
@@ -651,141 +677,141 @@ h3 {
 /*------- RWD -------*/
 @media (min-width: 744px) {
   /*------- 共用 -------*/
-  /* line 429, ../sass/index.scss */
+  /* line 441, ../sass/index.scss */
   .content-row {
     padding: 0 35px;
   }
 
   /*------- 登入頁面 -------*/
-  /* line 433, ../sass/index.scss */
+  /* line 445, ../sass/index.scss */
   .button2 {
     width: 320px;
   }
 
-  /* line 436, ../sass/index.scss */
+  /* line 448, ../sass/index.scss */
   .input-text {
     width: 320px;
   }
 
-  /* line 439, ../sass/index.scss */
+  /* line 451, ../sass/index.scss */
   .input-captcha {
     width: 210px;
   }
 
-  /* line 442, ../sass/index.scss */
+  /* line 454, ../sass/index.scss */
   .captcha-img {
     height: 45px;
   }
 
-  /* line 445, ../sass/index.scss */
+  /* line 457, ../sass/index.scss */
   .login-left {
     text-align: left;
   }
-  /* line 402, ../sass/index.scss */
+  /* line 414, ../sass/index.scss */
   .login-left img {
     width: 90%;
   }
-  /* line 405, ../sass/index.scss */
+  /* line 417, ../sass/index.scss */
   .login-left .info-s {
     display: inline-block;
     margin-top: 0;
   }
-  /* line 409, ../sass/index.scss */
+  /* line 421, ../sass/index.scss */
   .login-left .info-hide {
     display: none;
   }
 
-  /* line 448, ../sass/index.scss */
+  /* line 460, ../sass/index.scss */
   .login-right {
     margin-top: 125px;
   }
-  /* line 415, ../sass/index.scss */
+  /* line 427, ../sass/index.scss */
   .login-right form {
     width: 320px;
   }
-  /* line 418, ../sass/index.scss */
+  /* line 430, ../sass/index.scss */
   .login-right .join {
     width: 320px;
   }
-  /* line 420, ../sass/index.scss */
+  /* line 432, ../sass/index.scss */
   .login-right .join div:nth-child(1) {
     float: left;
     margin-bottom: 40px;
   }
-  /* line 424, ../sass/index.scss */
+  /* line 436, ../sass/index.scss */
   .login-right .join div:nth-child(2) {
     float: right;
   }
 
-  /* line 451, ../sass/index.scss */
+  /* line 463, ../sass/index.scss */
   .footer-all {
     display: block;
   }
 
-  /* line 452, ../sass/index.scss */
+  /* line 464, ../sass/index.scss */
   .footer-mobile {
     display: none;
   }
 
   /*------- 註冊頁面 -------*/
-  /* line 454, ../sass/index.scss */
+  /* line 466, ../sass/index.scss */
   .sign-left {
     text-align: left;
   }
-  /* line 402, ../sass/index.scss */
+  /* line 414, ../sass/index.scss */
   .sign-left img {
     width: 90%;
   }
-  /* line 405, ../sass/index.scss */
+  /* line 417, ../sass/index.scss */
   .sign-left .info-s {
     display: inline-block;
     margin-top: 0;
   }
-  /* line 409, ../sass/index.scss */
+  /* line 421, ../sass/index.scss */
   .sign-left .info-hide {
     display: none;
   }
 
-  /* line 457, ../sass/index.scss */
+  /* line 469, ../sass/index.scss */
   .sign-right {
     margin-top: 125px;
     margin-bottom: 90px;
   }
-  /* line 415, ../sass/index.scss */
+  /* line 427, ../sass/index.scss */
   .sign-right form {
     width: 320px;
   }
-  /* line 418, ../sass/index.scss */
+  /* line 430, ../sass/index.scss */
   .sign-right .join {
     width: 320px;
   }
-  /* line 420, ../sass/index.scss */
+  /* line 432, ../sass/index.scss */
   .sign-right .join div:nth-child(1) {
     float: left;
     margin-bottom: 40px;
   }
-  /* line 424, ../sass/index.scss */
+  /* line 436, ../sass/index.scss */
   .sign-right .join div:nth-child(2) {
     float: right;
   }
 
-  /* line 462, ../sass/index.scss */
+  /* line 474, ../sass/index.scss */
   .sign-img img {
     width: 300px;
   }
 
-  /* line 466, ../sass/index.scss */
+  /* line 478, ../sass/index.scss */
   .sign-progressbar-block {
     width: 480px;
   }
 
-  /* line 469, ../sass/index.scss */
+  /* line 481, ../sass/index.scss */
   .sign-progressbar li {
     width: 160px;
   }
 
   /*------- email頁面 -------*/
-  /* line 473, ../sass/index.scss */
+  /* line 485, ../sass/index.scss */
   [class*="email-"] {
     width: 600px;
   }
