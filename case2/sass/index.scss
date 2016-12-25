@@ -7,7 +7,8 @@ body {
 	overflow-x: hidden;
 	font-family: Microsoft JhengHei, "微軟正黑體", sans-serif;
 	text-align:	justify; 
-	text-justify:inter-ideograph; 
+	text-justify:inter-ideograph;
+	word-break: break-all; 
 }
 a{
 	font-size: 1.5rem;
@@ -184,7 +185,7 @@ h3{
 		}
 	}
 	.join{
-		width: 320px;
+		width: 100%;
 		margin: 0 auto;
 		div:nth-child(1){
 			float: none;
@@ -254,6 +255,7 @@ h3{
 			width: 320px;
 		}
 		.join{
+			width: 320px;
 			div:nth-child(1){
 				float: left;
 				margin-bottom: 40px;
@@ -265,4 +267,40 @@ h3{
 	}
 	.footer-all{display: block;}
 	.footer-mobile{display: none;}
+}
+
+/*------- email頁面 -------*/
+[class*="email-"]{
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+}
+.email-header{
+	padding: 30px 20px;
+}
+.email-content{
+	font-size: 1.8rem;
+	padding: 0 20px;
+	border-bottom: 1px solid #dedede;
+	border-top: 1px solid #dedede;
+	padding-top: 40px;
+	a{
+		font-size: 1.6rem;
+	}
+	p{
+		margin: 0 0 30px;
+	}
+	.note{
+		color: #c22e2e;
+		font-size: 1.4rem;
+	}
+}
+.email-footer{
+	padding: 20px 0;
+	text-align: center;
+	font-size: 1.4rem;
+	color: #959595;
+}
+@media (min-width: $screen-sm-min){
+	[class*="email-"]{width: 600px;}
 }
