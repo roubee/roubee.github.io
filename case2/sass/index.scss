@@ -282,6 +282,25 @@ h3{
 	@include content-left();
 	// margin-bottom: 145px;
 }
+.sign-left4{
+	@include content-left();
+	h2{
+		text-align: center;
+	}
+	h3{
+		text-align: center;
+		padding-bottom: 15px;
+	}
+	.img-arrow{
+		width: 7px;
+		padding: 0;
+		margin-left: 10px;
+	}
+	.img-brief{
+		width: 100%;
+		height: auto;
+	}
+}
 .sign-right{
 	@include content-right();
 	margin-bottom: 50px;
@@ -515,6 +534,23 @@ h3{
 		@include border-radius(99em);
 	}
 }
+/*------- 重設密碼頁面 -------*/
+.repw-title{
+	@include content-title();
+}
+#repw1{
+	width: 100%;
+	h3{
+		line-height: 30px;
+		margin-bottom: 50px;
+		margin-top: 60px;
+		padding: 0 30px;
+	}
+	.button2{
+		margin-top: 25px;
+		margin-bottom: 125px;
+	}
+}
 /*------- email頁面 -------*/
 [class*="email-"]{
 	width: 100%;
@@ -617,6 +653,12 @@ h3{
 		@include rwd-content-left();
 		margin-bottom: 145px;
 	}
+	.sign-left4{
+		@include rwd-content-left();
+		.img-brief{
+			width: 435px;
+		}
+	}
 	.sign-right{
 		@include rwd-content-right();
 		margin-bottom: 90px;
@@ -655,6 +697,20 @@ h3{
 	}
 	.sign-progressbar li{
 		width: 160px;
+	}
+	/*------- 重設密碼頁面 -------*/
+	#repw1{
+		width: 420px;
+		h3{
+			line-height: 30px;
+			margin-bottom: 50px;
+			margin-top: 60px;
+			width: 100%;
+		}
+		.button2{
+			margin-top: 25px;
+			margin-bottom: 125px;
+		}
 	}
 	/*------- email頁面 -------*/
 	[class*="email-"]{width: 600px;}
