@@ -15,7 +15,7 @@
   <body>
   <!-- 導覽列 -->
   <nav class="nav-all navbar navbar-fixed-top"><div class="container-fluid"><div class="row">
-    <div class="col-xs-1 col-xs-offset-1">
+    <div class="col-xs-1 col-xs-offset-1 nopadding">
         <div class="logo"><a href="#"><img src="./images/logo.png"></a></div>
     </div>
     <div class="col-xs-7"></div>
@@ -25,22 +25,26 @@
   </div></div></nav>
   <div class="wra">
     <!-- 登入標題 -->
-    <div class="login-title"><div><img src="./images/login.png"><span>註冊</span></div></div>
-    <div class="container-fluid"><div class="row">
-      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 login-left">
-        <h2>歡迎加入會員系統</h2>
-        <h3><span class="info-s">此網站會員系統服務<span class="info-hide">，</span>是由</span><span class="info-s"><span class="main-name">bizpider</span>提供</span></h3>
-        <div><img src="./images/loginBrief.png"></div>
+    <div class="sign-title"><div><img src="./images/login.png"><span>註冊</span></div></div>
+    <div class="container-fluid"><div class="row"><div class="col-xs-12"><div class="sign-progressbar-block">
+      <ul class="sign-progressbar nomargin">
+        <li class="active">填寫帳號</li>
+        <li class="undone">啟用帳號</li>
+        <li class="undone">填寫資訊</li>
+      </ul></div>
+    </div></div></div>
+    <div class="container-fluid"><div class="row content-row">
+      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
+        <h2>歡迎您的加入</h2>
+        <h3><span class="info-s">請填寫您的 <span class="hint">email</span> 作為 Bizpider</span><span class="info-s">會員登入帳號</span></h3>
+        <div class="sign-img"><img src="./images/loginBrief.png"></div>
       </div>
-      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 login-right nopadding">
-        <div class="join"><div>還沒有<span class="main-name">bizpider</span>帳號？</div><div><button class="button1">立即註冊<img src="./images/arrow.png"></button></div></div>
+      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
         <form role="form">
-          <div><input type="text" name="account" value="帳號" class="input-text"></div>
-          <div class="input-padding"><input type="text" name="password" value="密碼" class="input-text"></div>
-          <div class="input-padding"><a href="#" class="a1">忘記密碼</a></div>
+          <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
           <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
-          <div style="clear:both;" class="state"><input type="checkbox" name="loginState" class="input-checkbox"><span class="input-checkbox-text">保持登入狀態</span></div>
-          <div><button class="button2">登入</button></div>
+          <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
+          <div><button class="button2">註冊</button></div>
         </form>
       </div>
       <div class="col-lg-1 col-xs-1"></div>
@@ -59,5 +63,8 @@
       <span class="line">|</span><span>© 2016 Bizpider</span>
     </div>
   </div></div></footer>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="./jss/bootstrap.min.js"></script>
   </body>
 </html>

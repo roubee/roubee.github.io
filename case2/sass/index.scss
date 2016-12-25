@@ -56,7 +56,7 @@ h3{
 .text-l{font-size: 1.7rem;}
 .text-s{font-size: 1.5rem;}
 .text-xs{font-size: 1.4rem;color:#959595;}
-.main-name{color: #1aa0e5;}
+.hint{color: #1aa0e5;}
 @mixin button-all($color,$fontSize,$height){
 	background-color: $color;
 	color: #fff;
@@ -118,6 +118,27 @@ h3{
 	background-color: #eeeeee;
 }
 [class*="col-"] {text-align: center;}
+@mixin step-circle($backColor,$textColor){
+	width: 50px;
+	height: 50px;
+	background-color: $backColor;
+	@include border-radius(99em);
+	text-align: center;
+	line-height: 50px;
+	color: $textColor;
+	font-size: 2.4rem;
+}
+.step-done{
+	@include box-sizing(border-box);
+	border: 3px solid #1aa0e5;
+	@include step-circle(#fff,#1aa0e5);
+}
+.step-stay{
+	@include step-circle(#1aa0e5,#fff);
+}
+.step-undone{
+	@include step-circle(#e4e4e4,#fff);
+}
 /*------- 導覽列 -------*/
 .nav-all{
 	background-color: #fff;
@@ -138,7 +159,8 @@ h3{
 	overflow-x: hidden;
 	margin-top: 80px !important;
 }
-.login-title{
+/*------- 共用 -------*/
+@mixin content-title{
 	widows: 100%;
 	height: 100px;
 	line-height: 100px;
@@ -152,7 +174,7 @@ h3{
 		margin-left: 15px;
 	}
 }
-.login-left{
+@mixin content-left{
 	text-align: center;
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -169,7 +191,7 @@ h3{
 		display: inline-block;
 	}
 }
-.login-right{
+@mixin content-right{
 	margin-top: 35px;
 	margin-bottom: 90px;
 	form{
@@ -198,6 +220,19 @@ h3{
 		}
 	}
 }
+.content-row{
+	padding: 0;
+}
+/*------- 登入頁面 -------*/
+.login-title{
+	@include content-title();
+}
+.login-left{
+	@include content-left();
+}
+.login-right{
+	@include content-right();
+}
 .footer-mobile{
 	display: block;
 	padding: 30px 0;
@@ -222,53 +257,107 @@ h3{
 		padding: 0 15px;
 	}
 }
-/*------- RWD -------*/
-@media (min-width: $screen-sm-min){
-	.button2{
-		width: 320px;
-	}
-	.input-text{
-		width: 320px;
-	}
-	.input-captcha{
-		width:210px;
-	}
-	.captcha-img{
-		height: 40px;
-	}
-	.login-left{
-		text-align: left;
-		img{
-			width: 90%;
-		}
-		.info-s{
-			display: inline-block;
-			margin-top: 0;
-		}
-		.info-hide{
-			display: none;
-		}
-	}
-	.login-right{
-		margin-top: 125px;
-		form{
-			width: 320px;
-		}
-		.join{
-			width: 320px;
-			div:nth-child(1){
-				float: left;
-				margin-bottom: 40px;
-			}
-			div:nth-child(2){
-				float: right;
-			}
-		}
-	}
-	.footer-all{display: block;}
-	.footer-mobile{display: none;}
+/*------- 註冊頁面 -------*/
+.sign-title{
+	@include content-title();
 }
-
+.sign-left{
+	@include content-left();
+}
+.sign-right{
+	@include content-right();
+	margin-bottom: 50px;
+	.agree-block{
+		width: 100%;
+		text-align: left;
+		background-color: #f2f7fb;
+		height: 90px;
+		margin: 20px 0;
+		div:nth-child(1){
+			line-height: 90px;
+			margin-left: 25px;
+			margin-right: 10px;
+		}
+	}
+	div{
+		float: left;
+	}
+	.input-checkbox-text{
+		padding-top: 25px;
+		line-height: 2rem;
+	}
+}
+.sign-img{
+	text-align: center;
+	img{
+		width: 100%;
+	}
+}
+.sign-progressbar-block{
+	width: 261px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.sign-progressbar {
+	overflow: hidden;
+	counter-reset: step;
+}
+.sign-progressbar li {
+	list-style-type: none;
+	color: #808080;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	width: 87px;
+	float: left;
+	position: relative;
+	text-align: center;
+}
+.sign-progressbar li.active{
+	color: #1aa0e5;
+}
+.sign-progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	font-size: 2.4rem;
+	color: #fff;
+	background: #e4e4e4;
+	@include border-radius(99em);
+	margin: 0 auto 10px auto;
+}
+.sign-progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #e4e4e4;
+	position: absolute;
+	left: -50%;
+	top: 23.5px;
+	z-index: -1;
+}
+.sign-progressbar li:first-child:after {
+	content: none; 
+}
+.sign-progressbar li.active:before,  .sign-progressbar li.active:after{
+	background: #1aa0e5;
+	color: white;
+}
+.sign-progressbar li.done:before,{
+	line-height: 48.5px;
+	background: #fff;
+	color: #1aa0e5;
+	@include box-sizing(border-box);
+	border: 3px solid #1aa0e5;
+	width: 50px;
+}
+.sign-progressbar li.undone:before,{
+	background: #e4e4e4;
+	color: #fff;
+	width: 50px;
+}
 /*------- email頁面 -------*/
 [class*="email-"]{
 	width: 100%;
@@ -301,6 +390,82 @@ h3{
 	font-size: 1.4rem;
 	color: #959595;
 }
+
+/*------- RWD -------*/
 @media (min-width: $screen-sm-min){
+	/*------- 共用 -------*/
+	@mixin rwd-content-left{
+		text-align: left;
+		img{
+			width: 90%;
+		}
+		.info-s{
+			display: inline-block;
+			margin-top: 0;
+		}
+		.info-hide{
+			display: none;
+		}
+	}
+	@mixin rwd-content-right{
+		margin-top: 125px;
+		form{
+			width: 320px;
+		}
+		.join{
+			width: 320px;
+			div:nth-child(1){
+				float: left;
+				margin-bottom: 40px;
+			}
+			div:nth-child(2){
+				float: right;
+			}
+		}
+	}
+	.content-row{
+		padding: 0 35px;
+	}
+	/*------- 登入頁面 -------*/
+	.button2{
+		width: 320px;
+	}
+	.input-text{
+		width: 320px;
+	}
+	.input-captcha{
+		width:210px;
+	}
+	.captcha-img{
+		height: 45px;
+	}
+	.login-left{
+		@include rwd-content-left();
+	}
+	.login-right{
+		@include rwd-content-right();
+	}
+	.footer-all{display: block;}
+	.footer-mobile{display: none;}
+	/*------- 註冊頁面 -------*/
+	.sign-left{
+		@include rwd-content-left();
+	}
+	.sign-right{
+		@include rwd-content-right();
+		margin-bottom: 90px;
+	}
+	.sign-img{
+		img{
+			width: 300px;
+		}
+	}
+	.sign-progressbar-block{
+		width: 480px;
+	}
+	.sign-progressbar li{
+		width: 160px;
+	}
+	/*------- email頁面 -------*/
 	[class*="email-"]{width: 600px;}
 }
