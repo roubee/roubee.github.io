@@ -85,8 +85,9 @@ h3{
 	border: 0;
 }
 .button3{
-	width: 150px;
-	margin-right: 20px;
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 15px;
 	@include button-all(#bababa,1.7rem,50px);
 }
 .button3:hover,.button3:active{
@@ -198,6 +199,7 @@ h3{
 	.info-s{
 		display: block;
 		margin-top: 10px;
+		line-height: 30px;
 	}
 	.info-hide{
 		display: inline-block;
@@ -276,6 +278,10 @@ h3{
 .sign-left{
 	@include content-left();
 }
+.sign-left2{
+	@include content-left();
+	// margin-bottom: 145px;
+}
 .sign-right{
 	@include content-right();
 	margin-bottom: 50px;
@@ -297,6 +303,42 @@ h3{
 	.input-checkbox-text{
 		padding-top: 25px;
 		line-height: 2rem;
+	}
+}
+.sign-right2{
+	@include content-right();
+	margin-bottom: 50px;
+	.agree-block{
+		width: 100%;
+		text-align: left;
+		background-color: #f2f7fb;
+		height: 90px;
+		margin: 20px 0;
+		div:nth-child(1){
+			line-height: 90px;
+			margin-left: 25px;
+			margin-right: 10px;
+		}
+	}
+	div{
+		float: left;
+		width: 100%;
+	}
+	.input-checkbox-text{
+		padding-top: 25px;
+		line-height: 2rem;
+	}
+	.input-error{
+		border: 1px solid #c22e2e;
+		background-color: #fdeeee;
+	}
+	.error{
+		color: #d30909;
+		font-size: 1.5rem;
+		line-height: 30px;
+	}
+	.btn2{
+		width: 100%;
 	}
 }
 .sign-img{
@@ -373,6 +415,30 @@ h3{
 	color: #fff;
 	width: 50px;
 }
+.sign-timer{
+	height: 200px;
+	width: 100%;
+	margin: 45px 0;
+	span{
+		margin-left: 10px;
+		color: #959595;
+		font-size: 1.8rem;
+	}
+	.time{
+		font-size: 4rem;
+		color: #010101;
+		font-family: Verdana,sans-serif;
+	}
+	.timer-circle{
+		padding-top: 55px;
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+		float: none;
+		border: 6px solid #e4e4e4;
+		@include border-radius(99em);
+	}
+}
 /*------- email頁面 -------*/
 [class*="email-"]{
 	width: 100%;
@@ -441,6 +507,11 @@ h3{
 	.content-row{
 		padding: 0 35px;
 	}
+	.button3{
+		width: 150px;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
 	/*------- 登入頁面 -------*/
 	.button2{
 		width: 320px;
@@ -466,9 +537,21 @@ h3{
 	.sign-left{
 		@include rwd-content-left();
 	}
+	.sign-left2{
+		@include rwd-content-left();
+		margin-bottom: 145px;
+	}
 	.sign-right{
 		@include rwd-content-right();
 		margin-bottom: 90px;
+	}
+	.sign-right2{
+		@include rwd-content-right();
+		margin-bottom: 80px;
+		margin-top: 100px;
+		.btn2{
+			width: 150px;
+		}
 	}
 	.sign-img{
 		img{

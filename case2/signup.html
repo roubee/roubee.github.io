@@ -54,17 +54,21 @@
 
     <!-- 註冊步驟2 -->
     <div id="sign-step2" class="container-fluid hide"><div class="row content-row">
-      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
+      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left2 nopadding">
         <h2>已寄送識別碼</h2>
         <h3><span class="info-s">已將識別碼xxxx寄送到<span class="hint">abc@123.com</span>的email帳號<br>請填入此封郵件的啟用碼來啟用帳號。</span></h3>
         <div class="sign-img"><img src="./images/loginBrief.png"></div>
       </div>
-      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
+      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right2 nopadding">
         <form role="form" id="sign-form2">
-          <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
-          <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
-          <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
-          <div><button type="button" class="button3" onclick="signupStepShow(2,'prev')">回上一步</button><button type="button" class="button2" onclick="signupStepShow(2,'next')" style="width: 150px;">註冊</button></div>
+          <div><input type="text" name="account" value="啟用碼" class="input-text input-error"></div>
+          <div class="error">啟用碼錯誤，請確認email信件的啟用碼再填入</div>
+          <div class="sign-timer"><div class="timer-circle">
+            <img src="./images/timer.png">
+            <span>倒數時間</span>
+            <div class="time">09:15</div>
+          </div></div>
+          <div><button type="button" class="button3" onclick="signupStepShow(2,'prev')">回上一步</button><button type="button" class="button2 btn2" onclick="signupStepShow(2,'next')">註冊</button></div>
         </form>
       </div>
       <div class="col-lg-1 col-xs-1"></div>
