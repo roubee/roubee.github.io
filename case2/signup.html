@@ -7,7 +7,7 @@
 
     <title>bizpider</title>
 
-    <!-- Bootstrap -->
+    <link href="./css/jquery-ui.min.css"  rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/w3.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
@@ -43,8 +43,8 @@
       </div>
       <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
         <form role="form" id="sign-form1">
-          <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
-          <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
+          <div><input type="text" name="account" placeholder="Email帳號" class="input-text"></div>
+          <div style="float:left;" class="input-padding"><input type="text" name="captcha" placeholder="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
           <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
           <div><button type="button" class="button2" onclick="signupStepShow(1,'next')">註冊</button></div>
         </form>
@@ -61,7 +61,7 @@
       </div>
       <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right2 nopadding">
         <form role="form" id="sign-form2">
-          <div><input type="text" name="account" value="啟用碼" class="input-text input-error"></div>
+          <div><input type="text" name="account" placeholder="啟用碼" class="input-text input-error"></div>
           <div class="error">啟用碼錯誤，請確認email信件的啟用碼再填入</div>
           <div class="sign-timer"><div class="timer-circle">
             <img src="./images/timer.png">
@@ -79,13 +79,51 @@
       <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
         <h2>您的帳號已啟用!</h2>
         <h3><span class="info-s">請填寫完整正確的聯絡資訊，以利我們與您聯繫，謝謝!</span></h3>
-        <div class="sign-img"><img src="./images/loginBrief.png"></div>
+        <div><img src="./images/loginBrief.png"></div>
       </div>
-      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right nopadding">
+      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right3 nopadding">
+        <div class="lock"><img src="./images/lock.png"><span>Sabrina_Wang@1234.com.tw</span></div>
         <form role="form" id="sign-form3">
-          <div><input type="text" name="account" value="Email帳號" class="input-text"></div>
-          <div style="float:left;" class="input-padding"><input type="text" name="captcha" value="驗證碼" class="input-text input-captcha"></div><div style="float:right;" class="input-padding"><div class="captcha-img"></div></div>
-          <div style="clear:both;" class="agree-block"><div><input type="checkbox" name="loginState" class="input-checkbox"></div><div class="input-checkbox-text">我同意 bizpider的<br><a href="#" class="a1">會員條款</a> 及 <a href="#" class="a1">隱私權宣告</a></div></div>
+          <div style="float:left;"><input type="text" name="name" placeholder="姓名" class="input-text input-name"></div><div><div style="margin:0 auto;line-height: 45px;"><input type="radio" name="gender" value="male" checked> 先生 <input type="radio" name="gender" value="female"> 女士</div></div>
+          <div class="input-padding"><input type="password" name="password" placeholder="密碼" class="input-text"></div>
+          <div class="input-padding"><input type="password" name="re-password" placeholder="確認密碼" class="input-text"></div>
+          <div class="input-padding"><input type="text" name="company" placeholder="公司名稱" class="input-text"></div>
+          <div class="input-padding">
+            <select name="country-code" id="country-code">
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Taiwan">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+886</option>
+            </select>
+          </div>
+          <div style="float:left;" class="input-padding"><input type="text" name="phone" placeholder="電話" class="input-text input-phone"></div><div style="float:right;" class="input-padding"><input type="text" name="extension" placeholder="分機" class="input-text input-extension"></div>
+          <div style="clear:both;" class="input-padding"><input type="text" name="mobile" placeholder="行動電話" class="input-text"></div>
+          <div><button type="button" class="button2" onclick="">確認送出</button></div>
+        </form>
+      </div>
+      <div class="col-lg-1 col-xs-1"></div>
+    </div></div>
+
+    <!-- 註冊完成 -->
+    <div id="sign-step3" class="container-fluid hide"><div class="row content-row">
+      <div class="col-lg-5 col-lg-offset-1 col-xs-10 col-xs-offset-1 sign-left nopadding">
+        <h2>註冊完成</h2>
+        <h3><span class="info-s">請填寫完整正確的聯絡資訊，以利我們與您聯繫，謝謝!</span></h3>
+        <div><img src="./images/loginBrief.png"></div>
+      </div>
+      <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right3 nopadding">
+        <div class="lock"><img src="./images/lock.png"><span>Sabrina_Wang@1234.com.tw</span></div>
+        <form role="form" id="sign-form3">
+          <div style="float:left;"><input type="text" name="name" placeholder="姓名" class="input-text input-name"></div><div><div style="margin:0 auto;line-height: 45px;"><input type="radio" name="gender" value="male" checked> 先生 <input type="radio" name="gender" value="female"> 女士</div></div>
+          <div class="input-padding"><input type="password" name="password" placeholder="密碼" class="input-text"></div>
+          <div class="input-padding"><input type="password" name="re-password" placeholder="確認密碼" class="input-text"></div>
+          <div class="input-padding"><input type="text" name="company" placeholder="公司名稱" class="input-text"></div>
+          <div class="input-padding">
+            <select name="country-code" id="country-code">
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Taiwan">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+886</option>
+            </select>
+          </div>
+          <div style="float:left;" class="input-padding"><input type="text" name="phone" placeholder="電話" class="input-text input-phone"></div><div style="float:right;" class="input-padding"><input type="text" name="extension" placeholder="分機" class="input-text input-extension"></div>
+          <div style="clear:both;" class="input-padding"><input type="text" name="mobile" placeholder="行動電話" class="input-text"></div>
           <div><button type="button" class="button2" onclick="">確認送出</button></div>
         </form>
       </div>
@@ -108,6 +146,7 @@
   </div></div></footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./jss/bootstrap.min.js"></script>
   <script src="./jss/index.js"></script>
   </body>

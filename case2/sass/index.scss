@@ -341,6 +341,82 @@ h3{
 		width: 100%;
 	}
 }
+.sign-right3{
+	@include content-right();
+	margin-bottom: 50px;
+	.agree-block{
+		width: 100%;
+		text-align: left;
+		background-color: #f2f7fb;
+		height: 90px;
+		margin: 20px 0;
+		div:nth-child(1){
+			line-height: 90px;
+			margin-left: 25px;
+			margin-right: 10px;
+		}
+	}
+	div{
+		float: left;
+	}
+	.input-checkbox-text{
+		padding-top: 25px;
+		line-height: 2rem;
+	}
+	.lock{
+		float: none;
+		padding-bottom: 45px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		span{
+			margin-left: 20px;
+			vertical-align: middle;
+			font-size: 1.7rem;
+			color: #333333;
+		}
+	}
+	option.avatar {
+		background-repeat: no-repeat !important;
+		padding: 0 25px;
+	}
+	.avatar .ui-icon {
+		background-position: center center;
+	}
+	.ui-selectmenu-button.ui-button{
+		width: 260px;
+		height: 45px;
+	}
+	.ui-button .ui-icon{
+		background-image: url('../images/selectmenu.png') !important;
+	}
+	#country-code-button{
+		background-color: #fff !important;
+	}
+	.ui-selectmenu-text{
+		color: #333;
+		font-size: 1.7rem;
+		line-height: 30px;
+		background-image: url('../images/selectmenu.png') !important;
+		background-repeat: no-repeat;
+		background-position: right center;
+	}
+	.input-name{
+		width: 155px;
+	}
+	.input-phone{
+		width: 180px;
+	}
+	.input-extension{
+		width: 70px;
+	}
+	.button2{
+		margin-top: 35px;
+	}
+	input[type=radio]{
+		margin-left: 20px;
+	}
+}
 .sign-img{
 	text-align: center;
 	img{
@@ -551,6 +627,22 @@ h3{
 		margin-top: 100px;
 		.btn2{
 			width: 150px;
+		}
+	}
+	.sign-right3{
+		@include rwd-content-right();
+		margin-bottom: 90px;
+		.lock{
+			width: 320px;
+		}
+		.ui-selectmenu-button.ui-button{
+			width: 320px;
+		}
+		.input-phone{
+			width: 210px;
+		}
+		.input-extension{
+			width: 100px;
 		}
 	}
 	.sign-img{
