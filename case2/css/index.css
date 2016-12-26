@@ -817,6 +817,26 @@ h3 {
   margin-bottom: 125px;
 }
 
+#repw2 {
+  width: 100%;
+}
+#repw2 h3 {
+  margin: 0 auto;
+  margin-top: 60px;
+  line-height: 30px;
+  padding: 0 30px;
+}
+#repw2 input {
+  margin-bottom: 25px;
+}
+#repw2 .btn2 {
+  width: 260px;
+  margin-bottom: 75px;
+}
+#repw2 .button3 {
+  width: 260px;
+}
+
 /*------- email頁面 -------*/
 [class*="email-"] {
   width: 100%;
@@ -1058,12 +1078,26 @@ h3 {
   #repw1 h3 {
     line-height: 30px;
     margin-bottom: 50px;
-    margin-top: 60px;
     width: 100%;
   }
   #repw1 .button2 {
     margin-top: 25px;
     margin-bottom: 125px;
+  }
+
+  #repw2 {
+    width: 380px;
+  }
+  #repw2 h3 {
+    line-height: 30px;
+    margin-top: 60px;
+    width: 100%;
+  }
+  #repw2 .btn2 {
+    width: 150px;
+  }
+  #repw2 .button3 {
+    width: 150px;
   }
 
   /*------- email頁面 -------*/

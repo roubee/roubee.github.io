@@ -29,19 +29,26 @@
     <div id="repw-title1" class="repw-title"><div><img src="./images/key.png"><span>找回你的密碼</span></div></div>
     <div id="repw1" class="container-fluid"><div class="row">
       <div class="col-xs-12 nopadding">
-        <h3><span>請填寫當初申請的<sapn class="hint">email</sapn>帳號，我們會將重新設定密碼的連結寄至你的email信箱</h3>
+        <h3>請填寫當初申請的<sapn class="hint">email</sapn>帳號，我們會將重新設定密碼的連結寄至你的email信箱</h3>
         <div><input type="text" name="email" placeholder="Email帳號" class="input-text"></div>
         <div><button type="button" class="button2" onclick="resetpwStepShow(1,'next')">確認送出</button></div>
       </div>
       <div class="col-lg-1 col-xs-1"></div>
     </div></div>
     <!-- step2 -->
-    <div id="repw-title2" class="repw-title hide"><div><img src="./images/key.png"><span>找回你的密碼</span></div></div>
+    <div id="repw-title2" class="repw-title hide"><div><img src="./images/key.png"><span>重設密碼</span></div></div>
     <div id="repw2" class="container-fluid hide"><div class="row">
       <div class="col-xs-12 nopadding">
-        <h3><span>請填寫當初申請的<sapn class="hint">email</sapn>帳號，我們會將重新設定密碼的連結寄至你的email信箱</h3>
-        <div><input type="text" name="email" placeholder="Email帳號" class="input-text"></div>
-        <div><button type="button" class="button2" onclick="resetpwStepShow(1,'next')">確認送出</button></div>
+        <h3>已將驗證碼寄送到<sapn class="hint">abc@123.com</sapn>的email帳號<br>請填入此封郵件的驗證碼來啟用修改密碼功能。</h3>
+        <div class="sign-timer"><div class="timer-circle">
+          <img src="./images/timer.png">
+          <span>倒數時間</span>
+          <div class="time">09:15</div>
+        </div></div>
+        <div><input type="text" name="enable-code" placeholder="驗證碼" class="input-text"></div>
+        <div><input type="password" name="password" placeholder="新密碼" class="input-text"></div>
+        <div><input type="paddword" name="re-password" placeholder="確認新密碼" class="input-text"></div>
+        <div><button type="button" class="button3" onclick="resetpwStepShow(2,'prev')">回上一步</button><button type="button" class="button2 btn2" onclick="resetpwStepShow(2,'next')">重設密碼</button></div>
       </div>
       <div class="col-lg-1 col-xs-1"></div>
     </div></div>
@@ -51,7 +58,7 @@
       <div class="col-xs-12 nopadding">
         <h3><span>請填寫當初申請的<sapn class="hint">email</sapn>帳號，我們會將重新設定密碼的連結寄至你的email信箱</h3>
         <div><input type="text" name="email" placeholder="Email帳號" class="input-text"></div>
-        <div><button type="button" class="button2" onclick="resetpwStepShow(1,'next')">確認送出</button></div>
+        <div><button type="button" class="button2" onclick="">確認送出</button></div>
       </div>
       <div class="col-lg-1 col-xs-1"></div>
     </div></div>

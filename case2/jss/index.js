@@ -61,10 +61,10 @@ function resetpwStepShow(nowID,direction){
 	$('#repw'+nowID).hide();
 	$('#repw-title'+nowID).addClass('hide');
 	if (direction == 'next'){
-		$('#repw-title'+nowID).removeClass('hide');
+		$('#repw-title'+(nowID+1)).removeClass('hide');
 		$('#repw'+(nowID+1)).fadeIn('slow');
 	}else if (direction == 'prev'){
-		$('#repw-title'+nowID).removeClass('hide');
+		$('#repw-title'+(nowID-1)).removeClass('hide');
 		$('#repw'+(nowID-1)).fadeIn('slow');
 	}
 	
