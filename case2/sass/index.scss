@@ -570,6 +570,24 @@ h3{
 		width: 260px;
 	}
 }
+#repw3{
+	margin: 25px 0;
+	.info-s{
+		display: block;
+		margin-top: 10px;
+		line-height: 30px;
+	}
+	.img-brief{
+		width: 100%;
+		height: auto;
+	}
+	h3{
+		padding-bottom: 15px;
+	}
+	img{
+		padding-top: 35px;
+	}
+}
 /*------- email頁面 -------*/
 [class*="email-"]{
 	width: 100%;
@@ -742,6 +760,15 @@ h3{
 		}
 		.button3{
 			width: 150px;
+		}
+	}
+	#repw3{
+		.info-s{
+			display: inline-block;
+			margin-top: 0;
+		}
+		.img-brief{
+			width: 435px;
 		}
 	}
 	/*------- email頁面 -------*/
