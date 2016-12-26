@@ -856,6 +856,21 @@ h3 {
   padding-top: 35px;
 }
 
+/*------- 會員修改頁面 -------*/
+.account {
+  background-color: #ebf0f4;
+}
+.account .mydata {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.account .mypw {
+  width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
 /*------- email頁面 -------*/
 [class*="email-"] {
   width: 100%;
@@ -1125,6 +1140,14 @@ h3 {
   }
   #repw3 .img-brief {
     width: 435px;
+  }
+
+  /*------- 會員修改頁面 -------*/
+  .account .mydata {
+    width: 500px;
+  }
+  .account .mypw {
+    width: 500px;
   }
 
   /*------- email頁面 -------*/
