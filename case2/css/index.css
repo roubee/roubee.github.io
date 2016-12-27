@@ -885,6 +885,9 @@ h3 {
 .account .edit-pen {
   cursor: pointer;
 }
+.account .myimg {
+  position: relative;
+}
 .account .myimg .img {
   background-color: #1aa0e5;
   color: #fff;
@@ -896,6 +899,18 @@ h3 {
   border-radius: 99em;
   line-height: 122px;
   margin: 0 auto;
+}
+.account .myimg .pen {
+  position: absolute;
+  width: 165px;
+  height: 165px;
+  top: 0;
+  text-align: right;
+  left: 50%;
+}
+.account .myimg .pen img {
+  position: relative;
+  left: -50%;
 }
 .account .mydata {
   width: 100%;

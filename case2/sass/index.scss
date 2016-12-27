@@ -617,6 +617,7 @@ h3{
 		cursor: pointer;
 	}
 	.myimg{
+		position: relative;
 		.img{
 			background-color: $main-color;
 			color: #fff;
@@ -628,7 +629,16 @@ h3{
 			margin: 0 auto;
 		}
 		.pen{
-
+			position: absolute;
+			width: 165px;
+			height: 165px;
+			top: 0;
+			text-align: right;
+			left: 50%;
+			img{
+				position: relative;
+				left: -50%;
+			}
 		}
 	}
 	.mydata{
