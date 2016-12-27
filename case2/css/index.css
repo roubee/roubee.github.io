@@ -939,6 +939,38 @@ h3 {
 .account .content-block {
   clear: both;
   border-top: 1px solid #d1d1d1;
+  padding-top: 25px;
+}
+.account .content-block form .left {
+  float: left;
+  width: 30%;
+  text-align: left;
+  height: 45px;
+  display: block;
+  line-height: 45px;
+  margin: 10px 0;
+  color: #8c8c8c;
+  font-size: 1.7rem;
+}
+.account .content-block form .right {
+  float: right;
+  width: 70%;
+  height: 45px;
+  display: block;
+  margin: 10px 0;
+}
+.account .content-block form input {
+  height: 45px;
+  width: 100%;
+}
+.account .content-block form .btn2 {
+  width: 150px;
+}
+.account .content-block form button {
+  margin-top: 30px;
+}
+.account .content-block form .ui-selectmenu-button.ui-button {
+  width: 70%;
 }
 
 /*------- email頁面 -------*/

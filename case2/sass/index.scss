@@ -670,6 +670,40 @@ h3{
 	.content-block{
 		clear: both;
 		border-top: 1px solid #d1d1d1;
+		padding-top: 25px;
+		form{
+			.left{
+				float: left;
+				width: 30%;
+				text-align: left;
+				height: 45px;
+				display: block;
+				line-height: 45px;
+				margin: 10px 0;
+				color: #8c8c8c;
+				font-size: 1.7rem;
+			}
+			.right{
+				float: right;
+				width: 70%;
+				height: 45px;
+				display: block;
+				margin: 10px 0;
+			}
+			input{
+				height: 45px;
+				width: 100%;
+			}
+			.btn2{
+				width: 150px;
+			}
+			button{
+				margin-top: 30px;
+			}
+			.ui-selectmenu-button.ui-button{
+				width: 70%;
+			}
+		}
 	}
 }
 /*------- email頁面 -------*/

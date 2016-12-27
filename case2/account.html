@@ -34,13 +34,42 @@
         <div class="title-block">
           <div>個人資料</div><div><img src="./images/edit.png" class="edit-pen"></div>
         </div>
-        <div class="content-block">2</div>
+        <div class="content-block">
+          <form>
+          <div>
+            <div class="left">姓名</div><input class="input-text right" type="text" name="password">
+          </div>
+          <div>
+            <div class="left">公司名稱</div><input class="input-text right" type="text" name="password">
+          </div>
+          <div>
+            <div class="left">國碼</div><select name="country-code" id="country-code">
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Taiwan">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+886</option>
+            </select>
+          </div>
+          <div><button type="button" class="button3" onclick="">取消</button><button type="button" class="button2 btn2" onclick="">修改</button></div>
+          </form>
+        </div>
       </div>
       <div class="mypw">
         <div class="title-block">
           <div>密碼</div><div><img src="./images/edit.png" class="edit-pen"></div>
         </div>
-        <div class="content-block">4</div>
+        <div class="content-block">
+          <form>
+          <div>
+            <div class="left">舊密碼</div><input class="input-text right" type="password" name="password">
+          </div>
+          <div>
+            <div class="left">新密碼</div><input class="input-text right" type="password" name="new-password">
+          </div>
+          <div>
+            <div class="left">確認新密碼</div><input class="input-text right" type="password" name="new-re-password">
+          </div>
+          <div><button type="button" class="button3" onclick="">取消</button><button type="button" class="button2 btn2" onclick="">修改</button></div>
+          </form>
+        </div>
       </div>
     </div></div></div>      
   </div>
