@@ -7,7 +7,7 @@
 
     <title>bizpider</title>
 
-    <!-- Bootstrap -->
+    <link href="./css/jquery-ui.min.css"  rel="stylesheet">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link href="./css/w3.css" rel="stylesheet">
     <link href="./css/index.css" rel="stylesheet">
@@ -15,23 +15,33 @@
   <body>
   <!-- 導覽列 -->
   <nav class="nav-all navbar navbar-fixed-top"><div class="container-fluid"><div class="row">
-    <div class="col-xs-1 col-xs-offset-1 nopadding">
+    <div class="col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1 nopadding">
         <div class="logo"><a href="#"><img src="./images/logo.png"></a></div>
     </div>
-    <div class="col-xs-7"></div>
-    <div class="col-xs-2">
-        <div class="member"></div>
+    <div class="col-sm-7 col-xs-4"></div>
+    <div class="col-sm-2 col-xs-5">
+        <div class="member"><div class="simg">莎</div><span><a href="account.html">莎拉拉</a></span></div>
     </div>
   </div></div></nav>
   <div class="wra account">
     <div class="container-fluid"><div class="row"><div class="col-xs-12 nopadding">
       <h1>會員中心</h1>
       <div class="myimg">
-        <div>@@</div>
-        <div>#</div>
+        <div class="img">莎</div>
+        <div class="pen">#</div>
       </div>
-      <div class="mydata">2</div>
-      <div class="mypw">3</div>
+      <div class="mydata">
+        <div class="title-block">
+          <div>個人資料</div><div><img src="./images/edit.png" class="edit-pen"></div>
+        </div>
+        <div class="content-block">2</div>
+      </div>
+      <div class="mypw">
+        <div class="title-block">
+          <div>密碼</div><div><img src="./images/edit.png" class="edit-pen"></div>
+        </div>
+        <div class="content-block">4</div>
+      </div>
     </div></div></div>      
   </div>
   <!-- footer -->
@@ -48,6 +58,9 @@
     </div>
   </div></div></footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./jss/bootstrap.min.js"></script>
+  <script src="./jss/index.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @import "compass/css3";
 $screen-sm-min: 744px;
+$main-color: #1aa0e5;
 html {font-size: 62.5%;}
 body {
 	font-size: 1.6rem;
@@ -30,7 +31,7 @@ h3{
 	color: #5b5b5b;
 }
 .a1,.a1:focus{
-	color: #1aa0e5;
+	color: $main-color;
 	text-decoration: underline;
 }
 .a1:hover,.a1:active{
@@ -56,7 +57,7 @@ h3{
 .text-l{font-size: 1.7rem;}
 .text-s{font-size: 1.5rem;}
 .text-xs{font-size: 1.4rem;color:#959595;}
-.hint{color: #1aa0e5;}
+.hint{color: $main-color;}
 @mixin button-all($color,$fontSize,$height){
 	background-color: $color;
 	color: #fff;
@@ -78,7 +79,7 @@ h3{
 }
 .button2{
 	width: 260px;
-	@include button-all(#1aa0e5,1.7rem,50px);
+	@include button-all($main-color,1.7rem,50px);
 }
 .button2:hover,.button2:active{
 	background-color: #178fcd;
@@ -143,11 +144,11 @@ h3{
 }
 .step-done{
 	@include box-sizing(border-box);
-	border: 3px solid #1aa0e5;
-	@include step-circle(#fff,#1aa0e5);
+	border: 3px solid $main-color;
+	@include step-circle(#fff,$main-color);
 }
 .step-stay{
-	@include step-circle(#1aa0e5,#fff);
+	@include step-circle($main-color,#fff);
 }
 .step-undone{
 	@include step-circle(#e4e4e4,#fff);
@@ -165,7 +166,24 @@ h3{
 	.member{
 		float: right;
 		line-height: 80px;
+		.simg{
+			height: 30px;
+			width: 30px;
+			background-color: $main-color;
+			@include border-radius(99em);
+			float: left;
+			margin-top: 25px;
+			margin-right: 15px;
+			font-size: 1.4rem;
+			line-height: 2.5rem;
+			color: #fff;
+		}
+		a{
+			font-size: 1.7rem;
+			color: #000;
+		}
 	}
+	
 }
 .wra{
 	overflow-y: scroll;
@@ -462,7 +480,7 @@ h3{
 	text-align: center;
 }
 .sign-progressbar li.active{
-	color: #1aa0e5;
+	color: $main-color;
 }
 .sign-progressbar li:before {
 	content: counter(step);
@@ -488,21 +506,21 @@ h3{
 	z-index: -1;
 }
 .sign-progressbar li.done:after{
-	background: #1aa0e5;
+	background: $main-color;
 }
 .sign-progressbar li:first-child:after {
 	content: none; 
 }
 .sign-progressbar li.active:before,  .sign-progressbar li.active:after{
-	background: #1aa0e5;
+	background: $main-color;
 	color: white;
 }
 .sign-progressbar li.done:before,{
 	line-height: 48.5px;
 	background: #fff;
-	color: #1aa0e5;
+	color: $main-color;
 	@include box-sizing(border-box);
-	border: 3px solid #1aa0e5;
+	border: 3px solid $main-color;
 	width: 50px;
 }
 .sign-progressbar li.undone:before,{
@@ -591,18 +609,57 @@ h3{
 /*------- 會員修改頁面 -------*/
 .account{
 	background-color: #ebf0f4;
+	h1{
+		margin-top: 50px;
+		margin-bottom: 60px;
+	}
+	.edit-pen{
+		cursor: pointer;
+	}
 	.myimg{
+		.img{
+			background-color: $main-color;
+			color: #fff;
+			font-size: 7rem;
+			width: 122px;
+			height: 122px;
+			@include border-radius(99em);
+			line-height: 122px;
+			margin: 0 auto;
+		}
+		.pen{
 
+		}
 	}
 	.mydata{
 		width: 100%;
 		background-color: #fff;
 		margin: 0 auto;
+		padding: 40px 45px;
+		margin-bottom: 35px;
+		margin-top: 35px;
 	}
 	.mypw{
 		width: 100%;
 		background-color: #fff;
 		margin: 0 auto;
+		padding: 40px 45px;
+		margin-bottom: 135px;
+	}
+	.title-block{
+		div:nth-child(1){
+			float: left;
+			font-size: 2.2rem;
+			margin-bottom: 30px;
+		}
+		div:nth-child(2){
+			float: right;
+			margin-bottom: 30px;
+		}
+	}
+	.content-block{
+		clear: both;
+		border-top: 1px solid #d1d1d1;
 	}
 }
 /*------- email頁面 -------*/

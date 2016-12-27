@@ -34,6 +34,12 @@ $(function(){
       .iconselectmenu()
       .iconselectmenu('menuWidget')
       .addClass('ui-menu-icons avatar');
+
+    $('.edit-pen').hover(function(){
+    	$(this).attr('src','images/edit2.png');
+    },function(){
+    	$(this).attr('src','images/edit.png');
+    });
 });
 
 function signupStepShow(nowID,direction){
