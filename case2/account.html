@@ -32,21 +32,30 @@
       </div>
       <div class="mydata">
         <div class="title-block">
-          <div>個人資料</div><div><img src="./images/edit.png" class="edit-pen"></div>
+          <div>個人資料</div><div><img src="./images/edit.png" class="edit-pen" onclick="clickEdit()"></div>
         </div>
         <div class="content-block">
           <form>
           <div>
-            <div class="left">姓名</div><input class="input-text right" type="text" name="password">
+            <div class="left">姓名</div><div class="gender-text">小姐</div><input type="radio" name="gender" value="female" checked class="gender"><div class="gender-text">先生</div><input type="radio" name="gender" value="male" class="gender"><input class="input-text right myname" type="text" name="myname" value="莎拉拉">
           </div>
           <div>
-            <div class="left">公司名稱</div><input class="input-text right" type="text" name="password">
+            <div class="left">公司名稱</div><input class="input-text right" type="text" name="company" value="史瑪特有限公司">
           </div>
           <div>
             <div class="left">國碼</div><select name="country-code" id="country-code">
             　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Taiwan">台灣+886</option>
-            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+887</option>
             </select>
+          </div>
+          <div>
+            <div class="left">電話</div><input class="input-text right phone1" type="text" name="phone" value="04-12345678"><input class="input-text right phone2" type="text" name="phone" value="04-12345678">
+          </div>
+          <div>
+            <div class="left">行動電話</div><input class="input-text right" type="text" name="mobile" value="0900000000">
+          </div>
+          <div>
+            <div class="left">電子郵件</div><div class="email">Sabrina_Wang@12345.com.tw</div>
           </div>
           <div><button type="button" class="button3" onclick="">取消</button><button type="button" class="button2 btn2" onclick="">修改</button></div>
           </form>
@@ -54,7 +63,7 @@
       </div>
       <div class="mypw">
         <div class="title-block">
-          <div>密碼</div><div><img src="./images/edit.png" class="edit-pen"></div>
+          <div>密碼</div><div><img src="./images/edit.png" class="edit-pen" onclick="clickEdit()"></div>
         </div>
         <div class="content-block">
           <form>

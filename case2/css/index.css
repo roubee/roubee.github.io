@@ -930,11 +930,11 @@ h3 {
 .account .title-block div:nth-child(1) {
   float: left;
   font-size: 2.2rem;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .account .title-block div:nth-child(2) {
   float: right;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .account .content-block {
   clear: both;
@@ -962,6 +962,7 @@ h3 {
 .account .content-block form input {
   height: 45px;
   width: 100%;
+  color: #000;
 }
 .account .content-block form .btn2 {
   width: 150px;
@@ -971,6 +972,63 @@ h3 {
 }
 .account .content-block form .ui-selectmenu-button.ui-button {
   width: 70%;
+}
+.account .content-block form #country-code-button {
+  background-color: #fff !important;
+  float: right;
+  height: 45px;
+  display: block;
+  margin: 10px 0;
+  line-height: 45px;
+}
+.account .content-block form .ui-selectmenu-button.ui-button {
+  height: 45px;
+}
+.account .content-block form .ui-selectmenu-text {
+  background-image: url("../images/selectmenu.png") !important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  line-height: 30px;
+  font-size: 1.7rem;
+  color: #333;
+}
+.account .content-block form .email {
+  float: right;
+  height: 45px;
+  display: block;
+  line-height: 45px;
+  margin: 10px 0;
+  text-align: left;
+  width: 70%;
+}
+.account .content-block form .phone1 {
+  width: 15%;
+}
+.account .content-block form .phone2 {
+  width: 50%;
+  margin-right: 5%;
+}
+.account .content-block form input[type=radio] {
+  margin-left: 20px;
+}
+.account .content-block form .myname {
+  width: 30%;
+}
+.account .content-block form .gender {
+  width: 20px;
+  display: block;
+  line-height: 45px;
+  height: 45px;
+  float: right;
+  margin: 10px 0;
+}
+.account .content-block form .gender-text {
+  width: 40px;
+  display: block;
+  line-height: 45px;
+  height: 45px;
+  float: right;
+  margin: 10px 0;
 }
 
 /*------- email頁面 -------*/
