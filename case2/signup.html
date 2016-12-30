@@ -84,14 +84,23 @@
       <div class="col-lg-5 col-lg-offset-0 col-xs-10 col-xs-offset-1 sign-right3 nopadding">
         <div class="lock"><img src="./images/lock.png"><span>Sabrina_Wang@1234.com.tw</span></div>
         <form role="form" id="sign-form3">
-          <div style="float:left;"><input type="text" name="name" placeholder="姓名" class="input-text input-name"></div><div><div style="margin:0 auto;line-height: 45px;"><input type="radio" name="gender" value="male" checked> 先生 <input type="radio" name="gender" value="female"> 女士</div></div>
-          <div class="input-padding"><input type="password" name="password" placeholder="密碼" class="input-text"></div>
+          <div style="float:left;"><input type="text" name="name" placeholder="姓名" class="input-text input-name"></div><div><div style="margin:0 auto;line-height: 45px;"><input type="radio" name="gender" value="先生" checked> 先生 <input type="radio" name="gender" value="女士"> 女士</div></div>
+          <div class="input-padding">
+            <div class="pw-block">
+              <input type="password" name="password" placeholder="密碼" class="input-text" id="sign3-pw-input">
+              <div class="pw-strength">
+                <div class="progress"><div class="progress-inner"></div></div>
+                <div class="img"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pw-error">你的密碼順至少為6個字元。</div>
           <div class="input-padding"><input type="password" name="re-password" placeholder="確認密碼" class="input-text"></div>
           <div class="input-padding"><input type="text" name="company" placeholder="公司名稱" class="input-text"></div>
           <div class="input-padding">
             <select name="country-code" id="country-code">
-            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Taiwan">台灣+886</option>
-            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="台灣+886">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="台灣+887">台灣+887</option>
             </select>
           </div>
           <div style="float:left;" class="input-padding"><input type="text" name="phone" placeholder="電話" class="input-text input-phone"></div><div style="float:right;" class="input-padding"><input type="text" name="extension" placeholder="分機" class="input-text input-extension"></div>

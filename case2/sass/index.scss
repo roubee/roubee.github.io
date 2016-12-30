@@ -15,8 +15,9 @@ a{
 	font-size: 1.5rem;
 	cursor: pointer;
 }
-// a,a:visited,a:hover,a:active,a:focus{text-decoration: none;}
-a:focus, li:focus, button:focus, input:focus, input[type="checkbox"]{outline: none;}
+*:focus {
+    outline: none;
+}
 .nomargin {
    padding: 0 !important;
    margin: 0 !important;
@@ -95,6 +96,9 @@ h3{
 	background-color: #8c8c8c;
 	border: 0;
 }
+input[type="text"]:hover{
+	color: #333;
+}
 .input-text{
 	border: 1px solid #b9b9b9;
 	@include border-radius(5px);
@@ -120,6 +124,14 @@ h3{
 }
 .input-captcha{
 	width: 150px;
+}
+.input-error{
+	border: 1px solid #c22e2e;
+	background-color: #fdeeee;
+}
+.input-error:hover{
+	border: 1px solid #c22e2e;
+	background-color: #fdeeee;
 }
 .captcha-img{
 	width: 100px;
@@ -177,6 +189,7 @@ h3{
 			font-size: 1.4rem;
 			line-height: 2.5rem;
 			color: #fff;
+			overflow: hidden;
 		}
 		a{
 			font-size: 1.7rem;
@@ -365,10 +378,6 @@ h3{
 		padding-top: 25px;
 		line-height: 2rem;
 	}
-	.input-error{
-		border: 1px solid #c22e2e;
-		background-color: #fdeeee;
-	}
 	.error{
 		color: #d30909;
 		font-size: 1.5rem;
@@ -439,7 +448,7 @@ h3{
 		background-position: right center;
 	}
 	.input-name{
-		width: 155px;
+		width: 115px;
 	}
 	.input-phone{
 		width: 180px;
@@ -450,8 +459,55 @@ h3{
 	.button2{
 		margin-top: 35px;
 	}
-	input[type=radio]{
+	input[type="radio"]{
 		margin-left: 20px;
+	}
+	.pw-error{
+		color: #d30909;
+		font-size: 1.5rem;
+		padding-top: 10px;
+		text-align: left;
+		display: none;
+	}
+	.pw-block{
+	  position: relative;
+	  width: 260px;
+	  	.pw-strength{
+			width: 78px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: none;
+		}
+		.progress{
+			width: 40px;
+			height: 10px;
+			position: relative;
+			background-color: #cecece;
+			float: left;
+			top:50%;
+			transform:translateY(-50%);
+			margin-right: 10px;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+		.progress-inner{
+			width: 0;
+			height: 100%;
+			background-color: $main-color;
+		}
+		.img{
+			overflow: hidden;
+			width: 13px;
+			height: 16px;
+			position: relative;
+			float: left;
+			top:50%;
+			transform:translateY(-50%);
+			margin-right: 15px;
+			background: url('../images/pwStrength1.png') no-repeat center center;
+		}
 	}
 }
 .sign-img{
@@ -645,7 +701,7 @@ h3{
 		width: 100%;
 		background-color: #fff;
 		margin: 0 auto;
-		padding: 40px 45px;
+		padding: 35px 45px;
 		margin-bottom: 35px;
 		margin-top: 35px;
 	}
@@ -653,10 +709,11 @@ h3{
 		width: 100%;
 		background-color: #fff;
 		margin: 0 auto;
-		padding: 40px 45px;
+		padding: 35px 45px;
 		margin-bottom: 135px;
 	}
 	.title-block{
+		margin-bottom: 30px;
 		div:nth-child(1){
 			float: left;
 			font-size: 2.2rem;
@@ -671,7 +728,6 @@ h3{
 		clear: both;
 		border-top: 1px solid #d1d1d1;
 		padding-top: 25px;
-		// display: none;
 		form{
 			.left{
 				float: left;
@@ -700,7 +756,7 @@ h3{
 				width: 150px;
 			}
 			button{
-				margin-top: 30px;
+				margin-top: 0px;
 			}
 			.ui-selectmenu-button.ui-button{
 				width: 70%;
@@ -712,6 +768,7 @@ h3{
 				display: block;
 				margin: 10px 0;
 				line-height: 45px;
+				display: none;
 			}
 			.ui-selectmenu-button.ui-button{
 				height: 45px;
@@ -740,7 +797,7 @@ h3{
 				width: 50%;
 				margin-right: 5%;
 			}
-			input[type=radio]{
+			input[type="radio"]{
 				margin-left: 20px;
 			}
 			.myname{
@@ -762,8 +819,21 @@ h3{
 				float: right;
 				margin: 10px 0;
 			}
+			.info-txt{
+				line-height: 45px;
+				height: 45px;
+				margin: 10px 0;
+				float: left;
+				text-align: left;
+			}
+			.input-block{
+				display: none;
+			}
 		}
 	}
+}
+#country-code{
+	display: none !important;
 }
 /*------- email頁面 -------*/
 [class*="email-"]{
@@ -900,6 +970,12 @@ h3{
 		.input-extension{
 			width: 100px;
 		}
+		.pw-block{
+			width: 320px;
+		}
+		.input-name{
+			width: 155px;
+		}
 	}
 	.sign-img{
 		img{
@@ -959,4 +1035,85 @@ h3{
 	}
 	/*------- email頁面 -------*/
 	[class*="email-"]{width: 600px;}
+}
+
+// cropbox.js (https://github.com/hongkhanh/cropbox)
+.imageBox{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border:1px solid $main-color;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor:move;
+    margin: 0 auto;
+}
+
+.imageBox .thumbBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 122px;
+    height: 122px;
+    margin-top: -61px;
+    margin-left: -61px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox .spinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 300px;
+    background: rgba(0,0,0,0.7);
+}
+.cropbox{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	background-color: rgba(30,30,30,0.7);
+	padding-top: 100px;
+	color: #fff;
+	display: none;
+	.action{
+		width: 300px;
+		height: 30px;
+		margin: 10px auto;
+	}
+	.cropped>img{
+		margin-right: 10px;
+	}
+	input[type="file"] {
+	    display: none;
+	}
+	.custom-file-upload {
+	    @include button-all(#333333,1.7rem,40px);
+	    line-height: 40px;
+	    cursor: pointer;
+	}
+	input[type="button"] {
+	    @include button-all(#333333,1.7rem,40px);
+	    line-height: 40px;
+	    padding:0 20px;
+	    cursor: pointer;
+	    margin-left: 10px;
+	}
+	#account-btn-crop{
+		width: 120px;
+		background-color: $main-color;
+	}
+	#account-btn-cancel{
+		width: 120px;
+		background-color: #bababa;
+		margin-left: 0;
+	}
 }

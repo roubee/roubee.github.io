@@ -20,52 +20,73 @@
     </div>
     <div class="col-sm-7 col-xs-4"></div>
     <div class="col-sm-2 col-xs-5">
-        <div class="member"><div class="simg">莎</div><span><a href="account.html">莎拉拉</a></span></div>
+        <div class="member"><div class="simg"></div><span><a href="account.html">莎拉拉</a></span></div>
     </div>
   </div></div></nav>
+
+  <!-- 編輯會員照片 -->
+  <div class="cropbox" id="account-cropbox">
+    <div class="imageBox">
+      <div class="thumbBox"></div>
+      <div class="spinner" style="display: none">Loading...</div>
+    </div>
+    <div class="action">
+      <label for="account-file" class="custom-file-upload">
+        選擇檔案
+      </label>
+      <input id="account-file" type="file"/>
+      <input type="button" id="account-btn-zoomIn" value="+" style="float: right">
+      <input type="button" id="account-btn-zoomOut" value="-" style="float: right"><br><br>
+      <input type="button" id="account-btn-cancel" value="取消" style="float: left">
+      <input type="button" id="account-btn-crop" value="確定" style="float: right">
+    </div>
+    <div class="cropped">
+    </div>
+  </div>
+
   <div class="wra account">
     <div class="container-fluid"><div class="row"><div class="col-xs-12 nopadding">
       <h1>會員中心</h1>
       <div class="myimg">
-        <div class="img">莎</div>
-        <div class="pen"><img src="./images/edit.png" class="edit-pen"></div>
+        <div class="img"></div>
+        <div class="pen"><img src="./images/edit.png" class="edit-pen" onclick="clickEdit('account-cropbox')"></div>
       </div>
       <div class="mydata">
         <div class="title-block">
-          <div>個人資料</div><div><img src="./images/edit.png" class="edit-pen" onclick="clickEdit()"></div>
+          <div>個人資料</div><div><img src="./images/edit.png" class="edit-pen" onclick="clickEdit('account-mydata')"></div>
         </div>
-        <div class="content-block">
+        <div id="account-mydata" class="content-block">
           <form>
           <div>
-            <div class="left">姓名</div><div class="gender-text">小姐</div><input type="radio" name="gender" value="female" checked class="gender"><div class="gender-text">先生</div><input type="radio" name="gender" value="male" class="gender"><input class="input-text right myname" type="text" name="myname" value="莎拉拉">
+            <div class="left">姓名</div><div class="gender-text input-block">小姐</div><input type="radio" name="gender" value="女士" checked class="gender input-block"><div class="gender-text input-block">先生</div><input type="radio" name="gender" value="先生" class="gender input-block"><input class="input-text right myname input-block" type="text" name="myname" value="莎拉拉"><span id="myname-text" class="info-txt span-block"></span>
           </div>
-          <div>
-            <div class="left">公司名稱</div><input class="input-text right" type="text" name="company" value="史瑪特有限公司">
+          <div style="clear:both;">
+            <div class="left">公司名稱</div><input class="input-text right input-block" type="text" name="company" value="史瑪特有限公司"><span id="company-text" class="info-txt span-block"></span>
           </div>
-          <div>
-            <div class="left">國碼</div><select name="country-code" id="country-code">
-            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Taiwan">台灣+886</option>
-            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="Japan">台灣+887</option>
-            </select>
+          <div style="clear:both;">
+            <div class="left">國碼</div><select name="country-code" id="country-code" class="input-block">
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="台灣+886">台灣+886</option>
+            　<option data-class="avatar" data-style="background-image:url('./images/taiwan.png');" value="台灣+887">台灣+887</option>
+            </select><span id="country-text" class="info-txt span-block"></span>
           </div>
-          <div>
-            <div class="left">電話</div><input class="input-text right phone1" type="text" name="phone" value="04-12345678"><input class="input-text right phone2" type="text" name="phone" value="04-12345678">
+          <div style="clear:both;">
+            <div class="left">電話</div><input class="input-text right phone1 input-block" type="text" name="phoneExt" value="12"><input class="input-text right phone2 input-block" type="text" name="phone" value="04-12345678"><span id="phone-text" class="info-txt span-block"></span><span id="phoneExt-text" class="info-txt span-block"></span>
           </div>
-          <div>
-            <div class="left">行動電話</div><input class="input-text right" type="text" name="mobile" value="0900000000">
+          <div style="clear:both;">
+            <div class="left">行動電話</div><input class="input-text right input-block" type="text" name="mobile" value="0900000000"><span id="mobile-text" class="info-txt span-block"></span>
           </div>
-          <div>
+          <div style="clear:both;">
             <div class="left">電子郵件</div><div class="email">Sabrina_Wang@12345.com.tw</div>
           </div>
-          <div><button type="button" class="button3" onclick="">取消</button><button type="button" class="button2 btn2" onclick="">修改</button></div>
+          <div style="clear:both;"><button type="button" class="button3" onclick="clickCancel('account-mydata')" style="visibility: hidden;">取消</button><button type="button" class="button2 btn2" onclick="" style="visibility: hidden;">修改</button></div>
           </form>
         </div>
       </div>
       <div class="mypw">
         <div class="title-block">
-          <div>密碼</div><div><img src="./images/edit.png" class="edit-pen" onclick="clickEdit()"></div>
+          <div>密碼</div><div><img src="./images/edit.png" class="edit-pen" onclick="clickEdit('account-mypw')"></div>
         </div>
-        <div class="content-block">
+        <div id="account-mypw" class="content-block">
           <form>
           <div>
             <div class="left">舊密碼</div><input class="input-text right" type="password" name="password">
@@ -76,7 +97,7 @@
           <div>
             <div class="left">確認新密碼</div><input class="input-text right" type="password" name="new-re-password">
           </div>
-          <div><button type="button" class="button3" onclick="">取消</button><button type="button" class="button2 btn2" onclick="">修改</button></div>
+          <div><button type="button" class="button3" onclick="clickCancel('account-mypw')">取消</button><button type="button" class="button2 btn2" onclick="">修改</button></div>
           </form>
         </div>
       </div>
@@ -96,6 +117,7 @@
     </div>
   </div></div></footer>
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+   <script type="text/javascript" src="./jss/cropbox-min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="./jss/bootstrap.min.js"></script>

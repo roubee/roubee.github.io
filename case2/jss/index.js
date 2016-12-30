@@ -1,3 +1,6 @@
+var passwordProgressWidth = parseInt($('.progress').css('width'));
+var passwordNormMinLength = 6; //密碼強度最低標準
+var passwordNormMaxLength = 10; //密碼強度最高標準
 $(function(){
 	$('#sign-step2').hide();
 	$('#sign-step3').hide();
@@ -40,7 +43,82 @@ $(function(){
     },function(){
     	$(this).attr('src','images/edit.png');
     });
+
+    // 密碼強度確認
+    $('#sign3-pw-input').bind('input', function(){
+    	$('.pw-strength').css('display','block');
+    	$(this).addClass('input-error');
+    	checkPasswordStrength($(this).val());
+    });
+
+    $('.account .content-block').eq(1).css('display','none');
+
+    $('#myname-text').html($('input[name=myname]').val()+' / '+$('input:radio[name=gender]:checked').val());
+    $('#company-text').html($('input[name=company]').val());
+    $('#country-text').html($('select[name=country-code] option:selected').val());
+    $('#phone-text').html($('input[name=phone]').val());
+    $('#phoneExt-text').html(' # '+$('input[name=phoneExt]').val());
+    $('#mobile-text').html($('input[name=mobile]').val());
+
+    // 會員名稱
+    var accountName = $('input[name=myname]').val().charAt(0);
+    $('.member .simg').html(accountName);
+   	$('.account .myimg .img').html(accountName);
+
+    // cropbox.js (https://github.com/hongkhanh/cropbox)
+    var options =
+    {
+        thumbBox: '.thumbBox',
+        spinner: '.spinner',
+        imgSrc: ''
+    }
+    var cropper = $('.imageBox').cropbox(options);
+    $('#account-file').on('change', function(){
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            options.imgSrc = e.target.result;
+            cropper = $('.imageBox').cropbox(options);
+        }
+        reader.readAsDataURL(this.files[0]);
+        this.files = [];
+    })
+    $('#account-btn-crop').on('click', function(){
+        var img = cropper.getDataURL();
+        $('.cropped').append('<img src="'+img+'">');
+
+        $('.edit-pen').eq(0).css('visibility','visible');
+        $('#account-cropbox').hide();
+        $('.member .simg').css('background-image','url('+img+')');
+    	$('.account .myimg .img').css('background-image','url('+img+')');
+    })
+    $('#account-btn-zoomIn').on('click', function(){
+        cropper.zoomIn();
+    })
+    $('#account-btn-zoomOut').on('click', function(){
+        cropper.zoomOut();
+    })
+    $('#account-btn-cancel').on('click', function(){
+    	$('.edit-pen').eq(0).css('visibility','visible');
+        $('#account-cropbox').hide();
+    })
 });
+
+function checkPasswordStrength(val){
+	var per = (passwordProgressWidth/passwordNormMaxLength)*val.length;
+	$('.progress-inner').css('width',per+'px');
+
+	if(val.length<passwordNormMinLength){
+		$('.progress-inner').css('background-color','#c34141');
+		$('#sign3-pw-input').addClass('input-error');
+    	$('.pw-error').css('display','block');
+    	$('.pw-block .img').css('background-image','url(images/pwStrength1.png)');
+	}else{
+		$('.progress-inner').css('background-color','#1aa0e5');
+		$('#sign3-pw-input').removeClass('input-error');
+    	$('.pw-error').css('display','none');
+    	$('.pw-block .img').css('background-image','url(images/pwStrength2.png)');
+	}
+}
 
 function signupStepShow(nowID,direction){
 	$('#sign-step'+nowID).hide();
@@ -74,4 +152,69 @@ function resetpwStepShow(nowID,direction){
 		$('#repw'+(nowID-1)).fadeIn('slow');
 	}
 	
+}
+
+var accountBlockArr = [
+	{
+		id: 'account-cropbox',
+	},
+	{
+		id: 'account-mydata',
+	},
+	{
+		id: 'account-mypw'
+	}];
+function clickEdit(blockID){
+	for(var i=0; i<accountBlockArr.length; i++){
+		if(blockID==accountBlockArr[i].id){
+			$('.edit-pen').eq(i).css('visibility','hidden');
+		}
+	}
+
+	switch(blockID){
+		// 個人照片區塊
+		case accountBlockArr[0].id:
+			$('#account-cropbox').show();
+			break;
+		// 個人資料區塊
+		case accountBlockArr[1].id:
+			$('#country-code-button').css('display','block');
+			$('.input-block').css('display','block');
+			$('.span-block').css('display','none');
+			$('.account .content-block form button').css('visibility','visible');
+			$('.account .content-block form button').css('margin-top','30px');
+			break;
+		// 個人密碼區塊
+		case accountBlockArr[2].id:
+			$('.account .content-block').eq(1).css('display','block');
+			break;
+		default:
+			break;
+	}
+}
+
+function clickCancel(blockID) {
+	var blockState = $('#'+blockID).css('display');
+	for(var i=0; i<accountBlockArr.length; i++){
+		if(blockID==accountBlockArr[i].id){
+			$('.edit-pen').eq(i).css('visibility','visible');
+		}
+	}
+
+	switch(blockID){
+		case accountBlockArr[0].id:
+			break;
+		case accountBlockArr[1].id:
+			$('#country-code-button').css('display','none');
+			$('.input-block').css('display','none');
+			$('.span-block').css('display','block');
+			$('#account-mydata button').css('visibility','hidden');
+			$('.account .content-block form button').css('margin-top','0px');
+			break;
+		case accountBlockArr[2].id:
+			$('#'+accountBlockArr[2].id).css('display','none');
+			break;
+		default:
+			break;
+	}
 }

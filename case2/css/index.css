@@ -18,7 +18,7 @@ a {
   cursor: pointer;
 }
 
-a:focus, li:focus, button:focus, input:focus, input[type="checkbox"] {
+*:focus {
   outline: none;
 }
 
@@ -149,6 +149,10 @@ h3 {
   border: 0;
 }
 
+input[type="text"]:hover {
+  color: #333;
+}
+
 .input-text {
   border: 1px solid #b9b9b9;
   -moz-border-radius: 5px;
@@ -183,6 +187,16 @@ h3 {
 
 .input-captcha {
   width: 150px;
+}
+
+.input-error {
+  border: 1px solid #c22e2e;
+  background-color: #fdeeee;
+}
+
+.input-error:hover {
+  border: 1px solid #c22e2e;
+  background-color: #fdeeee;
 }
 
 .captcha-img {
@@ -273,6 +287,7 @@ h3 {
   font-size: 1.4rem;
   line-height: 2.5rem;
   color: #fff;
+  overflow: hidden;
 }
 .nav-all .member a {
   font-size: 1.7rem;
@@ -572,10 +587,6 @@ h3 {
   padding-top: 25px;
   line-height: 2rem;
 }
-.sign-right2 .input-error {
-  border: 1px solid #c22e2e;
-  background-color: #fdeeee;
-}
 .sign-right2 .error {
   color: #d30909;
   font-size: 1.5rem;
@@ -673,7 +684,7 @@ h3 {
   background-position: right center;
 }
 .sign-right3 .input-name {
-  width: 155px;
+  width: 115px;
 }
 .sign-right3 .input-phone {
   width: 180px;
@@ -684,8 +695,55 @@ h3 {
 .sign-right3 .button2 {
   margin-top: 35px;
 }
-.sign-right3 input[type=radio] {
+.sign-right3 input[type="radio"] {
   margin-left: 20px;
+}
+.sign-right3 .pw-error {
+  color: #d30909;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  text-align: left;
+  display: none;
+}
+.sign-right3 .pw-block {
+  position: relative;
+  width: 260px;
+}
+.sign-right3 .pw-block .pw-strength {
+  width: 78px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.sign-right3 .pw-block .progress {
+  width: 40px;
+  height: 10px;
+  position: relative;
+  background-color: #cecece;
+  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sign-right3 .pw-block .progress-inner {
+  width: 0;
+  height: 100%;
+  background-color: #1aa0e5;
+}
+.sign-right3 .pw-block .img {
+  overflow: hidden;
+  width: 13px;
+  height: 16px;
+  position: relative;
+  float: left;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 15px;
+  background: url("../images/pwStrength1.png") no-repeat center center;
 }
 
 .sign-img {
@@ -916,7 +974,7 @@ h3 {
   width: 100%;
   background-color: #fff;
   margin: 0 auto;
-  padding: 40px 45px;
+  padding: 35px 45px;
   margin-bottom: 35px;
   margin-top: 35px;
 }
@@ -924,8 +982,11 @@ h3 {
   width: 100%;
   background-color: #fff;
   margin: 0 auto;
-  padding: 40px 45px;
+  padding: 35px 45px;
   margin-bottom: 135px;
+}
+.account .title-block {
+  margin-bottom: 30px;
 }
 .account .title-block div:nth-child(1) {
   float: left;
@@ -968,7 +1029,7 @@ h3 {
   width: 150px;
 }
 .account .content-block form button {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 .account .content-block form .ui-selectmenu-button.ui-button {
   width: 70%;
@@ -980,6 +1041,7 @@ h3 {
   display: block;
   margin: 10px 0;
   line-height: 45px;
+  display: none;
 }
 .account .content-block form .ui-selectmenu-button.ui-button {
   height: 45px;
@@ -1008,7 +1070,7 @@ h3 {
   width: 50%;
   margin-right: 5%;
 }
-.account .content-block form input[type=radio] {
+.account .content-block form input[type="radio"] {
   margin-left: 20px;
 }
 .account .content-block form .myname {
@@ -1029,6 +1091,20 @@ h3 {
   height: 45px;
   float: right;
   margin: 10px 0;
+}
+.account .content-block form .info-txt {
+  line-height: 45px;
+  height: 45px;
+  margin: 10px 0;
+  float: left;
+  text-align: left;
+}
+.account .content-block form .input-block {
+  display: none;
+}
+
+#country-code {
+  display: none !important;
 }
 
 /*------- email頁面 -------*/
@@ -1252,6 +1328,12 @@ h3 {
   .sign-right3 .input-extension {
     width: 100px;
   }
+  .sign-right3 .pw-block {
+    width: 320px;
+  }
+  .sign-right3 .input-name {
+    width: 155px;
+  }
 
   .sign-img img {
     width: 300px;
@@ -1314,4 +1396,100 @@ h3 {
   [class*="email-"] {
     width: 600px;
   }
+}
+.imageBox {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #1aa0e5;
+  background: #fff;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  cursor: move;
+  margin: 0 auto;
+}
+
+.imageBox .thumbBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 122px;
+  height: 122px;
+  margin-top: -61px;
+  margin-left: -61px;
+  box-sizing: border-box;
+  border: 1px solid #666666;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox .spinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  line-height: 300px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.cropbox {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background-color: rgba(30, 30, 30, 0.7);
+  padding-top: 100px;
+  color: #fff;
+  display: none;
+}
+.cropbox .action {
+  width: 300px;
+  height: 30px;
+  margin: 10px auto;
+}
+.cropbox .cropped > img {
+  margin-right: 10px;
+}
+.cropbox input[type="file"] {
+  display: none;
+}
+.cropbox .custom-file-upload {
+  background-color: #333333;
+  color: #fff;
+  border: 0;
+  font-size: 1.7rem;
+  height: 40px;
+  padding: 0 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.cropbox input[type="button"] {
+  background-color: #333333;
+  color: #fff;
+  border: 0;
+  font-size: 1.7rem;
+  height: 40px;
+  padding: 0 30px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.cropbox #account-btn-crop {
+  width: 120px;
+  background-color: #1aa0e5;
+}
+.cropbox #account-btn-cancel {
+  width: 120px;
+  background-color: #bababa;
+  margin-left: 0;
 }
