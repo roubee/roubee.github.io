@@ -70,7 +70,7 @@ $(function(){
     {
         thumbBox: '.thumbBox',
         spinner: '.spinner',
-        imgSrc: ''
+        imgSrc: '' //本來的會員照片路徑
     }
     var cropper = $('.imageBox').cropbox(options);
     $('#account-file').on('change', function(){
