@@ -84,12 +84,11 @@ $(function(){
     })
     $('#account-btn-crop').on('click', function(){
         var img = cropper.getDataURL();
-        $('.cropped').append('<img src="'+img+'">');
-
         $('.edit-pen').eq(0).css('visibility','visible');
         $('#account-cropbox').hide();
         $('.member .simg').css('background-image','url('+img+')');
     	$('.account .myimg .img').css('background-image','url('+img+')');
+    	$('body').css('overflow','auto');
     })
     $('#account-btn-zoomIn').on('click', function(){
         cropper.zoomIn();
@@ -100,6 +99,7 @@ $(function(){
     $('#account-btn-cancel').on('click', function(){
     	$('.edit-pen').eq(0).css('visibility','visible');
         $('#account-cropbox').hide();
+        $('body').css('overflow','auto');
     })
 });
 
@@ -175,6 +175,7 @@ function clickEdit(blockID){
 		// 個人照片區塊
 		case accountBlockArr[0].id:
 			$('#account-cropbox').show();
+			$('body').css('overflow','hidden');
 			break;
 		// 個人資料區塊
 		case accountBlockArr[1].id:

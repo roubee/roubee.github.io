@@ -1450,9 +1450,6 @@ input[type="text"]:hover {
   height: 30px;
   margin: 10px auto;
 }
-.cropbox .cropped > img {
-  margin-right: 10px;
-}
 .cropbox input[type="file"] {
   display: none;
 }
