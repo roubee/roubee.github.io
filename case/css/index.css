@@ -730,7 +730,7 @@ a:focus, li:focus {
 .philosophy .title {
   padding-top: 60px;
   background: url("") no-repeat left -40px;
-  height: 200px;
+  height: 140px;
 }
 .philosophy .title span {
   color: #000;
@@ -741,13 +741,34 @@ a:focus, li:focus {
 .philosophy .content {
   color: #232323;
   background: url("") no-repeat 110px top;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .philosophy .content .stitle {
   color: #bf955a;
   font-size: 2.2rem;
   width: 100%;
   padding-bottom: 50px;
+}
+.philosophy .content .item {
+  margin-bottom: 60px;
+}
+.philosophy .content .item-img {
+  float: none;
+  margin-right: 30px;
+}
+.philosophy .content .item-title {
+  text-align: left;
+  font-size: 2.2rem;
+  color: #3e3934;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.philosophy .content .item-detail {
+  text-align: left;
+  font-size: 1.6rem;
+  color: #797979;
+  margin-left: 0;
+  width: 100%;
 }
 
 /*------- RWD -------*/
@@ -870,10 +891,25 @@ a:focus, li:focus {
   }
   .philosophy .content {
     background: url("") no-repeat 110px top;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
   }
   .philosophy .content .stitle {
     width: 100%;
+  }
+  .philosophy .content .item {
+    margin-bottom: 60px;
+  }
+  .philosophy .content .item-img {
+    float: left;
+    margin-right: 30px;
+  }
+  .philosophy .content .item-title {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .philosophy .content .item-detail {
+    margin-left: 140px;
+    width: 240px;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -994,15 +1030,30 @@ a:focus, li:focus {
     vertical-align: middle;
   }
   .philosophy .content {
-    background: url("../images/philosophy_back2.png") no-repeat 110px top;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    padding-bottom: 100px;
+    background: url("../images/philosophy_back2.png") no-repeat center top;
+    -moz-background-size: 120% auto;
+    -o-background-size: 120% auto;
+    -webkit-background-size: 120% auto;
+    background-size: 120% auto;
+    padding-bottom: 60px;
   }
   .philosophy .content .stitle {
     width: 710px;
+  }
+  .philosophy .content .item {
+    margin-bottom: 40px;
+  }
+  .philosophy .content .item-img {
+    float: left;
+    margin-right: 30px;
+  }
+  .philosophy .content .item-title {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .philosophy .content .item-detail {
+    margin-left: 140px;
+    width: 240px;
   }
 }
 @media (min-width: 1200px) {
@@ -1165,14 +1216,29 @@ a:focus, li:focus {
     vertical-align: middle;
   }
   .philosophy .content {
-    background: url("../images/philosophy_back2.png") no-repeat 110px top;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    background-size: 100% auto;
-    padding-bottom: 100px;
+    background: url("../images/philosophy_back2.png") no-repeat center top;
+    -moz-background-size: 120% auto;
+    -o-background-size: 120% auto;
+    -webkit-background-size: 120% auto;
+    background-size: 120% auto;
+    padding-bottom: 60px;
   }
   .philosophy .content .stitle {
     width: 710px;
+  }
+  .philosophy .content .item {
+    margin-bottom: 40px;
+  }
+  .philosophy .content .item-img {
+    float: left;
+    margin-right: 30px;
+  }
+  .philosophy .content .item-title {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  .philosophy .content .item-detail {
+    margin-left: 140px;
+    width: 240px;
   }
 }

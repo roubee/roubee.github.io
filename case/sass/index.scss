@@ -586,7 +586,7 @@ a:focus, li:focus{outline: none;}
 	.title{
 		padding-top: 60px;
 		background: url('') no-repeat left -40px;
-		height: 200px;
+		height: 140px;
 		span{
 			color: #000;
 			font-size: 3rem;
@@ -597,12 +597,33 @@ a:focus, li:focus{outline: none;}
 	.content{
 		color: #232323;
 		background: url('') no-repeat 110px top;
-		padding-bottom: 50px;
+		padding-bottom: 10px;
 		.stitle{
 			color: #bf955a;
 			font-size: 2.2rem;
 			width: 100%;
 			padding-bottom: 50px;
+		}
+		.item{
+			margin-bottom: 60px;
+		}
+		.item-img{
+			float: none;
+			margin-right: 30px;
+		}
+		.item-title{
+			text-align: left;
+			font-size: 2.2rem;
+			color: #3e3934;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+		.item-detail{
+			text-align: left;
+			font-size: 1.6rem;
+			color: #797979;
+			margin-left: 0;
+			width: 100%;
 		}
 	}
 }
@@ -697,9 +718,24 @@ a:focus, li:focus{outline: none;}
 		}
 		.content{
 			background: url('') no-repeat 110px top;
-			padding-bottom: 100px;
+			padding-bottom: 60px;
 			.stitle{
 				width: 100%;
+			}
+			.item{
+				margin-bottom: 60px;
+			}
+			.item-img{
+				float: left;
+				margin-right: 30px;
+			}
+			.item-title{
+				padding-top: 50px;
+				padding-bottom: 10px;
+			}
+			.item-detail{
+				margin-left: 140px;
+				width: 240px;
 			}
 		}
 	}
@@ -791,11 +827,26 @@ a:focus, li:focus{outline: none;}
 			}
 		}
 		.content{
-			background: url('../images/philosophy_back2.png') no-repeat 110px top;
-			@include background-size(100% auto);
-			padding-bottom: 100px;
+			background: url('../images/philosophy_back2.png') no-repeat center top;
+			@include background-size(120% auto);
+			padding-bottom: 60px;
 			.stitle{
 				width: 710px;
+			}
+			.item{
+				margin-bottom: 40px;
+			}
+			.item-img{
+				float: left;
+				margin-right: 30px;
+			}
+			.item-title{
+				padding-top: 50px;
+				padding-bottom: 10px;
+			}
+			.item-detail{
+				margin-left: 140px;
+				width: 240px;
 			}
 		}
 	}
@@ -902,11 +953,26 @@ a:focus, li:focus{outline: none;}
 			}
 		}
 		.content{
-			background: url('../images/philosophy_back2.png') no-repeat 110px top;
-			@include background-size(100% auto);
-			padding-bottom: 100px;
+			background: url('../images/philosophy_back2.png') no-repeat center top;
+			@include background-size(120% auto);
+			padding-bottom: 60px;
 			.stitle{
 				width: 710px;
+			}
+			.item{
+				margin-bottom: 40px;
+			}
+			.item-img{
+				float: left;
+				margin-right: 30px;
+			}
+			.item-title{
+				padding-top: 50px;
+				padding-bottom: 10px;
+			}
+			.item-detail{
+				margin-left: 140px;
+				width: 240px;
 			}
 		}
 	}
