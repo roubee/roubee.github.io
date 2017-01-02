@@ -724,6 +724,32 @@ a:focus, li:focus {
   color: #fff;
 }
 
+.philosophy {
+  margin-top: 73px;
+}
+.philosophy .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 200px;
+}
+.philosophy .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.philosophy .content {
+  color: #232323;
+  background: url("") no-repeat 110px top;
+  padding-bottom: 50px;
+}
+.philosophy .content .stitle {
+  color: #bf955a;
+  font-size: 2.2rem;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
   .service {
@@ -830,6 +856,25 @@ a:focus, li:focus {
   .history .content .stage-line div:before {
     content: url("../images/history_stage_lg.png");
   }
+
+  .philosophy .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .philosophy .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .philosophy .content {
+    background: url("") no-repeat 110px top;
+    padding-bottom: 100px;
+  }
+  .philosophy .content .stitle {
+    width: 100%;
+  }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
   .service {
@@ -935,6 +980,29 @@ a:focus, li:focus {
   }
   .history .content .stage-line div:before {
     content: url("../images/history_stage_lg.png");
+  }
+
+  .philosophy .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .philosophy .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .philosophy .content {
+    background: url("../images/philosophy_back2.png") no-repeat 110px top;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    padding-bottom: 100px;
+  }
+  .philosophy .content .stitle {
+    width: 710px;
   }
 }
 @media (min-width: 1200px) {
@@ -1080,5 +1148,31 @@ a:focus, li:focus {
   }
   .history .content .stage-line div:before {
     content: url("../images/history_stage_lg.png");
+  }
+
+  .philosophy {
+    margin-top: 140px;
+  }
+  .philosophy .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .philosophy .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .philosophy .content {
+    background: url("../images/philosophy_back2.png") no-repeat 110px top;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    padding-bottom: 100px;
+  }
+  .philosophy .content .stitle {
+    width: 710px;
   }
 }

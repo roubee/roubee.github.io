@@ -580,7 +580,32 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 }
-
+// 經營理念
+.philosophy{
+	margin-top: 73px;
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat left -40px;
+		height: 200px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.content{
+		color: #232323;
+		background: url('') no-repeat 110px top;
+		padding-bottom: 50px;
+		.stitle{
+			color: #bf955a;
+			font-size: 2.2rem;
+			width: 100%;
+			padding-bottom: 50px;
+		}
+	}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -657,6 +682,27 @@ a:focus, li:focus{outline: none;}
 			}
 		}
 	}
+	// 經營理念
+	.philosophy{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.content{
+			background: url('') no-repeat 110px top;
+			padding-bottom: 100px;
+			.stitle{
+				width: 100%;
+			}
+		}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -728,6 +774,28 @@ a:focus, li:focus{outline: none;}
 				div:before{
 					content: url('../images/history_stage_lg.png');
 				}
+			}
+		}
+	}
+	// 經營理念
+	.philosophy{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.content{
+			background: url('../images/philosophy_back2.png') no-repeat 110px top;
+			@include background-size(100% auto);
+			padding-bottom: 100px;
+			.stitle{
+				width: 710px;
 			}
 		}
 	}
@@ -816,6 +884,29 @@ a:focus, li:focus{outline: none;}
 				div:before{
 					content: url('../images/history_stage_lg.png');
 				}
+			}
+		}
+	}
+	// 經營理念
+	.philosophy{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.content{
+			background: url('../images/philosophy_back2.png') no-repeat 110px top;
+			@include background-size(100% auto);
+			padding-bottom: 100px;
+			.stitle{
+				width: 710px;
 			}
 		}
 	}
