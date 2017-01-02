@@ -852,6 +852,57 @@ a:focus, li:focus {
 .team .content .first-row {
   padding-top: 90px;
 }
+.team .item {
+  padding: 0 30px;
+  margin-bottom: 100px;
+}
+.team .item img {
+  width: 100%;
+}
+.team .item-name {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  color: #000;
+  font-size: 1.6rem;
+  padding: 25px 0;
+}
+.team .item-name span:nth-child(1) {
+  border-bottom: 1px solid #bf955a;
+  padding-bottom: 15px;
+}
+.team .item-info {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  color: #bf955a;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.team .item-position {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  color: #797979;
+  font-size: 1.6rem;
+}
+.team .item-position ul {
+  list-style-position: outside;
+  list-style-type: none;
+  padding: 0;
+}
+.team .item-position li {
+  height: 30px;
+}
+.team .item-position li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+}
 
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
@@ -1051,6 +1102,18 @@ a:focus, li:focus {
   }
   .team .content .first-row {
     padding-top: 50px;
+  }
+  .team .item img {
+    width: 400px;
+  }
+  .team .item-name {
+    width: 400px;
+  }
+  .team .item-info {
+    width: 400px;
+  }
+  .team .item-position {
+    width: 400px;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1255,6 +1318,18 @@ a:focus, li:focus {
   }
   .team .content .first-row {
     padding-top: 70px;
+  }
+  .team .item img {
+    width: 400px;
+  }
+  .team .item-name {
+    width: 400px;
+  }
+  .team .item-info {
+    width: 400px;
+  }
+  .team .item-position {
+    width: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -1507,5 +1582,17 @@ a:focus, li:focus {
   }
   .team .content .first-row {
     padding-top: 70px;
+  }
+  .team .item img {
+    width: 400px;
+  }
+  .team .item-name {
+    width: 400px;
+  }
+  .team .item-info {
+    width: 400px;
+  }
+  .team .item-position {
+    width: 400px;
   }
 }
