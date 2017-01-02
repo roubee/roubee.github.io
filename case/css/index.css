@@ -771,6 +771,59 @@ a:focus, li:focus {
   width: 100%;
 }
 
+.vision {
+  margin-top: 73px;
+}
+.vision .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+}
+.vision .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.vision .stitle {
+  color: #bf955a;
+  font-size: 2.4rem;
+  margin-top: 50px;
+}
+.vision .content {
+  margin-top: 0px;
+}
+.vision .content .first-row {
+  padding-top: 90px;
+}
+.vision .item-text {
+  color: #797979;
+  font-size: 1.6rem;
+  text-align: left;
+}
+.vision .item-img1 {
+  background: url("../images/vision_item1.jpg") no-repeat center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 230px;
+}
+.vision .item-img2 {
+  background: url("../images/vision_item2.jpg") no-repeat center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 230px;
+}
+.vision .item2-lg {
+  display: none;
+}
+.vision .item2-xs {
+  display: block;
+}
+
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
   .service {
@@ -910,6 +963,44 @@ a:focus, li:focus {
   .philosophy .content .item-detail {
     margin-left: 140px;
     width: 240px;
+  }
+
+  .vision .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .vision .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .vision .stitle {
+    margin-top: 60px;
+  }
+  .vision .content {
+    margin-top: 60px;
+  }
+  .vision .content .first-row {
+    padding-top: 0;
+  }
+  .vision .item-text {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+  .vision .item-img1 {
+    height: 530px;
+  }
+  .vision .item-img2 {
+    height: 530px;
+  }
+  .vision .item2-lg {
+    display: none;
+  }
+  .vision .item2-xs {
+    display: block;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1054,6 +1145,44 @@ a:focus, li:focus {
   .philosophy .content .item-detail {
     margin-left: 140px;
     width: 240px;
+  }
+
+  .vision .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .vision .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .vision .stitle {
+    margin-top: 60px;
+  }
+  .vision .content {
+    margin-top: 60px;
+  }
+  .vision .content .first-row {
+    padding-top: 0;
+  }
+  .vision .item-text {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 70px;
+  }
+  .vision .item-img1 {
+    height: 340px;
+  }
+  .vision .item-img2 {
+    height: 340px;
+  }
+  .vision .item2-lg {
+    display: block;
+  }
+  .vision .item2-xs {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -1240,5 +1369,46 @@ a:focus, li:focus {
   .philosophy .content .item-detail {
     margin-left: 140px;
     width: 240px;
+  }
+
+  .vision {
+    margin-top: 140px;
+  }
+  .vision .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .vision .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .vision .stitle {
+    margin-top: 60px;
+  }
+  .vision .content {
+    margin-top: 60px;
+  }
+  .vision .content .first-row {
+    padding-top: 0;
+  }
+  .vision .item-text {
+    padding-left: 130px;
+    padding-right: 70px;
+    padding-top: 100px;
+  }
+  .vision .item-img1 {
+    height: 420px;
+  }
+  .vision .item-img2 {
+    height: 420px;
+  }
+  .vision .item2-lg {
+    display: block;
+  }
+  .vision .item2-xs {
+    display: none;
   }
 }

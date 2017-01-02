@@ -627,6 +627,47 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 }
+// 公司願景
+.vision{
+	margin-top: 73px;
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat left -40px;
+		height: 140px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.stitle{
+		color: #bf955a;
+		font-size: 2.4rem;
+		margin-top: 50px;
+	}
+	.content{
+		margin-top: 0px;
+		.first-row{padding-top:90px;}
+	}
+	.item-text{
+		color: #797979;
+		font-size: 1.6rem;
+		text-align: left;
+	}
+	.item-img1{
+		background: url('../images/vision_item1.jpg') no-repeat center center;
+		@include background-size(cover);
+		height: 230px;
+	}
+	.item-img2{
+		background: url('../images/vision_item2.jpg') no-repeat center center;
+		@include background-size(cover);
+		height: 230px;
+	}
+	.item2-lg{display:none;}
+	.item2-xs{display:block;}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -739,6 +780,36 @@ a:focus, li:focus{outline: none;}
 			}
 		}
 	}
+	// 公司願景
+	.vision{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			margin-top: 60px;
+			.first-row{padding-top:0;}
+		}
+		.item-text{
+			padding-left: 0px; 
+			padding-right: 0px;
+			padding-top: 0px;
+		}
+		.item-img1{height: 530px;}
+		.item-img2{height: 530px;}
+		.item2-lg{display:none;}
+		.item2-xs{display:block;}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -849,6 +920,36 @@ a:focus, li:focus{outline: none;}
 				width: 240px;
 			}
 		}
+	}
+	// 公司願景
+	.vision{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			margin-top: 60px;
+			.first-row{padding-top:0;}
+		}
+		.item-text{
+			padding-left: 50px; 
+			padding-right: 50px;
+			padding-top: 70px;
+		}
+		.item-img1{height: 340px;}
+		.item-img2{height: 340px;}
+		.item2-lg{display:block;}
+		.item2-xs{display:none;}
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -975,5 +1076,36 @@ a:focus, li:focus{outline: none;}
 				width: 240px;
 			}
 		}
+	}
+	// 公司願景
+	.vision{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			margin-top: 60px;
+			.first-row{padding-top:0;}
+		}
+		.item-text{
+			padding-left: 130px; 
+			padding-right: 70px;
+			padding-top: 100px;
+		}
+		.item-img1{height: 420px;}
+		.item-img2{height: 420px;}
+		.item2-lg{display:block;}
+		.item2-xs{display:none;}
 	}
 }
