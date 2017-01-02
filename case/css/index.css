@@ -800,6 +800,12 @@ a:focus, li:focus {
   color: #797979;
   font-size: 1.6rem;
   text-align: left;
+  padding: 0 8.33%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.vision .item-text p {
+  margin: 0 0 30px;
 }
 .vision .item-img1 {
   background: url("../images/vision_item1.jpg") no-repeat center center;
@@ -986,9 +992,12 @@ a:focus, li:focus {
     padding-top: 0;
   }
   .vision .item-text {
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
+    padding: 0 8.33%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .vision .item-text p {
+    margin: 0 0 30px;
   }
   .vision .item-img1 {
     height: 530px;
@@ -1170,7 +1179,11 @@ a:focus, li:focus {
   .vision .item-text {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  .vision .item-text p {
+    margin: 0 0 30px;
   }
   .vision .item-img1 {
     height: 340px;
@@ -1398,6 +1411,10 @@ a:focus, li:focus {
     padding-left: 130px;
     padding-right: 70px;
     padding-top: 100px;
+    padding-bottom: 0px;
+  }
+  .vision .item-text p {
+    margin: 0 0 30px;
   }
   .vision .item-img1 {
     height: 420px;

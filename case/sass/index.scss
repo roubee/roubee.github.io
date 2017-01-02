@@ -654,6 +654,12 @@ a:focus, li:focus{outline: none;}
 		color: #797979;
 		font-size: 1.6rem;
 		text-align: left;
+		padding: 0 8.33%;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		p{
+			margin: 0 0 30px;
+		}
 	}
 	.item-img1{
 		background: url('../images/vision_item1.jpg') no-repeat center center;
@@ -801,9 +807,12 @@ a:focus, li:focus{outline: none;}
 			.first-row{padding-top:0;}
 		}
 		.item-text{
-			padding-left: 0px; 
-			padding-right: 0px;
-			padding-top: 0px;
+			padding: 0 8.33%;
+			padding-top: 70px;
+			padding-bottom: 70px;
+			p{
+				margin: 0 0 30px;
+			}
 		}
 		.item-img1{height: 530px;}
 		.item-img2{height: 530px;}
@@ -944,7 +953,11 @@ a:focus, li:focus{outline: none;}
 		.item-text{
 			padding-left: 50px; 
 			padding-right: 50px;
-			padding-top: 70px;
+			padding-top: 50px;
+			padding-bottom: 0px;
+			p{
+				margin: 0 0 30px;
+			}
 		}
 		.item-img1{height: 340px;}
 		.item-img2{height: 340px;}
@@ -1102,6 +1115,10 @@ a:focus, li:focus{outline: none;}
 			padding-left: 130px; 
 			padding-right: 70px;
 			padding-top: 100px;
+			padding-bottom: 0px;
+			p{
+				margin: 0 0 30px;
+			}
 		}
 		.item-img1{height: 420px;}
 		.item-img2{height: 420px;}
