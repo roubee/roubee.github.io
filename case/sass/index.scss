@@ -674,6 +674,29 @@ a:focus, li:focus{outline: none;}
 	.item2-lg{display:none;}
 	.item2-xs{display:block;}
 }
+// 經營團隊
+.team{
+	margin-top: 73px;
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat right top;
+		height: 140px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.stitle{
+		color: #bf955a;
+		font-size: 2.4rem;
+		margin-top: 50px;
+	}
+	.content{
+		.first-row{padding-top:90px;}
+	}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -819,6 +842,26 @@ a:focus, li:focus{outline: none;}
 		.item2-lg{display:none;}
 		.item2-xs{display:block;}
 	}
+	// 經營團隊
+	.team{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			.first-row{padding-top:50px;}
+		}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -963,6 +1006,26 @@ a:focus, li:focus{outline: none;}
 		.item-img2{height: 340px;}
 		.item2-lg{display:block;}
 		.item2-xs{display:none;}
+	}
+	// 經營團隊
+	.team{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			.first-row{padding-top:70px;}
+		}
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -1124,5 +1187,26 @@ a:focus, li:focus{outline: none;}
 		.item-img2{height: 420px;}
 		.item2-lg{display:block;}
 		.item2-xs{display:none;}
+	}
+	// 經營團隊
+	.team{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			.first-row{padding-top:70px;}
+		}
 	}
 }
