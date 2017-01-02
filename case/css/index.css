@@ -583,6 +583,147 @@ a:focus, li:focus {
   text-decoration: underline;
 }
 
+/*------- 關於我們 -------*/
+.history {
+  margin-top: 73px;
+}
+.history .bottom-back {
+  background: url("../images/history_back2.jpg") no-repeat center bottom;
+  -moz-background-size: 1200px 225px;
+  -o-background-size: 1200px 225px;
+  -webkit-background-size: 1200px 225px;
+  background-size: 1200px 225px;
+}
+.history .title {
+  padding-top: 60px;
+  background: url("") no-repeat right top;
+  height: 200px;
+}
+.history .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.history .title div:nth-child(2) {
+  color: #bf955a;
+  font-size: 2.4rem;
+  margin-top: 50px;
+}
+.history .content {
+  margin-top: 80px;
+  color: #232323;
+  padding-bottom: 230px;
+}
+.history .content .stage-line {
+  position: absolute;
+  padding-top: 30px;
+  width: 32px;
+  left: 8.33%;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.history .content .stage-line div {
+  margin-left: 0;
+}
+.history .content .stage-line div:before {
+  content: url("../images/history_stage_xs.png");
+}
+.history .content .year-block {
+  width: 100%;
+  clear: both;
+  display: inline-block;
+  padding: 30px 0;
+  cursor: pointer;
+  padding-left: 12%;
+}
+.history .content .year-block5 {
+  height: 441px;
+}
+.history .content .year-block4 {
+  height: 362px;
+}
+.history .content .year-block3 {
+  height: 231px;
+}
+.history .content .year-block2 {
+  height: 188px;
+}
+.history .content .year-block-in {
+  width: 100%;
+  margin: 0 auto;
+}
+.history .content .year-block-in div {
+  float: none;
+  display: block;
+}
+.history .content .year-block-in div:nth-child(1) {
+  width: 0;
+  text-align: right;
+  padding-right: 30px;
+  font-size: 2rem;
+  padding-left: 22px;
+}
+.history .content .year-block-in div:nth-child(2) {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 8.3%;
+}
+.history .content .year-block-in div:nth-child(3) {
+  width: 0;
+  display: none;
+}
+.history .content .year-block:hover {
+  background-color: #bf955a;
+  color: #fff;
+}
+.history .content .year-block:hover li:before {
+  color: #fff;
+}
+.history .content ul, .history .content li {
+  list-style-position: outside;
+  list-style-type: none;
+}
+.history .content li {
+  margin-left: 0.8rem;
+  text-indent: -0.8rem;
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.history .content li .detail {
+  font-size: 1.6rem;
+}
+.history .content li:before {
+  content: '◆';
+  margin-right: 0.5rem;
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+}
+.history .content .stage1 li:before {
+  color: #bf955a;
+}
+.history .content .stage2 li:before {
+  color: #232323;
+}
+.history .content .stage3 li:before {
+  color: #c6232f;
+}
+.history .content .stage3 .year-block-in div:nth-child(1) {
+  color: #c6232f;
+  font-size: 3rem;
+  margin-top: -5px;
+}
+.history .content .stage3:hover .year-block-in div:nth-child(1) {
+  color: #fff;
+}
+
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
   .service {
@@ -629,6 +770,66 @@ a:focus, li:focus {
     width: 20%;
     text-align: right;
   }
+
+  /*------- 關於我們 -------*/
+  .history .bottom-back {
+    -moz-background-size: 1200px 225px;
+    -o-background-size: 1200px 225px;
+    -webkit-background-size: 1200px 225px;
+    background-size: 1200px 225px;
+  }
+  .history .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+  }
+  .history .content {
+    padding-bottom: 230px;
+  }
+  .history .content .year-block {
+    padding-left: 0;
+  }
+  .history .content .year-block5 {
+    height: 365px;
+  }
+  .history .content .year-block4 {
+    height: 310px;
+  }
+  .history .content .year-block3 {
+    height: 230px;
+  }
+  .history .content .year-block2 {
+    height: 222px;
+  }
+  .history .content .year-block-in {
+    width: 620px;
+  }
+  .history .content .year-block-in div {
+    float: left;
+  }
+  .history .content .year-block-in div:nth-child(1) {
+    width: 110px;
+    padding-left: 0;
+  }
+  .history .content .year-block-in div:nth-child(2) {
+    width: 324px;
+    padding-right: 0;
+  }
+  .history .content .year-block-in div:nth-child(3) {
+    width: 186px;
+    display: block;
+  }
+  .history .content .stage-line {
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .history .content .stage-line div {
+    margin-left: -400px;
+  }
+  .history .content .stage-line div:before {
+    content: url("../images/history_stage_lg.png");
+  }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
   .service {
@@ -674,6 +875,66 @@ a:focus, li:focus {
   .footer-producer {
     width: 20%;
     text-align: right;
+  }
+
+  /*------- 關於我們 -------*/
+  .history .bottom-back {
+    -moz-background-size: 1200px 225px;
+    -o-background-size: 1200px 225px;
+    -webkit-background-size: 1200px 225px;
+    background-size: 1200px 225px;
+  }
+  .history .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+  }
+  .history .content {
+    padding-bottom: 280px;
+  }
+  .history .content .year-block {
+    padding-left: 0;
+  }
+  .history .content .year-block5 {
+    height: 365px;
+  }
+  .history .content .year-block4 {
+    height: 310px;
+  }
+  .history .content .year-block3 {
+    height: 230px;
+  }
+  .history .content .year-block2 {
+    height: 222px;
+  }
+  .history .content .year-block-in {
+    width: 670px;
+  }
+  .history .content .year-block-in div {
+    float: left;
+  }
+  .history .content .year-block-in div:nth-child(1) {
+    width: 110px;
+    padding-left: 0;
+  }
+  .history .content .year-block-in div:nth-child(2) {
+    width: 374px;
+    padding-right: 0;
+  }
+  .history .content .year-block-in div:nth-child(3) {
+    width: 186px;
+    display: block;
+  }
+  .history .content .stage-line {
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .history .content .stage-line div {
+    margin-left: -455px;
+  }
+  .history .content .stage-line div:before {
+    content: url("../images/history_stage_lg.png");
   }
 }
 @media (min-width: 1200px) {
@@ -756,5 +1017,68 @@ a:focus, li:focus {
   .footer-producer {
     width: 20%;
     text-align: right;
+  }
+
+  /*------- 關於我們 -------*/
+  .history {
+    margin-top: 140px;
+  }
+  .history .bottom-back {
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+  .history .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+  }
+  .history .content {
+    padding-bottom: 280px;
+  }
+  .history .content .year-block {
+    padding-left: 0;
+  }
+  .history .content .year-block5 {
+    height: 365px;
+  }
+  .history .content .year-block4 {
+    height: 310px;
+  }
+  .history .content .year-block3 {
+    height: 230px;
+  }
+  .history .content .year-block2 {
+    height: 222px;
+  }
+  .history .content .year-block-in {
+    width: 690px;
+  }
+  .history .content .year-block-in div {
+    float: left;
+  }
+  .history .content .year-block-in div:nth-child(1) {
+    width: 110px;
+    padding-left: 0;
+  }
+  .history .content .year-block-in div:nth-child(2) {
+    width: 394px;
+    padding-right: 0;
+  }
+  .history .content .year-block-in div:nth-child(3) {
+    width: 186px;
+    display: block;
+  }
+  .history .content .stage-line {
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  .history .content .stage-line div {
+    margin-left: -480px;
+  }
+  .history .content .stage-line div:before {
+    content: url("../images/history_stage_lg.png");
   }
 }

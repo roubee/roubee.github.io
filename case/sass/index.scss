@@ -454,8 +454,136 @@ a:focus, li:focus{outline: none;}
 		text-decoration: underline;
 	}
 }
+/*------- 關於我們 -------*/
+// 歷史沿革
+.history{
+	margin-top: 73px;
+	.bottom-back{
+		background: url('../images/history_back2.jpg') no-repeat center bottom;
+		@include background-size(1200px 225px);
+	}
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat right top;
+		height: 200px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+		div:nth-child(2){
+			color: #bf955a;
+			font-size: 2.4rem;
+			margin-top: 50px;
+		}
+	}
+	.content{
+		margin-top: 80px;
+		color: #232323;
+		padding-bottom: 230px;
+		.stage-line{
+			position: absolute;
+			padding-top: 30px;
+			width: 32px;
+			left: 8.33%;
+			@include transform(translate(0, 0));
+			div{
+				margin-left: 0;				
+			}
+			div:before{
+				content: url('../images/history_stage_xs.png');
+			}
+		}
+		.year-block{
+			width: 100%;
+			clear: both;
+			display: inline-block;
+			padding: 30px 0;
+			cursor: pointer;
+			padding-left: 12%;
+		}
+		.year-block5{height: 441px;}
+		.year-block4{height: 362px;}
+		.year-block3{height: 231px;}
+		.year-block2{height: 188px;}
+		.year-block-in{
+			width: 100%;
+			margin: 0 auto;
+			div{
+				float: none;
+				display: block;
+			}
+			div:nth-child(1){
+				width: 0;
+				text-align: right;
+				padding-right: 30px;
+				font-size: 2rem;
+				padding-left: 22px;
+			}
+			div:nth-child(2){
+				width: 100%; 
+				padding-left: 30px;
+				padding-right: 8.3%;
+			}
+			div:nth-child(3){
+				width: 0;
+				display: none;
+			}
+		}
+		.year-block:hover{
+			background-color: #bf955a;
+			color: #fff;
+			li:before{
+				color: #fff;
+			}
+		}
+		ul,li {
+			list-style-position: outside;
+			list-style-type: none;
+		}
+		li{
+			margin-left : 0.8rem; 
+			text-indent : -0.8rem ;
+			text-align: left;
+			font-size: 1.8rem;
+			margin-bottom: 20px;
+			.detail{
+				font-size: 1.6rem;
+			}
+		}
+		li:before{
+			content: '◆';
+			margin-right: 0.5rem;
+			font-size: 8px;
+			@include transform(scale(0.66));
+			display: inline-block;
+		}
+		.stage1{li:before{color: #bf955a;}}
+		.stage2{li:before{color: #232323;}}
+		.stage3{
+			li:before{color: #c6232f;}
+			.year-block-in{
+				div:nth-child(1){
+					color: #c6232f;
+					font-size: 3rem;
+					margin-top: -5px;
+				}
+			}
+		}
+		.stage3:hover{
+			.year-block-in{
+				div:nth-child(1){
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
 /*------- RWD -------*/
-@media (max-width: $screen-xs-max) {}
+@media (max-width: $screen-xs-max) {
+}
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
 	.service{
 		padding: 60px 0;
@@ -481,6 +609,54 @@ a:focus, li:focus{outline: none;}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
+	/*------- 關於我們 -------*/
+	// 歷史沿革
+	.history{
+		.bottom-back{
+			@include background-size(1200px 225px);
+		}
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+		}
+		.content{
+			padding-bottom: 230px;
+			.year-block{
+				padding-left: 0;
+			}
+			.year-block5{height: 365px;}
+			.year-block4{height: 310px;}
+			.year-block3{height: 230px;}
+			.year-block2{height: 222px;}
+			.year-block-in{
+				width: 620px;
+				div{
+					float: left;
+				}
+				div:nth-child(1){
+					width: 110px;
+					padding-left: 0;
+				}
+				div:nth-child(2){
+					width: 324px;
+					padding-right: 0;
+				}
+				div:nth-child(3){
+					width: 186px;
+					display: block;
+				}
+			}
+			.stage-line{
+				left: 50%;
+				@include transform(translate(-50%, 0));
+				div{
+					margin-left: -400px;
+				}
+				div:before{
+					content: url('../images/history_stage_lg.png');
+				}
+			}
+		}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -507,6 +683,54 @@ a:focus, li:focus{outline: none;}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
+	/*------- 關於我們 -------*/
+	// 歷史沿革
+	.history{
+		.bottom-back{
+			@include background-size(1200px 225px);
+		}
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+		}
+		.content{
+			padding-bottom: 280px;
+			.year-block{
+				padding-left: 0;
+			}
+			.year-block5{height: 365px;}
+			.year-block4{height: 310px;}
+			.year-block3{height: 230px;}
+			.year-block2{height: 222px;}
+			.year-block-in{
+				width: 670px;
+				div{
+					float: left;
+				}
+				div:nth-child(1){
+					width: 110px;
+					padding-left: 0;
+				}
+				div:nth-child(2){
+					width: 374px;
+					padding-right: 0;
+				}
+				div:nth-child(3){
+					width: 186px;
+					display: block;
+				}
+			}
+			.stage-line{
+				left: 50%;
+				@include transform(translate(-50%, 0));
+				div{
+					margin-left: -455px;
+				}
+				div:before{
+					content: url('../images/history_stage_lg.png');
+				}
+			}
+		}
+	}
 }
 @media (min-width: $screen-lg-min) {
 	.logo1{display: block;}
@@ -545,4 +769,54 @@ a:focus, li:focus{outline: none;}
 	.footer-leftblock{width: 20%;}
 	.footer-copyright{width: 60%;}
 	.footer-producer{width: 20%;text-align: right;}
+	/*------- 關於我們 -------*/
+	// 歷史沿革
+	.history{
+		margin-top: 140px;
+		.bottom-back{
+			@include background-size(100% auto);
+		}
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+		}
+		.content{
+			padding-bottom: 280px;
+			.year-block{
+				padding-left: 0;
+			}
+			.year-block5{height: 365px;}
+			.year-block4{height: 310px;}
+			.year-block3{height: 230px;}
+			.year-block2{height: 222px;}
+			.year-block-in{
+				width: 690px;
+				div{
+					float: left;
+				}
+				div:nth-child(1){
+					width: 110px;
+					padding-left: 0;
+				}
+				div:nth-child(2){
+					width: 394px;
+					padding-right: 0;
+				}
+				div:nth-child(3){
+					width: 186px;
+					display: block;
+				}
+			}
+			.stage-line{
+				left: 50%;
+				@include transform(translate(-50%, 0));
+				div{
+					margin-left: -480px;
+					
+				}
+				div:before{
+					content: url('../images/history_stage_lg.png');
+				}
+			}
+		}
+	}
 }
