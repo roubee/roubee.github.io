@@ -745,6 +745,101 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 }
+// 得獎事蹟
+.winning{
+	margin-top: 73px;
+	background: url('../images/winning_back2.jpg') no-repeat center bottom;
+	@include background-size(100% auto);
+	background-color: #eeede8;
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat left -40px;
+		height: 140px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.stitle{
+		color: #bf955a;
+		font-size: 2.4rem;
+		margin-top: 50px;
+	}
+	.content{
+		margin-top: 0px;
+		.first-row{padding-top:40px;}
+	}
+	.trophy-text{
+		text-align: left;
+		font-size: 2rem;
+		color: #232325;
+		padding-left: 50px;
+		padding-top: 50px;
+		margin-bottom: 35px;
+	}
+	.trophy-img{
+		text-align: right;
+		display: none;
+	}
+	.outer-block{
+		text-align: left;
+		background-color: #fff;
+		@include box-shadow(0px 0px 6px rgba(#666,0.5));
+		padding: 50px 8.33%;
+		margin-bottom: 350px;
+	}
+	.item{
+		clear: both;
+		margin-bottom: 70px;
+		width: 100%;
+	}
+	.item-title{
+		border-bottom: 1px solid #bf955a;
+		padding-bottom: 10px;
+		font-size: 2rem;
+		color: #232323;
+	}
+	.item-content{
+		width: 100;
+		display: -webkit-box;
+	    display: -moz-box;
+	    display: -ms-flexbox;
+	    display: -webkit-flex;
+	    display: flex;
+		padding-top: 25px;
+		line-height: 30px;
+		div{float:left;}
+		div:nth-child(1){
+			width:250px;
+			color: #3e3934;
+			font-size: 1.6rem;
+			li{line-height: 28px;}
+			li:before{
+				content: '◆';
+				font-size: 8px;
+				@include transform(scale(0.66));
+				margin-right: 0.5rem;
+				display: inline-block;
+			}
+		}
+		div:nth-child(2){
+			width:250px;
+			color: #797979;
+			font-size: 1.5rem;
+		}
+		div:nth-child(3){
+			color: #bf955a;
+			font-size: 1.5rem;
+		}
+		ul{
+			list-style-type: none;
+			list-style-position: outside;
+			padding: 0;
+		}
+	}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -914,6 +1009,34 @@ a:focus, li:focus{outline: none;}
 		.item-info{width: 400px;}
 		.item-position{width: 400px;}
 	}
+	// 得獎事蹟
+	.winning{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			margin-top: 0px;
+			.first-row{padding-top:0;}
+		}
+		.trophy-text{
+			padding-top: 90px;
+			margin-bottom: 35px;
+		}
+		.trophy-img{
+			display: none;
+		}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -1082,6 +1205,34 @@ a:focus, li:focus{outline: none;}
 		.item-name{width: 400px;}
 		.item-info{width: 400px;}
 		.item-position{width: 400px;}
+	}
+	// 得獎事蹟
+	.winning{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			margin-top: 0px;
+			.first-row{padding-top:0;}
+		}
+		.trophy-text{
+			padding-top: 90px;
+			margin-bottom: 0;
+		}
+		.trophy-img{
+			display: block;
+		}
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -1268,5 +1419,34 @@ a:focus, li:focus{outline: none;}
 		.item-name{width: 400px;}
 		.item-info{width: 400px;}
 		.item-position{width: 400px;}
+	}
+	// 得獎事蹟
+	.winning{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			margin-top: 0px;
+			.first-row{padding-top:0;}
+		}
+		.trophy-text{
+			padding-top: 90px;
+			margin-bottom: 0;
+		}
+		.trophy-img{
+			display: block;
+		}
 	}
 }

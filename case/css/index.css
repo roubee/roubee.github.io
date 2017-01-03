@@ -904,6 +904,115 @@ a:focus, li:focus {
   display: inline-block;
 }
 
+.winning {
+  margin-top: 73px;
+  background: url("../images/winning_back2.jpg") no-repeat center bottom;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-color: #eeede8;
+}
+.winning .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+}
+.winning .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.winning .stitle {
+  color: #bf955a;
+  font-size: 2.4rem;
+  margin-top: 50px;
+}
+.winning .content {
+  margin-top: 0px;
+}
+.winning .content .first-row {
+  padding-top: 40px;
+}
+.winning .trophy-text {
+  text-align: left;
+  font-size: 2rem;
+  color: #232325;
+  padding-left: 50px;
+  padding-top: 50px;
+  margin-bottom: 35px;
+}
+.winning .trophy-img {
+  text-align: right;
+  display: none;
+}
+.winning .outer-block {
+  text-align: left;
+  background-color: #fff;
+  -moz-box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
+  -webkit-box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
+  box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
+  padding: 50px 8.33%;
+  margin-bottom: 350px;
+}
+.winning .item {
+  clear: both;
+  margin-bottom: 70px;
+  width: 100%;
+}
+.winning .item-title {
+  border-bottom: 1px solid #bf955a;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  color: #232323;
+}
+.winning .item-content {
+  width: 100;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 25px;
+  line-height: 30px;
+}
+.winning .item-content div {
+  float: left;
+}
+.winning .item-content div:nth-child(1) {
+  width: 250px;
+  color: #3e3934;
+  font-size: 1.6rem;
+}
+.winning .item-content div:nth-child(1) li {
+  line-height: 28px;
+}
+.winning .item-content div:nth-child(1) li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.winning .item-content div:nth-child(2) {
+  width: 250px;
+  color: #797979;
+  font-size: 1.5rem;
+}
+.winning .item-content div:nth-child(3) {
+  color: #bf955a;
+  font-size: 1.5rem;
+}
+.winning .item-content ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
   .service {
@@ -1114,6 +1223,34 @@ a:focus, li:focus {
   }
   .team .item-position {
     width: 400px;
+  }
+
+  .winning .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .winning .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .winning .stitle {
+    margin-top: 60px;
+  }
+  .winning .content {
+    margin-top: 0px;
+  }
+  .winning .content .first-row {
+    padding-top: 0;
+  }
+  .winning .trophy-text {
+    padding-top: 90px;
+    margin-bottom: 35px;
+  }
+  .winning .trophy-img {
+    display: none;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1330,6 +1467,34 @@ a:focus, li:focus {
   }
   .team .item-position {
     width: 400px;
+  }
+
+  .winning .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .winning .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .winning .stitle {
+    margin-top: 60px;
+  }
+  .winning .content {
+    margin-top: 0px;
+  }
+  .winning .content .first-row {
+    padding-top: 0;
+  }
+  .winning .trophy-text {
+    padding-top: 90px;
+    margin-bottom: 0;
+  }
+  .winning .trophy-img {
+    display: block;
   }
 }
 @media (min-width: 1200px) {
@@ -1594,5 +1759,36 @@ a:focus, li:focus {
   }
   .team .item-position {
     width: 400px;
+  }
+
+  .winning {
+    margin-top: 140px;
+  }
+  .winning .title {
+    padding-top: 60px;
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .winning .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .winning .stitle {
+    margin-top: 60px;
+  }
+  .winning .content {
+    margin-top: 0px;
+  }
+  .winning .content .first-row {
+    padding-top: 0;
+  }
+  .winning .trophy-text {
+    padding-top: 90px;
+    margin-bottom: 0;
+  }
+  .winning .trophy-img {
+    display: block;
   }
 }
