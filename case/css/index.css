@@ -928,6 +928,7 @@ a:focus, li:focus {
   color: #bf955a;
   font-size: 2.4rem;
   margin-top: 50px;
+  padding: 0 15px;
 }
 .winning .content {
   margin-top: 0px;
@@ -966,6 +967,49 @@ a:focus, li:focus {
   padding-bottom: 10px;
   font-size: 2rem;
   color: #232323;
+}
+.winning .item-content2 {
+  width: 100;
+  padding-top: 25px;
+  line-height: 30px;
+}
+.winning .item-content2 .item-list {
+  clear: both;
+  width: 100%;
+  height: 30px;
+}
+.winning .item-content2 .item-list ul {
+  display: inline-block;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.winning .item-content2 .item-list ul:nth-child(1) {
+  width: 250px;
+  color: #3e3934;
+  font-size: 1.6rem;
+}
+.winning .item-content2 .item-list ul:nth-child(1) li {
+  line-height: 28px;
+}
+.winning .item-content2 .item-list ul:nth-child(1) li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+.winning .item-content2 .item-list ul:nth-child(2) {
+  width: 250px;
+  color: #797979;
+  font-size: 1.5rem;
+}
+.winning .item-content2 .item-list ul:nth-child(3) {
+  color: #bf955a;
+  font-size: 1.5rem;
 }
 .winning .item-content {
   width: 100;
@@ -1252,6 +1296,12 @@ a:focus, li:focus {
   .winning .trophy-img {
     display: none;
   }
+  .winning .item-content div:nth-child(1) {
+    width: 190px;
+  }
+  .winning .item-content div:nth-child(2) {
+    width: 220px;
+  }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
   .service {
@@ -1495,6 +1545,12 @@ a:focus, li:focus {
   }
   .winning .trophy-img {
     display: block;
+  }
+  .winning .item-content div:nth-child(1) {
+    width: 250px;
+  }
+  .winning .item-content div:nth-child(2) {
+    width: 250px;
   }
 }
 @media (min-width: 1200px) {
@@ -1790,5 +1846,11 @@ a:focus, li:focus {
   }
   .winning .trophy-img {
     display: block;
+  }
+  .winning .item-content div:nth-child(1) {
+    width: 250px;
+  }
+  .winning .item-content div:nth-child(2) {
+    width: 250px;
   }
 }
