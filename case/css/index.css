@@ -906,6 +906,8 @@ a:focus, li:focus {
 
 .winning {
   margin-top: 73px;
+}
+.winning .winning-in {
   background: url("../images/winning_back2.jpg") no-repeat center bottom;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
@@ -954,8 +956,9 @@ a:focus, li:focus {
   -moz-box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
   -webkit-box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
   box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
-  padding: 50px 8.33%;
-  margin-bottom: 350px;
+  padding: 25px 8.33%;
+  margin: 0 15px;
+  margin-bottom: 100px;
 }
 .winning .item {
   clear: both;
@@ -968,71 +971,33 @@ a:focus, li:focus {
   font-size: 2rem;
   color: #232323;
 }
-.winning .item-content2 {
-  width: 100;
-  padding-top: 25px;
-  line-height: 30px;
-}
-.winning .item-content2 .item-list {
-  clear: both;
-  width: 100%;
-  height: 30px;
-}
-.winning .item-content2 .item-list ul {
-  display: inline-block;
-  list-style-type: none;
-  list-style-position: outside;
-  padding: 0;
-}
-.winning .item-content2 .item-list ul:nth-child(1) {
-  width: 250px;
-  color: #3e3934;
-  font-size: 1.6rem;
-}
-.winning .item-content2 .item-list ul:nth-child(1) li {
-  line-height: 28px;
-}
-.winning .item-content2 .item-list ul:nth-child(1) li:before {
-  content: '◆';
-  font-size: 8px;
-  -moz-transform: scale(0.66);
-  -ms-transform: scale(0.66);
-  -webkit-transform: scale(0.66);
-  transform: scale(0.66);
-  margin-right: 0.5rem;
-  display: inline-block;
-}
-.winning .item-content2 .item-list ul:nth-child(2) {
-  width: 250px;
-  color: #797979;
-  font-size: 1.5rem;
-}
-.winning .item-content2 .item-list ul:nth-child(3) {
-  color: #bf955a;
-  font-size: 1.5rem;
-}
 .winning .item-content {
   width: 100;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   padding-top: 25px;
-  line-height: 30px;
+  line-height: 20px;
 }
-.winning .item-content div {
-  float: left;
+.winning .item-content .item-list {
+  clear: both;
+  width: 100%;
+  height: auto;
 }
-.winning .item-content div:nth-child(1) {
-  width: 250px;
+.winning .item-content .item-list ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+  vertical-align: top;
+}
+.winning .item-content .item-list ul:nth-child(1) {
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
   color: #3e3934;
   font-size: 1.6rem;
 }
-.winning .item-content div:nth-child(1) li {
-  line-height: 28px;
+.winning .item-content .item-list ul:nth-child(1) li {
+  line-height: 20px;
 }
-.winning .item-content div:nth-child(1) li:before {
+.winning .item-content .item-list ul:nth-child(1) li:before {
   content: '◆';
   font-size: 8px;
   -moz-transform: scale(0.66);
@@ -1042,19 +1007,18 @@ a:focus, li:focus {
   margin-right: 0.5rem;
   display: inline-block;
 }
-.winning .item-content div:nth-child(2) {
-  width: 250px;
+.winning .item-content .item-list ul:nth-child(2) {
+  display: inline-block;
+  width: 65%;
   color: #797979;
   font-size: 1.5rem;
+  padding-left: 18px;
 }
-.winning .item-content div:nth-child(3) {
+.winning .item-content .item-list ul:nth-child(3) {
+  display: inline-block;
   color: #bf955a;
   font-size: 1.5rem;
-}
-.winning .item-content ul {
-  list-style-type: none;
-  list-style-position: outside;
-  padding: 0;
+  width: 30%;
 }
 
 /*------- RWD -------*/
@@ -1296,11 +1260,30 @@ a:focus, li:focus {
   .winning .trophy-img {
     display: none;
   }
-  .winning .item-content div:nth-child(1) {
-    width: 190px;
+  .winning .outer-block {
+    margin: 0;
+    margin-bottom: 350px;
   }
-  .winning .item-content div:nth-child(2) {
+  .winning .item-content {
+    line-height: 28px;
+  }
+  .winning .item-content .item-list {
+    height: 30px;
+  }
+  .winning .item-content .item-list ul:nth-child(1) {
+    margin-bottom: 10px;
+    width: 190px;
+    display: inline-block;
+  }
+  .winning .item-content .item-list ul:nth-child(1) li {
+    line-height: 28px;
+  }
+  .winning .item-content .item-list ul:nth-child(2) {
     width: 220px;
+    padding-left: 0;
+  }
+  .winning .item-content .item-list ul:nth-child(3) {
+    width: auto;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1546,11 +1529,30 @@ a:focus, li:focus {
   .winning .trophy-img {
     display: block;
   }
-  .winning .item-content div:nth-child(1) {
-    width: 250px;
+  .winning .outer-block {
+    margin: 0;
+    margin-bottom: 350px;
   }
-  .winning .item-content div:nth-child(2) {
+  .winning .item-content {
+    line-height: 28px;
+  }
+  .winning .item-content .item-list {
+    height: 30px;
+  }
+  .winning .item-content .item-list ul:nth-child(1) {
+    margin-bottom: 10px;
     width: 250px;
+    display: inline-block;
+  }
+  .winning .item-content .item-list ul:nth-child(1) li {
+    line-height: 28px;
+  }
+  .winning .item-content .item-list ul:nth-child(2) {
+    width: 250px;
+    padding-left: 0;
+  }
+  .winning .item-content .item-list ul:nth-child(3) {
+    width: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -1847,10 +1849,29 @@ a:focus, li:focus {
   .winning .trophy-img {
     display: block;
   }
-  .winning .item-content div:nth-child(1) {
-    width: 250px;
+  .winning .outer-block {
+    margin: 0;
+    margin-bottom: 350px;
   }
-  .winning .item-content div:nth-child(2) {
+  .winning .item-content {
+    line-height: 28px;
+  }
+  .winning .item-content .item-list {
+    height: 30px;
+  }
+  .winning .item-content .item-list ul:nth-child(1) {
+    margin-bottom: 10px;
     width: 250px;
+    display: inline-block;
+  }
+  .winning .item-content .item-list ul:nth-child(1) li {
+    line-height: 28px;
+  }
+  .winning .item-content .item-list ul:nth-child(2) {
+    width: 250px;
+    padding-left: 0;
+  }
+  .winning .item-content .item-list ul:nth-child(3) {
+    width: auto;
   }
 }
