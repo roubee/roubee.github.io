@@ -854,6 +854,41 @@ a:focus, li:focus{outline: none;}
 		
 	}
 }
+// 社會使命
+.mission{
+	margin-top: 73px;
+	.mission-in{
+		background: url('../images/mission_back.jpg') no-repeat center center;
+		@include background-size(cover);
+	}
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat right top;
+		height: 140px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.content{
+		background: url('') no-repeat right bottom;
+		.contnet-in{
+			background-color: rgba(#000, 0.4);
+			color: #fff;
+			padding: 40px;
+			margin-bottom: 70px;
+		}
+		p{
+			text-align: left;
+			font-size: 1.6rem;
+		}
+		p:nth-child(1){
+			margin-bottom: 40px;
+		}
+	}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -1072,6 +1107,23 @@ a:focus, li:focus{outline: none;}
 			}
 		}
 	}
+	// 社會使命
+	.mission{
+		.title{
+			padding-top: 60px;
+			background: url('') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.content{
+			background: url('') no-repeat right bottom;
+		}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -1288,6 +1340,23 @@ a:focus, li:focus{outline: none;}
 				}
 				ul:nth-child(3){width:auto;}
 			}
+		}
+	}
+	// 社會使命
+	.mission{
+		.title{
+			padding-top: 60px;
+			background: url('') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.content{
+			background: url('../images/mission_back2.png') no-repeat right bottom;
 		}
 	}
 }
@@ -1524,6 +1593,24 @@ a:focus, li:focus{outline: none;}
 				}
 				ul:nth-child(3){width:auto;}
 			}
+		}
+	}
+	// 社會使命
+	.mission{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.content{
+			background: url('../images/mission_back2.png') no-repeat right bottom;
 		}
 	}
 }

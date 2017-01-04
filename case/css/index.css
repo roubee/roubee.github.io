@@ -1024,6 +1024,44 @@ a:focus, li:focus {
   width: 30%;
 }
 
+.mission {
+  margin-top: 73px;
+}
+.mission .mission-in {
+  background: url("../images/mission_back.jpg") no-repeat center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.mission .title {
+  padding-top: 60px;
+  background: url("") no-repeat right top;
+  height: 140px;
+}
+.mission .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.mission .content {
+  background: url("") no-repeat right bottom;
+}
+.mission .content .contnet-in {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 40px;
+  margin-bottom: 70px;
+}
+.mission .content p {
+  text-align: left;
+  font-size: 1.6rem;
+}
+.mission .content p:nth-child(1) {
+  margin-bottom: 40px;
+}
+
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
   .service {
@@ -1287,6 +1325,21 @@ a:focus, li:focus {
   }
   .winning .item-content .item-list ul:nth-child(3) {
     width: auto;
+  }
+
+  .mission .title {
+    padding-top: 60px;
+    background: url("") no-repeat right top;
+    height: 200px;
+  }
+  .mission .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .mission .content {
+    background: url("") no-repeat right bottom;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1556,6 +1609,21 @@ a:focus, li:focus {
   }
   .winning .item-content .item-list ul:nth-child(3) {
     width: auto;
+  }
+
+  .mission .title {
+    padding-top: 60px;
+    background: url("") no-repeat right top;
+    height: 200px;
+  }
+  .mission .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .mission .content {
+    background: url("../images/mission_back2.png") no-repeat right bottom;
   }
 }
 @media (min-width: 1200px) {
@@ -1876,5 +1944,23 @@ a:focus, li:focus {
   }
   .winning .item-content .item-list ul:nth-child(3) {
     width: auto;
+  }
+
+  .mission {
+    margin-top: 140px;
+  }
+  .mission .title {
+    padding-top: 60px;
+    background: url("") no-repeat right top;
+    height: 200px;
+  }
+  .mission .title span {
+    color: #000;
+    font-size: 3rem;
+    padding-left: 15px;
+    vertical-align: middle;
+  }
+  .mission .content {
+    background: url("../images/mission_back2.png") no-repeat right bottom;
   }
 }
