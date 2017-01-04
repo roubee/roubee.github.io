@@ -858,8 +858,8 @@ a:focus, li:focus{outline: none;}
 .mission{
 	margin-top: 73px;
 	.mission-in{
-		background: url('../images/mission_back.jpg') no-repeat center center;
-		@include background-size(cover);
+		background: url('../images/mission_back.jpg') no-repeat 70% center;
+		@include background-size(auto 100%);
 	}
 	.title{
 		padding-top: 60px;
@@ -1120,6 +1120,10 @@ a:focus, li:focus{outline: none;}
 				vertical-align: middle;
 			}
 		}
+		.mission-in{
+			background: url('../images/mission_back.jpg') no-repeat center center;
+			@include background-size(cover);
+		}
 		.content{
 			background: url('') no-repeat right bottom;
 		}
@@ -1354,6 +1358,10 @@ a:focus, li:focus{outline: none;}
 				padding-left: 15px;
 				vertical-align: middle;
 			}
+		}
+		.mission-in{
+			background: url('../images/mission_back.jpg') no-repeat center center;
+			@include background-size(cover);
 		}
 		.content{
 			background: url('../images/mission_back2.png') no-repeat right bottom;
@@ -1608,6 +1616,10 @@ a:focus, li:focus{outline: none;}
 				padding-left: 15px;
 				vertical-align: middle;
 			}
+		}
+		.mission-in{
+			background: url('../images/mission_back.jpg') no-repeat center center;
+			@include background-size(cover);
 		}
 		.content{
 			background: url('../images/mission_back2.png') no-repeat right bottom;

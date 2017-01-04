@@ -1028,11 +1028,11 @@ a:focus, li:focus {
   margin-top: 73px;
 }
 .mission .mission-in {
-  background: url("../images/mission_back.jpg") no-repeat center center;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
+  background: url("../images/mission_back.jpg") no-repeat 70% center;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
 }
 .mission .title {
   padding-top: 60px;
@@ -1338,6 +1338,13 @@ a:focus, li:focus {
     padding-left: 15px;
     vertical-align: middle;
   }
+  .mission .mission-in {
+    background: url("../images/mission_back.jpg") no-repeat center center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
   .mission .content {
     background: url("") no-repeat right bottom;
   }
@@ -1621,6 +1628,13 @@ a:focus, li:focus {
     font-size: 3rem;
     padding-left: 15px;
     vertical-align: middle;
+  }
+  .mission .mission-in {
+    background: url("../images/mission_back.jpg") no-repeat center center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
   .mission .content {
     background: url("../images/mission_back2.png") no-repeat right bottom;
@@ -1959,6 +1973,13 @@ a:focus, li:focus {
     font-size: 3rem;
     padding-left: 15px;
     vertical-align: middle;
+  }
+  .mission .mission-in {
+    background: url("../images/mission_back.jpg") no-repeat center center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
   .mission .content {
     background: url("../images/mission_back2.png") no-repeat right bottom;
