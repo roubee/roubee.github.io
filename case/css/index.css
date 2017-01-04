@@ -956,7 +956,7 @@ a:focus, li:focus {
   -moz-box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
   -webkit-box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
   box-shadow: 0px 0px 6px rgba(102, 102, 102, 0.5);
-  padding: 25px 8.33%;
+  padding: 50px 7%;
   margin: 0 15px;
   margin-bottom: 100px;
 }
@@ -964,6 +964,9 @@ a:focus, li:focus {
   clear: both;
   margin-bottom: 70px;
   width: 100%;
+}
+.winning .last-item {
+  margin-bottom: 0 !important;
 }
 .winning .item-title {
   border-bottom: 1px solid #bf955a;

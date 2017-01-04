@@ -790,7 +790,7 @@ a:focus, li:focus{outline: none;}
 		text-align: left;
 		background-color: #fff;
 		@include box-shadow(0px 0px 6px rgba(#666,0.5));
-		padding: 25px 8.33%;
+		padding: 50px 7%;
 		margin: 0 15px;
 		margin-bottom: 100px;
 	}
@@ -798,6 +798,9 @@ a:focus, li:focus{outline: none;}
 		clear: both;
 		margin-bottom: 70px;
 		width: 100%;
+	}
+	.last-item{
+		margin-bottom: 0 !important;
 	}
 	.item-title{
 		border-bottom: 1px solid #bf955a;
