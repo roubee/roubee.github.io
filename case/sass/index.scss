@@ -48,6 +48,21 @@ a:focus, li:focus{outline: none;}
    margin: 0 !important;
 }
 [class*="col-"] {text-align: center;}
+/*------- 分頁mixin -------*/
+@mixin page-title-default(){
+padding-top: 60px;
+background: url('') no-repeat left -40px;
+height: 140px;
+	span{
+		color: #000;
+		font-size: 3rem;
+		padding-left: 15px;
+		vertical-align: middle;
+	}
+}
+@mixin page-stitle-default(){
+
+}
 /*------- 右側導覽列 -------*/
 .nav-right-side{
 	display: none;
@@ -316,11 +331,12 @@ a:focus, li:focus{outline: none;}
 .case-mask{
 	width:140px;
 	height:140px;
-	background-color: rgba(#ab7f41, 0.8);
+	background-color: rgba(#fff, 0.8);
 	z-index: 2;
 	position: absolute;
 	display:block;
 }
+
 .case1{background: url('../images/case1.jpg') no-repeat;}
 .case2{background: url('../images/case2.jpg') no-repeat;}
 .case3{background: url('../images/case3.jpg') no-repeat;}
@@ -329,6 +345,12 @@ a:focus, li:focus{outline: none;}
 	z-index: 3;
 	position: absolute;
 	display:block;
+	background-color: transparent;
+	color: #3f3f3f;
+}
+.case-title:hover{
+	color: #fff;
+	background-color: rgba(#ab7f41, 0.8);
 }
 .case-area{margin-bottom: 15px;}
 /*------- 頁腳 -------*/
@@ -347,7 +369,6 @@ a:focus, li:focus{outline: none;}
 		text-align: left;
 		padding-top: 10px;
 	}
-	td:nth-child(1){padding-top: 0;}
 	td:nth-child(even){
 		text-align: left;
 		padding-left: 40px;
@@ -356,7 +377,7 @@ a:focus, li:focus{outline: none;}
 		padding-top: 40px;
 		padding-bottom: 30px;
 	}
-	.first_line{padding-top: 15px;}
+	tr .first_line{padding-top: 15px;}
 	.info1{
 		width: 19px;
 		height: 21px;
@@ -381,7 +402,7 @@ a:focus, li:focus{outline: none;}
 	width: 155px;
 }
 .footer-block2{
-	width: 210px;
+	width: 250px;
 }
 .footer-block3{
 	width: 250px;
@@ -419,11 +440,12 @@ a:focus, li:focus{outline: none;}
 	background-color: $mainColor;
 	color: #272727;
 }
-.top_title{
+tr .top_title{
 	font-size: 1.5rem;
 	color: $mainColor;
 	border-bottom: 1px solid $mainColor;
 	padding-bottom: 5px;
+	padding-top: 0;
 }
 .footer-bottom{
 	width: 100%;
@@ -889,6 +911,95 @@ a:focus, li:focus{outline: none;}
 		}
 	}
 }
+/*------- 服務項目 -------*/
+.page-service{
+	margin-top: 73px;
+	.title{
+		position: relative;
+		padding-top: 60px;
+		background: url('') no-repeat right top;
+		height: 140px;
+		span{
+			color: #000;
+			font-size: 2.5rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.stitle{
+		color: #bf955a;
+		font-size: 1.8rem;
+		margin: 0 auto;
+		margin-top: 50px;
+		width: 83.33%;
+	}
+	.content{
+		position: relative;
+		border: 3px solid #ff0000;
+		margin: 0 4.16%;
+		margin-top: 200px;
+		.back-img{
+			position: relative;
+			border: 3px solid #000;
+			background: url('../images/service/3stage_back.png') no-repeat top center;
+			height: 160px;
+			@include background-size(cover);
+		}
+		.info{
+			position: absolute;
+			top: 150px;
+			left: 3%; 
+			right: 3%; 
+			margin-left: auto; 
+			margin-right: auto;
+			width: 94%;
+			background-color: #fff;
+		}
+	}
+}
+/*------- 經營實績list -------*/
+.page-case-list{
+	margin-top: 73px;
+	.title{
+		padding-top: 60px;
+		background: url('') no-repeat left -40px;
+		height: 140px;
+		span{
+			color: #000;
+			font-size: 3rem;
+			padding-left: 15px;
+			vertical-align: middle;
+		}
+	}
+	.stitle{
+		color: #bf955a;
+		font-size: 2.4rem;
+		margin-top: 50px;
+	}
+	.content{
+		.first-row{padding-top:90px;}
+		padding-bottom: 150px;
+	}
+	.case-item{
+		display: block;
+	}
+	.case-item:nth-child(2){
+		margin: 20px 0;
+	}
+	.case-mask{
+		margin-left: auto;
+    	margin-right: auto;
+    	left: 0;
+    	right: 0;
+	}
+	.case-block{
+		margin: 0 auto;
+	}
+}
+.page-case-list-in{
+	background: url('../images/case.jpg') no-repeat top center;
+	@include background-size(cover);
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -1128,6 +1239,71 @@ a:focus, li:focus{outline: none;}
 			background: url('') no-repeat right bottom;
 		}
 	}
+	/*------- 服務項目 -------*/
+	.page-service{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+			width: 83.33%;
+			font-size: 2.4rem;
+		}
+		.content{
+			margin: 0 4.16%;
+			margin-top: 150px;
+			.back-img{
+				height: 380px;
+			}
+			.info{
+				top: 330px;
+				left: 5%; 
+				right: 5%; 
+				width: 90%;
+			}
+		}
+	}
+	/*------- 經營實績list -------*/
+	.page-case-list{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			.first-row{padding-top:50px;}
+		}
+		.case-item{
+			display: inline-block;
+		}
+		.case-item:nth-child(2){
+			margin: 0 20px;
+		}
+		.case-mask{
+	    	left: auto;
+	    	right: auto;
+		}
+	}
+	.page-case-list-in{
+		@include background-size(auto);
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -1366,6 +1542,71 @@ a:focus, li:focus{outline: none;}
 		.content{
 			background: url('../images/mission_back2.png') no-repeat right bottom;
 		}
+	}
+	/*------- 服務項目 -------*/
+	.page-service{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+			width: 800px;
+			font-size: 2.4rem;
+		}
+		.content{
+			margin: 0 12.5%;
+			margin-top: 150px;
+			.back-img{
+				height: 380px;
+			}
+			.info{
+				top: 330px;
+				left: 5%; 
+				right: 5%; 
+				width: 90%;
+			}
+		}
+	}
+	/*------- 經營實績list -------*/
+	.page-case-list{
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			.first-row{padding-top:70px;}
+		}
+		.case-item{
+			display: inline-block;
+		}
+		.case-item:nth-child(2){
+			margin: 0 20px;
+		}
+		.case-mask{
+	    	left: auto;
+	    	right: auto;
+		}
+	}
+	.page-case-list-in{
+		@include background-size(auto);
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -1624,5 +1865,72 @@ a:focus, li:focus{outline: none;}
 		.content{
 			background: url('../images/mission_back2.png') no-repeat right bottom;
 		}
+	}
+	/*------- 服務項目 -------*/
+	.page-service{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+			width: 800px;
+			font-size: 2.4rem;
+		}
+		.content{
+			margin: 0 12.5%;
+			margin-top: 150px;
+			.back-img{
+				height: 380px;
+			}
+			.info{
+				top: 330px;
+				left: 5%; 
+				right: 5%; 
+				width: 90%;
+			}
+		}
+	}
+	/*------- 經營實績list -------*/
+	.page-case-list{
+		margin-top: 140px;
+		.title{
+			padding-top: 60px;
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+			span{
+				color: #000;
+				font-size: 3rem;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			.first-row{padding-top:70px;}
+		}
+		.case-item{
+			display: inline-block;
+		}
+		.case-item:nth-child(2){
+			margin: 0 20px;
+		}
+		.case-mask{
+	    	left: auto;
+	    	right: auto;
+		}
+	}
+	.page-case-list-in{
+		@include background-size(cover);
 	}
 }
