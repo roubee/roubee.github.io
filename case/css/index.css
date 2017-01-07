@@ -602,6 +602,8 @@ tr .top_title {
 }
 .history .title {
   padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
   background: url("") no-repeat right top;
   height: 200px;
 }
@@ -1076,15 +1078,19 @@ tr .top_title {
 }
 .page-service .title {
   position: relative;
-  padding-top: 60px;
   background: url("") no-repeat right top;
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
   height: 140px;
 }
 .page-service .title span {
   color: #000;
-  font-size: 2.5rem;
+  font-size: 3rem;
   padding-left: 15px;
   vertical-align: middle;
+}
+.page-service .title span {
+  font-size: 2.5rem;
 }
 .page-service .stitle {
   color: #bf955a;
@@ -1168,6 +1174,46 @@ tr .top_title {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+}
+
+/*------- 經營實績detail -------*/
+.page-case-detail {
+  margin-top: 73px;
+}
+.page-case-detail .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+  background: url("") no-repeat right top;
+  padding-top: 30px;
+}
+.page-case-detail .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-case-detail .title div:nth-child(1) {
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 50px;
+}
+.page-case-detail .title div:nth-child(1) a {
+  color: #bf955a;
+}
+.page-case-detail .title div:nth-child(1) img {
+  margin-right: 10px;
+}
+.page-case-detail .stitle {
+  color: #3e3934;
+  font-size: 2.4rem;
+  margin-top: 50px;
+}
+.page-case-detail .content {
+  padding-bottom: 150px;
+}
+.page-case-detail .content .first-row {
+  padding-top: 90px;
 }
 
 /*------- RWD -------*/
@@ -1282,12 +1328,6 @@ tr .top_title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
   }
-  .philosophy .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .philosophy .content {
     background: url("") no-repeat 110px top;
     padding-bottom: 60px;
@@ -1315,12 +1355,6 @@ tr .top_title {
     padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .vision .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .vision .stitle {
     margin-top: 60px;
@@ -1357,12 +1391,6 @@ tr .top_title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
   }
-  .team .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .team .stitle {
     margin-top: 60px;
   }
@@ -1386,12 +1414,6 @@ tr .top_title {
     padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .winning .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .winning .stitle {
     margin-top: 60px;
@@ -1440,12 +1462,6 @@ tr .top_title {
     background: url("") no-repeat right top;
     height: 200px;
   }
-  .mission .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .mission .mission-in {
     background: url("../images/mission_back.jpg") no-repeat center center;
     -moz-background-size: cover;
@@ -1459,15 +1475,11 @@ tr .top_title {
 
   /*------- 服務項目 -------*/
   .page-service .title {
-    padding-top: 60px;
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
   }
   .page-service .title span {
-    color: #000;
     font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .page-service .stitle {
     margin-top: 60px;
@@ -1490,15 +1502,8 @@ tr .top_title {
 
   /*------- 經營實績list -------*/
   .page-case-list .title {
-    padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .page-case-list .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .page-case-list .stitle {
     margin-top: 60px;
@@ -1522,6 +1527,18 @@ tr .top_title {
     -o-background-size: auto;
     -webkit-background-size: auto;
     background-size: auto;
+  }
+
+  /*------- 經營實績detail -------*/
+  .page-case-detail .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-case-detail .stitle {
+    margin-top: 60px;
+  }
+  .page-case-detail .content .first-row {
+    padding-top: 50px;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1635,12 +1652,6 @@ tr .top_title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
   }
-  .philosophy .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .philosophy .content {
     background: url("../images/philosophy_back2.png") no-repeat center top;
     -moz-background-size: 120% auto;
@@ -1672,12 +1683,6 @@ tr .top_title {
     padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .vision .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .vision .stitle {
     margin-top: 60px;
@@ -1715,12 +1720,6 @@ tr .top_title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
   }
-  .team .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .team .stitle {
     margin-top: 60px;
   }
@@ -1744,12 +1743,6 @@ tr .top_title {
     padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .winning .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .winning .stitle {
     margin-top: 60px;
@@ -1798,12 +1791,6 @@ tr .top_title {
     background: url("") no-repeat right top;
     height: 200px;
   }
-  .mission .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .mission .mission-in {
     background: url("../images/mission_back.jpg") no-repeat center center;
     -moz-background-size: cover;
@@ -1817,15 +1804,11 @@ tr .top_title {
 
   /*------- 服務項目 -------*/
   .page-service .title {
-    padding-top: 60px;
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
   }
   .page-service .title span {
-    color: #000;
     font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .page-service .stitle {
     margin-top: 60px;
@@ -1848,15 +1831,8 @@ tr .top_title {
 
   /*------- 經營實績list -------*/
   .page-case-list .title {
-    padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .page-case-list .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .page-case-list .stitle {
     margin-top: 60px;
@@ -1880,6 +1856,18 @@ tr .top_title {
     -o-background-size: auto;
     -webkit-background-size: auto;
     background-size: auto;
+  }
+
+  /*------- 經營實績detail -------*/
+  .page-case-detail .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-case-detail .stitle {
+    margin-top: 60px;
+  }
+  .page-case-detail .content .first-row {
+    padding-top: 70px;
   }
 }
 @media (min-width: 1200px) {
@@ -2035,12 +2023,6 @@ tr .top_title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
   }
-  .philosophy .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .philosophy .content {
     background: url("../images/philosophy_back2.png") no-repeat center top;
     -moz-background-size: 120% auto;
@@ -2075,12 +2057,6 @@ tr .top_title {
     padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .vision .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .vision .stitle {
     margin-top: 60px;
@@ -2121,12 +2097,6 @@ tr .top_title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
   }
-  .team .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .team .stitle {
     margin-top: 60px;
   }
@@ -2153,12 +2123,6 @@ tr .top_title {
     padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .winning .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .winning .stitle {
     margin-top: 60px;
@@ -2210,12 +2174,6 @@ tr .top_title {
     background: url("") no-repeat right top;
     height: 200px;
   }
-  .mission .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
-  }
   .mission .mission-in {
     background: url("../images/mission_back.jpg") no-repeat center center;
     -moz-background-size: cover;
@@ -2232,15 +2190,11 @@ tr .top_title {
     margin-top: 140px;
   }
   .page-service .title {
-    padding-top: 60px;
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
   }
   .page-service .title span {
-    color: #000;
     font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .page-service .stitle {
     margin-top: 60px;
@@ -2266,15 +2220,8 @@ tr .top_title {
     margin-top: 140px;
   }
   .page-case-list .title {
-    padding-top: 60px;
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
     height: 200px;
-  }
-  .page-case-list .title span {
-    color: #000;
-    font-size: 3rem;
-    padding-left: 15px;
-    vertical-align: middle;
   }
   .page-case-list .stitle {
     margin-top: 60px;
@@ -2298,5 +2245,20 @@ tr .top_title {
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+  }
+
+  /*------- 經營實績detail -------*/
+  .page-case-detail {
+    margin-top: 140px;
+  }
+  .page-case-detail .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-case-detail .stitle {
+    margin-top: 60px;
+  }
+  .page-case-detail .content .first-row {
+    padding-top: 70px;
   }
 }
