@@ -841,8 +841,9 @@ tr .top_title {
 }
 .team .title {
   padding-top: 60px;
-  background: url("") no-repeat right top;
+  background: url("") no-repeat left -40px;
   height: 140px;
+  background: url("") no-repeat right top;
 }
 .team .title span {
   color: #000;
@@ -1042,8 +1043,9 @@ tr .top_title {
 }
 .mission .title {
   padding-top: 60px;
-  background: url("") no-repeat right top;
+  background: url("") no-repeat left -40px;
   height: 140px;
+  background: url("") no-repeat right top;
 }
 .mission .title span {
   color: #000;

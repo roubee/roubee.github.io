@@ -606,15 +606,7 @@ tr .top_title{
 .philosophy{
 	margin-top: 73px;
 	.title{
-		padding-top: 60px;
-		background: url('') no-repeat left -40px;
-		height: 140px;
-		span{
-			color: #000;
-			font-size: 3rem;
-			padding-left: 15px;
-			vertical-align: middle;
-		}
+		@include page-title-default();
 	}
 	.content{
 		color: #232323;
@@ -653,15 +645,7 @@ tr .top_title{
 .vision{
 	margin-top: 73px;
 	.title{
-		padding-top: 60px;
-		background: url('') no-repeat left -40px;
-		height: 140px;
-		span{
-			color: #000;
-			font-size: 3rem;
-			padding-left: 15px;
-			vertical-align: middle;
-		}
+		@include page-title-default();
 	}
 	.stitle{
 		color: #bf955a;
@@ -700,15 +684,8 @@ tr .top_title{
 .team{
 	margin-top: 73px;
 	.title{
-		padding-top: 60px;
+		@include page-title-default();
 		background: url('') no-repeat right top;
-		height: 140px;
-		span{
-			color: #000;
-			font-size: 3rem;
-			padding-left: 15px;
-			vertical-align: middle;
-		}
 	}
 	.stitle{
 		color: #bf955a;
@@ -776,15 +753,7 @@ tr .top_title{
 		background-color: #eeede8;
 	}
 	.title{
-		padding-top: 60px;
-		background: url('') no-repeat left -40px;
-		height: 140px;
-		span{
-			color: #000;
-			font-size: 3rem;
-			padding-left: 15px;
-			vertical-align: middle;
-		}
+		@include page-title-default();
 	}
 	.stitle{
 		color: #bf955a;
@@ -884,15 +853,8 @@ tr .top_title{
 		@include background-size(auto 100%);
 	}
 	.title{
-		padding-top: 60px;
+		@include page-title-default();
 		background: url('') no-repeat right top;
-		height: 140px;
-		span{
-			color: #000;
-			font-size: 3rem;
-			padding-left: 15px;
-			vertical-align: middle;
-		}
 	}
 	.content{
 		background: url('') no-repeat right bottom;
