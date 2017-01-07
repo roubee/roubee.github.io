@@ -1210,10 +1210,100 @@ tr .top_title {
   margin-top: 50px;
 }
 .page-case-detail .content {
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 70px;
 }
-.page-case-detail .content .first-row {
-  padding-top: 90px;
+.page-case-detail .item-block {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 480px;
+  margin-bottom: 40px;
+}
+.page-case-detail .item-img {
+  width: 100%;
+  float: left;
+  height: 214px;
+}
+.page-case-detail .item-text {
+  width: 290px;
+  position: absolute;
+  margin: auto;
+  top: 200px;
+  bottom: auto;
+  right: 0;
+  height: 270px;
+  background-color: #fff;
+  -moz-box-shadow: 0px 0px 5px #aaa;
+  -webkit-box-shadow: 0px 0px 5px #aaa;
+  box-shadow: 0px 0px 5px #aaa;
+  left: 0;
+}
+.page-case-detail .item-text .relative {
+  position: relative;
+}
+.page-case-detail .item-text:hover {
+  background-color: #bf955a;
+}
+.page-case-detail .item-img-1 {
+  background: url("../images/case/1.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-case-detail .item-img-2 {
+  background: url("../images/case/2.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-case-detail .item-img-3 {
+  background: url("../images/case/3.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-case-detail .item-img-4 {
+  background: url("../images/case/4.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-case-detail .item-img-5 {
+  background: url("../images/case/5.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-case-detail .page-block {
+  margin-top: 70px;
+}
+.page-case-detail .page-block img {
+  margin: 0 10px;
+}
+.page-case-detail .page-block ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+.page-case-detail .page-block li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #978d7f;
+  font-size: 1.8rem;
+}
+.page-case-detail li.now-page {
+  background-color: #bf955a;
+  color: #fff;
 }
 
 /*------- RWD -------*/
@@ -1539,6 +1629,21 @@ tr .top_title {
   }
   .page-case-detail .content .first-row {
     padding-top: 50px;
+  }
+  .page-case-detail .item-block {
+    width: 690px;
+    height: 214px;
+  }
+  .page-case-detail .item-img {
+    width: 320px;
+    height: 100%;
+  }
+  .page-case-detail .item-text {
+    width: 430px;
+    height: 180px;
+    left: auto;
+    top: 0;
+    bottom: 0;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -1868,6 +1973,21 @@ tr .top_title {
   }
   .page-case-detail .content .first-row {
     padding-top: 70px;
+  }
+  .page-case-detail .item-block {
+    width: 800px;
+    height: 214px;
+  }
+  .page-case-detail .item-img {
+    width: 320px;
+    height: 100%;
+  }
+  .page-case-detail .item-text {
+    width: 540px;
+    height: 180px;
+    left: auto;
+    top: 0;
+    bottom: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -2260,5 +2380,20 @@ tr .top_title {
   }
   .page-case-detail .content .first-row {
     padding-top: 70px;
+  }
+  .page-case-detail .item-block {
+    width: 800px;
+    height: 214px;
+  }
+  .page-case-detail .item-img {
+    width: 320px;
+    height: 100%;
+  }
+  .page-case-detail .item-text {
+    width: 540px;
+    height: 180px;
+    left: auto;
+    top: 0;
+    bottom: 0;
   }
 }

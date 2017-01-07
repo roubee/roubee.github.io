@@ -966,8 +966,68 @@ tr .top_title{
 		margin-top: 50px;
 	}
 	.content{
-		.first-row{padding-top:90px;}
-		padding-bottom: 150px;
+		padding-top: 80px;
+		padding-bottom: 70px;
+	}
+	.item-block{
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		height: 480px;
+		margin-bottom: 40px;
+	}
+	.item-img{
+		width: 100%;
+		float: left;
+		height: 214px;
+	}
+	.item-text{
+		width: 290px;
+		position: absolute;
+		margin: auto;
+		top: 200px;
+	    bottom: auto;
+		right: 0;
+		height: 270px;
+		background-color: #fff;
+		@include box-shadow(0px 0px 5px #aaa); 
+		left: 0;
+		.relative{
+			position: relative;
+		}
+	}
+	.item-text:hover{
+		background-color: $mainColor;
+	}
+	.item-img-1{background:url('../images/case/1.jpg') no-repeat;@include background-size(cover);}
+	.item-img-2{background:url('../images/case/2.jpg') no-repeat;@include background-size(cover);}
+	.item-img-3{background:url('../images/case/3.jpg') no-repeat;@include background-size(cover);}
+	.item-img-4{background:url('../images/case/4.jpg') no-repeat;@include background-size(cover);}
+	.item-img-5{background:url('../images/case/5.jpg') no-repeat;@include background-size(cover);}
+	.page-block{
+		margin-top: 70px;
+		img{
+			margin: 0 10px;
+		}
+		ul{
+			display: inline-block;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			vertical-align: middle;
+		}
+		li{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			color: #978d7f;
+			font-size: 1.8rem;	
+		}
+	}
+	li.now-page{
+		background-color: $mainColor;
+		color: #fff;
 	}
 }
 /*------- RWD -------*/
@@ -1245,6 +1305,21 @@ tr .top_title{
 		.content{
 			.first-row{padding-top:50px;}
 		}
+		.item-block{
+			width: 690px;
+			height: 214px;
+		}
+		.item-img{
+			width: 320px;
+			height: 100%;
+		}
+		.item-text{
+			width: 430px;
+			height: 180px;
+			left: auto;
+			top: 0;
+	    	bottom: 0;	
+		}
 	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
@@ -1520,6 +1595,21 @@ tr .top_title{
 		}
 		.content{
 			.first-row{padding-top:70px;}
+		}
+		.item-block{
+			width: 800px;
+			height: 214px;
+		}
+		.item-img{
+			width: 320px;
+			height: 100%;
+		}
+		.item-text{
+			width: 540px;
+			height: 180px;
+			left: auto;
+			top: 0;
+	    	bottom: 0;	
 		}
 	}
 }
@@ -1818,6 +1908,21 @@ tr .top_title{
 		}
 		.content{
 			.first-row{padding-top:70px;}
+		}
+		.item-block{
+			width: 800px;
+			height: 214px;
+		}
+		.item-img{
+			width: 320px;
+			height: 100%;
+		}
+		.item-text{
+			width: 540px;
+			height: 180px;
+			left: auto;
+			top: 0;
+	    	bottom: 0;	
 		}
 	}
 }
