@@ -1113,6 +1113,97 @@ tr .top_title{
 		color: #fff;
 	}
 }
+/*------- 加值服務 -------*/
+.page-value-addes{
+	margin-top: 73px;
+	.title{
+		@include page-title-default();
+		background: url('') no-repeat right top;
+	}
+	.stitle{
+		color: $mainColor;
+		font-size: 2.4rem;
+		margin-top: 40px;
+	}
+	.content{
+		padding-bottom: 100px;
+		padding-top: 90px;
+	}
+	[class*="col-"]{
+		border: 1px solid #000;
+	}
+	.page-block{
+		clear: both;
+		padding-top: 80px;
+		img{
+			margin: 0 10px;
+		}
+		ul{
+			display: inline-block;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			vertical-align: middle;
+		}
+		li{
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			line-height: 40px;
+			color: #978d7f;
+			font-size: 1.8rem;	
+		}
+	}
+	li.now-page{
+		background-color: $mainColor;
+		color: #fff;
+	}
+	.service-icon1{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: 0 0;
+	}
+	.service-icon2{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -72px 0;
+	}
+	.service-icon3{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -144px 0;
+	}
+	.service-icon4{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -216px 0;
+	}
+	.service-icon5{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -288px 0;
+	}
+	.service-icon6{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -360px 0;
+	}
+	.service-icon7{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -432px 0;
+	}
+	.service-icon8{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -504px 0;
+	}
+	.service-icon9{
+		@include service-icon();
+		background: url('../images/value-added/allicon.png') no-repeat;
+		background-position: -506px 0;
+	}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -1404,6 +1495,20 @@ tr .top_title{
 	    	bottom: 0;	
 		}
 	}
+	/*------- 加值服務 -------*/
+	.page-value-addes{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			padding-top: 80px;
+		}
+	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
 	.service{
@@ -1693,6 +1798,20 @@ tr .top_title{
 			left: auto;
 			top: 0;
 	    	bottom: 0;	
+		}
+	}
+	/*------- 加值服務 -------*/
+	.page-value-addes{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			padding-top: 80px;
 		}
 	}
 }
@@ -2006,6 +2125,20 @@ tr .top_title{
 			left: auto;
 			top: 0;
 	    	bottom: 0;	
+		}
+	}
+	/*------- 加值服務 -------*/
+	.page-value-addes{
+		margin-top: 140px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.content{
+			padding-top: 80px;
 		}
 	}
 }
