@@ -994,6 +994,94 @@ tr .top_title{
 		left: 0;
 		.relative{
 			position: relative;
+			padding: 20px 25px;
+			text-align: left;
+		}
+		.relative:hover{
+			.in-title,.in-info{color: #fff;}
+			.in-info{
+				border-bottom: 1px solid #d1b693;
+			}
+			.in-list{
+				div{background-image: url('../images/case/service_icon_on.png');}
+				div:hover{
+					background-image: url('../images/case/service_icon_hover.png');
+					.point{display: block;}
+				}
+				.point{background-image: url('');}
+			}
+		}
+		.in-title{
+			font-size: 1.8rem;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #3f3f3f;
+		}
+		.in-info{
+			line-height: 24px;
+			color: #797979;
+			border-bottom: 1px solid #ece9e4;
+			padding-bottom: 10px;
+		}
+		.in-list{
+			padding-top: 10px;
+			div{
+				background-image: url('../images/case/service_icon.png');
+			    background-repeat: no-repeat;
+			    display: inline-block;
+			    margin: 0 7px;
+			    cursor: pointer;
+			    position: relative;
+			}
+			.life{
+    			width: 20px;
+			    height: 20px;
+			    background-position: 0 0;
+			}
+
+			.security{
+			    width: 18px;
+			    height: 20px;
+			    background-position: -20px 0;
+			}
+
+			.envpro {
+			    width: 20px;
+			    height: 20px;
+			    background-position: -38px 0;
+			}
+
+			.elec {
+			    width: 20px;
+			    height: 20px;
+			    background-position: -58px 0;
+			}
+
+			.food {
+			    width: 13px;
+			    height: 20px;
+			    background-position: -78px 0;
+			}
+
+			.con {
+			    width: 18px;
+			    height: 20px;
+			    background-position: -91px 0;
+			}
+			.point{
+				background-color: #3f3f3f;
+				color: #fff; 
+				background-image:url('');
+				margin:0;
+				position: absolute;
+				padding: 3px 0px;
+				font-size: 1rem;
+				bottom: -30px;
+				left: 15px;
+				width: 55px;
+				text-align: center;
+				display: none;
+			}
 		}
 	}
 	.item-text:hover{
