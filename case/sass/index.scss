@@ -977,8 +977,8 @@ tr .top_title{
 		margin-bottom: 40px;
 	}
 	.item-img{
-		width: 100%;
-		float: left;
+		width: 320px;
+		float: none;
 		height: 214px;
 	}
 	.item-text{
@@ -1087,11 +1087,6 @@ tr .top_title{
 	.item-text:hover{
 		background-color: $mainColor;
 	}
-	.item-img-1{background:url('../images/case/1.jpg') no-repeat;@include background-size(cover);}
-	.item-img-2{background:url('../images/case/2.jpg') no-repeat;@include background-size(cover);}
-	.item-img-3{background:url('../images/case/3.jpg') no-repeat;@include background-size(cover);}
-	.item-img-4{background:url('../images/case/4.jpg') no-repeat;@include background-size(cover);}
-	.item-img-5{background:url('../images/case/5.jpg') no-repeat;@include background-size(cover);}
 	.page-block{
 		margin-top: 70px;
 		img{
@@ -1398,12 +1393,12 @@ tr .top_title{
 			height: 214px;
 		}
 		.item-img{
-			width: 320px;
+			float: left;
 			height: 100%;
 		}
 		.item-text{
 			width: 430px;
-			height: 180px;
+			height: 200px;
 			left: auto;
 			top: 0;
 	    	bottom: 0;	
@@ -1689,7 +1684,7 @@ tr .top_title{
 			height: 214px;
 		}
 		.item-img{
-			width: 320px;
+			float: left;
 			height: 100%;
 		}
 		.item-text{
@@ -2002,8 +1997,8 @@ tr .top_title{
 			height: 214px;
 		}
 		.item-img{
-			width: 320px;
 			height: 100%;
+			float: left;
 		}
 		.item-text{
 			width: 540px;

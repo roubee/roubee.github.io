@@ -1221,8 +1221,8 @@ tr .top_title {
   margin-bottom: 40px;
 }
 .page-case-detail .item-img {
-  width: 100%;
-  float: left;
+  width: 320px;
+  float: none;
   height: 214px;
 }
 .page-case-detail .item-text {
@@ -1331,41 +1331,6 @@ tr .top_title {
 }
 .page-case-detail .item-text:hover {
   background-color: #bf955a;
-}
-.page-case-detail .item-img-1 {
-  background: url("../images/case/1.jpg") no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.page-case-detail .item-img-2 {
-  background: url("../images/case/2.jpg") no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.page-case-detail .item-img-3 {
-  background: url("../images/case/3.jpg") no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.page-case-detail .item-img-4 {
-  background: url("../images/case/4.jpg") no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.page-case-detail .item-img-5 {
-  background: url("../images/case/5.jpg") no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 .page-case-detail .page-block {
   margin-top: 70px;
@@ -1722,12 +1687,12 @@ tr .top_title {
     height: 214px;
   }
   .page-case-detail .item-img {
-    width: 320px;
+    float: left;
     height: 100%;
   }
   .page-case-detail .item-text {
     width: 430px;
-    height: 180px;
+    height: 200px;
     left: auto;
     top: 0;
     bottom: 0;
@@ -2066,7 +2031,7 @@ tr .top_title {
     height: 214px;
   }
   .page-case-detail .item-img {
-    width: 320px;
+    float: left;
     height: 100%;
   }
   .page-case-detail .item-text {
@@ -2473,8 +2438,8 @@ tr .top_title {
     height: 214px;
   }
   .page-case-detail .item-img {
-    width: 320px;
     height: 100%;
+    float: left;
   }
   .page-case-detail .item-text {
     width: 540px;
