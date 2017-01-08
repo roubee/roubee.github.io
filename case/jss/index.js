@@ -1,6 +1,9 @@
 var windowWidth = "innerWidth" in window
 	? window.innerWidth
 	: document.documentElement.clientWidth; //ie8以下
+var windowHeight = "innerHeight" in window
+	? window.innerHeight
+	: document.documentElement.clientHeight; //ie8以下
 var scrollVal = 0;
 $(window).resize(function () {
 	windowWidth = "innerWidth" in window

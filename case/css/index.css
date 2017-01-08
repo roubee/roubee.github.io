@@ -1383,9 +1383,6 @@ tr .top_title {
   padding-bottom: 100px;
   padding-top: 90px;
 }
-.page-value-addes [class*="col-"] {
-  border: 1px solid #000;
-}
 .page-value-addes .page-block {
   clear: both;
   padding-top: 80px;
@@ -1419,6 +1416,7 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
   background-position: 0 0;
 }
@@ -1429,8 +1427,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -72px 0;
+  background-position: -74px 0;
 }
 .page-value-addes .service-icon3 {
   width: 36px;
@@ -1439,8 +1438,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -144px 0;
+  background-position: -148px 0;
 }
 .page-value-addes .service-icon4 {
   width: 36px;
@@ -1449,8 +1449,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -216px 0;
+  background-position: -222px 0;
 }
 .page-value-addes .service-icon5 {
   width: 36px;
@@ -1459,8 +1460,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -288px 0;
+  background-position: -296px 0;
 }
 .page-value-addes .service-icon6 {
   width: 36px;
@@ -1469,8 +1471,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -360px 0;
+  background-position: -370px 0;
 }
 .page-value-addes .service-icon7 {
   width: 36px;
@@ -1479,8 +1482,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -432px 0;
+  background-position: -444px 0;
 }
 .page-value-addes .service-icon8 {
   width: 36px;
@@ -1489,8 +1493,9 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -504px 0;
+  background-position: -518px 0;
 }
 .page-value-addes .service-icon9 {
   width: 36px;
@@ -1499,8 +1504,106 @@ tr .top_title {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 20px;
+  width: 37px;
   background: url("../images/value-added/allicon.png") no-repeat;
-  background-position: -506px 0;
+  background-position: -592px 0;
+}
+
+.page-value-addes-pop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(204, 204, 204, 0.9);
+  top: 0;
+  z-index: 2000;
+}
+.page-value-addes-pop .closebtn {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.page-value-addes-pop .block {
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 60px 50px;
+}
+.page-value-addes-pop .block div:nth-child(1) {
+  margin-bottom: 30px;
+}
+.page-value-addes-pop .in-title {
+  clear: both;
+  color: #3f3f3f;
+  font-size: 3rem;
+  border-bottom: 1px solid #bf955a;
+  padding-bottom: 30px;
+}
+.page-value-addes-pop .in-subtitle {
+  color: #bf955a;
+  font-size: 2.4rem;
+  padding-top: 80px;
+}
+.page-value-addes-pop .in-description {
+  margin-top: 50px;
+  color: #797979;
+}
+.page-value-addes-pop .in-table {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #ddd6cd;
+}
+.page-value-addes-pop .in-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.page-value-addes-pop .in-table table {
+  border-spacing: 0;
+}
+.page-value-addes-pop .in-table .table1 {
+  width: 100%;
+}
+.page-value-addes-pop .in-table .table1 .first-tr {
+  background-color: #797979;
+  color: #fff;
+}
+.page-value-addes-pop .in-table .table2 {
+  width: 95%;
+  margin: 0 auto;
+}
+.page-value-addes-pop .in-table .table2 td {
+  width: 33.33%;
+}
+.page-value-addes-pop .in-table .table2 td {
+  padding: 15px 0;
+}
+.page-value-addes-pop .in-table .border {
+  border-bottom: 1px solid #ddd6cd;
+}
+.page-value-addes-pop .in-hint {
+  margin-top: 40px;
+  text-align: left;
+  color: #232323;
+}
+.page-value-addes-pop .in-hint span {
+  font-size: 2rem;
+}
+.page-value-addes-pop .in-hint ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-value-addes-pop .in-hint li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 
 /*------- RWD -------*/
