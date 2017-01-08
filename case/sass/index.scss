@@ -1127,8 +1127,8 @@ tr .top_title{
 		color: #fff;
 	}
 }
-/*------- 加值服務 -------*/
-.page-value-addes{
+/*------- 加值服務及訊息中心 -------*/
+@mixin page-value-addes_news(){
 	margin-top: 73px;
 	.title{
 		@include page-title-default();
@@ -1224,7 +1224,8 @@ tr .top_title{
 		background-position: -592px 0;
 	}
 }
-.page-value-addes-pop{
+
+@mixin page-value-addes_news-pop(){
 	display: none;
 	width: 100%;
 	height: 100%;
@@ -1300,6 +1301,103 @@ tr .top_title{
 		color: #232323;
 		span{font-size: 2rem;}
 		@include page-ul-default();
+	}
+}
+
+//加值服務
+.page-value-addes{
+	@include page-value-addes_news();
+}
+.page-value-addes-pop{
+	@include page-value-addes_news-pop();
+}
+
+//訊息中心
+.page-news{
+	@include page-value-addes_news();
+	.stitle{
+		color: #797979;
+		font-size: 1.7rem;
+		border-bottom: 1px solid #ddd6cd;
+		padding-bottom: 0px;
+		div{
+			display: inline-block;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+		.on{
+			padding-bottom: 10px;
+			border-bottom: 2px solid #c6232f;
+		}
+	}
+}
+.page-news-pop{
+	@include page-value-addes_news-pop();
+}
+
+/*------- 競爭優勢 -------*/
+.page-advantage{
+	margin-top: 73px;
+	.title{
+		@include page-title-default();
+		background: url('') no-repeat right top;
+	}
+	.stitle{
+		margin-top: 40px;
+		color: #797979;
+		font-size: 1.7rem;
+		border-bottom: 1px solid #ddd6cd;
+		padding-bottom: 0px;
+		div{
+			display: inline-block;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+		.on{
+			padding-bottom: 10px;
+			border-bottom: 2px solid #c6232f;
+		}
+	}
+	.content{
+		padding-bottom: 100px;
+		padding-top: 90px;
+		width: 940px;
+		margin: 0 auto;
+		position: relative;
+		height: 1000px;
+	}
+	.img-block{
+		position: relative;
+		height: 380px;
+		background: url('../images/advantage/1.jpg') no-repeat center center;
+		@include background-size(cover);
+	}
+	.content-block{
+		border: 1px solid #ff0000;
+		position: absolute;
+		top: 420px;
+		width: 90%;
+		left: 5%;
+		background-color: #fff;
+		padding: 45px 70px 0 70px;
+		color: #797979;
+		text-align: left;
+	}
+	.in-title{
+		font-size: 2.4rem;
+		margin-bottom: 30px;
+		color: #000;
+	}
+	.in-info{
+		margin-bottom: 40px;
+	}
+	.in-stitle{
+		color: #232323;
+		font-size: 2rem;
+	}
+	.in-list{
+		@include page-ul-default();
+		li{display:inline-block;}
 	}
 }
 /*------- RWD -------*/
@@ -1593,8 +1691,8 @@ tr .top_title{
 	    	bottom: 0;	
 		}
 	}
-	/*------- 加值服務 -------*/
-	.page-value-addes{
+	/*------- 加值服務及訊息中心 -------*/
+	@mixin page-value-addes_news_sm(){
 		margin-top: 73px;
 		.title{
 			background: url('../images/history_back1.jpg') no-repeat right top;
@@ -1606,6 +1704,18 @@ tr .top_title{
 		.content{
 			padding-top: 80px;
 		}
+	}
+	//加值服務
+	.page-value-addes{
+		@include page-value-addes_news_sm();
+	}
+	//訊息中心
+	.page-news{
+		@include page-value-addes_news_sm();
+	}
+	/*------- 競爭優勢 -------*/
+	.page-advantage{
+		@include page-value-addes_news_sm();
 	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
@@ -1898,8 +2008,8 @@ tr .top_title{
 	    	bottom: 0;	
 		}
 	}
-	/*------- 加值服務 -------*/
-	.page-value-addes{
+	/*------- 加值服務及訊息中心 -------*/
+	@mixin page-value-addes_news_md(){
 		margin-top: 73px;
 		.title{
 			background: url('../images/history_back1.jpg') no-repeat right top;
@@ -1911,6 +2021,18 @@ tr .top_title{
 		.content{
 			padding-top: 80px;
 		}
+	}
+	//加值服務
+	.page-value-addes{
+		@include page-value-addes_news_md;
+	}
+	//訊息中心
+	.page-news{
+		@include page-value-addes_news_md;
+	}
+	/*------- 競爭優勢 -------*/
+	.page-advantage{
+		@include page-value-addes_news_md;
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -2225,8 +2347,8 @@ tr .top_title{
 	    	bottom: 0;	
 		}
 	}
-	/*------- 加值服務 -------*/
-	.page-value-addes{
+	/*------- 加值服務及訊息中心 -------*/
+	@mixin page-value-addes_news_lg(){
 		margin-top: 140px;
 		.title{
 			background: url('../images/history_back1.jpg') no-repeat right top;
@@ -2238,5 +2360,17 @@ tr .top_title{
 		.content{
 			padding-top: 80px;
 		}
+	}
+	//加值服務
+	.page-value-addes{
+		@include page-value-addes_news_lg();
+	}
+	//訊息中心
+	.page-news{
+		@include page-value-addes_news_lg();
+	}
+	/*------- 競爭優勢 -------*/
+	.page-advantage{
+		@include page-value-addes_news_lg();
 	}
 }

@@ -1358,7 +1358,7 @@ tr .top_title {
   color: #fff;
 }
 
-/*------- 加值服務 -------*/
+/*------- 加值服務及訊息中心 -------*/
 .page-value-addes {
   margin-top: 73px;
 }
@@ -1604,6 +1604,359 @@ tr .top_title {
   transform: scale(0.66);
   display: inline-block;
   margin-right: 0.5rem;
+}
+
+.page-news {
+  margin-top: 73px;
+}
+.page-news .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+  background: url("") no-repeat right top;
+}
+.page-news .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-news .stitle {
+  color: #bf955a;
+  font-size: 2.4rem;
+  margin-top: 40px;
+}
+.page-news .content {
+  padding-bottom: 100px;
+  padding-top: 90px;
+}
+.page-news .page-block {
+  clear: both;
+  padding-top: 80px;
+}
+.page-news .page-block img {
+  margin: 0 10px;
+}
+.page-news .page-block ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+.page-news .page-block li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #978d7f;
+  font-size: 1.8rem;
+}
+.page-news li.now-page {
+  background-color: #bf955a;
+  color: #fff;
+}
+.page-news .service-icon1 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: 0 0;
+}
+.page-news .service-icon2 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -74px 0;
+}
+.page-news .service-icon3 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -148px 0;
+}
+.page-news .service-icon4 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -222px 0;
+}
+.page-news .service-icon5 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -296px 0;
+}
+.page-news .service-icon6 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -370px 0;
+}
+.page-news .service-icon7 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -444px 0;
+}
+.page-news .service-icon8 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -518px 0;
+}
+.page-news .service-icon9 {
+  width: 36px;
+  height: 36px;
+  background: url("../images/service.png") no-repeat;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 37px;
+  background: url("../images/value-added/allicon.png") no-repeat;
+  background-position: -592px 0;
+}
+.page-news .stitle {
+  color: #797979;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #ddd6cd;
+  padding-bottom: 0px;
+}
+.page-news .stitle div {
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.page-news .stitle .on {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c6232f;
+}
+
+.page-news-pop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(204, 204, 204, 0.9);
+  top: 0;
+  z-index: 2000;
+}
+.page-news-pop .closebtn {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.page-news-pop .block {
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 60px 50px;
+}
+.page-news-pop .block div:nth-child(1) {
+  margin-bottom: 30px;
+}
+.page-news-pop .in-title {
+  clear: both;
+  color: #3f3f3f;
+  font-size: 3rem;
+  border-bottom: 1px solid #bf955a;
+  padding-bottom: 30px;
+}
+.page-news-pop .in-subtitle {
+  color: #bf955a;
+  font-size: 2.4rem;
+  padding-top: 80px;
+}
+.page-news-pop .in-description {
+  margin-top: 50px;
+  color: #797979;
+}
+.page-news-pop .in-table {
+  margin-top: 50px;
+  width: 100%;
+  border: 1px solid #ddd6cd;
+}
+.page-news-pop .in-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.page-news-pop .in-table table {
+  border-spacing: 0;
+}
+.page-news-pop .in-table .table1 {
+  width: 100%;
+}
+.page-news-pop .in-table .table1 .first-tr {
+  background-color: #797979;
+  color: #fff;
+}
+.page-news-pop .in-table .table2 {
+  width: 95%;
+  margin: 0 auto;
+}
+.page-news-pop .in-table .table2 td {
+  width: 33.33%;
+}
+.page-news-pop .in-table .table2 td {
+  padding: 15px 0;
+}
+.page-news-pop .in-table .border {
+  border-bottom: 1px solid #ddd6cd;
+}
+.page-news-pop .in-hint {
+  margin-top: 40px;
+  text-align: left;
+  color: #232323;
+}
+.page-news-pop .in-hint span {
+  font-size: 2rem;
+}
+.page-news-pop .in-hint ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-news-pop .in-hint li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/*------- 競爭優勢 -------*/
+.page-advantage {
+  margin-top: 73px;
+}
+.page-advantage .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+  background: url("") no-repeat right top;
+}
+.page-advantage .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-advantage .stitle {
+  margin-top: 40px;
+  color: #797979;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #ddd6cd;
+  padding-bottom: 0px;
+}
+.page-advantage .stitle div {
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.page-advantage .stitle .on {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c6232f;
+}
+.page-advantage .content {
+  padding-bottom: 100px;
+  padding-top: 90px;
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+  height: 1000px;
+}
+.page-advantage .img-block {
+  position: relative;
+  height: 380px;
+  background: url("../images/advantage/1.jpg") no-repeat center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-advantage .content-block {
+  border: 1px solid #ff0000;
+  position: absolute;
+  top: 420px;
+  width: 90%;
+  left: 5%;
+  background-color: #fff;
+  padding: 45px 70px 0 70px;
+  color: #797979;
+  text-align: left;
+}
+.page-advantage .in-title {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #000;
+}
+.page-advantage .in-info {
+  margin-bottom: 40px;
+}
+.page-advantage .in-stitle {
+  color: #232323;
+  font-size: 2rem;
+}
+.page-advantage .in-list ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-advantage .in-list li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-advantage .in-list li {
+  display: inline-block;
 }
 
 /*------- RWD -------*/
@@ -1946,7 +2299,7 @@ tr .top_title {
     bottom: 0;
   }
 
-  /*------- 加值服務 -------*/
+  /*------- 加值服務及訊息中心 -------*/
   .page-value-addes {
     margin-top: 73px;
   }
@@ -1958,6 +2311,35 @@ tr .top_title {
     margin-top: 60px;
   }
   .page-value-addes .content {
+    padding-top: 80px;
+  }
+
+  .page-news {
+    margin-top: 73px;
+  }
+  .page-news .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-news .stitle {
+    margin-top: 60px;
+  }
+  .page-news .content {
+    padding-top: 80px;
+  }
+
+  /*------- 競爭優勢 -------*/
+  .page-advantage {
+    margin-top: 73px;
+  }
+  .page-advantage .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-advantage .stitle {
+    margin-top: 60px;
+  }
+  .page-advantage .content {
     padding-top: 80px;
   }
 }
@@ -2305,7 +2687,7 @@ tr .top_title {
     bottom: 0;
   }
 
-  /*------- 加值服務 -------*/
+  /*------- 加值服務及訊息中心 -------*/
   .page-value-addes {
     margin-top: 73px;
   }
@@ -2317,6 +2699,35 @@ tr .top_title {
     margin-top: 60px;
   }
   .page-value-addes .content {
+    padding-top: 80px;
+  }
+
+  .page-news {
+    margin-top: 73px;
+  }
+  .page-news .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-news .stitle {
+    margin-top: 60px;
+  }
+  .page-news .content {
+    padding-top: 80px;
+  }
+
+  /*------- 競爭優勢 -------*/
+  .page-advantage {
+    margin-top: 73px;
+  }
+  .page-advantage .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-advantage .stitle {
+    margin-top: 60px;
+  }
+  .page-advantage .content {
     padding-top: 80px;
   }
 }
@@ -2727,7 +3138,7 @@ tr .top_title {
     bottom: 0;
   }
 
-  /*------- 加值服務 -------*/
+  /*------- 加值服務及訊息中心 -------*/
   .page-value-addes {
     margin-top: 140px;
   }
@@ -2739,6 +3150,35 @@ tr .top_title {
     margin-top: 60px;
   }
   .page-value-addes .content {
+    padding-top: 80px;
+  }
+
+  .page-news {
+    margin-top: 140px;
+  }
+  .page-news .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-news .stitle {
+    margin-top: 60px;
+  }
+  .page-news .content {
+    padding-top: 80px;
+  }
+
+  /*------- 競爭優勢 -------*/
+  .page-advantage {
+    margin-top: 140px;
+  }
+  .page-advantage .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-advantage .stitle {
+    margin-top: 60px;
+  }
+  .page-advantage .content {
     padding-top: 80px;
   }
 }
