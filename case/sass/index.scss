@@ -51,6 +51,29 @@ a:focus, li:focus{outline: none;}
 *:focus {
     outline: none;
 }
+.ui-selectmenu-button.ui-button{
+	width: 240px;
+	background-color: #fff;
+}
+.ui-selectmenu-text{
+	background-image: url("../images/selectmenu.png") !important;
+	background-repeat: no-repeat;
+	background-position: right center;
+	font-size: 1.6rem;
+}
+.ui-selectmenu-button span{
+	font-size: 1.6rem;
+}
+.ui-button .ui-icon{
+	background: url('');
+}
+.ui-button{
+	padding: 10px;
+	border: 1px solid #c9bfb2;
+}
+.ui-corner-all{
+	@include border-radius(0);
+}
 /*------- 分頁mixin -------*/
 @mixin page-title-default(){
 padding-top: 60px;
@@ -1353,7 +1376,7 @@ tr .top_title{
 		padding-bottom: 0px;
 		div{
 			display: inline-block;
-			padding: 0 20px;
+			padding: 0 10px;
 			cursor: pointer;
 		}
 		.on{
@@ -1424,29 +1447,6 @@ tr .top_title{
 		li:nth-child(2){margin:3%;}
 		li:nth-child(1){margin-left:3%}
 	}
-	.ui-selectmenu-button.ui-button{
-		width: 240px;
-		background-color: #fff;
-	}
-	.ui-selectmenu-text{
-		background-image: url("../images/selectmenu.png") !important;
-		background-repeat: no-repeat;
-		background-position: right center;
-		font-size: 1.6rem;
-	}
-	.ui-selectmenu-button span{
-		font-size: 1.6rem;
-	}
-	.ui-button .ui-icon{
-		background: url('');
-	}
-	.ui-button{
-		padding: 10px;
-		border: 1px solid #c9bfb2;
-	}
-	.ui-corner-all{
-		@include border-radius(0);
-	}
 	.relative{
 		position: relative;
 		width: 240px;
@@ -1460,6 +1460,12 @@ tr .top_title{
 	#class-row2{
 		padding-top: 50px;
 		display: block;
+	}
+	.ui-selectmenu-text{
+		font-size: 1.6rem;
+	}
+	.ui-selectmenu-button span{
+		font-size: 1.6rem;
 	}
 }
 /*------- RWD -------*/
@@ -2131,6 +2137,11 @@ tr .top_title{
 			li:nth-child(1){margin-left:3%}
 		}
 		.in-title{font-size: 2.4rem;}
+		.stitle{
+			div{
+				padding: 0 10px;
+			}
+		}
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -2488,5 +2499,10 @@ tr .top_title{
 			li:nth-child(1){margin-left:3%}
 		}
 		.in-title{font-size: 2.4rem;}
+		.stitle{
+			div{
+				padding: 0 20px;
+			}
+		}
 	}
 }

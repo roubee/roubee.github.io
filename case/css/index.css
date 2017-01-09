@@ -41,6 +41,37 @@ a:focus, li:focus {
   outline: none;
 }
 
+.ui-selectmenu-button.ui-button {
+  width: 240px;
+  background-color: #fff;
+}
+
+.ui-selectmenu-text {
+  background-image: url("../images/selectmenu.png") !important;
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-size: 1.6rem;
+}
+
+.ui-selectmenu-button span {
+  font-size: 1.6rem;
+}
+
+.ui-button .ui-icon {
+  background: url("");
+}
+
+.ui-button {
+  padding: 10px;
+  border: 1px solid #c9bfb2;
+}
+
+.ui-corner-all {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
 /*------- 分頁mixin -------*/
 /*------- 右側導覽列 -------*/
 .nav-right-side {
@@ -1897,7 +1928,7 @@ tr .top_title {
 }
 .page-advantage .stitle div {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 10px;
   cursor: pointer;
 }
 .page-advantage .stitle .on {
@@ -1992,31 +2023,6 @@ tr .top_title {
 .page-advantage .in-list li:nth-child(1) {
   margin-left: 3%;
 }
-.page-advantage .ui-selectmenu-button.ui-button {
-  width: 240px;
-  background-color: #fff;
-}
-.page-advantage .ui-selectmenu-text {
-  background-image: url("../images/selectmenu.png") !important;
-  background-repeat: no-repeat;
-  background-position: right center;
-  font-size: 1.6rem;
-}
-.page-advantage .ui-selectmenu-button span {
-  font-size: 1.6rem;
-}
-.page-advantage .ui-button .ui-icon {
-  background: url("");
-}
-.page-advantage .ui-button {
-  padding: 10px;
-  border: 1px solid #c9bfb2;
-}
-.page-advantage .ui-corner-all {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
 .page-advantage .relative {
   position: relative;
   width: 240px;
@@ -2032,6 +2038,12 @@ tr .top_title {
 .page-advantage #class-row2 {
   padding-top: 50px;
   display: block;
+}
+.page-advantage .ui-selectmenu-text {
+  font-size: 1.6rem;
+}
+.page-advantage .ui-selectmenu-button span {
+  font-size: 1.6rem;
 }
 
 /*------- RWD -------*/
@@ -2857,6 +2869,9 @@ tr .top_title {
   .page-advantage .in-title {
     font-size: 2.4rem;
   }
+  .page-advantage .stitle div {
+    padding: 0 10px;
+  }
 }
 @media (min-width: 1200px) {
   .logo1 {
@@ -3333,5 +3348,8 @@ tr .top_title {
   }
   .page-advantage .in-title {
     font-size: 2.4rem;
+  }
+  .page-advantage .stitle div {
+    padding: 0 20px;
   }
 }
