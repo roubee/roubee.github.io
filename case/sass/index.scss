@@ -48,6 +48,9 @@ a:focus, li:focus{outline: none;}
    margin: 0 !important;
 }
 [class*="col-"] {text-align: center;}
+*:focus {
+    outline: none;
+}
 /*------- 分頁mixin -------*/
 @mixin page-title-default(){
 padding-top: 60px;
@@ -739,7 +742,7 @@ tr .top_title{
 			padding: 0;
 		}
 		li{
-			height: 30px;
+			line-height: 30px;
 		}
 		li:before{
 			content: '◆';
@@ -1361,7 +1364,7 @@ tr .top_title{
 	.content{
 		padding-bottom: 100px;
 		padding-top: 90px;
-		width: 940px;
+		width: 90%;
 		margin: 0 auto;
 		position: relative;
 		height: 1000px;
@@ -1373,18 +1376,31 @@ tr .top_title{
 		@include background-size(cover);
 	}
 	.content-block{
-		border: 1px solid #ff0000;
 		position: absolute;
 		top: 420px;
 		width: 90%;
 		left: 5%;
 		background-color: #fff;
-		padding: 45px 70px 0 70px;
+		padding: 45px 20px 0 20px;
 		color: #797979;
 		text-align: left;
 	}
+	.content-block:after{
+		position: absolute;
+		content: '';
+		width: 101%;
+		height: 160px;
+		top: -0.5%;
+		left:-0.5%;
+		background: #999999;
+		background: -moz-linear-gradient(top,  #ddd 0%, #ffffff 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #ddd 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #ddd 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+		z-index: -1;
+	}
 	.in-title{
-		font-size: 2.4rem;
+		font-size: 1.8rem;
 		margin-bottom: 30px;
 		color: #000;
 	}
@@ -1397,7 +1413,53 @@ tr .top_title{
 	}
 	.in-list{
 		@include page-ul-default();
-		li{display:inline-block;}
+		margin-top: 30px;
+		li{
+			display: block;
+			width: 97%;
+			text-indent: -0.8rem;
+			vertical-align: top;
+			margin-left:3%;
+		}
+		li:nth-child(2){margin:3%;}
+		li:nth-child(1){margin-left:3%}
+	}
+	.ui-selectmenu-button.ui-button{
+		width: 240px;
+		background-color: #fff;
+	}
+	.ui-selectmenu-text{
+		background-image: url("../images/selectmenu.png") !important;
+		background-repeat: no-repeat;
+		background-position: right center;
+		font-size: 1.6rem;
+	}
+	.ui-selectmenu-button span{
+		font-size: 1.6rem;
+	}
+	.ui-button .ui-icon{
+		background: url('');
+	}
+	.ui-button{
+		padding: 10px;
+		border: 1px solid #c9bfb2;
+	}
+	.ui-corner-all{
+		@include border-radius(0);
+	}
+	.relative{
+		position: relative;
+		width: 240px;
+		margin: 0 auto;
+		div{
+			position: absolute;
+			z-index: 2;
+		}
+	}
+	#class-row1{display: none;}
+	#class-row2{
+		padding-top: 50px;
+		display: block;
 	}
 }
 /*------- RWD -------*/
@@ -1716,6 +1778,24 @@ tr .top_title{
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
 		@include page-value-addes_news_sm();
+		.content{
+			width: 90%;
+		}
+		.content-block{
+			padding: 45px 70px 0 70px;
+		}
+		#class-row1{display: none;}
+		#class-row2{display: block;}
+		.in-list{
+			li{
+				display:inline-block;
+				width: 25%;
+				margin-left:0;
+			}
+			li:nth-child(2){margin:0 11%;}
+			li:nth-child(1){margin-left:3%}
+		}
+		.in-title{font-size: 2.4rem;}
 	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
@@ -2033,6 +2113,24 @@ tr .top_title{
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
 		@include page-value-addes_news_md;
+		.content{
+			width: 940px;
+		}
+		.content-block{
+			padding: 45px 70px 0 70px;
+		}
+		#class-row1{display: block;}
+		#class-row2{display: none;}
+		.in-list{
+			li{
+				display:inline-block;
+				width: 20%;
+				margin-left:0;
+			}
+			li:nth-child(2){margin:0 18%;}
+			li:nth-child(1){margin-left:3%}
+		}
+		.in-title{font-size: 2.4rem;}
 	}
 }
 @media (min-width: $screen-lg-min) {
@@ -2372,5 +2470,23 @@ tr .top_title{
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
 		@include page-value-addes_news_lg();
+		.content{
+			width: 940px;
+		}
+		.content-block{
+			padding: 45px 70px 0 70px;
+		}
+		#class-row1{display: block;}
+		#class-row2{display: none;}
+		.in-list{
+			li{
+				display:inline-block;
+				width: 20%;
+				margin-left:0;
+			}
+			li:nth-child(2){margin:0 18%;}
+			li:nth-child(1){margin-left:3%}
+		}
+		.in-title{font-size: 2.4rem;}
 	}
 }

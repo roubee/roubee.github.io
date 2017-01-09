@@ -8,6 +8,7 @@
     <title>富士康物業-競爭優勢</title>
 
     <!-- Bootstrap -->
+    <link href="../css/jquery-ui.min.css"  rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
   </head>
@@ -73,7 +74,7 @@
       <div class="row"><div class="col-xs-12">
         <div class="title">
           <div><img src="../images/item.png"><span>競爭優勢</span></div>
-          <div class="row"><div class="col-xs-10 col-xs-offset-1"><div class="stitle">
+          <div id="class-row1" class="row"><div class="col-xs-10 col-xs-offset-1"><div class="stitle">
             <div class="on">完善教育訓練</div>
             <div>特勤團隊</div>
             <div>細緻服務</div>
@@ -82,6 +83,17 @@
             <div>多元社區活動</div>
             <div>特約配合團隊</div>
           </div></div></div>
+          <div id="class-row2" class="row"><div class="col-xs-10 col-xs-offset-1"><div class="relative"><div>
+            <select id="advantage-class-select">
+              <option selected="selected" value="完善教育訓練">完善教育訓練</option>
+              <option value="特勤團隊">特勤團隊</option>
+              <option value="細緻服務">細緻服務</option>
+              <option value="會館經營">會館經營</option>
+              <option value="E化服務">E化服務</option>
+              <option value="多元社區活動">多元社區活動</option>
+              <option value="特約配合團隊">特約配合團隊</option>
+            </select>
+          </div></div></div></div>
         </div>
         <div class="content">
           <div class="img-block"></div>
@@ -92,12 +104,12 @@
             </div>
             <div class="in-stitle">教育訓練課程列表：</div>
             <div class="in-list">
-              <ul><li>勞工安全及社區實務</li><li>1</li><li>1</li></ul>
-              <ul><li>勞工安全及工作技能</li><li>1</li><li>1</li></ul>
-              <ul><li>救災防護訓練</li><li>1</li><li>1</li></ul>
-              <ul><li>保全業經營管理及未來展望</li><li>1</li><li>交通指揮宣導及交通事故之協助處理</li></ul>
-              <ul><li>防盜強搶實務</li><li>1</li><li>1</li></ul>
-              <ul><li>1</li></ul>
+              <ul><li>勞工安全及社區實務</li><li>刑事法概要</li><li>擒拿術</li></ul>
+              <ul><li>勞工安全及工作技能</li><li>犯罪預防與民力運用</li><li>保全業法介紹</li></ul>
+              <ul><li>救災防護訓練</li><li>犯罪偵查</li><li>保全業相關理論及各國保全業介紹</li></ul>
+              <ul><li>保全業經營管理及未來展望</li><li>保全人員工作壓力與生活環境適應度探討</li><li>餐飲秘書教育訓練</li></ul>
+              <ul><li>交通指揮宣導及交通事故之協助處理</li><li>危機處理</li><li>五星級飯店實習訓練</li></ul>
+              <ul><li>防盜強搶實務</li></ul>
             </div>
           </div>
         </div>
@@ -157,11 +169,18 @@
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="../jss/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../jss/index.js"></script>
     <script type="text/javascript">
       $(function(){
-        var height = $('.content-block').height() + $('.img-block').height() + 140;
+        var height = $('.content-block').height() + $('.img-block').height() + 200;
+        $(window).resize(function () {
+          height = $('.content-block').height() + $('.img-block').height() + 200;
+          $('.content').css('height',height);
+        });
         $('.content').css('height',height);
+        
+        $('#advantage-class-select').selectmenu();
       });
     </script>
   </body>
