@@ -1272,6 +1272,7 @@ tr .top_title{
 		margin-top: 60px;
 		padding: 60px 50px;
 		div:nth-child(1){margin-bottom: 30px;}
+		img{width: 100%;}
 	}
 	.in-title{
 		clear: both;
@@ -1466,6 +1467,66 @@ tr .top_title{
 	}
 	.ui-selectmenu-button span{
 		font-size: 1.6rem;
+	}
+}
+.email{
+	.block{
+		width: 600px;
+		background-color: #eee;
+		margin: 0 auto;
+		margin-top: 35px;
+		text-align: left;
+	}
+	.backImg{
+		background: url(../images/) no-repeat right bottom;
+	}
+	.header{
+		margin: 0 50px;
+		padding: 0 5px;
+		padding-top: 40px;
+	}
+	.messsage{
+		margin: 0 50px;
+		padding: 0 5px;
+		color: #797979;
+		font-size: 1.6rem;
+		line-height: 35px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		div:nth-child(1){
+			font-size: 1.8rem;
+			span{
+				color: #000;
+				margin: 0 10px;
+			}
+		}
+	}
+	.content{
+		margin: 0 50px;
+		padding: 40px 5px;
+		border-bottom: 1px solid #ddd6cd;
+		border-top: 1px solid #ddd6cd;
+	}
+	.hint{
+		margin: 0 50px;
+		padding: 25px 5px;
+		div:nth-child(1){
+			color: #999;
+			font-size: 1.4rem;
+			margin-bottom: 50px;
+			a{
+				color: #999;
+				text-decoration: underline;
+			}
+		}
+		div:nth-child(2){
+			color: $mainColor;
+			font-size: 1.3rem;
+		}
+	}
+	.footer{
+		background-color: #272727;
+		padding: 0 35px;
 	}
 }
 /*------- RWD -------*/

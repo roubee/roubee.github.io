@@ -1569,6 +1569,9 @@ tr .top_title {
 .page-value-addes-pop .block div:nth-child(1) {
   margin-bottom: 30px;
 }
+.page-value-addes-pop .block img {
+  width: 100%;
+}
 .page-value-addes-pop .in-title {
   clear: both;
   color: #3f3f3f;
@@ -1831,6 +1834,9 @@ tr .top_title {
 .page-news-pop .block div:nth-child(1) {
   margin-bottom: 30px;
 }
+.page-news-pop .block img {
+  width: 100%;
+}
 .page-news-pop .in-title {
   clear: both;
   color: #3f3f3f;
@@ -2044,6 +2050,65 @@ tr .top_title {
 }
 .page-advantage .ui-selectmenu-button span {
   font-size: 1.6rem;
+}
+
+.email .block {
+  width: 600px;
+  background-color: #eee;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: left;
+}
+.email .backImg {
+  background: url(../images/) no-repeat right bottom;
+}
+.email .header {
+  margin: 0 50px;
+  padding: 0 5px;
+  padding-top: 40px;
+}
+.email .messsage {
+  margin: 0 50px;
+  padding: 0 5px;
+  color: #797979;
+  font-size: 1.6rem;
+  line-height: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.email .messsage div:nth-child(1) {
+  font-size: 1.8rem;
+}
+.email .messsage div:nth-child(1) span {
+  color: #000;
+  margin: 0 10px;
+}
+.email .content {
+  margin: 0 50px;
+  padding: 40px 5px;
+  border-bottom: 1px solid #ddd6cd;
+  border-top: 1px solid #ddd6cd;
+}
+.email .hint {
+  margin: 0 50px;
+  padding: 25px 5px;
+}
+.email .hint div:nth-child(1) {
+  color: #999;
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+}
+.email .hint div:nth-child(1) a {
+  color: #999;
+  text-decoration: underline;
+}
+.email .hint div:nth-child(2) {
+  color: #bf955a;
+  font-size: 1.3rem;
+}
+.email .footer {
+  background-color: #272727;
+  padding: 0 35px;
 }
 
 /*------- RWD -------*/
