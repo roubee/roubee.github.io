@@ -1387,7 +1387,7 @@ tr .top_title{
 	}
 	.content{
 		padding-bottom: 100px;
-		padding-top: 90px;
+		padding-top: 80px;
 		width: 90%;
 		margin: 0 auto;
 		position: relative;
@@ -1468,7 +1468,7 @@ tr .top_title{
 		font-size: 1.6rem;
 	}
 	.w3-section{
-		padding-bottom: 15px;
+		padding-bottom: 5px;
 	}
 	.mySlides{
 		height: 100%;
@@ -1898,13 +1898,20 @@ tr .top_title{
 	}
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
-		@include page-value-addes_news_sm();
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
 		.content{
 			width: 90%;
+			padding-top: 40px;
 		}
 		.content-block{
 			padding: 45px 70px 0 70px;
-			top: 420px;
+			top: 380px;
 		}
 		#class-row1{display: none;}
 		#class-row2{display: block;}
@@ -2240,13 +2247,20 @@ tr .top_title{
 	}
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
-		@include page-value-addes_news_md;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
 		.content{
 			width: 940px;
+			padding-top: 40px;
 		}
 		.content-block{
 			padding: 45px 70px 0 70px;
-			top: 420px;
+			top: 380px;
 		}
 		#class-row1{display: block;}
 		#class-row2{display: none;}
@@ -2609,13 +2623,20 @@ tr .top_title{
 	}
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
-		@include page-value-addes_news_lg();
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
 		.content{
 			width: 940px;
+			padding-top: 40px;
 		}
 		.content-block{
 			padding: 45px 70px 0 70px;
-			top: 420px;
+			top: 380px;
 		}
 		#class-row1{display: block;}
 		#class-row2{display: none;}

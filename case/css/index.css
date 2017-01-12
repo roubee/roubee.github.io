@@ -1943,7 +1943,7 @@ tr .top_title {
 }
 .page-advantage .content {
   padding-bottom: 100px;
-  padding-top: 90px;
+  padding-top: 80px;
   width: 90%;
   margin: 0 auto;
   position: relative;
@@ -2051,7 +2051,7 @@ tr .top_title {
   font-size: 1.6rem;
 }
 .page-advantage .w3-section {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .page-advantage .mySlides {
   height: 100%;
@@ -2540,9 +2540,6 @@ tr .top_title {
   }
 
   /*------- 競爭優勢 -------*/
-  .page-advantage {
-    margin-top: 73px;
-  }
   .page-advantage .title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
@@ -2551,14 +2548,12 @@ tr .top_title {
     margin-top: 60px;
   }
   .page-advantage .content {
-    padding-top: 80px;
-  }
-  .page-advantage .content {
     width: 90%;
+    padding-top: 40px;
   }
   .page-advantage .content-block {
     padding: 45px 70px 0 70px;
-    top: 420px;
+    top: 380px;
   }
   .page-advantage #class-row1 {
     display: none;
@@ -2961,9 +2956,6 @@ tr .top_title {
   }
 
   /*------- 競爭優勢 -------*/
-  .page-advantage {
-    margin-top: 73px;
-  }
   .page-advantage .title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
@@ -2972,14 +2964,12 @@ tr .top_title {
     margin-top: 60px;
   }
   .page-advantage .content {
-    padding-top: 80px;
-  }
-  .page-advantage .content {
     width: 940px;
+    padding-top: 40px;
   }
   .page-advantage .content-block {
     padding: 45px 70px 0 70px;
-    top: 420px;
+    top: 380px;
   }
   .page-advantage #class-row1 {
     display: block;
@@ -3448,9 +3438,6 @@ tr .top_title {
   }
 
   /*------- 競爭優勢 -------*/
-  .page-advantage {
-    margin-top: 140px;
-  }
   .page-advantage .title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
@@ -3459,14 +3446,12 @@ tr .top_title {
     margin-top: 60px;
   }
   .page-advantage .content {
-    padding-top: 80px;
-  }
-  .page-advantage .content {
     width: 940px;
+    padding-top: 40px;
   }
   .page-advantage .content-block {
     padding: 45px 70px 0 70px;
-    top: 420px;
+    top: 380px;
   }
   .page-advantage #class-row1 {
     display: block;
