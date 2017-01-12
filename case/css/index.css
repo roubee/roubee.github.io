@@ -2052,15 +2052,18 @@ tr .top_title {
   font-size: 1.6rem;
 }
 
+.email {
+  background-color: rgba(204, 204, 204, 0.9);
+}
 .email .block {
   width: 600px;
-  background-color: #eee;
+  background-color: #fff;
   margin: 0 auto;
   margin-top: 35px;
   text-align: left;
 }
 .email .backImg {
-  background: url(../images/) no-repeat right bottom;
+  background: url(../images/email_back.png) no-repeat right bottom;
 }
 .email .header {
   margin: 0 50px;
@@ -2089,6 +2092,35 @@ tr .top_title {
   border-bottom: 1px solid #ddd6cd;
   border-top: 1px solid #ddd6cd;
 }
+.email .content .css_table {
+  display: table;
+  width: 100%;
+}
+.email .content .css_tr {
+  display: table-row;
+  width: 100%;
+  height: 40px;
+}
+.email .content .css_td {
+  display: table-cell;
+  font-size: 1.6rem;
+}
+.email .content .css_td:nth-child(1) {
+  color: #797979;
+  width: 110px;
+}
+.email .content .css_td:nth-child(2) {
+  color: #000;
+}
+.email .content .smark {
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.2rem;
+}
 .email .hint {
   margin: 0 50px;
   padding: 25px 5px;
@@ -2109,6 +2141,24 @@ tr .top_title {
 .email .footer {
   background-color: #272727;
   padding: 0 35px;
+}
+.email .footer div:nth-child(1) {
+  font-size: 2rem;
+  color: #bf955a;
+  border-bottom: 1px solid #453d32;
+  padding: 30px 0;
+  text-align: center;
+}
+.email .footer div:nth-child(2) {
+  color: #8d8d8d;
+  font-size: 1.3rem;
+  padding: 10px 0;
+}
+.email .footer div:nth-child(2) span:nth-child(2) {
+  float: right;
+}
+.email .footer div:nth-child(2) a {
+  text-decoration: underline;
 }
 
 /*------- RWD -------*/
