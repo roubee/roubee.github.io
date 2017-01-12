@@ -1496,10 +1496,10 @@ tr .top_title{
 		margin-bottom: 20px;
 		div:nth-child(1){
 			font-size: 1.8rem;
-			span{
-				color: #000;
-				margin: 0 10px;
-			}
+		}
+		.pname{
+			color: #000;
+			margin: 0 10px;
 		}
 	}
 	.content{

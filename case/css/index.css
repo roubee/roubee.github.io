@@ -2082,7 +2082,7 @@ tr .top_title {
 .email .messsage div:nth-child(1) {
   font-size: 1.8rem;
 }
-.email .messsage div:nth-child(1) span {
+.email .messsage .pname {
   color: #000;
   margin: 0 10px;
 }
