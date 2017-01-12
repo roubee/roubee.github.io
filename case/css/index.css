@@ -1951,8 +1951,7 @@ tr .top_title {
 }
 .page-advantage .img-block {
   position: relative;
-  height: 380px;
-  background: url("../images/advantage/1.jpg") no-repeat center center;
+  height: 180px;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -1960,7 +1959,7 @@ tr .top_title {
 }
 .page-advantage .content-block {
   position: absolute;
-  top: 420px;
+  top: 250px;
   width: 90%;
   left: 5%;
   background-color: #fff;
@@ -2050,6 +2049,16 @@ tr .top_title {
 }
 .page-advantage .ui-selectmenu-button span {
   font-size: 1.6rem;
+}
+.page-advantage .w3-section {
+  padding-bottom: 15px;
+}
+.page-advantage .mySlides {
+  height: 100%;
+}
+.page-advantage .w3-badge {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .email {
@@ -2549,6 +2558,7 @@ tr .top_title {
   }
   .page-advantage .content-block {
     padding: 45px 70px 0 70px;
+    top: 420px;
   }
   .page-advantage #class-row1 {
     display: none;
@@ -2569,6 +2579,12 @@ tr .top_title {
   }
   .page-advantage .in-title {
     font-size: 2.4rem;
+  }
+  .page-advantage .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-advantage .img-block {
+    height: 380px;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -2963,6 +2979,7 @@ tr .top_title {
   }
   .page-advantage .content-block {
     padding: 45px 70px 0 70px;
+    top: 420px;
   }
   .page-advantage #class-row1 {
     display: block;
@@ -2986,6 +3003,12 @@ tr .top_title {
   }
   .page-advantage .stitle div {
     padding: 0 10px;
+  }
+  .page-advantage .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-advantage .img-block {
+    height: 380px;
   }
 }
 @media (min-width: 1200px) {
@@ -3443,6 +3466,7 @@ tr .top_title {
   }
   .page-advantage .content-block {
     padding: 45px 70px 0 70px;
+    top: 420px;
   }
   .page-advantage #class-row1 {
     display: block;
@@ -3466,5 +3490,11 @@ tr .top_title {
   }
   .page-advantage .stitle div {
     padding: 0 20px;
+  }
+  .page-advantage .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-advantage .img-block {
+    height: 380px;
   }
 }

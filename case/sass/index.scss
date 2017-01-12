@@ -1395,13 +1395,12 @@ tr .top_title{
 	}
 	.img-block{
 		position: relative;
-		height: 380px;
-		background: url('../images/advantage/1.jpg') no-repeat center center;
+		height: 180px;
 		@include background-size(cover);
 	}
 	.content-block{
 		position: absolute;
-		top: 420px;
+		top: 250px;
 		width: 90%;
 		left: 5%;
 		background-color: #fff;
@@ -1467,6 +1466,16 @@ tr .top_title{
 	}
 	.ui-selectmenu-button span{
 		font-size: 1.6rem;
+	}
+	.w3-section{
+		padding-bottom: 15px;
+	}
+	.mySlides{
+		height: 100%;
+	}
+	.w3-badge{
+		padding-left:0;
+		padding-right:0;
 	}
 }
 .email{
@@ -1895,6 +1904,7 @@ tr .top_title{
 		}
 		.content-block{
 			padding: 45px 70px 0 70px;
+			top: 420px;
 		}
 		#class-row1{display: none;}
 		#class-row2{display: block;}
@@ -1908,6 +1918,12 @@ tr .top_title{
 			li:nth-child(1){margin-left:3%}
 		}
 		.in-title{font-size: 2.4rem;}
+		.w3-section{
+			padding-bottom: 30px;
+		}
+		.img-block{
+			height: 380px;
+		}
 	}
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
@@ -2230,6 +2246,7 @@ tr .top_title{
 		}
 		.content-block{
 			padding: 45px 70px 0 70px;
+			top: 420px;
 		}
 		#class-row1{display: block;}
 		#class-row2{display: none;}
@@ -2247,6 +2264,12 @@ tr .top_title{
 			div{
 				padding: 0 10px;
 			}
+		}
+		.w3-section{
+			padding-bottom: 30px;
+		}
+		.img-block{
+			height: 380px;
 		}
 	}
 }
@@ -2592,6 +2615,7 @@ tr .top_title{
 		}
 		.content-block{
 			padding: 45px 70px 0 70px;
+			top: 420px;
 		}
 		#class-row1{display: block;}
 		#class-row2{display: none;}
@@ -2609,6 +2633,12 @@ tr .top_title{
 			div{
 				padding: 0 20px;
 			}
+		}
+		.w3-section{
+			padding-bottom: 30px;
+		}
+		.img-block{
+			height: 380px;
 		}
 	}
 }

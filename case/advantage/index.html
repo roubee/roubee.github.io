@@ -11,6 +11,7 @@
     <link href="../css/jquery-ui.min.css"  rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/w3.css" rel="stylesheet">
   </head>
   <body>
     <!-- 右側導覽列 -->
@@ -96,7 +97,16 @@
           </div></div></div></div>
         </div>
         <div class="content">
-          <div class="img-block"></div>
+          <div class="img-block w3-content w3-display-container">
+            <div class="mySlides" style="background: url(../images/advantage/1.jpg) no-repeat center center"></div>
+            <div class="mySlides" style="background: url(../images/advantage/2.jpg) no-repeat center center"></div>
+            <div class="mySlides" style="background: url(../images/advantage/3.jpg) no-repeat center center"></div>
+            <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+              <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(1)"></span>
+              <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(2)"></span>
+              <span class="w3-badge demo w3-border w3-hover-white" onclick="currentDiv(3)"></span>
+            </div>
+          </div>
           <div class="content-block">
             <div class="in-title">完善教育訓練，不斷提升人力素質完善教育訓練</div>
             <div class="in-info">
@@ -171,8 +181,11 @@
     <script src="../jss/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../jss/index.js"></script>
+    <script src="../jss/w3.js"></script>
     <script type="text/javascript">
       $(function(){
+        do_slide();
+
         var height = $('.content-block').height() + $('.img-block').height() + 200;
         $(window).resize(function () {
           height = $('.content-block').height() + $('.img-block').height() + 200;
