@@ -1107,60 +1107,6 @@ tr .top_title {
   margin-bottom: 40px;
 }
 
-/*------- 服務項目 -------*/
-.page-service {
-  margin-top: 73px;
-}
-.page-service .title {
-  position: relative;
-  background: url("") no-repeat right top;
-  padding-top: 60px;
-  background: url("") no-repeat left -40px;
-  height: 140px;
-}
-.page-service .title span {
-  color: #000;
-  font-size: 3rem;
-  padding-left: 15px;
-  vertical-align: middle;
-}
-.page-service .title span {
-  font-size: 2.5rem;
-}
-.page-service .stitle {
-  color: #bf955a;
-  font-size: 1.8rem;
-  margin: 0 auto;
-  margin-top: 50px;
-  width: 83.33%;
-}
-.page-service .content {
-  position: relative;
-  border: 3px solid #ff0000;
-  margin: 0 4.16%;
-  margin-top: 200px;
-}
-.page-service .content .back-img {
-  position: relative;
-  border: 3px solid #000;
-  background: url("../images/service/3stage_back.png") no-repeat top center;
-  height: 160px;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-.page-service .content .info {
-  position: absolute;
-  top: 150px;
-  left: 3%;
-  right: 3%;
-  margin-left: auto;
-  margin-right: auto;
-  width: 94%;
-  background-color: #fff;
-}
-
 /*------- 經營實績list -------*/
 .page-case-list {
   margin-top: 73px;
@@ -2196,6 +2142,29 @@ tr .top_title {
   text-decoration: underline;
 }
 
+/*------- 服務項目 -------*/
+.page-service {
+  margin-top: 73px;
+}
+.page-service .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+  background: url("") no-repeat left -40px;
+}
+.page-service .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-service .stitle {
+  font-size: 1.8rem;
+  color: #bf955a;
+  width: 83.33%;
+  margin: 0 auto;
+}
+
 /*------- RWD -------*/
 @media (min-width: 744px) and (max-width: 959px) {
   .service {
@@ -2453,33 +2422,6 @@ tr .top_title {
     background: url("") no-repeat right bottom;
   }
 
-  /*------- 服務項目 -------*/
-  .page-service .title {
-    background: url("../images/history_back1.jpg") no-repeat right top;
-    height: 200px;
-  }
-  .page-service .title span {
-    font-size: 3rem;
-  }
-  .page-service .stitle {
-    margin-top: 60px;
-    width: 83.33%;
-    font-size: 2.4rem;
-  }
-  .page-service .content {
-    margin: 0 4.16%;
-    margin-top: 150px;
-  }
-  .page-service .content .back-img {
-    height: 380px;
-  }
-  .page-service .content .info {
-    top: 330px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-  }
-
   /*------- 經營實績list -------*/
   .page-case-list .title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
@@ -2566,6 +2508,9 @@ tr .top_title {
   }
 
   /*------- 競爭優勢 -------*/
+  .page-advantage {
+    margin-top: 73px;
+  }
   .page-advantage .title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
@@ -2609,6 +2554,19 @@ tr .top_title {
   }
   .page-advantage .in-item .in-clear {
     clear: both;
+  }
+
+  /*------- 服務項目 -------*/
+  .page-service {
+    margin-top: 73px;
+  }
+  .page-service .title {
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .page-service .stitle {
+    font-size: 2.4rem;
+    width: 83.33%;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -2872,33 +2830,6 @@ tr .top_title {
     background: url("../images/mission_back2.png") no-repeat right bottom;
   }
 
-  /*------- 服務項目 -------*/
-  .page-service .title {
-    background: url("../images/history_back1.jpg") no-repeat right top;
-    height: 200px;
-  }
-  .page-service .title span {
-    font-size: 3rem;
-  }
-  .page-service .stitle {
-    margin-top: 60px;
-    width: 800px;
-    font-size: 2.4rem;
-  }
-  .page-service .content {
-    margin: 0 12.5%;
-    margin-top: 150px;
-  }
-  .page-service .content .back-img {
-    height: 380px;
-  }
-  .page-service .content .info {
-    top: 330px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-  }
-
   /*------- 經營實績list -------*/
   .page-case-list .title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
@@ -2985,6 +2916,9 @@ tr .top_title {
   }
 
   /*------- 競爭優勢 -------*/
+  .page-advantage {
+    margin-top: 73px;
+  }
   .page-advantage .title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
@@ -3031,6 +2965,19 @@ tr .top_title {
   }
   .page-advantage .in-item .in-clear {
     clear: none;
+  }
+
+  /*------- 服務項目 -------*/
+  .page-service {
+    margin-top: 73px;
+  }
+  .page-service .title {
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .page-service .stitle {
+    font-size: 2.4rem;
+    width: 66.66%;
   }
 }
 @media (min-width: 1200px) {
@@ -3348,36 +3295,6 @@ tr .top_title {
     background: url("../images/mission_back2.png") no-repeat right bottom;
   }
 
-  /*------- 服務項目 -------*/
-  .page-service {
-    margin-top: 140px;
-  }
-  .page-service .title {
-    background: url("../images/history_back1.jpg") no-repeat right top;
-    height: 200px;
-  }
-  .page-service .title span {
-    font-size: 3rem;
-  }
-  .page-service .stitle {
-    margin-top: 60px;
-    width: 800px;
-    font-size: 2.4rem;
-  }
-  .page-service .content {
-    margin: 0 12.5%;
-    margin-top: 150px;
-  }
-  .page-service .content .back-img {
-    height: 380px;
-  }
-  .page-service .content .info {
-    top: 330px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-  }
-
   /*------- 經營實績list -------*/
   .page-case-list {
     margin-top: 140px;
@@ -3470,6 +3387,9 @@ tr .top_title {
   }
 
   /*------- 競爭優勢 -------*/
+  .page-advantage {
+    margin-top: 140px;
+  }
   .page-advantage .title {
     background: url("../images/history_back1.jpg") no-repeat right top;
     height: 200px;
@@ -3516,5 +3436,18 @@ tr .top_title {
   }
   .page-advantage .in-item .in-clear {
     clear: none;
+  }
+
+  /*------- 服務項目 -------*/
+  .page-service {
+    margin-top: 140px;
+  }
+  .page-service .title {
+    background: url("../images/history_back1_2.jpg") no-repeat left -40px;
+    height: 200px;
+  }
+  .page-service .stitle {
+    font-size: 2.4rem;
+    width: 66.66%;
   }
 }

@@ -904,48 +904,6 @@ tr .top_title{
 		}
 	}
 }
-/*------- 服務項目 -------*/
-.page-service{
-	margin-top: 73px;
-	.title{
-		position: relative;
-		background: url('') no-repeat right top;
-		@include page-title-default();
-		span{
-			font-size: 2.5rem;
-		}
-	}
-	.stitle{
-		color: $mainColor;
-		font-size: 1.8rem;
-		margin: 0 auto;
-		margin-top: 50px;
-		width: 83.33%;
-	}
-	.content{
-		position: relative;
-		border: 3px solid #ff0000;
-		margin: 0 4.16%;
-		margin-top: 200px;
-		.back-img{
-			position: relative;
-			border: 3px solid #000;
-			background: url('../images/service/3stage_back.png') no-repeat top center;
-			height: 160px;
-			@include background-size(cover);
-		}
-		.info{
-			position: absolute;
-			top: 150px;
-			left: 3%; 
-			right: 3%; 
-			margin-left: auto; 
-			margin-right: auto;
-			width: 94%;
-			background-color: #fff;
-		}
-	}
-}
 /*------- 經營實績list -------*/
 .page-case-list{
 	margin-top: 73px;
@@ -1613,6 +1571,20 @@ tr .top_title{
 		}
 	}
 }
+/*------- 服務項目 -------*/
+.page-service{
+	margin-top: 73px;
+	.title{
+		@include page-title-default();
+		background: url('') no-repeat left -40px;
+	}
+	.stitle{
+		font-size: 1.8rem;
+		color: $mainColor;
+		width: 83.33%;
+		margin: 0 auto;
+	}
+}
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
 }
@@ -1822,34 +1794,6 @@ tr .top_title{
 			background: url('') no-repeat right bottom;
 		}
 	}
-	/*------- 服務項目 -------*/
-	.page-service{
-		.title{
-			background: url('../images/history_back1.jpg') no-repeat right top;
-			height: 200px;
-			span{
-				font-size: 3rem;
-			}
-		}
-		.stitle{
-			margin-top: 60px;
-			width: 83.33%;
-			font-size: 2.4rem;
-		}
-		.content{
-			margin: 0 4.16%;
-			margin-top: 150px;
-			.back-img{
-				height: 380px;
-			}
-			.info{
-				top: 330px;
-				left: 5%; 
-				right: 5%; 
-				width: 90%;
-			}
-		}
-	}
 	/*------- 經營實績list -------*/
 	.page-case-list{
 		.title{
@@ -1928,6 +1872,7 @@ tr .top_title{
 	}
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
+		margin-top: 73px;
 		.title{
 			background: url('../images/history_back1.jpg') no-repeat right top;
 			height: 200px;
@@ -1965,6 +1910,18 @@ tr .top_title{
 			.in-clear{
 				clear: both;
 			}
+		}
+	}
+	/*------- 服務項目 -------*/
+	.page-service{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+		}
+		.stitle{
+			font-size: 2.4rem;
+			width: 83.33%;
 		}
 	}
 }
@@ -2176,34 +2133,6 @@ tr .top_title{
 			background: url('../images/mission_back2.png') no-repeat right bottom;
 		}
 	}
-	/*------- 服務項目 -------*/
-	.page-service{
-		.title{
-			background: url('../images/history_back1.jpg') no-repeat right top;
-			height: 200px;
-			span{
-				font-size: 3rem;
-			}
-		}
-		.stitle{
-			margin-top: 60px;
-			width: 800px;
-			font-size: 2.4rem;
-		}
-		.content{
-			margin: 0 12.5%;
-			margin-top: 150px;
-			.back-img{
-				height: 380px;
-			}
-			.info{
-				top: 330px;
-				left: 5%; 
-				right: 5%; 
-				width: 90%;
-			}
-		}
-	}
 	/*------- 經營實績list -------*/
 	.page-case-list{
 		.title{
@@ -2282,6 +2211,7 @@ tr .top_title{
 	}
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
+		margin-top: 73px;
 		.title{
 			background: url('../images/history_back1.jpg') no-repeat right top;
 			height: 200px;
@@ -2324,6 +2254,18 @@ tr .top_title{
 			.in-clear{
 				clear: none;
 			}
+		}
+	}
+	/*------- 服務項目 -------*/
+	.page-service{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+		}
+		.stitle{
+			font-size: 2.4rem;
+			width: 66.66%;
 		}
 	}
 }
@@ -2554,35 +2496,6 @@ tr .top_title{
 			background: url('../images/mission_back2.png') no-repeat right bottom;
 		}
 	}
-	/*------- 服務項目 -------*/
-	.page-service{
-		margin-top: 140px;
-		.title{
-			background: url('../images/history_back1.jpg') no-repeat right top;
-			height: 200px;
-			span{
-				font-size: 3rem;
-			}
-		}
-		.stitle{
-			margin-top: 60px;
-			width: 800px;
-			font-size: 2.4rem;
-		}
-		.content{
-			margin: 0 12.5%;
-			margin-top: 150px;
-			.back-img{
-				height: 380px;
-			}
-			.info{
-				top: 330px;
-				left: 5%; 
-				right: 5%; 
-				width: 90%;
-			}
-		}
-	}
 	/*------- 經營實績list -------*/
 	.page-case-list{
 		margin-top: 140px;
@@ -2663,6 +2576,7 @@ tr .top_title{
 	}
 	/*------- 競爭優勢 -------*/
 	.page-advantage{
+		margin-top: 140px;
 		.title{
 			background: url('../images/history_back1.jpg') no-repeat right top;
 			height: 200px;
@@ -2705,6 +2619,18 @@ tr .top_title{
 			.in-clear{
 				clear: none;
 			}
+		}
+	}
+	/*------- 服務項目 -------*/
+	.page-service{
+		margin-top: 140px;
+		.title{
+			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 200px;
+		}
+		.stitle{
+			font-size: 2.4rem;
+			width: 66.66%;
 		}
 	}
 }
