@@ -2062,6 +2062,13 @@ tr .top_title {
   padding-left: 0;
   padding-right: 0;
 }
+.page-advantage .in-item .in-tr div {
+  display: inline-block;
+  width: 20%;
+}
+.page-advantage .in-item .in-tr div:nth-child(2) {
+  margin: 0 18%;
+}
 
 .email {
   background-color: rgba(204, 204, 204, 0.9);

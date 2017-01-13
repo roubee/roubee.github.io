@@ -1480,7 +1480,12 @@ tr .top_title{
 		padding-right:0;
 	}
 	.in-item{
-
+		.in-tr{
+			div{display:inline-block;width:20%;}
+			div:nth-child(1){}
+			div:nth-child(2){margin:0 18%;}
+			div:nth-child(3){}
+		}
 	}
 }
 .email{
