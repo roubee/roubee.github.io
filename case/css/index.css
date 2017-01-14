@@ -1855,6 +1855,7 @@ tr .top_title {
   margin-right: 0.5rem;
 }
 
+/*------- 服務與優勢和人才招募共用 -------*/
 /*------- 競爭優勢 -------*/
 .page-advantage {
   margin-top: 73px;
@@ -1931,19 +1932,6 @@ tr .top_title {
   /* IE6-9 */
   z-index: -1;
 }
-.page-advantage .in-title {
-  font-size: 1.8rem;
-  margin-bottom: 30px;
-  color: #000;
-}
-.page-advantage .in-info {
-  margin-bottom: 40px;
-  font-size: 1.6rem;
-}
-.page-advantage .in-stitle {
-  color: #232323;
-  font-size: 2rem;
-}
 .page-advantage .in-list {
   margin-top: 30px;
 }
@@ -2007,6 +1995,19 @@ tr .top_title {
 .page-advantage .w3-badge {
   padding-left: 0;
   padding-right: 0;
+}
+.page-advantage .in-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #000;
+}
+.page-advantage .in-info {
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+}
+.page-advantage .in-stitle {
+  color: #232323;
+  font-size: 2rem;
 }
 .page-advantage .in-item .in-td div:nth-child(1) {
   height: 64px;
@@ -2151,6 +2152,7 @@ tr .top_title {
   background: url("") no-repeat left -40px;
   height: 140px;
   background: url("") no-repeat left -40px;
+  height: 150px;
 }
 .page-service .title span {
   color: #000;
@@ -2158,11 +2160,738 @@ tr .top_title {
   padding-left: 15px;
   vertical-align: middle;
 }
+.page-service .title span {
+  font-size: 2.5rem;
+}
 .page-service .stitle {
+  margin-top: 40px;
+  color: #797979;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #ddd6cd;
+  padding-bottom: 0px;
+}
+.page-service .stitle div {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.page-service .stitle .on {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c6232f;
+}
+.page-service .stitle img {
+  margin-right: 10px;
+}
+.page-service .sinfo {
   font-size: 1.8rem;
   color: #bf955a;
-  width: 83.33%;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  width: 100%;
+}
+.page-service .content {
+  padding-bottom: 100px;
+  padding-top: 80px;
+  width: 90%;
   margin: 0 auto;
+  position: relative;
+  height: 1000px;
+}
+.page-service .img-block {
+  position: relative;
+  height: 180px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-service .content-block {
+  position: absolute;
+  top: 250px;
+  width: 90%;
+  left: 5%;
+  background-color: #fff;
+  padding: 45px 20px 0 20px;
+  color: #797979;
+  text-align: left;
+}
+.page-service .content-block:after {
+  position: absolute;
+  content: '';
+  width: 101%;
+  height: 160px;
+  top: -0.5%;
+  left: -0.5%;
+  background: #999999;
+  background: -moz-linear-gradient(top, #ddd 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ddd 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  z-index: -1;
+}
+.page-service .in-list {
+  margin-top: 30px;
+}
+.page-service .in-list ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-service .in-list li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-service .in-list li {
+  display: block;
+  width: 97%;
+  text-indent: -0.8rem;
+  vertical-align: top;
+  margin-left: 3%;
+  font-size: 1.6rem;
+}
+.page-service .in-list li:nth-child(2) {
+  margin: 3%;
+}
+.page-service .in-list li:nth-child(1) {
+  margin-left: 3%;
+}
+.page-service .relative {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+}
+.page-service .relative div {
+  position: absolute;
+  z-index: 2;
+}
+.page-service #class-row1 {
+  display: none;
+}
+.page-service #class-row2 {
+  padding-top: 50px;
+  display: block;
+}
+.page-service .ui-selectmenu-text {
+  font-size: 1.6rem;
+}
+.page-service .ui-selectmenu-button span {
+  font-size: 1.6rem;
+}
+.page-service .w3-section {
+  padding-bottom: 5px;
+}
+.page-service .mySlides {
+  height: 100%;
+}
+.page-service .w3-badge {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-service .content {
+  background: url(../images/service/icon1.png) no-repeat right 10px;
+}
+.page-service .content-block .row {
+  margin-bottom: 70px;
+}
+.page-service .content-block .left {
+  float: left;
+}
+.page-service .content-block .right {
+  float: left;
+}
+.page-service .content-block .in-img {
+  clear: both;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 30px;
+}
+.page-service .content-block .in-content {
+  text-align: left;
+}
+.page-service .content-block .in-title {
+  font-size: 2.4rem;
+  color: #000;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.page-service .content-block ol {
+  margin-left: 2em;
+  padding: 0;
+}
+.page-service .content-block li {
+  padding-left: 0;
+  margin-left: -1em;
+}
+.page-service .in-list li {
+  width: 100%;
+}
+.page-service .in-list li:nth-child(3) {
+  margin-left: 3%;
+}
+.page-service .in-btitle {
+  font-size: 2.4rem;
+  color: #232323;
+}
+.page-service .in-stitle {
+  color: #232323;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  padding-left: 8.33%;
+}
+.page-service .sinfo2 div {
+  text-align: left;
+}
+.page-service .sinfo2 [class*="col-"] {
+  padding: 20px;
+}
+.page-service .sinfo2 [class*="col-"] div:nth-child(1) {
+  font-size: 2rem;
+  color: #232323;
+}
+.page-service .sinfo2 [class*="col-"] div:nth-child(2) {
+  font-size: 1.6rem;
+  color: #797979;
+  padding-left: 22px;
+}
+.page-service .item {
+  text-align: left;
+  font-size: 1.6rem;
+  color: #797979;
+  line-height: 2.5rem;
+}
+.page-service .item:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-service .ui-selectmenu-button.ui-button:focus {
+  -moz-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+}
+
+.ui-widget.ui-widget-content {
+  border: 1px solid #bf955a;
+  -moz-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background: #bf955a !important;
+  border: 0;
+}
+
+.ui-selectmenu-button.ui-button {
+  border: 1px solid #bf955a;
+}
+
+.ui-menu-item {
+  font-size: 1.6rem;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  padding: 5px;
+}
+
+/*------- 菁英招募 -------*/
+.page-welfare {
+  margin-top: 73px;
+}
+.page-welfare .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+  background: url("") no-repeat right top;
+  height: 150px;
+}
+.page-welfare .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-welfare .title span {
+  font-size: 2.5rem;
+}
+.page-welfare .stitle {
+  margin-top: 40px;
+  color: #797979;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #ddd6cd;
+  padding-bottom: 0px;
+}
+.page-welfare .stitle div {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.page-welfare .stitle .on {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c6232f;
+}
+.page-welfare .stitle img {
+  margin-right: 10px;
+}
+.page-welfare .sinfo {
+  font-size: 1.8rem;
+  color: #bf955a;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  width: 100%;
+}
+.page-welfare .content {
+  padding-bottom: 100px;
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 1000px;
+}
+.page-welfare .img-block {
+  position: relative;
+  height: 180px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-welfare .content-block {
+  position: absolute;
+  top: 250px;
+  width: 90%;
+  left: 5%;
+  background-color: #fff;
+  padding: 45px 20px 0 20px;
+  color: #797979;
+  text-align: left;
+}
+.page-welfare .content-block:after {
+  position: absolute;
+  content: '';
+  width: 101%;
+  height: 160px;
+  top: -0.5%;
+  left: -0.5%;
+  background: #999999;
+  background: -moz-linear-gradient(top, #ddd 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ddd 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  z-index: -1;
+}
+.page-welfare .in-list {
+  margin-top: 30px;
+}
+.page-welfare .in-list ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-welfare .in-list li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-welfare .in-list li {
+  display: block;
+  width: 97%;
+  text-indent: -0.8rem;
+  vertical-align: top;
+  margin-left: 3%;
+  font-size: 1.6rem;
+}
+.page-welfare .in-list li:nth-child(2) {
+  margin: 3%;
+}
+.page-welfare .in-list li:nth-child(1) {
+  margin-left: 3%;
+}
+.page-welfare .relative {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+}
+.page-welfare .relative div {
+  position: absolute;
+  z-index: 2;
+}
+.page-welfare #class-row1 {
+  display: none;
+}
+.page-welfare #class-row2 {
+  padding-top: 50px;
+  display: block;
+}
+.page-welfare .ui-selectmenu-text {
+  font-size: 1.6rem;
+}
+.page-welfare .ui-selectmenu-button span {
+  font-size: 1.6rem;
+}
+.page-welfare .w3-section {
+  padding-bottom: 5px;
+}
+.page-welfare .mySlides {
+  height: 100%;
+}
+.page-welfare .w3-badge {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-welfare .in-btitle {
+  font-size: 2.4rem;
+  color: #232323;
+}
+.page-welfare .in-stitle {
+  color: #232323;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+}
+.page-welfare .item {
+  text-align: left;
+  font-size: 1.6rem;
+  color: #797979;
+  line-height: 2.5rem;
+}
+.page-welfare .item:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-welfare .content2-wra {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-color: #ededed;
+  background-image: url(../images/welfare_back2.jpg) no-repeat center bottom;
+}
+.page-welfare .content2 {
+  width: 90%;
+  margin: 0 auto;
+}
+.page-welfare .content2 .title2 {
+  font-size: 3rem;
+  color: #000;
+  padding: 50px 0;
+}
+.page-welfare .content2 .title2 span {
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-welfare .content2 .stitle2 {
+  width: 100%;
+  color: #232323;
+  font-size: 1.6rem;
+  display: block;
+}
+.page-welfare .content2 .stitle2 div {
+  display: block;
+  margin-bottom: 20px;
+}
+.page-welfare .content2 .stitle2 .num {
+  color: #bf955a;
+}
+.page-welfare .content2 .left {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.page-welfare .content2 .right {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.page-welfare .content2 .css-table {
+  display: table;
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: #797979;
+}
+.page-welfare .content2 .css-table a {
+  color: #000;
+  text-decoration: underline;
+}
+.page-welfare .content2 .css-table a:hover, .page-welfare .content2 .css-table a:active, .page-welfare .content2 .css-table a:focus {
+  color: #bf955a;
+}
+.page-welfare .content2 .css-tr {
+  display: table-row;
+  width: 96%;
+  padding: 0 2%;
+}
+.page-welfare .content2 .css-td {
+  display: table-cell;
+  text-align: left;
+  padding: 30px 0;
+}
+.page-welfare .content2 .tr-title {
+  background-color: #797979;
+  color: #fff;
+}
+.page-welfare .content2 .tr-title .css-td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.page-welfare .content2 .td1 {
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.page-welfare .content2 .td2 {
+  width: 20%;
+  display: none;
+}
+.page-welfare .content2 .td3 {
+  width: 30%;
+  padding-left: 4%;
+  padding-right: 4%;
+  display: none;
+}
+.page-welfare .content2 .td-border {
+  border-bottom: 1px solid #ddd6cd;
+}
+.page-welfare .content2 .page-block {
+  margin: 70px 0;
+}
+.page-welfare .content2 .page-block img {
+  margin: 0 10px;
+}
+.page-welfare .content2 .page-block ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+.page-welfare .content2 .page-block li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  color: #978d7f;
+  font-size: 1.8rem;
+}
+.page-welfare .content2 li.now-page {
+  background-color: #bf955a;
+  color: #fff;
+}
+.page-welfare .ui-selectmenu-button.ui-button:focus {
+  -moz-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+}
+
+/*------- 客服中心 -------*/
+.page-contact {
+  margin-top: 73px;
+}
+.page-contact .title {
+  padding-top: 60px;
+  background: url("") no-repeat left -40px;
+  height: 140px;
+  background: url("") no-repeat right top;
+}
+.page-contact .title span {
+  color: #000;
+  font-size: 3rem;
+  padding-left: 15px;
+  vertical-align: middle;
+}
+.page-contact .stitle {
+  margin-top: 40px;
+  color: #797979;
+  font-size: 1.7rem;
+  border-bottom: 1px solid #ddd6cd;
+  padding-bottom: 0px;
+}
+.page-contact .stitle div {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.page-contact .stitle .on {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #c6232f;
+}
+.page-contact .content {
+  padding-bottom: 100px;
+  padding-top: 80px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 1000px;
+}
+.page-contact .img-block {
+  position: relative;
+  height: 180px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.page-contact .content-block {
+  position: absolute;
+  top: 250px;
+  width: 90%;
+  left: 5%;
+  background-color: #fff;
+  padding: 45px 20px 0 20px;
+  color: #797979;
+  text-align: left;
+}
+.page-contact .content-block:after {
+  position: absolute;
+  content: '';
+  width: 101%;
+  height: 160px;
+  top: -0.5%;
+  left: -0.5%;
+  background: #999999;
+  background: -moz-linear-gradient(top, #ddd 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ddd 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  z-index: -1;
+}
+.page-contact .in-list {
+  margin-top: 30px;
+}
+.page-contact .in-list ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-contact .in-list li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-contact .in-list li {
+  display: block;
+  width: 97%;
+  text-indent: -0.8rem;
+  vertical-align: top;
+  margin-left: 3%;
+  font-size: 1.6rem;
+}
+.page-contact .in-list li:nth-child(2) {
+  margin: 3%;
+}
+.page-contact .in-list li:nth-child(1) {
+  margin-left: 3%;
+}
+.page-contact .relative {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+}
+.page-contact .relative div {
+  position: absolute;
+  z-index: 2;
+}
+.page-contact #class-row1 {
+  display: none;
+}
+.page-contact #class-row2 {
+  padding-top: 50px;
+  display: block;
+}
+.page-contact .ui-selectmenu-text {
+  font-size: 1.6rem;
+}
+.page-contact .ui-selectmenu-button span {
+  font-size: 1.6rem;
+}
+.page-contact .w3-section {
+  padding-bottom: 5px;
+}
+.page-contact .mySlides {
+  height: 100%;
+}
+.page-contact .w3-badge {
+  padding-left: 0;
+  padding-right: 0;
+}
+.page-contact .content {
+  height: 100%;
+}
+.page-contact .content .info {
+  display: block;
+  border-bottom: 1px solid #e8e3dc;
+  width: 100%;
+  margin-left: 0;
+}
+.page-contact .content .info div {
+  display: inline-block;
+}
+.page-contact .content .info div:nth-child(1) {
+  margin-right: 60px;
+  display: none;
+}
+.page-contact .content .info span {
+  display: block;
+}
+.page-contact .content .info span:nth-child(1) {
+  color: #272727;
+  font-size: 2.4rem;
+}
+.page-contact .content .info span:nth-child(2) {
+  color: #999999;
+  font-size: 1.5rem;
+  height: 70px;
+}
+.page-contact .content .form {
+  padding: 50px 0px;
+}
+.page-contact .content .form div {
+  text-align: left;
 }
 
 /*------- RWD -------*/
@@ -2507,6 +3236,7 @@ tr .top_title {
     padding-top: 80px;
   }
 
+  /*------- 服務與優勢和人才招募 -------*/
   /*------- 競爭優勢 -------*/
   .page-advantage {
     margin-top: 73px;
@@ -2543,14 +3273,14 @@ tr .top_title {
   .page-advantage .in-list li:nth-child(1) {
     margin-left: 3%;
   }
-  .page-advantage .in-title {
-    font-size: 2.4rem;
-  }
   .page-advantage .w3-section {
     padding-bottom: 30px;
   }
   .page-advantage .img-block {
     height: 380px;
+  }
+  .page-advantage .in-title {
+    font-size: 2.4rem;
   }
   .page-advantage .in-item .in-clear {
     clear: both;
@@ -2562,11 +3292,292 @@ tr .top_title {
   }
   .page-service .title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
-    height: 200px;
+    height: 150px;
+  }
+  .page-service .title span {
+    font-size: 3rem;
   }
   .page-service .stitle {
+    margin-top: 60px;
+  }
+  .page-service .sinfo {
     font-size: 2.4rem;
-    width: 83.33%;
+  }
+  .page-service .content {
+    width: 90%;
+    padding-top: 40px;
+  }
+  .page-service .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-service #class-row1 {
+    display: none;
+  }
+  .page-service #class-row2 {
+    display: block;
+  }
+  .page-service .in-list li {
+    display: inline-block;
+    width: 25%;
+    margin-left: 0;
+  }
+  .page-service .in-list li:nth-child(2) {
+    margin: 0 11%;
+  }
+  .page-service .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-service .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-service .img-block {
+    height: 380px;
+  }
+  .page-service .content-block .left {
+    float: left;
+  }
+  .page-service .content-block .right {
+    float: right;
+  }
+  .page-service .content-block .in-img {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: left;
+    padding: 15px !important;
+  }
+  .page-service .content-block .in-content {
+    text-align: left;
+  }
+  .page-service .in-list li {
+    width: 24%;
+  }
+  .page-service .in-list li:nth-child(2) {
+    margin: 0 12%;
+  }
+  .page-service .in-list li:nth-child(3) {
+    margin-left: 0;
+  }
+  .page-service .in-stitle {
+    padding-left: 0;
+  }
+
+  /*------- 菁英招募 -------*/
+  .page-welfare {
+    margin-top: 73px;
+  }
+  .page-welfare .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 150px;
+  }
+  .page-welfare .title span {
+    font-size: 3rem;
+  }
+  .page-welfare .stitle {
+    margin-top: 60px;
+  }
+  .page-welfare .sinfo {
+    font-size: 2.4rem;
+  }
+  .page-welfare .content {
+    width: 90%;
+    padding-top: 40px;
+  }
+  .page-welfare .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-welfare #class-row1 {
+    display: none;
+  }
+  .page-welfare #class-row2 {
+    display: block;
+  }
+  .page-welfare .in-list li {
+    display: inline-block;
+    width: 25%;
+    margin-left: 0;
+  }
+  .page-welfare .in-list li:nth-child(2) {
+    margin: 0 11%;
+  }
+  .page-welfare .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-welfare .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-welfare .img-block {
+    height: 380px;
+  }
+  .page-welfare .in-stitle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-welfare .content2 {
+    width: 90%;
+  }
+  .page-welfare .content2 .stitle2 {
+    display: inline-block;
+  }
+  .page-welfare .content2 .stitle2 div {
+    display: inline-block;
+  }
+  .page-welfare .content2 .left {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+  }
+  .page-welfare .content2 .right {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+  }
+  .page-welfare .content2 .td1 {
+    width: 30%;
+  }
+  .page-welfare .content2 .td2 {
+    display: table-cell;
+  }
+  .page-welfare .content2 .td3 {
+    display: table-cell;
+  }
+  .page-welfare .content2 .page-block li {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*------- 客服中心 -------*/
+  .page-contact {
+    margin-top: 73px;
+  }
+  .page-contact .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-contact .stitle {
+    margin-top: 60px;
+  }
+  .page-contact .content {
+    padding-bottom: 100px;
+    padding-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 1000px;
+  }
+  .page-contact .img-block {
+    position: relative;
+    height: 180px;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+  .page-contact .content-block {
+    position: absolute;
+    top: 250px;
+    width: 90%;
+    left: 5%;
+    background-color: #fff;
+    padding: 45px 20px 0 20px;
+    color: #797979;
+    text-align: left;
+  }
+  .page-contact .content-block:after {
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 160px;
+    top: -0.5%;
+    left: -0.5%;
+    background: #999999;
+    background: -moz-linear-gradient(top, #ddd 0%, #ffffff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ddd 0%, #ffffff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */
+    z-index: -1;
+  }
+  .page-contact .in-list {
+    margin-top: 30px;
+  }
+  .page-contact .in-list ul {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+  }
+  .page-contact .in-list li:before {
+    content: '◆';
+    font-size: 8px;
+    -moz-transform: scale(0.66);
+    -ms-transform: scale(0.66);
+    -webkit-transform: scale(0.66);
+    transform: scale(0.66);
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  .page-contact .in-list li {
+    display: block;
+    width: 97%;
+    text-indent: -0.8rem;
+    vertical-align: top;
+    margin-left: 3%;
+    font-size: 1.6rem;
+  }
+  .page-contact .in-list li:nth-child(2) {
+    margin: 3%;
+  }
+  .page-contact .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-contact .relative {
+    position: relative;
+    width: 240px;
+    margin: 0 auto;
+  }
+  .page-contact .relative div {
+    position: absolute;
+    z-index: 2;
+  }
+  .page-contact #class-row1 {
+    display: none;
+  }
+  .page-contact #class-row2 {
+    padding-top: 50px;
+    display: block;
+  }
+  .page-contact .ui-selectmenu-text {
+    font-size: 1.6rem;
+  }
+  .page-contact .ui-selectmenu-button span {
+    font-size: 1.6rem;
+  }
+  .page-contact .w3-section {
+    padding-bottom: 5px;
+  }
+  .page-contact .mySlides {
+    height: 100%;
+  }
+  .page-contact .w3-badge {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-contact .content {
+    height: 100%;
+  }
+  .page-contact .content .info {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .page-contact .content .info div:nth-child(1) {
+    display: inline-block;
+  }
+  .page-contact .content .form {
+    padding: 50px 140px;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -2915,6 +3926,7 @@ tr .top_title {
     padding-top: 80px;
   }
 
+  /*------- 服務與優勢和人才招募 -------*/
   /*------- 競爭優勢 -------*/
   .page-advantage {
     margin-top: 73px;
@@ -2925,6 +3937,9 @@ tr .top_title {
   }
   .page-advantage .stitle {
     margin-top: 60px;
+  }
+  .page-advantage .stitle div {
+    padding: 0 10px;
   }
   .page-advantage .content {
     width: 940px;
@@ -2951,17 +3966,14 @@ tr .top_title {
   .page-advantage .in-list li:nth-child(1) {
     margin-left: 3%;
   }
-  .page-advantage .in-title {
-    font-size: 2.4rem;
-  }
-  .page-advantage .stitle div {
-    padding: 0 10px;
-  }
   .page-advantage .w3-section {
     padding-bottom: 30px;
   }
   .page-advantage .img-block {
     height: 380px;
+  }
+  .page-advantage .in-title {
+    font-size: 2.4rem;
   }
   .page-advantage .in-item .in-clear {
     clear: none;
@@ -2973,11 +3985,224 @@ tr .top_title {
   }
   .page-service .title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
-    height: 200px;
+    height: 150px;
+  }
+  .page-service .title span {
+    font-size: 3rem;
   }
   .page-service .stitle {
+    margin-top: 60px;
+  }
+  .page-service .stitle div {
+    padding: 0 10px;
+  }
+  .page-service .sinfo {
     font-size: 2.4rem;
-    width: 66.66%;
+  }
+  .page-service .content {
+    width: 940px;
+    padding-top: 40px;
+  }
+  .page-service .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-service #class-row1 {
+    display: block;
+  }
+  .page-service #class-row2 {
+    display: none;
+  }
+  .page-service .in-list li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 0;
+  }
+  .page-service .in-list li:nth-child(2) {
+    margin: 0 18%;
+  }
+  .page-service .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-service .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-service .img-block {
+    height: 380px;
+  }
+  .page-service .content-block .left {
+    float: left;
+  }
+  .page-service .content-block .right {
+    float: right;
+  }
+  .page-service .content-block .in-img {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: left;
+    padding: 15px !important;
+  }
+  .page-service .content-block .in-content {
+    text-align: left;
+  }
+  .page-service .in-list li {
+    width: 24%;
+  }
+  .page-service .in-list li:nth-child(2) {
+    margin: 0 12%;
+  }
+  .page-service .in-list li:nth-child(3) {
+    margin-left: 0;
+  }
+  .page-service .in-stitle {
+    padding-left: 0;
+  }
+
+  /*------- 菁英招募 -------*/
+  .page-welfare {
+    margin-top: 73px;
+  }
+  .page-welfare .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 150px;
+  }
+  .page-welfare .title span {
+    font-size: 3rem;
+  }
+  .page-welfare .stitle {
+    margin-top: 60px;
+  }
+  .page-welfare .stitle div {
+    padding: 0 10px;
+  }
+  .page-welfare .sinfo {
+    font-size: 2.4rem;
+  }
+  .page-welfare .content {
+    width: 940px;
+    padding-top: 40px;
+  }
+  .page-welfare .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-welfare #class-row1 {
+    display: block;
+  }
+  .page-welfare #class-row2 {
+    display: none;
+  }
+  .page-welfare .in-list li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 0;
+  }
+  .page-welfare .in-list li:nth-child(2) {
+    margin: 0 18%;
+  }
+  .page-welfare .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-welfare .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-welfare .img-block {
+    height: 380px;
+  }
+  .page-welfare .in-stitle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-welfare .content2 {
+    width: 940px;
+  }
+  .page-welfare .content2 .stitle2 {
+    display: inline-block;
+  }
+  .page-welfare .content2 .stitle2 div {
+    display: inline-block;
+  }
+  .page-welfare .content2 .left {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+  }
+  .page-welfare .content2 .right {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+  }
+  .page-welfare .content2 .td1 {
+    width: 30%;
+  }
+  .page-welfare .content2 .td2 {
+    display: table-cell;
+  }
+  .page-welfare .content2 .td3 {
+    display: table-cell;
+  }
+  .page-welfare .content2 .page-block li {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*------- 客服中心 -------*/
+  .page-contact {
+    margin-top: 73px;
+  }
+  .page-contact .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-contact .stitle {
+    margin-top: 60px;
+  }
+  .page-contact .stitle div {
+    padding: 0 10px;
+  }
+  .page-contact .content {
+    width: 940px;
+    padding-top: 40px;
+  }
+  .page-contact .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-contact #class-row1 {
+    display: block;
+  }
+  .page-contact #class-row2 {
+    display: none;
+  }
+  .page-contact .in-list li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 0;
+  }
+  .page-contact .in-list li:nth-child(2) {
+    margin: 0 18%;
+  }
+  .page-contact .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-contact .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-contact .img-block {
+    height: 380px;
+  }
+  .page-contact .content {
+    height: 100%;
+  }
+  .page-contact .content .info {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .page-contact .content .info div:nth-child(1) {
+    display: inline-block;
+  }
+  .page-contact .content .form {
+    padding: 50px 80px;
   }
 }
 @media (min-width: 1200px) {
@@ -3386,6 +4611,7 @@ tr .top_title {
     padding-top: 80px;
   }
 
+  /*------- 服務與優勢和人才招募 -------*/
   /*------- 競爭優勢 -------*/
   .page-advantage {
     margin-top: 140px;
@@ -3396,6 +4622,9 @@ tr .top_title {
   }
   .page-advantage .stitle {
     margin-top: 60px;
+  }
+  .page-advantage .stitle div {
+    padding: 0 20px;
   }
   .page-advantage .content {
     width: 940px;
@@ -3422,17 +4651,14 @@ tr .top_title {
   .page-advantage .in-list li:nth-child(1) {
     margin-left: 3%;
   }
-  .page-advantage .in-title {
-    font-size: 2.4rem;
-  }
-  .page-advantage .stitle div {
-    padding: 0 20px;
-  }
   .page-advantage .w3-section {
     padding-bottom: 30px;
   }
   .page-advantage .img-block {
     height: 380px;
+  }
+  .page-advantage .in-title {
+    font-size: 2.4rem;
   }
   .page-advantage .in-item .in-clear {
     clear: none;
@@ -3444,10 +4670,223 @@ tr .top_title {
   }
   .page-service .title {
     background: url("../images/history_back1_2.jpg") no-repeat left -40px;
-    height: 200px;
+    height: 150px;
+  }
+  .page-service .title span {
+    font-size: 3rem;
   }
   .page-service .stitle {
+    margin-top: 60px;
+  }
+  .page-service .stitle div {
+    padding: 0 20px;
+  }
+  .page-service .sinfo {
     font-size: 2.4rem;
-    width: 66.66%;
+  }
+  .page-service .content {
+    width: 940px;
+    padding-top: 40px;
+  }
+  .page-service .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-service #class-row1 {
+    display: block;
+  }
+  .page-service #class-row2 {
+    display: none;
+  }
+  .page-service .in-list li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 0;
+  }
+  .page-service .in-list li:nth-child(2) {
+    margin: 0 18%;
+  }
+  .page-service .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-service .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-service .img-block {
+    height: 380px;
+  }
+  .page-service .content-block .left {
+    float: left;
+  }
+  .page-service .content-block .right {
+    float: right;
+  }
+  .page-service .content-block .in-img {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    text-align: left;
+    padding: 15px !important;
+  }
+  .page-service .content-block .in-content {
+    text-align: left;
+  }
+  .page-service .in-list li {
+    width: 24%;
+  }
+  .page-service .in-list li:nth-child(2) {
+    margin: 0 12%;
+  }
+  .page-service .in-list li:nth-child(3) {
+    margin-left: 0;
+  }
+  .page-service .in-stitle {
+    padding-left: 0;
+  }
+
+  /*------- 菁英招募 -------*/
+  .page-welfare {
+    margin-top: 140px;
+  }
+  .page-welfare .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 150px;
+  }
+  .page-welfare .title span {
+    font-size: 3rem;
+  }
+  .page-welfare .stitle {
+    margin-top: 60px;
+  }
+  .page-welfare .stitle div {
+    padding: 0 20px;
+  }
+  .page-welfare .sinfo {
+    font-size: 2.4rem;
+  }
+  .page-welfare .content {
+    width: 940px;
+    padding-top: 40px;
+  }
+  .page-welfare .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-welfare #class-row1 {
+    display: block;
+  }
+  .page-welfare #class-row2 {
+    display: none;
+  }
+  .page-welfare .in-list li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 0;
+  }
+  .page-welfare .in-list li:nth-child(2) {
+    margin: 0 18%;
+  }
+  .page-welfare .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-welfare .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-welfare .img-block {
+    height: 380px;
+  }
+  .page-welfare .in-stitle {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .page-welfare .content2 {
+    width: 940px;
+  }
+  .page-welfare .content2 .stitle2 {
+    display: inline-block;
+  }
+  .page-welfare .content2 .stitle2 div {
+    display: inline-block;
+  }
+  .page-welfare .content2 .left {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+  }
+  .page-welfare .content2 .right {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+  }
+  .page-welfare .content2 .td1 {
+    width: 30%;
+  }
+  .page-welfare .content2 .td2 {
+    display: table-cell;
+  }
+  .page-welfare .content2 .td3 {
+    display: table-cell;
+  }
+  .page-welfare .content2 .page-block li {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*------- 客服中心 -------*/
+  .page-contact {
+    margin-top: 140px;
+  }
+  .page-contact .title {
+    background: url("../images/history_back1.jpg") no-repeat right top;
+    height: 200px;
+  }
+  .page-contact .stitle {
+    margin-top: 60px;
+  }
+  .page-contact .stitle div {
+    padding: 0 20px;
+  }
+  .page-contact .content {
+    width: 940px;
+    padding-top: 40px;
+  }
+  .page-contact .content-block {
+    padding: 45px 70px 0 70px;
+    top: 380px;
+  }
+  .page-contact #class-row1 {
+    display: block;
+  }
+  .page-contact #class-row2 {
+    display: none;
+  }
+  .page-contact .in-list li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 0;
+  }
+  .page-contact .in-list li:nth-child(2) {
+    margin: 0 18%;
+  }
+  .page-contact .in-list li:nth-child(1) {
+    margin-left: 3%;
+  }
+  .page-contact .w3-section {
+    padding-bottom: 30px;
+  }
+  .page-contact .img-block {
+    height: 380px;
+  }
+  .page-contact .content {
+    height: 100%;
+  }
+  .page-contact .content .info {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .page-contact .content .info div:nth-child(1) {
+    display: inline-block;
+  }
+  .page-contact .content .form {
+    padding: 50px 80px;
   }
 }

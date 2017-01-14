@@ -1319,30 +1319,8 @@ tr .top_title{
 .page-news-pop{
 	@include page-value-addes_news-pop();
 }
-
-/*------- 競爭優勢 -------*/
-.page-advantage{
-	margin-top: 73px;
-	.title{
-		@include page-title-default();
-		background: url('') no-repeat right top;
-	}
-	.stitle{
-		margin-top: 40px;
-		color: #797979;
-		font-size: 1.7rem;
-		border-bottom: 1px solid #ddd6cd;
-		padding-bottom: 0px;
-		div{
-			display: inline-block;
-			padding: 0 10px;
-			cursor: pointer;
-		}
-		.on{
-			padding-bottom: 10px;
-			border-bottom: 2px solid #c6232f;
-		}
-	}
+/*------- 服務與優勢和人才招募共用 -------*/
+@mixin page-advantage-service-welfare() {
 	.content{
 		padding-bottom: 100px;
 		padding-top: 80px;
@@ -1379,19 +1357,6 @@ tr .top_title{
 		background: linear-gradient(to bottom,  #ddd 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 		z-index: -1;
-	}
-	.in-title{
-		font-size: 1.8rem;
-		margin-bottom: 30px;
-		color: #000;
-	}
-	.in-info{
-		margin-bottom: 40px;
-		font-size: 1.6rem;
-	}
-	.in-stitle{
-		color: #232323;
-		font-size: 2rem;
 	}
 	.in-list{
 		@include page-ul-default();
@@ -1436,6 +1401,44 @@ tr .top_title{
 	.w3-badge{
 		padding-left:0;
 		padding-right:0;
+	}
+}
+/*------- 競爭優勢 -------*/
+.page-advantage{
+	margin-top: 73px;
+	.title{
+		@include page-title-default();
+		background: url('') no-repeat right top;
+	}
+	.stitle{
+		margin-top: 40px;
+		color: #797979;
+		font-size: 1.7rem;
+		border-bottom: 1px solid #ddd6cd;
+		padding-bottom: 0px;
+		div{
+			display: inline-block;
+			padding: 0 10px;
+			cursor: pointer;
+		}
+		.on{
+			padding-bottom: 10px;
+			border-bottom: 2px solid #c6232f;
+		}
+	}
+	@include page-advantage-service-welfare();
+	.in-title{
+		font-size: 1.8rem;
+		margin-bottom: 30px;
+		color: #000;
+	}
+	.in-info{
+		margin-bottom: 40px;
+		font-size: 1.6rem;
+	}
+	.in-stitle{
+		color: #232323;
+		font-size: 2rem;
 	}
 	.in-item{
 		.in-td{
@@ -1577,12 +1580,364 @@ tr .top_title{
 	.title{
 		@include page-title-default();
 		background: url('') no-repeat left -40px;
+		span{font-size: 2.5rem;}
+		height: 150px;
 	}
 	.stitle{
+		margin-top: 40px;
+		color: #797979;
+		font-size: 1.7rem;
+		border-bottom: 1px solid #ddd6cd;
+		padding-bottom: 0px;
+		div{
+			display: inline-block;
+			padding: 0 10px;
+			cursor: pointer;
+		}
+		.on{
+			padding-bottom: 10px;
+			border-bottom: 2px solid #c6232f;
+		}
+		img{
+			margin-right: 10px;
+		}
+	}
+	.sinfo{
 		font-size: 1.8rem;
 		color: $mainColor;
-		width: 83.33%;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		width: 100%;
+	}
+	@include page-advantage-service-welfare();
+	.content{
+		background: url(../images/service/icon1.png) no-repeat right 10px;
+	}
+	.content-block{
+		.row{
+			margin-bottom: 70px;
+		}
+		.left{float: left;}
+		.right{float: left;}
+		.in-img{
+			clear: both;
+			text-align: center;
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			padding-bottom: 30px;
+		}
+		.in-content{
+			text-align: left;
+		}
+		.in-title{
+			font-size: 2.4rem;
+			color: #000;
+			margin-bottom: 30px;
+			font-weight: bold;
+		}
+		ol{
+			margin-left: 2em;
+			padding: 0;
+		}
+		li{
+			padding-left: 0;
+			margin-left: -1em;
+		}
+	}
+	.in-list{
+		li{
+			width: 100%;
+		}
+		li:nth-child(3){margin-left: 3%;}
+	}
+	.in-btitle{
+		font-size: 2.4rem;
+		color: #232323;
+	}
+	.in-stitle{
+		color: #232323;
+		font-size: 2rem;
+		margin-bottom: 25px;
+		margin-top: 40px;
+		padding-left: 8.33%;
+	}
+	.sinfo2{
+		div{text-align:left;}
+		[class*="col-"]{
+			padding: 20px;
+			div:nth-child(1){
+				font-size: 2rem;
+				color: #232323;
+			}
+			div:nth-child(2){
+				font-size: 1.6rem;
+				color: #797979;
+				padding-left: 22px;
+			}
+		}
+	}
+	.item{
+		text-align: left;
+		font-size: 1.6rem;
+		color: #797979;
+		line-height: 2.5rem;
+	}
+	.item:before{
+		content: '◆';
+		font-size: 8px;
+		@include transform(scale(0.66));
+		display: inline-block;
+		margin-right: 0.5rem;
+	}
+	.ui-selectmenu-button.ui-button:focus{
+		@include box-shadow(0px 0px 5px rgba($mainColor,0.5));
+	}
+}
+.ui-widget.ui-widget-content{
+	border: 1px solid $mainColor;
+	@include box-shadow(0px 0px 5px rgba($mainColor,0.5));
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	background: $mainColor !important;
+	border: 0;
+}
+.ui-selectmenu-button.ui-button{
+	border: 1px solid $mainColor;
+}
+.ui-menu-item{
+	font-size: 1.6rem;
+}
+.ui-menu .ui-menu-item-wrapper{
+	padding: 5px;
+}
+/*------- 菁英招募 -------*/
+.page-welfare{
+	margin-top: 73px;
+	.title{
+		@include page-title-default();
+		background: url('') no-repeat right top;
+		span{font-size: 2.5rem;}
+		height: 150px;
+	}
+	.stitle{
+		margin-top: 40px;
+		color: #797979;
+		font-size: 1.7rem;
+		border-bottom: 1px solid #ddd6cd;
+		padding-bottom: 0px;
+		div{
+			display: inline-block;
+			padding: 0 10px;
+			cursor: pointer;
+		}
+		.on{
+			padding-bottom: 10px;
+			border-bottom: 2px solid #c6232f;
+		}
+		img{
+			margin-right: 10px;
+		}
+	}
+	.sinfo{
+		font-size: 1.8rem;
+		color: $mainColor;
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		width: 100%;
+	}
+	@include page-advantage-service-welfare();
+	.in-btitle{
+		font-size: 2.4rem;
+		color: #232323;
+	}
+	.in-stitle{
+		color: #232323;
+		font-size: 2rem;
+		margin-bottom: 25px;
+		margin-top: 40px;
+		padding-left: 8.33%;
+		padding-right: 8.33%;
+	}
+	.item{
+		text-align: left;
+		font-size: 1.6rem;
+		color: #797979;
+		line-height: 2.5rem;
+	}
+	.item:before{
+		content: '◆';
+		font-size: 8px;
+		@include transform(scale(0.66));
+		display: inline-block;
+		margin-right: 0.5rem;
+	}
+	.content2-wra{
+		width: 100%;
+		position: relative;
+		height: 100%;
+		background-color: #ededed;
+		background-image: url(../images/welfare_back2.jpg) no-repeat center bottom;
+	}
+	.content2{
+		width: 90%;
 		margin: 0 auto;
+		.title2{
+			font-size: 3rem;
+			color: #000;
+			padding: 50px 0;
+			span{
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+		}
+		.stitle2{
+			width: 100%;
+			color: #232323;
+			font-size: 1.6rem;
+			display:block;
+			div{
+				display:block;
+				margin-bottom: 20px;
+			}
+			.num{
+				color: $mainColor;
+			}
+		}
+		.left{
+			display:block;
+			width: 100%;
+			text-align: left;
+		}
+		.right{
+			display:block;
+			width: 100%;
+			text-align: left;
+		}
+		.css-table {
+		    display:table;
+		    width: 100%;
+		    background-color: #fff;
+		    font-size: 1.6rem;
+		    color: #797979;
+		    a{
+		    	color: #000;
+		    	text-decoration: underline;
+		    }
+		    a:hover,a:active,a:focus{
+		    	color: $mainColor;
+		    }
+		}
+		.css-tr {
+		    display: table-row;
+		    width: 96%;
+		    padding: 0 2%;
+		}
+		.css-td {
+		    display: table-cell;
+		    text-align: left;
+		    padding: 30px 0;
+		}
+		.tr-title{
+			background-color: #797979;
+			color: #fff;
+			.css-td {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+		}
+		.td1{width:92%;padding-left:4%;padding-right:4%;}
+		.td2{width:20%;display:none;}
+		.td3{width:30%;padding-left:4%;padding-right:4%;display:none;}
+		.td-border{
+			border-bottom: 1px solid #ddd6cd;
+		}
+		.page-block{
+			margin: 70px 0;
+			img{
+				margin: 0 10px;
+			}
+			ul{
+				display: inline-block;
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				vertical-align: middle;
+			}
+			li{
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				line-height: 40px;
+				color: #978d7f;
+				font-size: 1.8rem;	
+			}
+		}
+		li.now-page{
+			background-color: $mainColor;
+			color: #fff;
+		}
+	}
+	.ui-selectmenu-button.ui-button:focus{
+		@include box-shadow(0px 0px 5px rgba($mainColor,0.5));
+	}
+}
+/*------- 客服中心 -------*/
+.page-contact{
+	margin-top: 73px;
+	.title{
+		@include page-title-default();
+		background: url('') no-repeat right top;
+	}
+	.stitle{
+		margin-top: 40px;
+		color: #797979;
+		font-size: 1.7rem;
+		border-bottom: 1px solid #ddd6cd;
+		padding-bottom: 0px;
+		div{
+			display: inline-block;
+			padding: 0 10px;
+			cursor: pointer;
+		}
+		.on{
+			padding-bottom: 10px;
+			border-bottom: 2px solid #c6232f;
+		}
+	}
+	@include page-advantage-service-welfare();
+	.content{
+		height: 100%;
+		.info{
+			display: block;
+			border-bottom: 1px solid #e8e3dc;
+			width: 100%;
+			margin-left: 0;
+			div{
+				display: inline-block;
+			}
+			div:nth-child(1){
+				margin-right: 60px;
+				display: none;
+			}
+			span{
+				display: block;
+			}
+			span:nth-child(1){
+				color: #272727;
+				font-size: 2.4rem;
+			}
+			span:nth-child(2){
+				color: #999999;
+				font-size: 1.5rem;
+				height: 70px;
+			}
+		}
+		.form{
+			div{text-align: left;}
+			padding: 50px 0px;
+		}
 	}
 }
 /*------- RWD -------*/
@@ -1870,16 +2225,8 @@ tr .top_title{
 	.page-news{
 		@include page-value-addes_news_sm();
 	}
-	/*------- 競爭優勢 -------*/
-	.page-advantage{
-		margin-top: 73px;
-		.title{
-			background: url('../images/history_back1.jpg') no-repeat right top;
-			height: 200px;
-		}
-		.stitle{
-			margin-top: 60px;
-		}
+	/*------- 服務與優勢和人才招募 -------*/
+	@mixin page-advantage-service-welfare-sm() {
 		.content{
 			width: 90%;
 			padding-top: 40px;
@@ -1899,13 +2246,25 @@ tr .top_title{
 			li:nth-child(2){margin:0 11%;}
 			li:nth-child(1){margin-left:3%}
 		}
-		.in-title{font-size: 2.4rem;}
 		.w3-section{
 			padding-bottom: 30px;
 		}
 		.img-block{
 			height: 380px;
 		}
+	}
+	/*------- 競爭優勢 -------*/
+	.page-advantage{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		@include page-advantage-service-welfare-sm();
+		.in-title{font-size: 2.4rem;}
 		.in-item{
 			.in-clear{
 				clear: both;
@@ -1917,11 +2276,111 @@ tr .top_title{
 		margin-top: 73px;
 		.title{
 			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 150px;
+			span{font-size: 3rem;}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.sinfo{
+			font-size: 2.4rem;
+		}
+		@include page-advantage-service-welfare-sm();
+		.content{
+		}
+		.content-block{
+			.left{float: left;}
+			.right{float: right;}
+			.in-img{
+				padding-top: 30px;
+				padding-bottom: 0px;
+				text-align: left;
+				padding: 15px !important;
+			}
+			.in-content{
+				text-align: left;
+			}
+		}
+		.in-list{
+			li{width: 24%;}
+			li:nth-child(2){
+				margin: 0 12%;
+			}
+			li:nth-child(3){margin-left: 0;}
+		}
+		.in-stitle{
+			padding-left: 0;
+		}
+	}
+	/*------- 菁英招募 -------*/
+	.page-welfare{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 150px;
+			span{font-size: 3rem;}
+		}
+		.stitle{
+			margin-top: 60px;
+		}
+		.sinfo{
+			font-size: 2.4rem;
+		}
+		@include page-advantage-service-welfare-sm();
+		.in-stitle{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.content2{
+			width: 90%;
+			.stitle2{
+				display:inline-block;
+				div{display:inline-block;}
+			}
+			.left{
+				display:inline-block;
+				width: 40%;
+				text-align: left;
+			}
+			.right{
+				display:inline-block;
+				width: 40%;
+				text-align: right;
+			}
+			.td1{width:30%;}
+			.td2{display:table-cell;}
+			.td3{display:table-cell;}
+			.page-block{
+				li{
+					width: 40px;
+					height: 40px;
+				}
+			}
+		}
+	}
+	/*------- 客服中心 -------*/
+	.page-contact{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
 			height: 200px;
 		}
 		.stitle{
-			font-size: 2.4rem;
-			width: 83.33%;
+			margin-top: 60px;
+		}
+		@include page-advantage-service-welfare();
+		.content{
+			height: 100%;
+			.info{
+				width: 90%;
+				margin-left: 5%;
+				div:nth-child(1){
+					display: inline-block;
+				}
+			}
+			.form{
+				padding: 50px 140px;
+			}
 		}
 	}
 }
@@ -2209,16 +2668,8 @@ tr .top_title{
 	.page-news{
 		@include page-value-addes_news_md;
 	}
-	/*------- 競爭優勢 -------*/
-	.page-advantage{
-		margin-top: 73px;
-		.title{
-			background: url('../images/history_back1.jpg') no-repeat right top;
-			height: 200px;
-		}
-		.stitle{
-			margin-top: 60px;
-		}
+	/*------- 服務與優勢和人才招募 -------*/
+	@mixin page-advantage-service-welfare-md() {
 		.content{
 			width: 940px;
 			padding-top: 40px;
@@ -2238,18 +2689,28 @@ tr .top_title{
 			li:nth-child(2){margin:0 18%;}
 			li:nth-child(1){margin-left:3%}
 		}
-		.in-title{font-size: 2.4rem;}
-		.stitle{
-			div{
-				padding: 0 10px;
-			}
-		}
 		.w3-section{
 			padding-bottom: 30px;
 		}
 		.img-block{
 			height: 380px;
 		}
+	}
+	/*------- 競爭優勢 -------*/
+	.page-advantage{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+			div{
+				padding: 0 10px;
+			}
+		}
+		@include page-advantage-service-welfare-md();
+		.in-title{font-size: 2.4rem;}
 		.in-item{
 			.in-clear{
 				clear: none;
@@ -2261,11 +2722,120 @@ tr .top_title{
 		margin-top: 73px;
 		.title{
 			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 150px;
+			span{font-size: 3rem;}
+		}
+		.stitle{
+			margin-top: 60px;
+			div{
+				padding: 0 10px;
+			}
+		}
+		.sinfo{
+			font-size: 2.4rem;
+		}
+		@include page-advantage-service-welfare-md();
+		.content{
+		}
+		.content-block{
+			.left{float: left;}
+			.right{float: right;}
+			.in-img{
+				padding-top: 30px;
+				padding-bottom: 0px;
+				text-align: left;
+				padding: 15px !important;
+			}
+			.in-content{
+				text-align: left;
+			}
+		}
+		.in-list{
+			li{width: 24%;}
+			li:nth-child(2){
+				margin: 0 12%;
+			}
+			li:nth-child(3){margin-left: 0;}
+		}
+		.in-stitle{
+			padding-left: 0;
+		}
+	}
+	/*------- 菁英招募 -------*/
+	.page-welfare{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 150px;
+			span{font-size: 3rem;}
+		}
+		.stitle{
+			margin-top: 60px;
+			div{
+				padding: 0 10px;
+			}
+		}
+		.sinfo{
+			font-size: 2.4rem;
+		}
+		@include page-advantage-service-welfare-md();
+		.in-stitle{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.content2{
+			width: 940px;
+			.stitle2{
+				display:inline-block;
+				div{display:inline-block;}
+			}
+			.left{
+				display:inline-block;
+				width: 40%;
+				text-align: left;
+			}
+			.right{
+				display:inline-block;
+				width: 40%;
+				text-align: right;
+			}
+			.td1{width:30%;}
+			.td2{display:table-cell;}
+			.td3{display:table-cell;}
+			.page-block{
+				li{
+					width: 40px;
+					height: 40px;
+				}
+			}
+		}
+	}
+	/*------- 客服中心 -------*/
+	.page-contact{
+		margin-top: 73px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
 			height: 200px;
 		}
 		.stitle{
-			font-size: 2.4rem;
-			width: 66.66%;
+			margin-top: 60px;
+			div{
+				padding: 0 10px;
+			}
+		}
+		@include page-advantage-service-welfare-md();
+		.content{
+			height: 100%;
+			.info{
+				width: 90%;
+				margin-left: 5%;
+				div:nth-child(1){
+					display: inline-block;
+				}
+			}
+			.form{
+				padding: 50px 80px;
+			}
 		}
 	}
 }
@@ -2574,16 +3144,8 @@ tr .top_title{
 	.page-news{
 		@include page-value-addes_news_lg();
 	}
-	/*------- 競爭優勢 -------*/
-	.page-advantage{
-		margin-top: 140px;
-		.title{
-			background: url('../images/history_back1.jpg') no-repeat right top;
-			height: 200px;
-		}
-		.stitle{
-			margin-top: 60px;
-		}
+	/*------- 服務與優勢和人才招募 -------*/
+	@mixin page-advantage-service-welfare-lg() {
 		.content{
 			width: 940px;
 			padding-top: 40px;
@@ -2603,18 +3165,28 @@ tr .top_title{
 			li:nth-child(2){margin:0 18%;}
 			li:nth-child(1){margin-left:3%}
 		}
-		.in-title{font-size: 2.4rem;}
-		.stitle{
-			div{
-				padding: 0 20px;
-			}
-		}
 		.w3-section{
 			padding-bottom: 30px;
 		}
 		.img-block{
 			height: 380px;
 		}
+	}
+	/*------- 競爭優勢 -------*/
+	.page-advantage{
+		margin-top: 140px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 200px;
+		}
+		.stitle{
+			margin-top: 60px;
+			div{
+				padding: 0 20px;
+			}
+		}
+		@include page-advantage-service-welfare-lg();
+		.in-title{font-size: 2.4rem;}
 		.in-item{
 			.in-clear{
 				clear: none;
@@ -2625,12 +3197,121 @@ tr .top_title{
 	.page-service{
 		margin-top: 140px;
 		.title{
+			span{font-size: 3rem;}
 			background: url('../images/history_back1_2.jpg') no-repeat left -40px;
+			height: 150px;
+		}
+		.stitle{
+			margin-top: 60px;
+			div{
+				padding: 0 20px;
+			}
+		}
+		.sinfo{
+			font-size: 2.4rem;
+		}
+		@include page-advantage-service-welfare-lg();
+		.content{
+		}
+		.content-block{
+			.left{float: left;}
+			.right{float: right;}
+			.in-img{
+				padding-top: 30px;
+				padding-bottom: 0px;
+				text-align: left;
+				padding: 15px !important;
+			}
+			.in-content{
+				text-align: left;
+			}
+		}
+		.in-list{
+			li{width: 24%;}
+			li:nth-child(2){
+				margin: 0 12%;
+			}
+			li:nth-child(3){margin-left: 0;}
+		}
+		.in-stitle{
+			padding-left: 0;
+		}
+	}
+	/*------- 菁英招募 -------*/
+	.page-welfare{
+		margin-top: 140px;
+		.title{
+			span{font-size: 3rem;}
+			background: url('../images/history_back1.jpg') no-repeat right top;
+			height: 150px;
+		}
+		.stitle{
+			margin-top: 60px;
+			div{
+				padding: 0 20px;
+			}
+		}
+		.sinfo{
+			font-size: 2.4rem;
+		}
+		@include page-advantage-service-welfare-lg();
+		.in-stitle{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.content2{
+			width: 940px;
+			.stitle2{
+				display:inline-block;
+				div{display:inline-block;}
+			}
+			.left{
+				display:inline-block;
+				width: 40%;
+				text-align: left;
+			}
+			.right{
+				display:inline-block;
+				width: 40%;
+				text-align: right;
+			}
+			.td1{width:30%;}
+			.td2{display:table-cell;}
+			.td3{display:table-cell;}
+			.page-block{
+				li{
+					width: 40px;
+					height: 40px;
+				}
+			}
+		}
+	}
+	/*------- 客服中心 -------*/
+	.page-contact{
+		margin-top: 140px;
+		.title{
+			background: url('../images/history_back1.jpg') no-repeat right top;
 			height: 200px;
 		}
 		.stitle{
-			font-size: 2.4rem;
-			width: 66.66%;
+			margin-top: 60px;
+			div{
+				padding: 0 20px;
+			}
+		}
+		@include page-advantage-service-welfare-lg();
+		.content{
+			height: 100%;
+			.info{
+				width: 90%;
+				margin-left: 5%;
+				div:nth-child(1){
+					display: inline-block;
+				}
+			}
+			.form{
+				padding: 50px 80px;
+			}
 		}
 	}
 }
