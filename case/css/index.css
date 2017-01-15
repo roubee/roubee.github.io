@@ -3002,6 +3002,50 @@ tr .top_title {
   margin-left: 60px;
   margin-top: 50px;
 }
+.page-contact .content .company-block {
+  margin: 40px 0;
+}
+.page-contact .content .company-name {
+  color: #3f3f3f;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  width: 290px;
+  margin: 0 auto;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+.page-contact .content .company-name span {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #bf955a;
+}
+.page-contact .content .company-map {
+  width: 290px;
+  height: 200px;
+  margin: 0 auto;
+}
+.page-contact .content .company-info {
+  text-align: left;
+  width: 290px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-top: 25px;
+  color: #8d8d8d;
+}
+.page-contact .content .company-info div {
+  margin: 5px 0;
+}
+.page-contact .content .company-info .in div {
+  display: inline-block;
+}
+.page-contact .content .company-info .in div:nth-child(1) {
+  vertical-align: top;
+  width: 19px;
+  margin-right: 10px;
+}
+.page-contact .content .company-info .in div:nth-child(2) {
+  width: 236px;
+}
 
 .ui-selectmenu-text {
   padding-left: 10px;
@@ -3716,6 +3760,18 @@ tr .top_title {
   .page-contact .content form {
     width: 100%;
   }
+  .page-contact .content .company-name {
+    width: 320px;
+  }
+  .page-contact .content .company-map {
+    width: 320px;
+  }
+  .page-contact .content .company-info {
+    width: 320px;
+  }
+  .page-contact .content .company-info .in div:nth-child(2) {
+    width: 260px;
+  }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
   .service {
@@ -4349,6 +4405,18 @@ tr .top_title {
   }
   .page-contact .content form {
     width: 100%;
+  }
+  .page-contact .content .company-name {
+    width: 350px;
+  }
+  .page-contact .content .company-map {
+    width: 350px;
+  }
+  .page-contact .content .company-info {
+    width: 350px;
+  }
+  .page-contact .content .company-info .in div:nth-child(2) {
+    width: 296px;
   }
 }
 @media (min-width: 1200px) {
@@ -5043,5 +5111,17 @@ tr .top_title {
   }
   .page-contact .content form {
     width: 100%;
+  }
+  .page-contact .content .company-name {
+    width: 350px;
+  }
+  .page-contact .content .company-map {
+    width: 350px;
+  }
+  .page-contact .content .company-info {
+    width: 350px;
+  }
+  .page-contact .content .company-info .in div:nth-child(2) {
+    width: 296px;
   }
 }

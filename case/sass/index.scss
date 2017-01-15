@@ -2038,6 +2038,51 @@ tr .top_title{
 				margin-top: 50px;
 			}
 		}
+		// 公司聯絡資訊
+		.company-block{
+			margin: 40px 0;
+		}
+		.company-name{
+			color: #3f3f3f;
+			font-size: 2rem;
+			font-weight: bold;
+			text-align: left;
+			width: 290px;
+			margin: 0 auto;
+			padding-left: 20px;
+			margin-bottom: 25px;
+			span{
+				padding-bottom: 10px;
+				border-bottom: 1px solid $mainColor;
+			}
+		}
+		.company-map{
+			width: 290px;
+			height: 200px;
+			margin: 0 auto;
+		}
+		.company-info{
+			text-align: left;
+			width: 290px;
+			margin: 0 auto;
+			padding-left: 20px;
+			padding-top: 25px;
+			color: #8d8d8d;
+			div{
+				margin: 5px 0;
+			}
+			.in{
+				div{display: inline-block;}
+				div:nth-child(1){
+					vertical-align: top;
+					width: 19px;
+					margin-right: 10px;
+				}
+				div:nth-child(2){
+					width: 236px;
+				}
+			}
+		}
 	}
 }
 .ui-selectmenu-text{
@@ -2503,6 +2548,16 @@ tr .top_title{
 				}
 			}
 			form{width: 100%;}
+			.company-name{width: 320px;}
+			.company-map{width: 320px;}
+			.company-info{
+				width: 320px;
+				.in{
+					div:nth-child(2){
+						width: 260px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -2965,6 +3020,16 @@ tr .top_title{
 				}
 			}
 			form{width: 100%;}
+			.company-name{width: 350px;}
+			.company-map{width: 350px;}
+			.company-info{
+				width: 350px;
+				.in{
+					div:nth-child(2){
+						width: 296px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -3448,6 +3513,16 @@ tr .top_title{
 				}
 			}
 			form{width: 100%;}
+			.company-name{width: 350px;}
+			.company-map{width: 350px;}
+			.company-info{
+				width: 350px;
+				.in{
+					div:nth-child(2){
+						width: 296px;
+					}
+				}
+			}
 		}
 	}
 }
