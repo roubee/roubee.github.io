@@ -1292,6 +1292,17 @@ tr .top_title{
 //加值服務
 .page-value-addes{
 	@include page-value-addes_news();
+	.service-block:hover{
+		.service-icon1{background-position: -37px 0;}
+		.service-icon2{background-position: -111px 0;}
+		.service-icon3{background-position: -185px 0;}
+		.service-icon4{background-position: -259px 0;}
+		.service-icon5{background-position: -333px 0;}
+		.service-icon6{background-position: -407px 0;}
+		.service-icon7{background-position: -481px 0;}
+		.service-icon8{background-position: -555px 0;}
+		.service-icon9{background-position: -629px 0;}
+	}
 }
 .page-value-addes-pop{
 	@include page-value-addes_news-pop();
@@ -1315,9 +1326,156 @@ tr .top_title{
 			border-bottom: 2px solid #c6232f;
 		}
 	}
+	.grid{
+		width: 270px;
+		margin: 0 auto;
+	}
+	.grid-item {
+		width: 270px;
+	}
+	.in-grid{
+		cursor: pointer;
+		background-color: #fff;
+		width: 240px;
+		margin: 10px auto;
+		@include box-shadow(0px 0px 5px rgba(#aaa,0.5));
+	}
+	.in-grid:hover{
+		background-color: $mainColor;
+		.news-title{color:#fff;}
+		.news-date{color:#fff;}
+		.news-content{color:#fff;}
+		.mask{display:none;}
+		.link{display:block;}
+	}
+	.in-img{
+		width: 100%;
+		height: 170px;
+		position: relative;
+		.mask{
+			display: block;
+			background-color: rgba(#201403, 0.3);
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 1;
+		}
+		.link{
+			display: none;
+			position: absolute;
+			z-index: 2;
+			width: 100%;
+			height: 43px;
+			top: 63.5px;
+			div{
+				display: inline-block;
+				margin: 0 5px;
+			}
+		}
+	}
+	.in-info{
+		text-align: left;
+		padding: 30px 20px;
+	}
+	.news-title{
+		color: #3f3f3f;
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+	}
+	.news-date{
+		color: #797979;
+		font-size: 1.1rem;
+		margin-bottom: 15px;
+	}
+	.news-content{
+		color: #797979;
+		font-size: 1.4rem;
+	}
+	.news-container{
+		background: url() no-repeat 90% bottom;
+	}
+	.relative{
+		position: relative;
+		width: 240px;
+		margin: 0 auto;
+		div{
+			position: absolute;
+			z-index: 2;
+		}
+	}
+	#class-row1{display: none;}
+	#class-row2{
+		padding-top: 50px;
+		display: block;
+	}
+	.ui-selectmenu-text{
+		font-size: 1.6rem;
+	}
+	.ui-selectmenu-button span{
+		font-size: 1.6rem;
+	}
+	.w3-section{
+		padding-bottom: 5px;
+	}
+	.mySlides{
+		height: 100%;
+	}
+	.w3-badge{
+		padding-left:0;
+		padding-right:0;
+	}
 }
 .page-news-pop{
 	@include page-value-addes_news-pop();
+	.arrow{
+		padding-top: 30%;
+	}
+	.btn-arrow{
+		display: none;
+	}
+	.closebtn{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.in-title{
+		border: 0;
+		margin-bottom: 30px;
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.in-subtitle{
+		color: #3e3934;
+		padding-bottom: 50px;
+		padding-top: 20px;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.in-xsubtitle{
+		color: #232323;
+		font-size: 20px;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+	.in-description{
+		font-size: 1.6rem;
+		color: #797979;
+		margin-bottom: 50px;
+		margin-top: 0px;
+		text-align: left;
+		.important{
+			color: #000;
+		}
+		@include page-ul-default();
+		li{
+			color: #232323;
+			font-size: 1.6rem;
+		}
+	}
+	.td2{display:none;}
+	.in-table .table2 td{width: 100%}
 }
 /*------- 服務與優勢和人才招募共用 -------*/
 @mixin page-advantage-service-welfare() {
@@ -2381,6 +2539,21 @@ tr .top_title{
 	//訊息中心
 	.page-news{
 		@include page-value-addes_news_sm();
+		.grid{
+			width: 540px;
+		}
+		.news-container{
+			background: url(../images/news/icon.png) no-repeat 90% bottom;
+		}
+		#class-row1{display: none;}
+		#class-row2{display: block;}
+	}
+	.page-news-pop{
+		.btn-arrow{
+			display: block;
+		}
+		.td2{display:block;}
+		.in-table .table2 td{width: 50%}
 	}
 	/*------- 服務與優勢和人才招募 -------*/
 	@mixin page-advantage-service-welfare-sm() {
@@ -2844,6 +3017,21 @@ tr .top_title{
 	//訊息中心
 	.page-news{
 		@include page-value-addes_news_md;
+		.grid{
+			width: 810px;
+		}
+		.news-container{
+			background: url(../images/news/icon.png) no-repeat 90% bottom;
+		}
+		#class-row1{display: block;}
+		#class-row2{display: none;}
+	}
+	.page-news-pop{
+		.btn-arrow{
+			display: block;
+		}
+		.td2{display:block;}
+		.in-table .table2 td{width: 50%}
 	}
 	/*------- 服務與優勢和人才招募 -------*/
 	@mixin page-advantage-service-welfare-md() {
@@ -3337,6 +3525,21 @@ tr .top_title{
 	//訊息中心
 	.page-news{
 		@include page-value-addes_news_lg();
+		.grid{
+			width: 810px;
+		}
+		.news-container{
+			background: url(../images/news/icon.png) no-repeat 90% bottom;
+		}
+		#class-row1{display: block;}
+		#class-row2{display: none;}
+	}
+	.page-news-pop{
+		.btn-arrow{
+			display: block;
+		}
+		.td2{display:block;}
+		.in-table .table2 td{width: 50%}
 	}
 	/*------- 服務與優勢和人才招募 -------*/
 	@mixin page-advantage-service-welfare-lg() {

@@ -1489,6 +1489,33 @@ tr .top_title {
   background: url("../images/value-added/allicon.png") no-repeat;
   background-position: -592px 0;
 }
+.page-value-addes .service-block:hover .service-icon1 {
+  background-position: -37px 0;
+}
+.page-value-addes .service-block:hover .service-icon2 {
+  background-position: -111px 0;
+}
+.page-value-addes .service-block:hover .service-icon3 {
+  background-position: -185px 0;
+}
+.page-value-addes .service-block:hover .service-icon4 {
+  background-position: -259px 0;
+}
+.page-value-addes .service-block:hover .service-icon5 {
+  background-position: -333px 0;
+}
+.page-value-addes .service-block:hover .service-icon6 {
+  background-position: -407px 0;
+}
+.page-value-addes .service-block:hover .service-icon7 {
+  background-position: -481px 0;
+}
+.page-value-addes .service-block:hover .service-icon8 {
+  background-position: -555px 0;
+}
+.page-value-addes .service-block:hover .service-icon9 {
+  background-position: -629px 0;
+}
 
 .page-value-addes-pop {
   display: none;
@@ -1754,6 +1781,118 @@ tr .top_title {
   padding-bottom: 10px;
   border-bottom: 2px solid #c6232f;
 }
+.page-news .grid {
+  width: 270px;
+  margin: 0 auto;
+}
+.page-news .grid-item {
+  width: 270px;
+}
+.page-news .in-grid {
+  cursor: pointer;
+  background-color: #fff;
+  width: 240px;
+  margin: 10px auto;
+  -moz-box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.5);
+  box-shadow: 0px 0px 5px rgba(170, 170, 170, 0.5);
+}
+.page-news .in-grid:hover {
+  background-color: #bf955a;
+}
+.page-news .in-grid:hover .news-title {
+  color: #fff;
+}
+.page-news .in-grid:hover .news-date {
+  color: #fff;
+}
+.page-news .in-grid:hover .news-content {
+  color: #fff;
+}
+.page-news .in-grid:hover .mask {
+  display: none;
+}
+.page-news .in-grid:hover .link {
+  display: block;
+}
+.page-news .in-img {
+  width: 100%;
+  height: 170px;
+  position: relative;
+}
+.page-news .in-img .mask {
+  display: block;
+  background-color: rgba(32, 20, 3, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.page-news .in-img .link {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 43px;
+  top: 63.5px;
+}
+.page-news .in-img .link div {
+  display: inline-block;
+  margin: 0 5px;
+}
+.page-news .in-info {
+  text-align: left;
+  padding: 30px 20px;
+}
+.page-news .news-title {
+  color: #3f3f3f;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.page-news .news-date {
+  color: #797979;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+.page-news .news-content {
+  color: #797979;
+  font-size: 1.4rem;
+}
+.page-news .news-container {
+  background: url() no-repeat 90% bottom;
+}
+.page-news .relative {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+}
+.page-news .relative div {
+  position: absolute;
+  z-index: 2;
+}
+.page-news #class-row1 {
+  display: none;
+}
+.page-news #class-row2 {
+  padding-top: 50px;
+  display: block;
+}
+.page-news .ui-selectmenu-text {
+  font-size: 1.6rem;
+}
+.page-news .ui-selectmenu-button span {
+  font-size: 1.6rem;
+}
+.page-news .w3-section {
+  padding-bottom: 5px;
+}
+.page-news .mySlides {
+  height: 100%;
+}
+.page-news .w3-badge {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .page-news-pop {
   display: none;
@@ -1853,6 +1992,73 @@ tr .top_title {
   transform: scale(0.66);
   display: inline-block;
   margin-right: 0.5rem;
+}
+.page-news-pop .arrow {
+  padding-top: 30%;
+}
+.page-news-pop .btn-arrow {
+  display: none;
+}
+.page-news-pop .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.page-news-pop .in-title {
+  border: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.page-news-pop .in-subtitle {
+  color: #3e3934;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.page-news-pop .in-xsubtitle {
+  color: #232323;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.page-news-pop .in-description {
+  font-size: 1.6rem;
+  color: #797979;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  text-align: left;
+}
+.page-news-pop .in-description .important {
+  color: #000;
+}
+.page-news-pop .in-description ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+}
+.page-news-pop .in-description li:before {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+.page-news-pop .in-description li {
+  color: #232323;
+  font-size: 1.6rem;
+}
+.page-news-pop .td2 {
+  display: none;
+}
+.page-news-pop .in-table .table2 td {
+  width: 100%;
 }
 
 /*------- 服務與優勢和人才招募共用 -------*/
@@ -3404,6 +3610,28 @@ tr .top_title {
   .page-news .content {
     padding-top: 80px;
   }
+  .page-news .grid {
+    width: 540px;
+  }
+  .page-news .news-container {
+    background: url(../images/news/icon.png) no-repeat 90% bottom;
+  }
+  .page-news #class-row1 {
+    display: none;
+  }
+  .page-news #class-row2 {
+    display: block;
+  }
+
+  .page-news-pop .btn-arrow {
+    display: block;
+  }
+  .page-news-pop .td2 {
+    display: block;
+  }
+  .page-news-pop .in-table .table2 td {
+    width: 50%;
+  }
 
   /*------- 服務與優勢和人才招募 -------*/
   /*------- 競爭優勢 -------*/
@@ -4118,6 +4346,28 @@ tr .top_title {
   .page-news .content {
     padding-top: 80px;
   }
+  .page-news .grid {
+    width: 810px;
+  }
+  .page-news .news-container {
+    background: url(../images/news/icon.png) no-repeat 90% bottom;
+  }
+  .page-news #class-row1 {
+    display: block;
+  }
+  .page-news #class-row2 {
+    display: none;
+  }
+
+  .page-news-pop .btn-arrow {
+    display: block;
+  }
+  .page-news-pop .td2 {
+    display: block;
+  }
+  .page-news-pop .in-table .table2 td {
+    width: 50%;
+  }
 
   /*------- 服務與優勢和人才招募 -------*/
   /*------- 競爭優勢 -------*/
@@ -4823,6 +5073,28 @@ tr .top_title {
   }
   .page-news .content {
     padding-top: 80px;
+  }
+  .page-news .grid {
+    width: 810px;
+  }
+  .page-news .news-container {
+    background: url(../images/news/icon.png) no-repeat 90% bottom;
+  }
+  .page-news #class-row1 {
+    display: block;
+  }
+  .page-news #class-row2 {
+    display: none;
+  }
+
+  .page-news-pop .btn-arrow {
+    display: block;
+  }
+  .page-news-pop .td2 {
+    display: block;
+  }
+  .page-news-pop .in-table .table2 td {
+    width: 50%;
   }
 
   /*------- 服務與優勢和人才招募 -------*/
