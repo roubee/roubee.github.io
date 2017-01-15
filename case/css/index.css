@@ -2887,11 +2887,136 @@ tr .top_title {
   font-size: 1.5rem;
   height: 70px;
 }
+.page-contact .content form {
+  margin: 0 auto;
+  width: 290px;
+}
 .page-contact .content .form {
   padding: 50px 0px;
+  font-size: 1.6rem;
 }
 .page-contact .content .form div {
   text-align: left;
+}
+.page-contact .content .form .important:after {
+  content: '◆';
+  font-size: 8px;
+  -moz-transform: scale(0.66);
+  -ms-transform: scale(0.66);
+  -webkit-transform: scale(0.66);
+  transform: scale(0.66);
+  display: inline-block;
+  margin-left: 5px;
+  color: #c6232f;
+}
+.page-contact .content .form input, .page-contact .content .form textarea {
+  border: 1px solid #c9bfb2;
+  width: 100%;
+  padding: 10px 20px;
+}
+.page-contact .content .form ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #c9bfb2;
+}
+.page-contact .content .form :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #c9bfb2;
+}
+.page-contact .content .form ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #c9bfb2;
+}
+.page-contact .content .form :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #c9bfb2;
+}
+.page-contact .content .form .ui-selectmenu-button.ui-button {
+  border: 1px solid #c9bfb2;
+  width: 100%;
+}
+.page-contact .content .form .ui-button {
+  padding: 12px;
+}
+.page-contact .content .form .item {
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+.page-contact .content .form .phone1, .page-contact .content .form .fax1 {
+  width: 25%;
+}
+.page-contact .content .form .phone2, .page-contact .content .form .fax2 {
+  width: 40%;
+  margin: 0 5%;
+}
+.page-contact .content .form .phone3 {
+  width: 25%;
+}
+.page-contact .content .form .error {
+  color: #c6232f;
+  border: 1px solid #c6232f;
+}
+.page-contact .content .form .error-text {
+  font-size: 1.4rem;
+  padding: 0 10px;
+  position: absolute;
+  color: #fff;
+  background-color: #c6232f;
+}
+.page-contact .content .form .ui-selectmenu-button.ui-button:focus, .page-contact .content .form input:focus, .page-contact .content .form textarea:focus {
+  -moz-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+  box-shadow: 0px 0px 5px rgba(191, 149, 90, 0.5);
+}
+.page-contact .content .form .captcha-input {
+  width: 100px;
+  height: 45px;
+  display: inline-block;
+  vertical-align: top;
+}
+.page-contact .content .form .captcha-img {
+  width: 120px;
+  height: 45px;
+  background-color: #eeeeee;
+  display: inline-block;
+  margin: 0 10px;
+}
+.page-contact .content .form .captcha-reload {
+  cursor: pointer;
+  width: 40px;
+  height: 45px;
+  background: url("../images/captcha_reload.png") no-repeat center center;
+  display: inline-block;
+}
+.page-contact .content .form button {
+  color: #fff;
+  background-color: #bf955a;
+  width: 140px;
+  height: 40px;
+  border: 0;
+}
+.page-contact .content .form .captcha, .page-contact .content .form .submit {
+  vertical-align: top;
+  display: block;
+}
+.page-contact .content .form .submit {
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.ui-selectmenu-text {
+  padding-left: 10px;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  padding-left: 50px;
+}
+
+.ui-menu .ui-icon {
+  left: 20px;
+}
+
+.ui-button:focus .ui-icon, .ui-button .ui-icon {
+  background: url();
 }
 
 /*------- RWD -------*/
@@ -3577,7 +3702,19 @@ tr .top_title {
     display: inline-block;
   }
   .page-contact .content .form {
-    padding: 50px 140px;
+    padding: 50px 80px;
+  }
+  .page-contact .content .form .captcha, .page-contact .content .form .submit {
+    display: inline-block;
+  }
+  .page-contact .content .form .submit {
+    margin-top: 0px;
+  }
+  .page-contact .content .form .item {
+    width: 290px;
+  }
+  .page-contact .content form {
+    width: 100%;
   }
 }
 @media (min-width: 960px) and (max-width: 1199px) {
@@ -4203,6 +4340,15 @@ tr .top_title {
   }
   .page-contact .content .form {
     padding: 50px 80px;
+  }
+  .page-contact .content .form .captcha, .page-contact .content .form .submit {
+    display: inline-block;
+  }
+  .page-contact .content .form .submit {
+    margin-top: 0px;
+  }
+  .page-contact .content form {
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -4888,5 +5034,14 @@ tr .top_title {
   }
   .page-contact .content .form {
     padding: 50px 80px;
+  }
+  .page-contact .content .form .captcha, .page-contact .content .form .submit {
+    display: inline-block;
+  }
+  .page-contact .content .form .submit {
+    margin-top: 0px;
+  }
+  .page-contact .content form {
+    width: 100%;
   }
 }

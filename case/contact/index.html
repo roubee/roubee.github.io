@@ -109,28 +109,52 @@
           <div class="form">
             <form>
               <div class="row">
-                <div class="col-sm-6 col-xs-12">
-                  <div><span>姓名</span><br><input type="" name=""></div>
-                  <div><span>國家/國碼</span><br><input type="" name=""></div>
-                  <div><span>聯絡電話</span><br><input type="" name=""></div>
-                  <div><span>傳真</span><br><input type="" name=""></div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="item"><span class="important">姓名</span><br><input type="text" name="" placeholder="請輸入真實姓名"></div>
+                  <div class="item"><span class="important">國家/國碼</span><br>
+                    <div>
+                      <select name="country-code" id="country-code">
+                      　<option data-class="avatar" data-style="background-image:url('../images/taiwan.png');" value="(台灣)+886">(台灣)+886</option>
+                      　<option data-class="avatar" data-style="background-image:url('../images/taiwan.png');" value="(台灣)+887">(台灣)+887</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="item"><span class="important">聯絡電話</span><br><input type="text" name="" class="phone1"><input type="text" name="" class="phone2"><input type="text" name="" class="phone3" placeholder="分機"></div>
+                  <div class="item"><span>傳真</span><br><input type="text" name="" class="fax1" placeholder="區碼"><input type="text" name="" class="fax2" placeholder="傳真號碼"></div>
                 </div>
-                <div class="col-sm-6 col-xs-12">
-                  <div><span>手機號碼</span><br><input type="" name=""></div>
-                  <div><span>電子郵件</span><br><input type="" name=""></div>
-                  <div><span>公司名稱</span><br><input type="" name=""></div>
-                  <div><span>地址</span><br><input type="" name=""></div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="item"><span>手機號碼</span><br><input type="text" name="" placeholder="請輸入手機號碼" class="error">
+                    <span class="error-text">格式錯誤</span>
+                  </div>
+                  <div class="item"><span>電子郵件</span><br><input type="text" name="" placeholder="請輸入Email"></div>
+                  <div class="item"><span>公司名稱</span><br><input type="text" name="" placeholder="請輸入公司名稱"></div>
+                  <div class="item"><span>地址</span><br><input type="text" name="" placeholder="地址"></div>
                 </div>
-                <div class="col-sm-12 col-xs-12">
-                  <span>諮詢主題</span><br><input type="" name="">
-                </div>
-                <div class="col-sm-12 col-xs-12">
-                  <span>諮詢內容</span><br><input type="" name="">
-                </div>
-                <div class="col-sm-12 col-xs-12">
-                  <div>1</div>
-                  <div>2</div>
-                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12"">
+                <div class="item">
+                  <span class="important">諮詢主題</span><br>
+                    <div>
+                      <select name="subject" id="subject">
+                      　<option value="服務需求">服務需求</option>
+                      　<option value="物業管理">物業管理</option>
+                      　<option value="資產管理">資產管理</option>
+                      　<option value="保全管理">保全管理</option>
+                      </select>
+                    </div>
+                </div></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"><div class="item">
+                  <span class="important">諮詢內容</span><br><textarea rows="5" placeholder="內容敘述"></textarea>
+                </div></div>
+                <div class="col-xs-12"><div style="text-align:center;">
+                  <div class="captcha">
+                    <div class="captcha-input"><input type="text" name="" placeholder="認證碼"></div>
+                    <div class="captcha-img"></div>
+                    <div class="captcha-reload"></div>
+                  </div>
+                  <div class="submit"><button>送出</button></div>
+                </div></div>
               </div>
             </form>
           </div>
@@ -194,6 +218,13 @@
     <script src="../jss/index.js"></script>
     <script type="text/javascript">
       $('#advantage-class-select').selectmenu();
+      $(function(){
+        $('#country-code')
+        .iconselectmenu()
+        .iconselectmenu('menuWidget')
+        .addClass('ui-menu-icons avatar');
+        $('#subject').selectmenu();
+      });
     </script>
   </body>
 </html>

@@ -1934,11 +1934,123 @@ tr .top_title{
 				height: 70px;
 			}
 		}
+		form{
+			margin: 0 auto;
+			width: 290px;
+		}
 		.form{
 			div{text-align: left;}
 			padding: 50px 0px;
+			font-size: 1.6rem;
+			.important:after{
+				content: '◆';
+				font-size: 8px;
+				@include transform(scale(0.66));
+				display: inline-block;
+				margin-left: 5px;
+				color: #c6232f;
+			}
+			input, textarea{
+				border: 1px solid #c9bfb2;
+				width: 100%;
+				padding: 10px 20px;
+			}
+			::-webkit-input-placeholder { /* WebKit browsers */
+			    color: #c9bfb2;
+			}
+			:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			    color: #c9bfb2;
+			}
+			::-moz-placeholder { /* Mozilla Firefox 19+ */
+			    color: #c9bfb2;
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10+ */
+			    color: #c9bfb2;
+			}
+			.ui-selectmenu-button.ui-button{
+				border: 1px solid #c9bfb2;
+				width: 100%;
+			}
+			.ui-button{
+				padding: 12px;
+			}
+			.item{
+				margin: 0 auto;
+				margin-bottom: 35px;
+			}
+			.phone1, .fax1{
+				width: 25%; 
+			}
+			.phone2, .fax2{
+				width: 40%;
+				margin: 0 5%;
+			}
+			.phone3{
+				width: 25%;
+			}
+			.error{
+				color: #c6232f;
+				border: 1px solid #c6232f;
+			}
+			.error-text{
+				font-size: 1.4rem;
+				padding: 0 10px;
+				position: absolute;
+				color: #fff;
+				background-color: #c6232f;
+			}
+			.ui-selectmenu-button.ui-button:focus, input:focus, textarea:focus{
+				@include box-shadow(0px 0px 5px rgba($mainColor,0.5));
+			}
+			.captcha-input{
+				width: 100px;
+				height: 45px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.captcha-img{
+				width: 120px;
+				height: 45px;
+				background-color: #eeeeee;
+				display: inline-block;
+				margin: 0 10px;
+			}
+			.captcha-reload{
+				cursor: pointer;
+				width: 40px;
+				height: 45px;
+				background: url('../images/captcha_reload.png') no-repeat center center;
+				display: inline-block;
+			}
+			button{
+				color: #fff;
+				background-color: $mainColor;
+				width: 140px;
+				height: 40px;
+				border: 0;
+			}
+			.captcha, .submit{
+				vertical-align: top;
+				display: block;
+			}
+			.submit{
+				margin-left: 60px;
+				margin-top: 50px;
+			}
 		}
 	}
+}
+.ui-selectmenu-text{
+	padding-left: 10px;
+}
+.ui-menu .ui-menu-item-wrapper{
+	padding-left: 50px;
+}
+.ui-menu .ui-icon{
+	left: 20px;
+}
+.ui-button:focus .ui-icon, .ui-button .ui-icon{
+	background: url();
 }
 /*------- RWD -------*/
 @media (max-width: $screen-xs-max) {
@@ -2379,8 +2491,18 @@ tr .top_title{
 				}
 			}
 			.form{
-				padding: 50px 140px;
+				padding: 50px 80px;
+				.captcha, .submit{
+					display: inline-block;
+				}
+				.submit{
+					margin-top: 0px;
+				}
+				.item{
+					width: 290px;
+				}
 			}
+			form{width: 100%;}
 		}
 	}
 }
@@ -2835,7 +2957,14 @@ tr .top_title{
 			}
 			.form{
 				padding: 50px 80px;
+				.captcha, .submit{
+					display: inline-block;
+				}
+				.submit{
+					margin-top: 0px;
+				}
 			}
+			form{width: 100%;}
 		}
 	}
 }
@@ -3311,7 +3440,14 @@ tr .top_title{
 			}
 			.form{
 				padding: 50px 80px;
+				.captcha, .submit{
+					display: inline-block;
+				}
+				.submit{
+					margin-top: 0px;
+				}
 			}
+			form{width: 100%;}
 		}
 	}
 }
