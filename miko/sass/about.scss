@@ -1,0 +1,145 @@
+$screen-pc-min: 1280px;
+$pc-inner-width: 1235px;
+@import "compass/css3";
+
+header {
+	.slick-items {
+		img {
+			width: 100%;
+		}
+	}
+	.slick-dots {
+		text-align: right;
+		margin-top: 5px;
+		li {
+			display: inline-block;
+			margin: 0 2px;
+			button {
+	            border: 0;
+	            background: transparent;
+	            height: 7px;
+	            width: 7px;
+	            outline: none;
+	            line-height: 0px;
+	            font-size: 0px;
+	            color: transparent;
+	            cursor: pointer;
+	            background: url(../images/icon/slick_dots.png) no-repeat;
+	            background-position: 0 0;
+	            padding: 0;
+	            margin: 0;
+	        }
+		}
+		.slick-active {
+	        button {
+	            background: url(../images/icon/slick_dots.png) no-repeat;
+	            background-position: -7px 0;
+	        }
+	    }
+	}
+}
+
+@media (min-width: $screen-pc-min) {
+	header {
+		width: $pc-inner-width;
+		margin: 0 auto;
+		.slick-dots {
+			margin-top: 16px;
+			li {
+				margin: 0 7px;
+				button {
+					height: 24px;
+	            	width: 24px;
+	            	background: url(../images/icon/slick_dots_pc.png) no-repeat;
+	            	background-position: 0 0;
+				}
+			}
+			.slick-active {
+		        button {
+		            background: url(../images/icon/slick_dots_pc.png) no-repeat;
+		            background-position: -24px 0;
+		        }
+		    }
+		}
+	}
+}
+
+main {
+	width: calc(100% - 30px);
+	margin: 0 auto;
+	padding: 0 15px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	.title {
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		img {
+			width: 20px;
+			margin-right: 10px;
+		}
+	}
+	.content {
+		margin: 15px 0;
+		display: flex;
+		align-items: flex-start;
+		.img {
+			width: 150px;
+			text-align: center;
+			img {
+				width: 100%;
+			}
+			img.logo {
+				width: 100px;
+				margin-bottom: 20px;
+			}
+		}
+		.text {
+			width: calc(100% - 150px);
+			font-size: 1.2rem;
+			line-height: 150%;
+			padding-left: 10px;
+		}
+		.img2 {
+			width: 100%;
+		}
+		iframe.map {
+			width: 100%;
+			height: 100vw;
+		}
+	}
+}
+
+@media (min-width: $screen-pc-min) {
+	main {
+		width: $pc-inner-width;
+		padding: 0px;
+		padding-top: 20px;
+		padding-bottom: 180px;
+		.title {
+			font-size: 3.8rem;
+			img {
+				width: 81px;
+				margin-right: 25px;
+			}
+		}
+		.content {
+			margin-top: 50px;
+			margin-bottom: 70px;
+			.img {
+				width: 510px;
+				img.logo {
+					display: none;
+				}
+			}
+			.text {
+				width: calc(100% - 510px);
+				font-size: 2.5rem;
+				padding-left: 30px;
+			}
+			iframe.map {
+				height: 650px;
+			}
+		}
+	}
+}

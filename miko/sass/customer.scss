@@ -1,0 +1,72 @@
+$screen-pc-min: 1280px;
+$pc-inner-width: 1275px;
+@import "compass/css3";
+
+main {
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	.title {
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		padding-left: 15px;
+		img {
+			margin-right: 5px;
+			width: 16px;
+		}
+	}
+	.list {
+		padding-top: 15px;
+	}
+	.item {
+		float: left;
+		width: calc((100% - 20px) / 2);
+		margin: 0 5px;
+		font-size: 1.2rem;
+	}
+	.item__img {
+		img {
+			width: 100%;
+		}
+	}
+	.item__text {
+		text-align: center;
+		padding: 15px 0;
+	}
+	.list:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}
+
+@media (min-width: $screen-pc-min) {
+	main {
+		width: $pc-inner-width;
+		.title {
+			font-size: 3.3rem;
+			padding-left: 0px;
+			img {
+				margin-right: 10px;
+				width: 37px;
+			}
+		}
+		.list {
+			padding: 0 10px;
+			padding-top: 65px;
+		}
+		.item {
+			font-size: 2.7rem;
+			width: calc((100% - 60px) / 3);
+			margin: 0 10px;
+		}
+		.item__img {
+			img {
+				border: 3px #CCCCCC solid;
+			}
+		}
+		.item__text {
+			padding: 45px 0;
+		}
+	}
+}

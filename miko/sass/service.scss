@@ -1,0 +1,55 @@
+$screen-pc-min: 1280px;
+$pc-inner-width: 1275px;
+@import "compass/css3";
+
+main {
+	width: calc(100% - 40px);
+	margin: 0 auto;
+	padding-bottom: 30px;
+	.title {
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		img {
+			margin-right: 10px;
+			width: 20px;
+		}
+	}
+	.content {
+		width: 100%;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		img {
+			width: 100%;
+		}
+		img.pc {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: $screen-pc-min) {
+	main {
+		width: $pc-inner-width;
+		padding-bottom: 110px;
+		.title {
+			font-size: 3.4rem;
+			img {
+				margin-right: 20px;
+				width: 49px;
+			}
+		}
+		.content {
+			width: 1100px;
+			margin: 0 auto;
+			margin-top: 90px;
+			margin-bottom: 140px;
+			img.mobile {
+				display: none;
+			}
+			img.pc {
+				display: block;
+			}
+		}
+	}
+}

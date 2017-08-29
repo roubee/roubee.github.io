@@ -1,0 +1,254 @@
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+main .map {
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+main .map__link {
+  font-size: 1.2rem;
+  color: #956135;
+  letter-spacing: 3px;
+}
+main .map__link a, main .map__link a:visited, main .map__link a:hover {
+  color: #956135;
+}
+main .map__link:before {
+  content: '>';
+  color: #000;
+  margin-right: 3px;
+}
+main .img-wrap__current img {
+  width: 100%;
+}
+main .img-wrap__list {
+  margin: 0 5px;
+  margin-top: 15px;
+}
+main .img-wrap__list div {
+  width: calc((100% - 40px) / 4);
+  float: left;
+  margin: 0 5px;
+}
+main .img-wrap__list div img {
+  width: 100%;
+}
+main .img-wrap__list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main .info-wrap {
+  margin-top: 45px;
+  padding: 0 20px;
+}
+main .info-wrap .title {
+  font-size: 2.3rem;
+  line-height: 120%;
+}
+main .info-wrap .code {
+  font-size: 1.6rem;
+  color: #878787;
+  line-height: 200%;
+  padding-top: 20px;
+}
+main .info-wrap .price {
+  color: #E89111;
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+main .info-wrap .price__nt {
+  font-size: 3.5rem;
+  margin-right: 15px;
+}
+main .info-wrap .hint {
+  color: #936134;
+  font-size: 1.9rem;
+  padding-top: 15px;
+}
+main .description {
+  margin-top: 35px;
+  padding: 0 20px;
+}
+main .description .title {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+}
+main .description .img-des {
+  width: 25px;
+  margin-right: 10px;
+}
+main .description .block {
+  margin: 30px 0;
+}
+main .description .img-wrap {
+  display: none;
+}
+main .description .text-wrap {
+  font-size: 1.5rem;
+}
+main .recommend .title {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0 15px;
+  color: #595857;
+}
+main .recommend .img-recommend {
+  width: 28px;
+  margin-right: 5px;
+}
+main .recommend .list {
+  padding: 0 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+main .recommend .list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main .recommend .list__item {
+  float: left;
+  width: calc((100% - 40px) / 2);
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+main .recommend .list__item img {
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  main {
+    width: 1275px;
+  }
+  main .map {
+    padding-left: 0px;
+    margin-bottom: 80px;
+  }
+  main .map__link {
+    font-size: 2.6rem;
+    letter-spacing: 7px;
+  }
+  main .map__link:before {
+    margin-right: 3px;
+  }
+  main .content:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  main .img-wrap {
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+  }
+  main .img-wrap__current {
+    width: 680px;
+  }
+  main .img-wrap__list {
+    width: 170px;
+    margin: 0px;
+  }
+  main .img-wrap__list div {
+    width: 100px;
+    margin: 0px;
+    margin-right: 70px;
+    margin-bottom: 30px;
+    float: none;
+  }
+  main .info-wrap {
+    width: calc(100% - 910px);
+    float: left;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding: 0px;
+  }
+  main .info-wrap .title {
+    font-size: 6rem;
+    border-bottom: 1px solid #808285;
+    padding-bottom: 30px;
+  }
+  main .info-wrap .code {
+    font-size: 3.6rem;
+    line-height: 120%;
+    padding-top: 45px;
+  }
+  main .info-wrap .code span {
+    display: block;
+  }
+  main .info-wrap .price {
+    font-size: 6rem;
+    padding-top: 30px;
+  }
+  main .info-wrap .price__nt {
+    font-size: 8.4rem;
+    margin-right: 35px;
+  }
+  main .info-wrap .hint {
+    font-size: 4.5rem;
+    padding-top: 50px;
+  }
+  main .description {
+    margin-top: 135px;
+    padding: 0px;
+  }
+  main .description .title {
+    font-size: 3.7rem;
+  }
+  main .description .img-des {
+    width: 60px;
+    margin-right: 25px;
+  }
+  main .description .block {
+    margin: 0;
+    margin-top: 40px;
+    padding: 0 100px;
+  }
+  main .description .block:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  main .description .img-wrap {
+    display: block;
+    float: left;
+    width: 680px;
+    margin-right: 40px;
+  }
+  main .description .img-wrap img {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+  }
+  main .description .text-wrap {
+    width: calc(100% - 720px);
+    float: left;
+    font-size: 2.8rem;
+  }
+  main .recommend {
+    margin-top: 110px;
+  }
+  main .recommend .title {
+    font-size: 3.7rem;
+    padding: 0;
+  }
+  main .recommend .img-recommend {
+    width: 61px;
+    margin-right: 25px;
+  }
+  main .recommend .list {
+    margin-top: 90px;
+    padding: 0 75px;
+  }
+  main .recommend .list__item {
+    width: calc((100% - 200px) / 4);
+    margin: 0 25px;
+    margin-bottom: 100px;
+  }
+}
