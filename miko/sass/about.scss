@@ -81,24 +81,24 @@ main {
 	}
 	.content {
 		margin: 15px 0;
-		display: flex;
-		align-items: flex-start;
 		.img {
-			width: 150px;
+			width: 100%;
 			text-align: center;
 			img {
 				width: 100%;
 			}
 			img.logo {
-				width: 100px;
+				width: 100%;
+				max-width: 403px;
+				margin: 0 auto;
 				margin-bottom: 20px;
 			}
 		}
 		.text {
-			width: calc(100% - 150px);
+			width: 100%;
 			font-size: 1.2rem;
 			line-height: 150%;
-			padding-left: 10px;
+			margin-top: 15px;
 		}
 		.img2 {
 			width: 100%;
@@ -124,6 +124,8 @@ main {
 			}
 		}
 		.content {
+			display: flex;
+			align-items: flex-start;
 			margin-top: 50px;
 			margin-bottom: 70px;
 			.img {
@@ -136,6 +138,7 @@ main {
 				width: calc(100% - 510px);
 				font-size: 2.5rem;
 				padding-left: 30px;
+				margin-top: 0px;
 			}
 			iframe.map {
 				height: 650px;
