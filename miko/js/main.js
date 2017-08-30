@@ -2,9 +2,10 @@ var windowWidth = 'innerWidth' in window
     ? window.innerWidth
     : document.documentElement.clientWidth;
 var device = 'mobile';
+var pcSize = 769;
 
 $(function(){
-	if(windowWidth >= 1280){
+	if(windowWidth >= pcSize){
 		device = 'pc';
 	}
 });
@@ -13,7 +14,7 @@ $(window).resize(function(){
 	windowWidth = 'innerWidth' in window
         ? window.innerWidth
         : document.documentElement.clientWidth;
-	if(windowWidth >= 1280){
+	if(windowWidth >= pcSize){
 		device = 'pc';
 	}else{
 		device = 'mobile';

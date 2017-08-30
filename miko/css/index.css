@@ -29,9 +29,9 @@ header .slick-dots .slick-active button {
   background-position: -7px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   header {
-    width: 1235px;
+    width: 66%;
     margin: 0 auto;
   }
   header .slick-dots {
@@ -107,9 +107,9 @@ main .product-item__mask {
   display: none;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   main {
-    width: 1235px;
+    width: 66%;
     padding-bottom: 70px;
   }
   main .title-wrap {

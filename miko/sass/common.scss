@@ -1,5 +1,6 @@
-$screen-pc-min: 1280px;
-$pc-inner-width: 1235px;
+$screen-pc-min: 769px;
+$screen-pc-bigger-min: 1280px;
+$pc-inner-width: 66%;
 @import "compass/reset";
 
 html {
@@ -9,6 +10,7 @@ html {
 body {
 	font-size: 1.4rem;
 	font-family: Microsoft JhengHei, "微軟正黑體", Arial, sans-serif;
+	word-break: break-all;
 }
 
 a, a:visited, a:hover {
@@ -27,7 +29,7 @@ nav {
 	.top-wrap {
 		padding: 20px 0;
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 	}
 	.btn-hamburger {
 		cursor: pointer;
@@ -49,11 +51,11 @@ nav {
 	}
 	.counter {
 		display: none;
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 		color: #241916;
 		margin-top: 20px;
 		span {
-			font-size: 5rem;
+			font-size: 2.2rem;
 			color: #E5AB38;
 			font-weight: bold;
 			margin-left: 15px;
@@ -86,6 +88,9 @@ nav {
 	.menu-list__icon {
 		width: 50px;
 		text-align: center;
+	}
+	.menu-list__icon2, .menu-list__icon2--active {
+		display: none;
 	}
 	.search-wrap--mobile {
 		display: flex;
@@ -125,18 +130,24 @@ nav {
 			display: none;
 		}
 		.logo {
-			width: 403px;
-			margin-left: 50px;
+			width: 100%;
+			margin-left: 4%;
+			max-width: 403px;
+		}
+		.logo-wrap {
+			display: inline-table;
+			width: 32%;
 		}
 		.btn-line {
-			margin-right: 50px;
+			margin-right: 2%;
 			img {
-				width: 146px;
+				width: 80px;
 			}
 		}
 		.counter {
 			display: flex;
 			align-items: center;
+			margin-top: 10px;
 		}
 		.bottom-wrap {
 			position: relative;
@@ -154,10 +165,18 @@ nav {
 			li {
 				display: inline-block;
 				padding: 0px;
+				width: calc(100% / 6);
 			}
 		}
 		.menu-list__icon {
 			display: none;
+		}
+		.menu-list__icon2 {
+			width: 100%;
+			display: block;
+		}
+		.menu-list__icon2--active {
+			width: 100%;
 		}
 		.search-wrap--mobile {
 			display: none;
@@ -166,28 +185,29 @@ nav {
 			display: flex;
 			justify-content: space-between;
 			align-self: flex-end;
-			margin-left: 100px;
-			margin-bottom: 10px;
-			height: 35px;
+			margin-left: auto;
+			margin-bottom: 5px;
+			height: 22px;
 			background-color: #fff;
+			width: 25%;
 		}
 		.search-input {
 			border: 2px solid #000;
 			height: 100%;
-			width: 200px;
+			width: calc(100% - 41px);
 			padding: 0px;
-			font-size: 1.8rem;
+			font-size: 1.4rem;
 		}
 		.search-btn {
 			border: 2px solid #000;
 			border-left: 0px;
-			width: 75px;
+			width: 35px;
 			background: url(../images/icon/search.png) no-repeat center;
-			background-size: 28px auto;
+			background-size: 14px auto;
 		}
 		.menu-list__item {
-			width: 150px;
-			height: 137px;
+			width: 100%;
+			max-width: 150px;
 			display: block;
 			text-align: center;
 			span {
@@ -195,34 +215,43 @@ nav {
 				padding-top: 90px;
 				padding-right: 9px;
 				color: #241916;
-			}
-			.menu-list__item--active {
-				color: #9FA0A0;
+				display: none;
 			}
 		}
-		.menu-list__item1 {
-			background: url(../images/icon/menu_item1_pc.png) no-repeat center;
+		.hide {
+			display: none;
 		}
-		.menu-list__item2 {
-			background: url(../images/icon/menu_item2_pc.png) no-repeat center;
+		.show {
+			display: block
 		}
-		.menu-list__item3 {
-			width: 151px;
-			height: 138px;
-			background: url(../images/icon/menu_item3_pc.png) no-repeat center;
+	}
+}
+
+@media (min-width: $screen-pc-bigger-min) {
+	nav {
+		.search-wrap--pc {
+			height: 35px;
+			margin-bottom: 10px;
 		}
-		.menu-list__item4 {
-			background: url(../images/icon/menu_item4_pc.png) no-repeat center;
+		.search-input {
+			width: calc(100% - 81px);
+			font-size: 1.8rem;
 		}
-		.menu-list__item5 {
-			background: url(../images/icon/menu_item5_pc.png) no-repeat center;
+		.search-btn {
+			width: 75px;
+			background: url(../images/icon/search.png) no-repeat center;
+			background-size: 28px auto;
 		}
-		.menu-list__item6 {
-			width: 138px;
-			height: 137px;
-			background: url(../images/icon/menu_item6_pc.png) no-repeat center;
+		.counter {
+			font-size: 1.8rem;
+			margin-top: 20px;
 			span {
-				padding-right: 0px;
+				font-size: 5rem;
+			}
+		}
+		.btn-line {
+			img {
+				width: 146px;
 			}
 		}
 	}
@@ -255,7 +284,7 @@ footer {
 			display: block;
 			background-color: #F9F7F4;
 			border-top: 3px solid #DCDDDD;
-			height: 290px;
+			height: 210px;
 			.link-list {
 				position: absolute;
     			left: 0;
@@ -263,40 +292,40 @@ footer {
     			z-index: 1;
 				text-align: center;
 				margin: auto;
-				margin-top: 110px;
-				width: 850px;
+				margin-top: 70px;
+				width: 50%;
 				display: flex;
 				justify-content:space-around;
 				li {
 					display: inline-block;
-					font-size: 2.2rem;
+					font-size: 1.6rem;
 				}
 			}
 			.social-link {
 				position: absolute;
-				top: 60px;
+				top: 50px;
 				width: $pc-inner-width;
 				text-align: right;
 				left: 0;
 				right: 0;
 				margin: auto;
 				a:first-child {
-					margin-right: 15px;
+					margin-right: 5px;
+				}
+				.fb, .line {
+					width: 30px;
 				}
 			}
 			.btn-totop {
 				position: absolute;
 				top: -3px;
-				width: 100%;
-				max-width: 1480px;
-				height: 66px;
-				left: 0;
-				right: 0;
-				margin: auto;
+				height: 36px;
+				right: 9%;
 				.ui {
-					width: 75px;
+					width: 40px;
 					height: 100%;
 					background: url(../images/icon/arrow_totop.png) no-repeat center;
+					background-size: 100% auto;
 					cursor: pointer;
 					float: right;
 				}
@@ -312,22 +341,64 @@ footer {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			font-size: 2.2rem;
+			font-size: 1.6rem;
 			line-height: 160%;
 			max-width: 1580px;
 			margin: auto;
+			width: 83%;
+			.img-wrap {
+				width: 20%;
+				margin-right: 2%;
+			}
 			.logo {
-				width: 337px;
+				width: 100%;
+				max-width: 337px;
 				margin-right: 30px;
 				margin-bottom: 15px;
 			}
-			.info-wra {
+			.info-wrap {
+				width: 78%;
 				display: flex;
-				padding: 50px 0px;
+				padding: 30px 0px;
 				div:first-child {
-					margin-right: 60px;
+					margin-right: 5%;
 				}
 			}
 		}
 	}
+}
+
+@media (min-width: $screen-pc-bigger-min) {
+	footer {
+		.top-wrap {
+			height: 290px;
+			.link-list {
+				width: 40%;
+				margin-top: 110px;
+				li {
+					font-size: 2.2rem;
+				}
+			}
+			.social-link {
+				a:first-child {
+					margin-right: 15px;
+				}
+				.fb, .line {
+					width: 72px;
+				}
+			}
+			.btn-totop {
+				height: 66px;
+				.ui {
+					width: 75px;
+				}
+			}
+		}
+		.bottom-wrap--pc {
+			font-size: 2.2rem;
+			.info-wrap {
+				padding: 50px 0px;
+			}
+		}
+	}	
 }
