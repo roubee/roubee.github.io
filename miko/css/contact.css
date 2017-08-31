@@ -46,8 +46,8 @@ main .text-note:before {
 @media (min-width: 769px) {
   main {
     width: 60%;
-    padding-bottom: 315px;
-    padding-top: 130px;
+    padding-bottom: 15%;
+    padding-top: 8%;
   }
   main .img-wrap {
     position: absolute;
@@ -66,7 +66,7 @@ main .text-note:before {
   main .img-phone {
     width: 13%;
     max-width: 143px;
-    margin: 65px 0;
+    margin: 5% 0;
   }
   main .title {
     display: flex;
@@ -85,7 +85,7 @@ main .text-note:before {
     width: auto;
     display: inline-block;
     text-indent: -4.6rem;
-    margin-top: 150px;
+    margin-top: 8%;
   }
   main .text-note:before {
     content: url(../images/icon/start_pc.png);

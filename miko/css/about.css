@@ -102,8 +102,8 @@ main .content iframe.map {
   main {
     width: 66%;
     padding: 0px;
-    padding-top: 20px;
-    padding-bottom: 180px;
+    padding-top: 1%;
+    padding-bottom: 9%;
   }
   main .title {
     font-size: 3.8rem;
@@ -116,8 +116,8 @@ main .content iframe.map {
   main .content {
     display: flex;
     align-items: flex-start;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
   main .content .img {
     width: 42%;

@@ -50,7 +50,7 @@ main .list:after {
     width: 95%;
     margin: 0 auto;
     padding: 0 10px;
-    padding-top: 65px;
+    padding-top: 4%;
   }
   main .item {
     font-size: 2.7rem;

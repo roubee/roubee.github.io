@@ -1,5 +1,4 @@
 $screen-pc-min: 769px;
-$screen-pc-bigger-min: 1280px;
 $pc-inner-width: 60%;
 @import "compass/css3";
 
@@ -53,8 +52,8 @@ main {
 @media (min-width: $screen-pc-min) {
 	main {
 		width: $pc-inner-width;
-		padding-bottom: 315px;
-		padding-top: 130px;
+		padding-bottom: 15%;
+		padding-top: 8%;
 		.img-wrap {
 			position: absolute;
 			left: 0;
@@ -72,7 +71,7 @@ main {
 		.img-phone {
 			width: 13%;
 			max-width: 143px;
-			margin: 65px 0;
+			margin: 5% 0;
 		}
 		.title {
 			display: flex;
@@ -91,18 +90,12 @@ main {
 			width: auto;
 			display: inline-block;
 			text-indent: -4.6rem;
-			margin-top: 150px;
+			margin-top: 8%;
 		}
 		.text-note:before {
 			content: url(../images/icon/start_pc.png);
 			position: relative;
     		top: 5px;
 		}
-	}
-}
-
-@media (min-width: $screen-pc-bigger-min) {
-	main {
-
 	}
 }

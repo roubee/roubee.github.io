@@ -201,8 +201,8 @@ nav .search-wrap--pc {
     margin: 0 auto;
   }
   nav .top-wrap {
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-top: 10%;
+    padding-bottom: 5%;
   }
   nav .btn-hamburger {
     display: none;
@@ -235,7 +235,7 @@ nav .search-wrap--pc {
     position: relative;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
     display: block;
   }
   nav .menu-list {
@@ -307,16 +307,8 @@ nav .search-wrap--pc {
   }
 }
 @media (min-width: 1280px) {
-  nav .top-wrap {
-    padding-top: 120px;
-    padding-bottom: 60px;
-  }
-  nav .bottom-wrap {
-    margin-bottom: 60px;
-  }
   nav .search-wrap--pc {
     height: 35px;
-    margin-bottom: 10px;
   }
   nav .search-input {
     width: calc(100% - 81px);
@@ -437,7 +429,7 @@ footer .bottom-wrap--pc {
   footer .bottom-wrap--pc .info-wrap {
     width: 78%;
     display: flex;
-    padding: 30px 0px;
+    padding: 4% 0;
   }
   footer .bottom-wrap--pc .info-wrap div:first-child {
     width: 42%;
@@ -460,8 +452,5 @@ footer .bottom-wrap--pc {
   }
   footer .top-wrap .social-link a:first-child {
     margin-right: 15px;
-  }
-  footer .bottom-wrap--pc .info-wrap {
-    padding: 50px 0px;
   }
 }

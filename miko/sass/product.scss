@@ -57,19 +57,19 @@ main {
 		.list {
 			width: 94%;
 			margin: 0 auto;
-			padding-top: 110px;
-			padding-bottom: 200px;
+			padding-top: 8%;
+			padding-bottom: 12%;
 			a {
 				display: inline;
 			}
 		}
 		.item-wrap {
-			width: calc((100% - 160px) / 4);
-			margin: 0 20px;
+			width: calc((100% - 16%) / 4);
+			margin: 0 2%;
 		}
 		.item__text {
 			font-size: 3rem;
-			padding: 50px 0;
+			padding: 15% 0;
 		}
 	}
 }

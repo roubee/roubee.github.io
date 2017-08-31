@@ -110,20 +110,20 @@ main .product-item__mask {
 @media (min-width: 769px) {
   main {
     width: 66%;
-    padding-bottom: 70px;
+    padding-bottom: 9%;
   }
   main .title-wrap {
     font-size: 4rem;
-    padding-top: 40px;
+    padding-top: 4%;
     justify-content: flex-start;
   }
   main .title__img {
     width: 5.6%;
     max-width: 68px;
-    margin-right: 30px;
+    margin-right: 25px;
   }
   main .product-wrap {
-    padding-top: 35px;
+    padding-top: 4%;
   }
   main .product-item {
     margin: 0.5%;

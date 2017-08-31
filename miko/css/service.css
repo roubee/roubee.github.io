@@ -27,13 +27,13 @@ main .content img.pc {
 @media (min-width: 769px) {
   main {
     width: 70%;
-    padding-bottom: 110px;
+    padding-bottom: 5%;
   }
   main .title {
     font-size: 3.4rem;
   }
   main .title img {
-    margin-right: 20px;
+    margin-right: 25px;
     width: 5%;
     max-width: 49px;
   }
@@ -41,8 +41,8 @@ main .content img.pc {
     width: 82%;
     max-width: 1100px;
     margin: 0 auto;
-    margin-top: 90px;
-    margin-bottom: 140px;
+    margin-top: 6%;
+    margin-bottom: 10%;
   }
   main .content img.mobile {
     display: none;
