@@ -1,5 +1,5 @@
-$screen-pc-min: 1280px;
-$pc-inner-width: 1275px;
+$screen-pc-min: 769px;
+$pc-inner-width: 80%;
 @import "compass/css3";
 
 main {
@@ -136,6 +136,9 @@ main {
 		.map {
 			padding-left: 0px;
 			margin-bottom: 80px;
+			width: 85%;
+    		margin-left: auto;
+    		margin-right: auto;
 		}
 		.map__link {
 			font-size: 2.6rem;
@@ -154,36 +157,42 @@ main {
 			display: flex;
 			flex-direction: row-reverse;
 			justify-content: flex-start;
+
+			width: 54%;
 		}
 		.img-wrap__current {
-			width: 680px;
+			width: 80%;
 		}
 		.img-wrap__list {
-			width: 170px;
+			width: 20%;
 			margin: 0px;
 			div {
-				width: 100px;
+				width: 70%;
 				margin: 0px;
-				margin-right: 70px;
+				margin-right: 30%;
 				margin-bottom: 30px;
 				float: none;
 			}
 		}
 		.info-wrap {
-			width: calc(100% - 910px);
+			width: 39%;
 			float: left;
 			margin-top: 0px;
-			margin-left: 60px;
+			margin-left: 7%;
 			padding: 0px;
 			.title {
 				font-size: 6rem;
 				border-bottom: 1px solid #808285;
-				padding-bottom: 30px
+				padding-bottom: 30px;
+				padding-left: 2%;
+    			padding-right: 2%;
 			}
 			.code {
 				font-size: 3.6rem;
 				line-height: 120%;
 				padding-top: 45px;
+				padding-left: 2%;
+    			padding-right: 2%;
 				span {
 					display: block;
 				}
@@ -191,6 +200,8 @@ main {
 			.price {
 				font-size: 6rem;
 				padding-top: 30px;
+				padding-left: 2%;
+    			padding-right: 2%;
 			}
 			.price__nt {
 				font-size: 8.4rem;
@@ -199,6 +210,8 @@ main {
 			.hint {
 				font-size: 4.5rem;
 				padding-top: 50px;
+				padding-left: 2%;
+    			padding-right: 2%;
 			}
 		}
 		.description {
@@ -208,13 +221,15 @@ main {
 				font-size: 3.7rem;
 			}
 			.img-des {
-				width: 60px;
-				margin-right: 25px;
+				width: 4%;
+				max-width: 60px;
+				margin-right: 2%;
+				margin-left: 2%;
 			}
 			.block {
 				margin: 0;
 				margin-top: 40px;
-				padding: 0 100px;
+				padding: 0 10%;
 			}
 			.block:after {
 				content: '';
@@ -224,8 +239,8 @@ main {
 			.img-wrap {
 				display: block;
 				float: left;
-				width: 680px;
-				margin-right: 40px;
+				width: 50%;
+				margin-right: 3%;
 				img {
 					width: 100%;
 					display: block;
@@ -233,7 +248,7 @@ main {
 				}
 			}
 			.text-wrap {
-				width: calc(100% - 720px);
+				width: 47%;
 				float: left;
 				font-size: 2.8rem;
 			}
@@ -245,16 +260,18 @@ main {
 				padding: 0;
 			}
 			.img-recommend {
-				width: 61px;
-				margin-right: 25px;
+				width: 4%;
+				max-width: 61px;
+				margin-right: 2%;
+				margin-left: 2%;
 			}
 			.list {
 				margin-top: 90px;
-				padding: 0 75px;
+				padding: 0 8%;
 			}
 			.list__item {
-				width: calc((100% - 200px) / 4);
-				margin: 0 25px;
+				width: calc((100% - 16%) / 4);
+				margin: 0 2%;
 				margin-bottom: 100px;
 			}
 		}
