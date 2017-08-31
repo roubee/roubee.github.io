@@ -244,10 +244,16 @@ nav .search-wrap--pc {
     font-size: 2.4rem;
     padding-bottom: 0px;
     border: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   nav .menu-list li {
     display: inline-block;
     padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   nav .menu-list__icon {
     display: none;
