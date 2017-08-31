@@ -176,8 +176,8 @@ nav .search-wrap--pc {
     margin: 0 auto;
   }
   nav .top-wrap {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 90px;
+    padding-bottom: 40px;
   }
   nav .btn-hamburger {
     display: none;
@@ -206,7 +206,7 @@ nav .search-wrap--pc {
     position: relative;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     display: block;
   }
   nav .menu-list {
@@ -279,6 +279,13 @@ nav .search-wrap--pc {
   }
 }
 @media (min-width: 1280px) {
+  nav .top-wrap {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  nav .bottom-wrap {
+    margin-bottom: 60px;
+  }
   nav .search-wrap--pc {
     height: 35px;
     margin-bottom: 10px;
