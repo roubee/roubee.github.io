@@ -29,9 +29,9 @@ header .slick-dots .slick-active button {
   background-position: -7px 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   header {
-    width: 1235px;
+    width: 66%;
     margin: 0 auto;
   }
   header .slick-dots {
@@ -76,6 +76,7 @@ main .content .img {
 }
 main .content .img img {
   width: 100%;
+  display: block;
 }
 main .content .img img.logo {
   width: 100%;
@@ -97,9 +98,9 @@ main .content iframe.map {
   height: 100vw;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   main {
-    width: 1235px;
+    width: 66%;
     padding: 0px;
     padding-top: 20px;
     padding-bottom: 180px;
@@ -108,7 +109,8 @@ main .content iframe.map {
     font-size: 3.8rem;
   }
   main .title img {
-    width: 81px;
+    width: 7.2%;
+    max-width: 81px;
     margin-right: 25px;
   }
   main .content {
@@ -118,15 +120,15 @@ main .content iframe.map {
     margin-bottom: 70px;
   }
   main .content .img {
-    width: 510px;
+    width: 42%;
   }
   main .content .img img.logo {
     display: none;
   }
   main .content .text {
-    width: calc(100% - 510px);
+    width: calc(100% - 42%);
     font-size: 2.5rem;
-    padding-left: 30px;
+    padding-left: 3%;
     margin-top: 0px;
   }
   main .content iframe.map {

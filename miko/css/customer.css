@@ -34,9 +34,9 @@ main .list:after {
   display: block;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   main {
-    width: 1275px;
+    width: 70%;
   }
   main .title {
     font-size: 3.3rem;
@@ -47,6 +47,8 @@ main .list:after {
     width: 37px;
   }
   main .list {
+    width: 95%;
+    margin: 0 auto;
     padding: 0 10px;
     padding-top: 65px;
   }

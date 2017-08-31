@@ -13,14 +13,18 @@ main .title img {
   margin-left: 15px;
 }
 main .list {
+  font-size: 0px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
   padding-top: 15px;
   padding-bottom: 45px;
 }
-main .item {
-  float: left;
+main .item-wrap {
+  display: inline-block;
   width: calc((100% - 20px) / 2);
   margin: 0 5px;
   cursor: pointer;
+  vertical-align: top;
 }
 main .item__img img {
   width: 100%;
@@ -30,30 +34,31 @@ main .item__text {
   padding: 15px 0;
   text-align: center;
 }
-main .list:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   main {
-    width: 1275px;
+    width: 82%;
     padding: 0;
   }
   main .title {
     font-size: 4rem;
   }
   main .title img {
-    width: 62px;
+    width: 4%;
+    max-width: 62px;
     margin-left: 0px;
     margin-right: 25px;
   }
   main .list {
+    width: 94%;
+    margin: 0 auto;
     padding-top: 110px;
     padding-bottom: 200px;
   }
-  main .item {
+  main .list a {
+    display: inline;
+  }
+  main .item-wrap {
     width: calc((100% - 160px) / 4);
     margin: 0 20px;
   }

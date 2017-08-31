@@ -1,5 +1,5 @@
-$screen-pc-min: 1280px;
-$pc-inner-width: 1275px;
+$screen-pc-min: 769px;
+$pc-inner-width: 82%;
 @import "compass/css3";
 
 main {
@@ -16,14 +16,18 @@ main {
 		}
 	}
 	.list {
+		font-size: 0px;
+  		letter-spacing: 0px;
+  		word-spacing: 0px;
 		padding-top: 15px;
 		padding-bottom: 45px;
 	}
-	.item {
-		float: left;
+	.item-wrap {
+		display: inline-block;
 		width: calc((100% - 20px) / 2);
 		margin: 0 5px;
 		cursor: pointer;
+		vertical-align: top;
 	}
 	.item__img {
 		img {
@@ -35,11 +39,6 @@ main {
 		padding: 15px 0;
 		text-align: center;
 	}
-	.list:after {
-		content: '';
-		display: block;
-		clear: both;
-	}
 }
 
 @media (min-width: $screen-pc-min) {
@@ -49,16 +48,22 @@ main {
 		.title {
 			font-size: 4rem;
 			img {
-				width: 62px;
+				width: 4%;
+				max-width: 62px;
 				margin-left: 0px;
 				margin-right: 25px;
 			}
 		}
 		.list {
+			width: 94%;
+			margin: 0 auto;
 			padding-top: 110px;
 			padding-bottom: 200px;
+			a {
+				display: inline;
+			}
 		}
-		.item {
+		.item-wrap {
 			width: calc((100% - 160px) / 4);
 			margin: 0 20px;
 		}

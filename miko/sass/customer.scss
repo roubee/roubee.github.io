@@ -1,5 +1,5 @@
-$screen-pc-min: 1280px;
-$pc-inner-width: 1275px;
+$screen-pc-min: 769px;
+$pc-inner-width: 70%;
 @import "compass/css3";
 
 main {
@@ -52,6 +52,8 @@ main {
 			}
 		}
 		.list {
+			width: 95%;
+			margin: 0 auto;
 			padding: 0 10px;
 			padding-top: 65px;
 		}

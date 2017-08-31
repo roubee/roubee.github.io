@@ -43,37 +43,47 @@ main .text-note:before {
   content: url(../images/icon/start.png);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 769px) {
   main {
-    width: 1235px;
+    width: 60%;
     padding-bottom: 315px;
     padding-top: 130px;
   }
+  main .img-wrap {
+    position: absolute;
+    left: 0;
+    width: 14%;
+  }
   main .img-line {
-    width: 166px;
-    margin-right: 155px;
+    width: 100%;
+    max-width: 166px;
     margin-bottom: 0px;
   }
   main .img-qrcode {
-    width: 375px;
+    width: 30.6%;
+    max-width: 375px;
   }
   main .img-phone {
-    width: 143px;
+    width: 13%;
+    max-width: 143px;
     margin: 65px 0;
   }
   main .title {
     display: flex;
     align-items: center;
+    position: relative;
   }
   main .text-main {
-    font-size: 7rem;
+    margin: 0 auto;
+    font-size: 6rem;
   }
   main .text-smaller {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   main .text-note {
-    font-size: 4.8rem;
-    width: 410px;
+    font-size: 4.5rem;
+    width: auto;
+    display: inline-block;
     text-indent: -4.6rem;
     margin-top: 150px;
   }
