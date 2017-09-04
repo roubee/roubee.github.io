@@ -59,7 +59,8 @@ main {
   padding-bottom: 40px;
 }
 main .title {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
 }
@@ -77,12 +78,6 @@ main .content .img {
 main .content .img img {
   width: 100%;
   display: block;
-}
-main .content .img img.logo {
-  width: 100%;
-  max-width: 403px;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }
 main .content .text {
   width: 100%;
@@ -121,9 +116,6 @@ main .content iframe.map {
   }
   main .content .img {
     width: 42%;
-  }
-  main .content .img img.logo {
-    display: none;
   }
   main .content .text {
     width: calc(100% - 42%);

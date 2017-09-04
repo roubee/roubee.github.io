@@ -6,10 +6,12 @@ main {
 main .title {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 main .title img {
   width: 20px;
+  margin-right: 10px;
 }
 main .list {
   font-size: 0px;

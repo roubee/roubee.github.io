@@ -71,7 +71,8 @@ main {
 	padding-top: 10px;
 	padding-bottom: 40px;
 	.title {
-		font-size: 1.2rem;
+		font-size: 2rem;
+		font-weight: bold;
 		display: flex;
 		align-items: center;
 		img {
@@ -87,12 +88,6 @@ main {
 			img {
 				width: 100%;
 				display: block;
-			}
-			img.logo {
-				width: 100%;
-				max-width: 403px;
-				margin: 0 auto;
-				margin-bottom: 20px;
 			}
 		}
 		.text {
@@ -132,9 +127,6 @@ main {
 			margin-bottom: 4%;
 			.img {
 				width: 42%;
-				img.logo {
-					display: none;
-				}
 			}
 			.text {
 				width: calc(100% - 42%);

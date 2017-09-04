@@ -6,9 +6,9 @@ $pc-inner-width: 70%;
 main {
 	width: calc(100% - 40px);
 	margin: 0 auto;
-	padding-bottom: 30px;
 	.title {
-		font-size: 1.2rem;
+		font-size: 2rem;
+		font-weight: bold;
 		display: flex;
 		align-items: center;
 		img {
@@ -19,7 +19,7 @@ main {
 	.content {
 		width: 100%;
 		margin-top: 20px;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
 		img {
 			width: 100%;
 		}

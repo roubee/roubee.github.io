@@ -7,18 +7,21 @@ main {
 	margin: 0 auto;
 	text-align: center;
 	padding-bottom: 85px;
-	.img-line {
-		width: 42px;
-		margin-bottom: 10px;
+	.arrow {
+		width: 10%;
+		max-width: 58px;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 3%;
 	}
 	.img-qrcode {
 		width: 127px;
+		margin-bottom: 10%;
+		cursor: pointer;
 	}
 	.img-phone {
 		width: 43px;
 		margin: 35px 0;
-	}
-	.title {
 	}
 	.text-main {
 		font-size: 2.5rem;
@@ -53,30 +56,15 @@ main {
 	main {
 		width: $pc-inner-width;
 		padding-bottom: 15%;
-		padding-top: 8%;
-		.img-wrap {
-			position: absolute;
-			left: 0;
-			width: 14%;
-		}
-		.img-line {
-			width: 100%;
-			max-width: 166px;
-			margin-bottom: 0px;
-		}
+		padding-top: 4%;
 		.img-qrcode {
 			width: 30.6%;
-			max-width: 375px;
+			max-width: 255px;
 		}
 		.img-phone {
 			width: 13%;
 			max-width: 143px;
 			margin: 5% 0;
-		}
-		.title {
-			display: flex;
-			align-items: center;
-			position: relative;
 		}
 		.text-main {
 			margin: 0 auto;
