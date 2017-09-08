@@ -31,11 +31,10 @@ $('#nav__btn-hamburger').click(function(){
 	if(device == 'mobile'){
 		$('#nav__bottom-wrap').toggle();
 	}
-	$('#nav__bottom-wrap').show();
-	// return false;
+	return false;
 });
 
 $('#footer__btn-totop').click(function(){
 	$('html,body').animate({scrollTop: 0});
-	// return false;
+	return false;
 });
