@@ -90,6 +90,10 @@ body {
   word-break: break-all;
 }
 
+input, textarea {
+  font-size: initial;
+}
+
 a, a:visited, a:hover {
   color: #000;
   text-decoration: none;
