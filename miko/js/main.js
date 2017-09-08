@@ -27,12 +27,12 @@ $(window).resize(function(){
 	}
 });
 
-$('#nav__btn-hamburger').click(function(){
-	if(device == 'mobile'){
-		$('#nav__bottom-wrap').toggle();
-	}
-	return false;
-});
+// $('#nav__btn-hamburger').click(function(){
+// 	if(device == 'mobile'){
+// 		$('#nav__bottom-wrap').toggle();
+// 	}
+// 	return false;
+// });
 
 $('#footer__btn-totop').click(function(){
 	$('html,body').animate({scrollTop: 0});
