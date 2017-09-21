@@ -25,6 +25,9 @@ main {
 		margin: 0 5px;
 		font-size: 1.2rem;
 	}
+	.item:nth-child(2n+1) {
+		clear: both;
+	}
 	.item__img {
 		img {
 			width: 100%;
@@ -33,6 +36,7 @@ main {
 	.item__text {
 		text-align: center;
 		padding: 15px 0;
+		height:  42px;
 	}
 	.list:after {
 		content: '';
@@ -62,6 +66,12 @@ main {
 			font-size: 2.7rem;
 			width: calc((100% - 60px) / 3);
 			margin: 0 10px;
+		}
+		.item:nth-child(2n+1) {
+			clear: none;
+		}
+		.item:nth-child(3n+1) {
+			clear: both;
 		}
 		.item__img {
 			img {
