@@ -69,6 +69,9 @@ main .info-wrap .hint {
   font-size: 1.9rem;
   padding-top: 15px;
 }
+main .info-wrap .tag, main .info-wrap .select-color {
+  display: none;
+}
 main .description {
   margin-top: 35px;
   padding: 0 20px;
@@ -168,7 +171,7 @@ main .recommend .list__item__mask {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
-    width: 54%;
+    width: 60%;
   }
   main .img-wrap__current {
     width: 80%;
@@ -185,10 +188,10 @@ main .recommend .list__item__mask {
     float: none;
   }
   main .info-wrap {
-    width: 39%;
+    width: 36%;
     float: left;
     margin-top: 0px;
-    margin-left: 7%;
+    margin-left: 4%;
     padding: 0px;
   }
   main .info-wrap .title {
@@ -220,9 +223,49 @@ main .recommend .list__item__mask {
   }
   main .info-wrap .hint {
     font-size: 4rem;
-    padding-top: 10%;
+    padding-top: 6%;
     padding-left: 2%;
     padding-right: 2%;
+  }
+  main .info-wrap .tag {
+    padding-top: 6%;
+    display: flex;
+    align-items: center;
+    color: #898989;
+    font-size: 2.7rem;
+  }
+  main .info-wrap .tag .tag__img {
+    margin-right: 10px;
+  }
+  main .info-wrap .tag a, main .info-wrap .tag a:visited, main .info-wrap .tag a:hover {
+    color: #898989;
+    font-size: 2.7rem;
+  }
+  main .info-wrap .select-color {
+    padding-top: 6%;
+    display: block;
+    color: #F39800;
+    font-size: 3.3rem;
+  }
+  main .info-wrap .select-color__block {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+  }
+  main .info-wrap .select-color__block__img {
+    float: left;
+    cursor: pointer;
+    width: calc((100% - 96px) / 8);
+    max-width: 50px;
+    height: auto;
+    margin: 4px;
+    border: 2px solid #fff;
+  }
+  main .info-wrap .select-color__block__img:hover {
+    border: 2px solid #cd333e;
+  }
+  main .info-wrap .select-color__block__img:nth-child(8n+1) {
+    clear: both;
   }
   main .description {
     margin-top: 10%;

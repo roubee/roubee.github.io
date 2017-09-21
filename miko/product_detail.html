@@ -137,6 +137,43 @@
 				<div class="hint">
 					*批發報價請來電洽詢
 				</div>
+				<div class="tag">
+					<img src="images/tag.png" class="tag__img">
+					<div>
+						<a href="#">#抱枕枕心</a>
+						<a href="#">#抱枕</a>
+						<a href="#">#造型抱枕</a>
+					</div>
+				</div>
+				<div class="select-color">
+					<div class="select-color__title">*請選擇顏色:</div>
+					<div class="select-color__block">
+						<img src="images/product/1.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__block__img" data-img="images/product5_3.jpg">
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="description">
@@ -234,6 +271,11 @@
 		$('.product__img').on('click mouseenter', function () {
     		var src = $(this).attr('src');
 			$('#product__img--current').attr('src', src);
+		});
+
+		$('.select-color__block__img').hover(function(){
+			var img = $(this).attr('data-img');
+			$('#product__img--current').attr('src', img);
 		});
 	</script>
 </body>
