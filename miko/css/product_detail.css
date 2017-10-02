@@ -26,7 +26,7 @@ main .img-wrap__slick img {
   user-select: none;
 }
 main .img-wrap__slick .slick-prev, main .img-wrap__slick .slick-next {
-  width: 50px;
+  width: 60px;
   height: 100%;
   line-height: 0px;
   font-size: 0px;
