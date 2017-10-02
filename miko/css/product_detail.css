@@ -19,6 +19,12 @@ main .map__link:before {
   color: #000;
   margin-right: 3px;
 }
+main .img-wrap__slick img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 main .img-wrap__slick .slick-prev, main .img-wrap__slick .slick-next {
   width: 50px;
   height: 100%;
