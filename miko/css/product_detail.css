@@ -20,8 +20,8 @@ main .map__link:before {
   margin-right: 3px;
 }
 main .img-wrap__slick .slick-prev, main .img-wrap__slick .slick-next {
-  width: 11px;
-  height: 31px;
+  width: 50%;
+  height: 100%;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
@@ -34,16 +34,16 @@ main .img-wrap__slick .slick-prev, main .img-wrap__slick .slick-next {
   z-index: 1;
 }
 main .img-wrap__slick .slick-prev {
-  background: url(../images/arrows.png) no-repeat;
-  background-position: 0 0;
+  background: url(../images/arrow_prev.png) no-repeat;
+  background-position: left center;
   top: 0;
   bottom: 0;
   margin: auto;
   left: 2px;
 }
 main .img-wrap__slick .slick-next {
-  background: url(../images/arrows.png) no-repeat;
-  background-position: -11px 0;
+  background: url(../images/arrow_next.png) no-repeat;
+  background-position: right center;
   top: 0;
   bottom: 0;
   margin: auto;
