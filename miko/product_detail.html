@@ -115,10 +115,18 @@
 		</div>
 		<div class="content">
 			<div class="img-wrap">
-				<div class="img-wrap__current">
+				<!-- 商品大圖手機版 -->
+				<div class="img-wrap--mobile" id="product__slick">
+					<img src="images/product5_1.jpg">
+					<img src="images/product5_2.jpg">
+					<img src="images/product5_3.jpg">
+					<img src="images/product5_4.jpg">
+				</div>
+				<!-- 商品大圖電腦版 -->			
+				<div class="img-wrap__current img-wrap--pc">
 					<img src="images/product5_1.jpg" id="product__img--current">
 				</div>
-				<div class="img-wrap__list">
+				<div class="img-wrap__list img-wrap--pc">
 					<div><img src="images/product5_1.jpg" class="product__img"></div>
 					<div><img src="images/product5_2.jpg" class="product__img"></div>
 					<div><img src="images/product5_3.jpg" class="product__img"></div>
@@ -130,6 +138,36 @@
 				<div class="code">
 					產品編號:<span>D70/D70-1</span><br>
 					國際條碼:<span>88000718/88001722</span>
+				</div>
+				<!-- 布花手機版 -->
+				<div class="select-color__mobile">
+					<div class="select-color__mobile__title">*布花色:</div>
+					<div class="select-color__mobile__block">
+						<img src="images/product/1.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/1.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/2.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+						<img src="images/product/3.jpg" class="select-color__mobile__block__img" data-img="images/product5_2.jpg">
+						<img src="images/product/4.jpg" class="select-color__mobile__block__img" data-img="images/product5_3.jpg">
+					</div>
 				</div>
 				<div class="price">
 					<span class="price__nt">NT</span>$--
@@ -145,6 +183,7 @@
 						<a href="#">#造型抱枕</a>
 					</div>
 				</div>
+				<!-- 布花電腦版 -->
 				<div class="select-color">
 					<div class="select-color__title">*請選擇顏色:</div>
 					<div class="select-color__block">
@@ -266,6 +305,7 @@
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script>
 		$('.product__img').on('click mouseenter', function () {
@@ -277,6 +317,13 @@
 			var img = $(this).attr('data-img');
 			$('#product__img--current').attr('src', img);
 		});
+
+		$('#product__slick').slick({
+			arrows: true,
+			dots: false,
+			autoplay: false
+		});
+		$('#product__slick').on('swipe', function(event, slick, direction){});
 	</script>
 </body>
 </html>
