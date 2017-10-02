@@ -20,7 +20,7 @@ main .map__link:before {
   margin-right: 3px;
 }
 main .img-wrap__slick .slick-prev, main .img-wrap__slick .slick-next {
-  width: 50%;
+  width: 50px;
   height: 100%;
   line-height: 0px;
   font-size: 0px;
