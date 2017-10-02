@@ -22,6 +22,38 @@ main {
 		color: #000;
 		margin-right: 3px;
 	}
+	.img-wrap__slick {
+		.slick-prev, .slick-next {
+			width: 11px;
+			height: 31px;
+			line-height: 0px;
+    		font-size: 0px;
+    		cursor: pointer;
+    		background: transparent;
+    		color: transparent;
+    		padding: 0;
+    		border: none;
+    		outline: none;
+    		position: absolute;
+    		z-index: 1;
+		}
+		.slick-prev {
+			background: url(../images/arrows.png) no-repeat;
+			background-position: 0 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			left: 2px;
+		}
+		.slick-next {
+			background: url(../images/arrows.png) no-repeat;
+			background-position: -11px 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			right: 2px;
+		}
+	}
 	.img-wrap--pc {
 		display: none;
 	}
