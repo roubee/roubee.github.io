@@ -1,0 +1,237 @@
+/*todo*/
+/*css3 support*/
+
+.pricing-title {
+	position: relative;
+	width: 100%;
+	height: 224px;
+	font-size: 3.2rem;
+	font-weight: 500;
+	letter-spacing: 0.9px;
+	color: #ffffff;
+	background: url(../images/pricing/title.jpg) no-repeat center;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 769px) {
+	.pricing-title {
+		background: url(../images/pricing/title@2x.jpg) no-repeat center;
+		background-size: cover;
+	}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 769px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 769px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 769px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 769px),
+only screen and (                min-resolution: 192dpi) and (min-width: 769px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 769px) { 
+	.pricing-title {
+		background: url(../images/pricing/title@3x.jpg) no-repeat center;
+		background-size: cover;
+	}
+}
+
+.pricing-title .mask {
+	background-color: rgba(74, 74, 74, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pricing-plans {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.pricing-plans h1 {
+	margin-top: 72px;
+	margin-bottom: 10px;
+}
+
+.pricing-plans__content {
+	position: relative;
+	margin-top: 73px;
+	margin-bottom: 126px;
+	text-align: center;
+}
+
+.pricing-plans__content .title {
+	font-size: 2.4rem;
+	font-weight: 500;
+	letter-spacing: 0.7px;
+	color: #2275d7;
+}
+
+.pricing-plans__content p {
+	font-size: 1.6rem;
+	color: #4a4a4a;
+	margin-top: 17px;
+	margin-bottom: 32px;
+}
+
+.pricing-plans__content .price {
+	font-size: 6.4rem;
+	font-weight: 500;
+	letter-spacing: 0.9px;
+	color: #2275d7;
+}
+
+.pricing-plans__content .price--del {
+	font-size: 4rem;
+	letter-spacing: 0.6px;
+}
+
+.pricing-plans__content .price:after {
+	content: ' ';
+	font-size: 1.8rem;
+}
+
+.pricing-plans__content .price--red {
+	font-size: 4.8rem;
+	color: #e44d42;
+	letter-spacing: 0.7px;
+}
+
+.pricing-plans__content ul {
+	width: 208px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.pricing-plans__content li {
+	border-bottom: 1px dashed #979797;
+	padding: 10px 0;
+	line-height: 165%;
+}
+
+.pricing-plans__content li:last-child {
+	border: 0px;
+}
+
+.pricing-plans__content a,
+.pricing-plans__content a:hover,
+.pricing-plans__content a:active {
+	color: #2275d7;
+}
+
+.pricing-plans__content .ui-button {
+	margin: 0 auto;
+	margin-top: 35px;
+}
+
+.pricing-plans__free {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 364px;
+	height: 523px;
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 1px 1px 6px 0 #d5d2d2;
+  	left: -180px;
+}
+
+.pricing-plans__free .title {
+	padding-top: 46px;
+	margin-bottom: 31px;
+}
+
+.pricing-plans__free .price-wrap {
+	padding-left: 60px;
+}
+
+.pricing-plans__free .ui-button {
+	margin-top: 18px;
+}
+
+.pricing-plans__pay {
+	position: relative;
+	width: 384px;
+	height: 605px;
+	background-color: #fff;
+  	border-radius: 10px;
+	box-shadow: 3px 11px 25px 0 #c4c4c4;
+	left: 180px;
+}
+
+.pricing-plans__pay .title {
+	padding-top: 57px;
+}
+
+.pricing-plans__pay del {
+	text-decoration: none;
+	position: relative;
+}
+
+.pricing-plans__pay del:after {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0%;
+	bottom: 50%;
+	border-top: solid 2px #e44d42;
+	border-bottom: solid 2px #e44d42;
+	display: block;
+	content: '';
+}
+
+.pricing-plans__pay .price-wrap {
+	margin-top: 15px;
+}
+
+.pricing-plans__pay li {
+	font-weight: 500;
+}
+
+.pricing-faqs {
+	position: relative;
+	width: 100%;
+	height: 582px;
+	background: url(../images/pricing/faqs.jpg) no-repeat center;
+	background-size: cover;
+}
+
+@media only screen and (min-width: 769px) {
+	.pricing-faqs {
+		background: url(../images/pricing/faqs@2x.jpg) no-repeat center;
+		background-size: cover;
+	}
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 769px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 769px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 769px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 769px),
+only screen and (                min-resolution: 192dpi) and (min-width: 769px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 769px) { 
+	.pricing-faqs {
+		background: url(../images/pricing/faqs@3x.jpg) no-repeat center;
+		background-size: cover;
+	}
+}
+
+.pricing-faqs .mask {
+	background-color: rgba(246, 247, 249, 0.7);
+}
+
+.pricing-faqs h1 {
+	position: absolute;
+	right: 208px;
+	top: 120px;
+	width: 417px;
+}
+
+.pricing-faqs p {
+	position: absolute;
+	right: 208px;
+	top: 181px;
+	width: 417px;
+	color: #4a4a4a;
+	line-height: 145%;
+}

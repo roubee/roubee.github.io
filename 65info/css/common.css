@@ -1,0 +1,66 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: PingFangTC, Helvetica,Arial, "微軟正黑體", "新細明體", sans-serif;
+	font-size: 1.8rem;
+	font-weight: 300;
+	color: #6e6c6c;
+	letter-spacing: 0.5px;
+}
+
+.relative-block {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;		
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 500;
+	letter-spacing: 0.7px;
+	color: #4a4a4a;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ui-button {
+	width: 165px;
+	height: 55px;
+	border-radius: 50px;
+	border: solid 1px #2275d7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	font-weight: 600;
+	letter-spacing: 1.8px;
+	color: #2275d7;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.ui-button--recommend {
+	color: #fff;
+	background-color: #2275d7;
+}
