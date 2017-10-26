@@ -1,10 +1,10 @@
 .pricing-title {
 	position: relative;
 	width: 100%;
-	height: 224px;
-	font-size: 3.2rem;
+	height: 112px;
+	font-size: 1.8rem;
 	font-weight: 500;
-	letter-spacing: 0.9px;
+	letter-spacing: 0.5px;
 	color: #ffffff;
 	background: url(../images/pricing/title.jpg) no-repeat center;
 	background-size: cover;
@@ -14,6 +14,9 @@
 	.pricing-title {
 		background: url(../images/pricing/title@2x.jpg) no-repeat center;
 		background-size: cover;
+		font-size: 3.2rem;
+		letter-spacing: 0.9px;
+		height: 224px;
 	}
 }
 
@@ -52,62 +55,117 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding: 0 35px;
+	width: 76.5%;
+	margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
 	.pricing-plans {
-		padding: 0;
+		width: 100%;
 	}
 }
 
 .pricing-plans h1 {
-	margin-top: 72px;
-	margin-bottom: 10px;
+	margin-top: 32px;
+	margin-bottom: 6px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans h1 {
+		margin-top: 72px;
+		margin-bottom: 10px;
+	}
+}
+
+.pricing-plans p {
+	font-size: 1.4rem;
+	letter-spacing: 0.4px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans p {
+		font-size: 1.8rem;
+		text-align: left;
+	}
 }
 
 .pricing-plans__content {
 	position: relative;
-	margin-top: 73px;
-	margin-bottom: 126px;
+	margin-top: 36px;
+	margin-bottom: 64px;
 	text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content {
+		margin-top: 73px;
+		margin-bottom: 126px;
+	}
+}
+
 .pricing-plans__content .title {
-	font-size: 2.4rem;
+	font-size: 18px;
 	font-weight: 500;
-	letter-spacing: 0.7px;
+	letter-spacing: 0.5px;
 	color: #2275d7;
 }
 
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content .title {
+		font-size: 2.4rem;
+		font-weight: 500;
+		letter-spacing: 0.7px;
+	}
+}
+
 .pricing-plans__content p {
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	color: #4a4a4a;
 	margin: 0 auto;
-	margin-top: 17px;
-	margin-bottom: 22px;
-	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 27px;
+	padding: 0 17px;
+	letter-spacing: 0.4px;
 }
 
 @media only screen and (min-width: 768px) {
 	.pricing-plans__content p {
+		font-size: 1.6rem;
+		letter-spacing: 0.5px;
+		padding: 0;
 		width: 100%;
 		margin: 0;
 		margin-top: 17px;
 		margin-bottom: 32px;
+		text-align: center;
 	}
 }
 
 .pricing-plans__content .price {
-	font-size: 6.4rem;
+	font-size: 5.12rem;
 	font-weight: 500;
-	letter-spacing: 0.9px;
+	letter-spacing: 0.8px;
 	color: #2275d7;
 }
 
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content .price {
+		font-size: 6.4rem;
+		letter-spacing: 0.9px;
+	}
+}
+
 .pricing-plans__content .price--del {
-	font-size: 4rem;
-	letter-spacing: 0.6px;
+	font-size: 3.2rem;
+	letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content .price--del {
+		font-size: 4rem;
+		letter-spacing: 0.6px;
+	}
 }
 
 .pricing-plans__content .price:after {
@@ -116,37 +174,54 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 }
 
 .pricing-plans__content .price--red {
-	font-size: 4.8rem;
+	font-size: 3.84rem;
 	color: #e44d42;
 	letter-spacing: 0.7px;
 }
 
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content .price--red {
+		font-size: 4.8rem;
+		letter-spacing: 0.7px;
+	}
+}
+
 .pricing-plans__content ul {
-	width: 208px;
+	width: 166.4px;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: 25px;
 }
 
 @media only screen and (min-width: 768px) {
 	.pricing-plans__content ul {
+		width: 208px;
 		margin-top: 30px;
 	}
 }
 
 .pricing-plans__content li {
 	border-bottom: 1px dashed #979797;
-	padding: 10px 0;
+	padding: 7px 0;
 	line-height: 165%;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content li {
+		padding: 10px 0;
+	}
 }
 
 .pricing-plans__content li:last-child {
 	border: 0px;
 }
 
-.pricing-plans__content a,
+.pricing-plans__content a {
+	color: #2275d7;
+}
+
 .pricing-plans__content a:hover,
 .pricing-plans__content a:active {
-	color: #2275d7;
+	opacity: 0.75;
 }
 
 .pricing-plans__content .ui-button {
@@ -165,8 +240,10 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 1px 1px 6px 0 #d5d2d2;
-  	width: 280px;
-  	height: 470px;
+  	width: 290px;
+  	height: 418px;
+  	font-size: 14px;
+	letter-spacing: 0.4px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -179,12 +256,14 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 		left: -180px;
 		width: 364px;
 		height: 523px;
+		font-size: 1.8rem;
+		letter-spacing: 0.5px;
 	}
 }
 
 .pricing-plans__free .title {
-	padding-top: 36px;
-	margin-bottom: 11px;
+	padding-top: 33.8px;
+	margin-bottom: 25px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -195,7 +274,13 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 }
 
 .pricing-plans__free .price-wrap {
-	padding-left: 60px;
+	padding-left: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__free .price-wrap {
+		padding-left: 60px;
+	}
 }
 
 .pricing-plans__free .ui-button {
@@ -204,13 +289,15 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 
 .pricing-plans__pay {
 	position: relative;
-	width: 280px;
-	height: 550px;
+	width: 290px;
+	height: 468px;
 	background-color: #fff;
   	border-radius: 10px;
 	box-shadow: 3px 11px 25px 0 #c4c4c4;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 20px;
+	font-size: 14px;
+	letter-spacing: 0.4px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -219,11 +306,23 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 		height: 605px;
 		left: 180px;
 		margin: 0;
+		font-size: 1.8rem;
+		letter-spacing: 0.5px;
+	}
+}
+
+.pricing-plans__pay ul {
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__pay ul {
+		margin-top: 30px;
 	}
 }
 
 .pricing-plans__pay .title {
-	padding-top: 47px;
+	padding-top: 48px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -255,20 +354,30 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 
 .pricing-plans__pay li {
 	font-weight: 500;
+	letter-spacing: 0.4px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__pay li {
+		letter-spacing: 0.5px;
+	}
 }
 
 .pricing-faqs {
 	position: relative;
 	width: 100%;
-	background: url(../images/pricing/faqs.jpg) no-repeat center;
+	background: url(../images/pricing/faqs.jpg) no-repeat;
+	background-position: center right;
 	background-size: cover;
-	height: 582px;
+	height: 446px;
 }
 
 @media only screen and (min-width: 768px) {
 	.pricing-faqs {
 		background: url(../images/pricing/faqs@2x.jpg) no-repeat center;
+		background-position: center;
 		background-size: cover;
+		height: 582px;
 	}
 }
 
@@ -291,39 +400,45 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 
 .pricing-faqs h1 {
 	position: absolute;
-	top: 50px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 68px;
+	text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
 	.pricing-faqs h1 {
+		left: initial;
+		margin: 0;
 		top: 120px;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.pricing-faqs h1 {
+		text-align: left;
 		width: 417px;
-		right: 208px;
+		right: 14.4%;
 	}
 }
 
 .pricing-faqs p {
 	position: absolute;
-	top: 101px;
+	top: 125px;
 	color: #4a4a4a;
-	line-height: 145%;
+	font-size: 1.4rem;
+  	letter-spacing: 0.4px;
+  	line-height: 145%;
 }
 
 @media only screen and (min-width: 768px) {
 	.pricing-faqs p {
 		width: 417px;
-		right: 208px;
+		right: 14.4%;
 		top: 181px;
+		font-size: 1.8rem;
+  		letter-spacing: 0.5px;
 	}
 }
 
 .pricing-faqs .relative-block {
-	width: 80%;
+	width: 82.5%;
 	margin: 0 auto;
 }
 
