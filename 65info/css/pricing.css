@@ -1,6 +1,3 @@
-/*todo*/
-/*css3 support*/
-
 .pricing-title {
 	position: relative;
 	width: 100%;
@@ -13,7 +10,7 @@
 	background-size: cover;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 	.pricing-title {
 		background: url(../images/pricing/title@2x.jpg) no-repeat center;
 		background-size: cover;
@@ -21,12 +18,12 @@
 }
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 769px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 769px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 769px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 769px),
-only screen and (                min-resolution: 192dpi) and (min-width: 769px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 769px) { 
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 768px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (                min-resolution: 192dpi) and (min-width: 768px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 768px) { 
 	.pricing-title {
 		background: url(../images/pricing/title@3x.jpg) no-repeat center;
 		background-size: cover;
@@ -35,15 +32,33 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 
 .pricing-title .mask {
 	background-color: rgba(74, 74, 74, 0.5);
+}
+
+.pricing-title .relative-block {
+	width: 90%;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-title .relative-block {
+		width: 100%;
+	}
 }
 
 .pricing-plans {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	padding: 0 35px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans {
+		padding: 0;
+	}
 }
 
 .pricing-plans h1 {
@@ -68,8 +83,19 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 .pricing-plans__content p {
 	font-size: 1.6rem;
 	color: #4a4a4a;
+	margin: 0 auto;
 	margin-top: 17px;
-	margin-bottom: 32px;
+	margin-bottom: 22px;
+	width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content p {
+		width: 100%;
+		margin: 0;
+		margin-top: 17px;
+		margin-bottom: 32px;
+	}
 }
 
 .pricing-plans__content .price {
@@ -98,7 +124,13 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 .pricing-plans__content ul {
 	width: 208px;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content ul {
+		margin-top: 30px;
+	}
 }
 
 .pricing-plans__content li {
@@ -119,26 +151,47 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 
 .pricing-plans__content .ui-button {
 	margin: 0 auto;
-	margin-top: 35px;
+	margin-top: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__content .ui-button {
+		margin-top: 35px;
+	}
 }
 
 .pricing-plans__free {
-	position: absolute;
-	z-index: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	width: 364px;
-	height: 523px;
+	margin: 0 auto;
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 1px 1px 6px 0 #d5d2d2;
-  	left: -180px;
+  	width: 280px;
+  	height: 470px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__free {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		left: -180px;
+		width: 364px;
+		height: 523px;
+	}
 }
 
 .pricing-plans__free .title {
-	padding-top: 46px;
-	margin-bottom: 31px;
+	padding-top: 36px;
+	margin-bottom: 11px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__free .title {
+		padding-top: 46px;
+		margin-bottom: 31px;
+	}
 }
 
 .pricing-plans__free .price-wrap {
@@ -151,16 +204,32 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 
 .pricing-plans__pay {
 	position: relative;
-	width: 384px;
-	height: 605px;
+	width: 280px;
+	height: 550px;
 	background-color: #fff;
   	border-radius: 10px;
 	box-shadow: 3px 11px 25px 0 #c4c4c4;
-	left: 180px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__pay {
+		width: 384px;
+		height: 605px;
+		left: 180px;
+		margin: 0;
+	}
 }
 
 .pricing-plans__pay .title {
-	padding-top: 57px;
+	padding-top: 47px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-plans__pay .title {
+		padding-top: 57px;
+	}
 }
 
 .pricing-plans__pay del {
@@ -191,12 +260,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 .pricing-faqs {
 	position: relative;
 	width: 100%;
-	height: 582px;
 	background: url(../images/pricing/faqs.jpg) no-repeat center;
 	background-size: cover;
+	height: 582px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
 	.pricing-faqs {
 		background: url(../images/pricing/faqs@2x.jpg) no-repeat center;
 		background-size: cover;
@@ -204,12 +273,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 }
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 769px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 769px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 769px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 769px),
-only screen and (                min-resolution: 192dpi) and (min-width: 769px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 769px) { 
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 768px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 768px),
+only screen and (                min-resolution: 192dpi) and (min-width: 768px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 768px) { 
 	.pricing-faqs {
 		background: url(../images/pricing/faqs@3x.jpg) no-repeat center;
 		background-size: cover;
@@ -222,16 +291,45 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 769px) 
 
 .pricing-faqs h1 {
 	position: absolute;
-	right: 208px;
-	top: 120px;
-	width: 417px;
+	top: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-faqs h1 {
+		top: 120px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-faqs h1 {
+		width: 417px;
+		right: 208px;
+	}
 }
 
 .pricing-faqs p {
 	position: absolute;
-	right: 208px;
-	top: 181px;
-	width: 417px;
+	top: 101px;
 	color: #4a4a4a;
 	line-height: 145%;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-faqs p {
+		width: 417px;
+		right: 208px;
+		top: 181px;
+	}
+}
+
+.pricing-faqs .relative-block {
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.pricing-faqs .relative-block {
+		width: 100%;
+		margin: 0;
+	}
 }
