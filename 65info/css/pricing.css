@@ -241,7 +241,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 1px 1px 6px 0 #d5d2d2;
-  	width: 290px;
+  	width: 300px;
   	height: 418px;
   	font-size: 14px;
 	letter-spacing: 0.4px;
@@ -290,13 +290,13 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 768px) 
 
 .pricing-plans__pay {
 	position: relative;
-	width: 290px;
+	width: 300px;
 	height: 468px;
 	background-color: #fff;
   	border-radius: 10px;
 	box-shadow: 3px 11px 25px 0 #c4c4c4;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 20px;
 	font-size: 14px;
 	letter-spacing: 0.4px;
 }
