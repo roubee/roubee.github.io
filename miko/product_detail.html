@@ -367,6 +367,13 @@
 			selectColorHasClicked = true;
 			$('.slick-current').find('img').attr('src', $(this).attr('data-img'));
 		});
+
+		function preloadImg(src) {
+			var img = new Image();
+			img.src = src;
+		}
+		preloadImg('images/product5_5.jpg');
+		preloadImg('images/product5_6.jpg');
 	</script>
 </body>
 </html>
