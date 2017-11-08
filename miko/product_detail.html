@@ -368,12 +368,16 @@
 			$('.slick-current').find('img').attr('src', $(this).attr('data-img'));
 		});
 
+		// 預載花色的圖片
+		$(function(){
+			for(var i = 0; i < $('.select-color__mobile__block__img').length; i++){
+				preloadImg($('.select-color__mobile__block__img').eq(i).attr('data-img'));
+			}
+		});
 		function preloadImg(src) {
 			var img = new Image();
 			img.src = src;
 		}
-		preloadImg('images/product5_5.jpg');
-		preloadImg('images/product5_6.jpg');
 	</script>
 </body>
 </html>
