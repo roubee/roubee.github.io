@@ -10,7 +10,53 @@
 	<link rel="stylesheet" type="text/css" href="css/pricing.css">
 </head>
 <body>
-	<div class="pricing-wrap">
+	<!-- nav -->
+	<nav>
+		<div class="nav-wrap">
+			<div class="nav__logo">
+				<a href="index.html"><img src="images/icon/logo.svg"></a>
+				<div id="nav-hamburger" class="nav__hamburger">
+					<div id="ui-hamburger-menu" class="ui-hamburger-menu"><span></span></div>
+				</div>
+				<div class="nav__member">
+					<ul>
+						<li id="nav-member-account" class="nav__member__account">
+							<div class="nav__member__account-image"></div>
+							<div class="nav__member__account-name">JasonLin <div class="ui-arrow"></div></div>
+						</li>
+						<li id="nav-member-dialog" class="nav__member__dialog">
+							<div class="nav__member__dialog-box">
+								<div class="nav__member__dialog-arrow"></div>
+								<ul>
+									<li><a href="">個人資料</a></li>
+									<li><a href="">我的家屬</a></li>
+									<li><a href="">我的收藏</a></li>
+									<li><a href="">福利上架</a></li>
+									<li><a href="">登出</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul id="nav-menu-parent" class="nav__menu-parent">
+				<a href=""><li>首頁</li></a>
+				<li class="nav__menu-child-link">
+					<div id="nav-menu-child-title" class="title">找資訊 <div class="ui-arrow"></div></div>
+					<ul id="nav-menu-child" class="nav__menu-child">
+						<a href=""><li>福利資訊</li></a>
+						<a href=""><li>健康資訊</li></a>
+						<a href=""><li>活動資訊</li></a>
+					</ul>
+				</li>
+				<a href=""><li>部落格</li></a>
+				<a href=""><li>方案</li></a>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- main -->
+	<div class="main pricing-wrap">
 		<section class="pricing-title">
 			<div class="mask">
 				<div class="relative-block">
@@ -76,5 +122,26 @@
 			</div>
 		</section>
 	</div>
+
+	<!-- footer -->
+	<footer>
+		<div class="footer__nav">
+			<ul class="footer__nav__menu">
+				<li><a href="">關於我們</a></li>
+				<li><a href="">福利資訊</a></li>
+				<li><a href="">健康資訊</a></li>
+				<li><a href="">照護據點</a></li>
+				<li><a href="">聯絡我們</a></li>
+			</ul>
+			<ul class="footer__nav__social">
+				<li><a href="" target="_blank"><img src="images/icon/social_fb.png"></a></li>
+				<li><a href="" target="_blank"><img src="images/icon/social_ig.png"></a></li>
+				<li><a href="" target="_blank"><img src="images/icon/social_twitter.png"></a></li>
+			</ul>
+		</div>
+		<div class="footer__copyright">© 2017  65INFO ALL RIGHTS RESERVED</div>
+	</footer>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="jss/main.js"></script>
 </body>
 </html>
