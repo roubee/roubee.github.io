@@ -1,0 +1,229 @@
+.index-info-header {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 20px;
+	margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info-header {
+		padding: 0px 15px;
+		margin-top: 70px;
+	}
+}
+
+.index-info-header__title {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	color: #4a4a4a;
+}
+
+.index-info-header__title:before {
+	content: '';
+	border: 1px solid #2275d7;
+	display: block;
+	width: 35px;
+	margin-bottom: 7px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info-header__title {
+		font-size: 2.4rem;
+		letter-spacing: 0.3px;
+	}
+
+	.index-info-header__title:before {
+		border: 1.5px solid #2275d7;
+		width: 45px;
+		margin-bottom: 10px;
+	}
+}
+
+.index-info-header__more a,
+.index-info-header__more a:visited,
+.index-info-header__more a:hover{
+	font-size: 1.4rem;
+	letter-spacing: 0.2px;
+	color: #6e6c6c;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info-header__more a,
+	.index-info-header__more a:visited,
+	.index-info-header__more a:hover{
+		font-size: 1.6rem;
+	}
+}
+
+.index-info {
+	max-width: 1015px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info {
+		padding: 0 7.5px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.index-info__item {
+	box-shadow: 0 0 4px 0 #dad6d6;
+	margin-top: 20px;
+	padding-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info__item {
+		width: calc((100% - 45px) / 3);
+		margin: 0 7.5px;
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+	
+	.index-info__item--2column {
+		width: calc((100% - 30px) / 2);
+	}
+}
+
+.index-info__item__pic {
+	height: 210px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info__item__pic {
+		height: 260px;
+	}
+}
+
+.index-info__item__title,
+.index-info__item__content,
+.index-info__item__keywords {
+	margin: 0 12px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info__item__title,
+	.index-info__item__content,
+	.index-info__item__keywords {
+		margin: 0 17px;
+	}
+}
+
+.index-info__item__title {
+	margin-top: 15px;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: #4a4a4a;
+}
+
+.index-info__item__title a,
+.index-info__item__title a:visited,
+.index-info__item__title a:hover {
+	color: #4a4a4a;
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info__item__title {
+		font-size: 1.8rem;
+		margin-top: 20px;
+	}
+}
+
+.index-info__item__content {
+	margin-top: 10px;
+	font-size: 1.3rem;
+	letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info__item__content {
+		margin-top: 20px;
+		font-size: 1.6rem;
+		letter-spacing: 0.6px;
+	}
+}
+
+.index-info__item__content p {
+	margin-top: 10px;
+}
+
+.index-info__item__keywords {
+	margin-top: 20px;	
+}
+
+@media only screen and (min-width: 768px) {
+	.index-info__item--2column {
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 0px;
+	}
+
+	.index-info__item--2column .index-info__item__pic {
+		width: 195px;
+		height: 100%;
+	}
+
+	.index-info__item--2column .index-info__item__content-wrap {
+		width: calc(100% - 195px);
+		padding-bottom: 20px;
+	}
+}
+
+.index-info1__item1__pic {
+	background: url(../images/index/info1_1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info1__item2__pic {
+	background: url(../images/index/info1_2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info1__item3__pic {
+	background: url(../images/index/info1_3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info2__item1__pic {
+	background: url(../images/index/info2_1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info2__item2__pic {
+	background: url(../images/index/info2_2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info2__item3__pic {
+	background: url(../images/index/info2_3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info3__item1__pic {
+	background: url(../images/index/info3_1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info3__item2__pic {
+	background: url(../images/index/info3_2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info3__item3__pic {
+	background: url(../images/index/info3_3.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.index-info3__item4__pic {
+	background: url(../images/index/info3_4.jpg) no-repeat center;
+	background-size: cover;
+}

@@ -18,3 +18,21 @@ if(windowWidth < 768){
 		$('#nav-menu-child').slideToggle();
 	});
 }
+
+$('.ui-drop-down').click(function(event){
+	event.stopPropagation();
+	$(this).find('.item--selected').toggleClass('item--active');
+	$(this).find('.item__list').toggle();
+});
+
+$('.ui-drop-down').find('.option').click(function(){
+	var parentEl = $(this).closest('.ui-drop-down');
+	parentEl.find('.option--selected').text($(this).text());
+});
+
+$(document).click(function(){
+	// dropbox
+	var dropdownEl = $('.ui-drop-down');
+	dropdownEl.find('.item--selected').removeClass('item--active');
+	dropdownEl.find('.item__list').hide();
+});
