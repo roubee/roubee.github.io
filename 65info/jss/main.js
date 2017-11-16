@@ -31,8 +31,31 @@ $('.ui-drop-down').find('.option').click(function(){
 });
 
 $(document).click(function(){
-	// dropbox
 	var dropdownEl = $('.ui-drop-down');
 	dropdownEl.find('.item--selected').removeClass('item--active');
 	dropdownEl.find('.item__list').hide();
+});
+
+$(function(){
+	var scroll = $(window).scrollTop();
+
+	if(windowWidth >= 768){
+		if(scroll > 0){
+			$('#nav-logo').slideUp();
+		}else{
+			$('#nav-logo').slideDown();
+		}
+	}
+});
+
+$(window).scroll(function(){
+	var scroll = $(window).scrollTop();
+
+	if(windowWidth >= 768){
+		if(scroll > 0){
+			$('#nav-logo').slideUp();
+		}else{
+			$('#nav-logo').slideDown();
+		}
+	}
 });

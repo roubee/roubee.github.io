@@ -87,6 +87,10 @@
 		padding-bottom: 20px;
 	}
 	
+	.index-info__item:hover {
+		box-shadow: 0 0 6px 0 #9b9b9b;
+	}
+	
 	.index-info__item--2column {
 		width: calc((100% - 30px) / 2);
 	}

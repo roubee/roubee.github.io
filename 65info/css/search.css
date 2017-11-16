@@ -220,6 +220,11 @@
 		flex-wrap: wrap;
 		padding-bottom: 0px;
 	}
+	
+	.search-info__item:hover {
+		box-shadow: 0 0 6px 0 #9b9b9b;
+	}
+
 	.search-info__item:last-child {
 		margin: 0;
 	}
@@ -387,6 +392,11 @@
 	margin: 5px 2px;
 	white-space: nowrap;
 	padding: 10px 5px;
+}
+
+.search-tag__item--selected {
+	background-color: #2275d7;
+	color: #fff;
 }
 
 .search-ad {
