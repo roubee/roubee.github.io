@@ -284,6 +284,14 @@ ul, li {
 	border-radius: 15px;
 	background-color: #fff;
 	overflow: hidden;
+	width: calc(100% - 30px);
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.ui-drop-down .item__list ul {
+		width: 100%;
+	}
 }
 
 .ui-drop-down .item--active {
