@@ -277,10 +277,12 @@ ul, li {
     overflow: auto;
     border-radius: 15px;
     border: solid 2px #fcc500;
+   	background-color: #fff;
 }
 
 .ui-drop-down .item__list ul {
 	border-radius: 15px;
+	background-color: #fff;
 }
 
 .ui-drop-down .item--active {
