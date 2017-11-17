@@ -283,6 +283,7 @@ ul, li {
 .ui-drop-down .item__list ul {
 	border-radius: 15px;
 	background-color: #fff;
+	overflow: hidden;
 }
 
 .ui-drop-down .item--active {
