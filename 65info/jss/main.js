@@ -54,7 +54,7 @@ $('.ui-input').blur( function() {
 	if(windowWidth < 768){
 		$('nav').show();
 	}
-})
+});
 
 $('.ui-keywords').click(function(event){
 	event.stopPropagation();
