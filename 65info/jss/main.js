@@ -42,8 +42,10 @@ $(function(){
 	if(windowWidth >= 768){
 		if(scroll > 0){
 			$('#nav-logo').slideUp();
+			$('.main').addClass('main--up');
 		}else{
 			$('#nav-logo').slideDown();
+			$('.main').removeClass('main--up');
 		}
 	}
 });
@@ -54,8 +56,10 @@ $(window).scroll(function(){
 	if(windowWidth >= 768){
 		if(scroll > 0){
 			$('#nav-logo').slideUp();
+			$('.main').addClass('main--up');
 		}else{
 			$('#nav-logo').slideDown();
+			$('.main').removeClass('main--up');
 		}
 	}
 });

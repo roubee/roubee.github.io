@@ -909,6 +909,9 @@ nav .nav__member__dialog a:hover {
 	.main {
 		padding-top: 191px;
 	}
+	.main--up {
+		padding-top: 68px;
+	}
 }
 
 /*-------- footer --------*/
