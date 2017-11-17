@@ -36,6 +36,10 @@ $(document).click(function(){
 	dropdownEl.find('.item__list').hide();
 });
 
+$('.ui-keywords').click(function(event){
+	event.stopPropagation();
+});
+
 $(function(){
 	var scroll = $(window).scrollTop();
 

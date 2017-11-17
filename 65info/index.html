@@ -100,9 +100,9 @@
 			</div>
 			<div class="page-search__keywords">
 				<span>熱門關鍵字：</span>
-				<div class="ui-keywords"><a href="">失智症</a></div>
-				<div class="ui-keywords"><a href="">急難救護</a></div>
-				<div class="ui-keywords"><a href="">居家修護</a></div>
+				<a href="" class="ui-keywords">失智症</a>
+				<a href="" class="ui-keywords">急難救護</a>
+				<a href="" class="ui-keywords">居家修護</a>
 			</div>
 		</div>
 
@@ -129,8 +129,8 @@
 						</p>
 					</div>
 					<div class="index-info__item__keywords">
-						<div class="ui-keywords">睡眠品質</div>
-						<div class="ui-keywords">照顧</div>
+						<a href="" class="ui-keywords">睡眠品質</a>
+						<a href="" class="ui-keywords">照顧</a>
 					</div>
 				</div></a>
 			</div>
@@ -147,8 +147,8 @@
 						</p>
 					</div>
 					<div class="index-info__item__keywords">
-						<div class="ui-keywords">睡眠品質</div>
-						<div class="ui-keywords">照顧</div>
+						<a href="" class="ui-keywords">睡眠品質</a>
+						<a href="" class="ui-keywords">照顧</a>
 					</div>
 				</div></a>
 			</div>
@@ -165,8 +165,8 @@
 						</p>
 					</div>
 					<div class="index-info__item__keywords">
-						<div class="ui-keywords">睡眠品質</div>
-						<div class="ui-keywords">照顧</div>
+						<a href="" class="ui-keywords">睡眠品質</a>
+						<a href="" class="ui-keywords">照顧</a>
 					</div>
 				</div></a>
 			</div>
@@ -195,8 +195,8 @@
 						</p>
 					</div>
 					<div class="index-info__item__keywords">
-						<div class="ui-keywords">睡眠品質</div>
-						<div class="ui-keywords">照顧</div>
+						<a href="" class="ui-keywords">睡眠品質</a>
+						<a href="" class="ui-keywords">照顧</a>
 					</div>
 				</div></a>
 			</div>
@@ -213,8 +213,8 @@
 						</p>
 					</div>
 					<div class="index-info__item__keywords">
-						<div class="ui-keywords">睡眠品質</div>
-						<div class="ui-keywords">照顧</div>
+						<a href="" class="ui-keywords">睡眠品質</a>
+						<a href="" class="ui-keywords">照顧</a>
 					</div>
 				</div></a>
 			</div>
@@ -231,8 +231,8 @@
 						</p>
 					</div>
 					<div class="index-info__item__keywords">
-						<div class="ui-keywords">睡眠品質</div>
-						<div class="ui-keywords">照顧</div>
+						<a href="" class="ui-keywords">睡眠品質</a>
+						<a href="" class="ui-keywords">照顧</a>
 					</div>
 				</div></a>
 			</div>
@@ -261,7 +261,7 @@
 							<p>2017/09/02 ~ 2017/09/27</p>
 						</div>
 						<div class="index-info__item__keywords">
-							<div class="ui-keywords">高雄市 苓雅區</div>
+							<a href="" class="ui-keywords">高雄市 苓雅區</a>
 						</div>
 					</div>
 				</div></a>
@@ -279,7 +279,7 @@
 							<p>2017/09/05 ~ 2017/12/15</p>
 						</div>
 						<div class="index-info__item__keywords">
-							<div class="ui-keywords">高雄市 苓雅區</div>
+							<a href="" class="ui-keywords">高雄市 苓雅區</a>
 						</div>
 					</div>
 				</div></a>
@@ -297,7 +297,7 @@
 							<p>2017/09/29 ~ 2017/09/295</p>
 						</div>
 						<div class="index-info__item__keywords">
-							<div class="ui-keywords">新北市 中和區</div>
+							<a href="" class="ui-keywords">新北市 中和區</a>
 						</div>
 					</div>
 				</div></a>
@@ -315,7 +315,7 @@
 							<p>2017/09/05 ~ 2017/12/15</p>
 						</div>
 						<div class="index-info__item__keywords">
-							<div class="ui-keywords">台北市 大安區</div>
+							<a href="" class="ui-keywords">台北市 大安區</a>
 						</div>
 					</div>
 				</div></a>
@@ -343,5 +343,11 @@
 	</footer>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript" src="jss/main.js"></script>
+	<script>
+		$('.index-info__item').click(function(){
+			window.location = $(this).find('.index-info__item-link').attr('href'); 
+  			return false;
+		});
+	</script>
 </body>
 </html>

@@ -88,7 +88,7 @@
 .index-info__item {
 	box-shadow: 0 0 4px 0 #dad6d6;
 	margin-top: 20px;
-	
+	cursor: pointer;
 }
 
 .index-info__item:hover {
@@ -100,14 +100,6 @@
 		width: calc((100% - 45px) / 3);
 		margin: 0 7.5px;
 		margin-top: 20px;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.index-info__item-link {
-		display: block;
-		width: 100%;
-		height: 100%;
 	}
 }
 
