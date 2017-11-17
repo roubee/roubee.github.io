@@ -418,7 +418,7 @@
 	color: #fff;
 }
 
-.search-ad {
+.search-adda {
 	box-shadow: 0 0 3px 0 #c3c2c2;
 	font-size: 1.4rem;
 	font-weight: 500;
@@ -428,17 +428,17 @@
 	margin: 20px 0;
 }
 
-.search-ad a,
-.search-ad a:visited,
-.search-ad a:hover {
+.search-adda a,
+.search-adda a:visited,
+.search-adda a:hover {
 	color: #9b9b9b;
 	text-decoration: none;
 }
 
-.search-ad__img img {
+.search-adda__img img {
 	width: 100%;
 }
 
-.search-ad__content {
+.search-adda__content {
 	padding: 20px;
 }
