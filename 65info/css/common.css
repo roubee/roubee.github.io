@@ -279,6 +279,10 @@ ul, li {
     border: solid 2px #fcc500;
 }
 
+.ui-drop-down .item__list ul {
+	border-radius: 15px;
+}
+
 .ui-drop-down .item--active {
 	border: solid 2px #fcc500;
 }
