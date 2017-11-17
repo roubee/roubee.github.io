@@ -545,7 +545,7 @@ nav a:hover {
 	.nav__logo {
 		padding-top: 0px;
 		margin-top: 62px;
-		margin-bottom: 35px;
+		margin-bottom: 25px;
 	}
 }
 
@@ -742,8 +742,7 @@ nav .nav__member__dialog a:hover {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-top: 35px;
-		padding-bottom: 36px;
+		padding: 23px 0;
 		height: 21px;
 		font-size: 1.5rem;
 		box-shadow: 0 0 0 0;
@@ -908,7 +907,7 @@ nav .nav__member__dialog a:hover {
 
 @media only screen and (min-width: 768px) {
 	.main {
-		padding-top: 225px;
+		padding-top: 191px;
 	}
 }
 
