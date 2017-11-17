@@ -300,8 +300,18 @@ ul, li {
 	display: inline-flex;
 	margin: 2px;
 	white-space: nowrap;
-	padding: 5px 8px;
 	cursor: pointer;
+}
+
+.ui-keywords a,
+.ui-keywords a:visited,
+.ui-keywords a:hover {
+	text-decoration: none;
+	color: #9b9b9b;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px 8px;
 }
 
 .ui-views-count,
