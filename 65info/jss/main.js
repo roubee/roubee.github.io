@@ -17,13 +17,6 @@ if(windowWidth < 768){
 		$(this).toggleClass('title--active');
 		$('#nav-menu-child').slideToggle();
 	});
-	$('.ui-input').focus( function() {
-		$('nav').slideUp();
-		$("html, body").animate({scrollTop: $(this).offset().top});
-	});
-	$('.ui-input').blur( function() {
-		$('nav').slideDown();
-	});
 }
 
 $('.ui-drop-down').click(function(event){
