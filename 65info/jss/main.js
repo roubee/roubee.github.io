@@ -37,7 +37,7 @@ $(document).click(function(){
 });
 
 $('.ui-input').on('focus', function() {
-	$('html, body').scrollTop($(this).offset().top);
+	$('html, body').animate({scrollTop: $(this).offset().top});
 });
 
 $('.ui-keywords').click(function(event){
