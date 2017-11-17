@@ -18,11 +18,11 @@ if(windowWidth < 768){
 		$('#nav-menu-child').slideToggle();
 	});
 	$('.ui-input').focus( function() {
-		$('nav').hide();
+		$('nav').slideUp();
+		$("html, body").animate({scrollTop: $(this).offset().top});
 	});
-
 	$('.ui-input').blur( function() {
-		$('nav').show();
+		$('nav').slideDown();
 	});
 }
 
