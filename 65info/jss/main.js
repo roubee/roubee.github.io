@@ -36,6 +36,10 @@ $(document).click(function(){
 	dropdownEl.find('.item__list').hide();
 });
 
+$('.ui-input').on('focus', function() {
+	document.body.scrollTop = $(this).offset().top;
+});
+
 $('.ui-keywords').click(function(event){
 	event.stopPropagation();
 });
