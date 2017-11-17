@@ -37,7 +37,11 @@ $(document).click(function(){
 });
 
 $('.ui-input').on('focus', function() {
-	$('html, body').animate({scrollTop: $(this).offset().top});
+	if(windowWidth < 768){
+		$('#nav-logo').slideUp();
+		$('.main').addClass('main--up');
+		$('html, body').animate({scrollTop: $(this).offset().top});
+	}
 });
 
 $('.ui-keywords').click(function(event){
