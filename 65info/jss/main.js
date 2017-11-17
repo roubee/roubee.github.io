@@ -36,14 +36,6 @@ $(document).click(function(){
 	dropdownEl.find('.item__list').hide();
 });
 
-$('.ui-input').on('focus', function() {
-	if(windowWidth < 768){
-		$('#nav-logo').slideUp();
-		$('.main').addClass('main--up');
-		$('html, body').animate({scrollTop: $(this).offset().top});
-	}
-});
-
 $('.ui-keywords').click(function(event){
 	event.stopPropagation();
 });
