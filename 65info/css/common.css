@@ -639,12 +639,12 @@ nav a:hover {
 .nav__member__dialog-box {
 	position: absolute;
     z-index: 1;
-    top: 10px;
+    top: 9px;
     right: 15px;
 	width: 125px;
 	border-radius: 3px;
 	background-color: #ffffff;
-	box-shadow: 0 1px 3px 0 #9b9b9b;
+	box-shadow: 0 1px 5px 0 #d5d2d2;
 	text-align: center;
 	padding: 0 10px;
 }
@@ -656,7 +656,7 @@ nav a:hover {
 	}
 }
 
-.nav__member__dialog a {
+nav .nav__member__dialog a {
 	width: 100%;
 	display: block;
 	text-decoration: none;
@@ -666,7 +666,7 @@ nav a:hover {
 	letter-spacing: -0.3px;
 }
 
-.nav__member__dialog a:hover {
+nav .nav__member__dialog a:hover {
 	color: #2275d7;
 }
 
@@ -830,29 +830,29 @@ nav a:hover {
     top: 5px;
 }
 
+.nav__menu-child-link:hover {
+	color: #2275d7;
+}
+
+.nav__menu-child-link:hover .ui-arrow {
+	border-color: #2275d7 transparent transparent transparent;
+}
+
 @media only screen and (min-width: 768px) {
 	.nav__menu-child-link .ui-arrow {
 		float: right;
 		display: block;
-	}
-	
-	.nav__menu-child-link:hover {
-		color: #2275d7;
 	}
 
 	.nav__menu-child-link:hover > .nav__menu-child {
 		display: block;
 	}
 
-	.nav__menu-child-link:hover .ui-arrow {
-		border-color: #2275d7 transparent transparent transparent;
-	}
-
 	.nav__menu-child {
 		width: 160px;
 		background-color: #fff;
 		border-radius: 5px;
-		box-shadow: 0 2px 6px 0 #9a9a9b;
+		box-shadow: 0 0 6px 0 #d5d2d2;
 		position: absolute;
 		top: 24px;
 		left: 50%;
@@ -864,14 +864,14 @@ nav a:hover {
 		text-align: center;
 		font-size: 1.5rem;
 		font-weight: 500;
-		padding-top: 34px;
+		padding-top: 20px;
 		display: none;
 	}
 
 	.nav__menu-child:before {
 		content: '';
 		width: 170px;
-		height: 45px;
+		height: 40px;
 		position: absolute;
     	left: 50%;
     	transform: translateX(-50%);
