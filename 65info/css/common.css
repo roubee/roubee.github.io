@@ -873,14 +873,14 @@ nav .nav__member__dialog a:hover {
 		text-align: center;
 		font-size: 1.5rem;
 		font-weight: 500;
-		padding-top: 20px;
+		padding-top: 9px;
 		display: none;
 	}
 
 	.nav__menu-child:before {
 		content: '';
 		width: 170px;
-		height: 40px;
+		height: 20px;
 		position: absolute;
     	left: 50%;
     	transform: translateX(-50%);
