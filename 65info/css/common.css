@@ -279,15 +279,6 @@ ul, li {
     border: solid 2px #fcc500;
 }
 
-/*.ui-drop-down .item__list ul {
-	position: absolute;
-	border-top: 0px;
-	width: 100%;
-	z-index: 99;
-	background-color: #fff;
-    border-radius: 15px;
-}*/
-
 .ui-drop-down .item--active {
 	border: solid 2px #fcc500;
 }
